@@ -38,9 +38,17 @@ More fun to build than to live in. The worldbuilding high of The Rook never quit
 
 Incredible world-architect, but the texture of living inside the longer books can feel thin. The magic systems are inventive; the characters less so. Emperor's Soul is the exception that proves the rule — small scope, perfect balance of system and character.
 
-### A Wizard's Guide to Defensive Baking — T. Kingfisher · 6/10 (in progress)
+---
 
-Charming but not transcendent. Voice is warm, cozy-with-darkness energy. Rating provisional — the gut-punch is an ending thing; will update once finished. Confirmed so far: this register isn't quite the core of what works — the craft and satirical coherence of DCC is what's actually being chased.
+## 6-6.5
+
+### Piranesi — Susanna Clarke · 6.5/10 *(listened on Audible)*
+
+The mystery structure is the strongest element — the slow reconstruction of what the House is and isn't has real pull. But the twist underwhelmed compared to Evelyn Hardcastle, which is the natural comp: same identity-reconstruction skeleton, less satisfying payoff. The nature of the House itself (the halls, the flooding, the water) stayed too ambiguous to fully resolve — not earned strangeness so much as unresolved strangeness. A miss relative to the TBR prediction; was the top 9/10 candidate and landed well short.
+
+### A Wizard's Guide to Defensive Baking — T. Kingfisher · 6/10
+
+Charming but not transcendent. Voice is warm, cozy-with-darkness energy. Confirmed: this register isn't quite the core of what works — the craft and satirical coherence of DCC is what's actually being chased.
 
 ---
 

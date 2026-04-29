@@ -8,14 +8,6 @@
 
 ## Tier 1 — Highest Confidence
 
-### Piranesi — Susanna Clarke
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Piranesi+Susanna+Clarke) | Price: *not yet tracked*
-
-**Why it's #1:** Total authorial control over something small and strange that secretly contains multitudes. The narrator is unreliable in a way that keeps productive distance while the world does the emotional heavy lifting. Identity-reconstruction structure mirrors The Rook. Ending lands like Emperor's Soul — quiet and devastating. Short and perfectly weighted; never wastes a page.
-
-**The bet:** This is the most likely 9/10 on the list.
-
 ### The Left Hand of Darkness — Ursula Le Guin
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Left+Hand+of+Darkness+Le+Guin) | Price: $6.99 ~~$9.99~~ 🔔 *alert set @ $6.98*
@@ -78,13 +70,14 @@
 
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
-**The caveat:** May skew too cozy — similar risk as Kingfisher. Worth trying if Piranesi and Left Hand of Darkness land well.
+**The caveat:** May skew too cozy — similar risk as Kingfisher. Worth trying if Left Hand of Darkness lands well.
 
 -----
 
 ## Already Read / Removed from Queue
 
-- A Wizard's Guide to Defensive Baking — Read. 6/10 (provisional, in progress).
+- Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
+- A Wizard's Guide to Defensive Baking — Read. 6/10.
 - Dungeon Crawler Carl — The benchmark.
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
