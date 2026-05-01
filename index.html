@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tefleming — Books</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f3ee;
+      --surface: #fefefc;
+      --border: #dedad2;
+      --text: #1a1a17;
+      --muted: #6b6860;
+      --accent: #7a3e1a;
+      --accent-hover: #5c2e12;
+      --accent-light: #f0e8df;
+      --green: #2a5c3f;
+      --amber: #7a5a1a;
+      --tan: #8a7040;
+      --red: #6b2a2a;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --r: 4px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* ── Modal ─────────────────────────────────────────────────────── */
+
+    .modal-overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.45);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 100;
+    }
+    .modal-overlay.hidden { display: none; }
+
+    .modal {
+      background: var(--surface);
+      border-radius: var(--r);
+      padding: 32px;
+      width: 100%; max-width: 400px;
+      margin: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.18);
+    }
+    .modal h2 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+    .modal p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .modal code {
+      font-size: 12px;
+      background: var(--accent-light);
+      padding: 1px 5px;
+      border-radius: 2px;
+    }
+
+    /* ── Inputs ────────────────────────────────────────────────────── */
+
+    input[type="text"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 9px 12px;
+      font-family: var(--sans);
+      font-size: 14px;
+      background: var(--surface);
+      color: var(--text);
+      margin-bottom: 8px;
+      -webkit-appearance: none;
+    }
+    input:focus { outline: none; border-color: var(--accent); }
+    input::placeholder { color: #bbb; }
+
+    /* ── Buttons ───────────────────────────────────────────────────── */
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--r);
+      padding: 10px 20px;
+      font-family: var(--sans);
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 4px;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-primary:disabled { opacity: .5; cursor: not-allowed; }
+
+    .link-btn {
+      background: none; border: none;
+      color: var(--muted);
+      font-size: 12px;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 0;
+      font-family: var(--sans);
+    }
+    .link-btn:hover { color: var(--text); }
+
+    /* ── Utilities ─────────────────────────────────────────────────── */
+
+    .error-msg { color: #c0392b; font-size: 13px; margin: 6px 0; min-height: 18px; }
+    .pat-note { margin-top: 12px; font-size: 12px; color: var(--muted); }
+
+    /* ── App layout ────────────────────────────────────────────────── */
+
+    #app { max-width: 720px; margin: 0 auto; padding: 0 16px 80px; }
+
+    header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      padding: 28px 0 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: .01em;
+    }
+
+    /* ── Tabs ──────────────────────────────────────────────────────── */
+
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 36px;
+    }
+    .tab {
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 12px 20px;
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--muted);
+      cursor: pointer;
+      margin-bottom: -1px;
+      letter-spacing: .02em;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 500; }
+
+    /* ── Loading / error ───────────────────────────────────────────── */
+
+    .loading { color: var(--muted); font-size: 14px; padding: 32px 0; }
+
+    /* ── TBR tier sections ─────────────────────────────────────────── */
+
+    .tier-section { margin-bottom: 52px; }
+
+    .tier-heading {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin-bottom: 28px;
+    }
+
+    /* ── TBR book entries ──────────────────────────────────────────── */
+
+    .tbr-book {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .tbr-book:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .book-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+    .book-byline {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .book-rec {
+      font-style: italic;
+    }
+
+    .kindle-line {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    .kindle-line a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 12px;
+      border: 1px solid var(--accent-light);
+      background: var(--accent-light);
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+    .kindle-line a:hover { background: #e8d8cc; }
+    .price { color: var(--text); font-weight: 500; }
+    .price-orig { text-decoration: line-through; color: var(--muted); }
+    .price-alert { font-size: 12px; }
+    .price-untracked { font-size: 12px; font-style: italic; }
+
+    .book-field { margin-bottom: 12px; }
+    .field-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 3px;
+    }
+    .field-body { font-size: 14px; line-height: 1.7; }
+
+    /* ── Already Read ──────────────────────────────────────────────── */
+
+    .already-read { margin-top: 52px; }
+    .already-read .tier-heading { margin-bottom: 16px; }
+    .already-read ul { list-style: none; }
+    .already-read li {
+      font-size: 13px;
+      color: var(--muted);
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .already-read li:last-child { border-bottom: none; }
+
+    /* ── Submission form ───────────────────────────────────────────── */
+
+    #submit-section {
+      margin-top: 60px;
+      border-top: 2px solid var(--border);
+      padding-top: 36px;
+    }
+    #submit-section h2 {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: normal;
+      margin-bottom: 6px;
+    }
+    #submit-section .sub-desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .field-row { margin-bottom: 16px; }
+    .field-row label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    #submit-status { font-size: 13px; margin: 10px 0 4px; min-height: 20px; }
+    #submit-status.success { color: var(--green); }
+    #submit-status.success a { color: var(--green); }
+    #submit-status.error { color: #c0392b; }
+
+    /* ── Ratings ───────────────────────────────────────────────────── */
+
+    .rating-book {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 0 18px;
+      align-items: start;
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+    .rating-book:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .score-col { text-align: right; padding-top: 3px; }
+    .score-val {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 1;
+      display: block;
+    }
+    .score-denom { font-size: 11px; color: var(--muted); display: block; text-align: right; }
+    .score-dnf-label { font-size: 13px; font-family: var(--sans); font-weight: 600; letter-spacing: .04em; }
+
+    .s9  { color: var(--green); }
+    .s7  { color: var(--amber); }
+    .s6  { color: var(--tan); }
+    .s4  { color: var(--red); }
+    .sdnf { color: var(--red); }
+
+    .rating-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: normal;
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+    .rating-author { font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+    .rating-format { font-size: 12px; color: var(--muted); font-style: italic; margin-bottom: 10px; }
+    .rating-notes { font-size: 14px; line-height: 1.75; }
+    .rating-notes p + p { margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<!-- PAT Modal -->
+<div id="pat-modal" class="modal-overlay">
+  <div class="modal">
+    <h2>GitHub Access</h2>
+    <p>Enter a GitHub PAT with read access to <code>teddyballgm/TBR</code> and pull request write access.</p>
+    <input type="password" id="pat-input" placeholder="ghp_…" autocomplete="off" spellcheck="false">
+    <div id="pat-error" class="error-msg"></div>
+    <button class="btn-primary" id="pat-submit">Load</button>
+    <p class="pat-note">Stored in localStorage on this device. <button class="link-btn" id="clear-pat">Clear</button></p>
+  </div>
+</div>
+
+<!-- App -->
+<div id="app" style="display:none">
+  <header>
+    <h1>tefleming</h1>
+    <button class="link-btn" id="change-pat">change PAT</button>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="tbr">TBR</button>
+    <button class="tab" data-tab="ratings">Ratings</button>
+  </nav>
+
+  <main>
+    <div id="tab-tbr">
+      <div id="tbr-loading" class="loading">Loading…</div>
+      <div id="tbr-error" class="error-msg" style="display:none"></div>
+      <div id="tbr-content" style="display:none"></div>
+      <section id="submit-section" style="display:none">
+        <h2>Submit a Book</h2>
+        <p class="sub-desc">Opens a PR adding a stub to tbr.md for triage.</p>
+        <form id="submit-form">
+          <div class="field-row">
+            <label for="sub-title">Title</label>
+            <input type="text" id="sub-title" required placeholder="e.g. The Left Hand of Darkness">
+          </div>
+          <div class="field-row">
+            <label for="sub-author">Author</label>
+            <input type="text" id="sub-author" required placeholder="e.g. Ursula Le Guin">
+          </div>
+          <div class="field-row">
+            <label for="sub-source">Rec from <span style="text-transform:none;font-weight:400">(optional)</span></label>
+            <input type="text" id="sub-source" placeholder="e.g. Dylan">
+          </div>
+          <div class="field-row">
+            <label for="sub-name">Your name <span style="text-transform:none;font-weight:400">(optional)</span></label>
+            <input type="text" id="sub-name" placeholder="for PR attribution">
+          </div>
+          <div id="submit-status"></div>
+          <button type="submit" id="submit-btn" class="btn-primary">Open PR</button>
+        </form>
+      </section>
+    </div>
+
+    <div id="tab-ratings" style="display:none">
+      <div id="ratings-loading" class="loading">Loading…</div>
+      <div id="ratings-error" class="error-msg" style="display:none"></div>
+      <div id="ratings-content" style="display:none"></div>
+    </div>
+  </main>
+</div>
+
+<script>
+  const REPO = 'teddyballgm/TBR';
+  const API  = 'https://api.github.com';
+
+  // ── PAT ──────────────────────────────────────────────────────────────────
+
+  const getPAT   = () => localStorage.getItem('gh_pat') || '';
+  const setPAT   = p  => localStorage.setItem('gh_pat', p);
+  const clearPAT = () => localStorage.removeItem('gh_pat');
+
+  // ── GitHub API ────────────────────────────────────────────────────────────
+
+  async function ghFetch(pat, path, opts = {}) {
+    const res = await fetch(`${API}${path}`, {
+      ...opts,
+      headers: {
+        Authorization: `token ${pat}`,
+        Accept: 'application/vnd.github.v3+json',
+        ...(opts.headers || {})
+      }
+    });
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      throw new Error(body.message || `GitHub API error ${res.status}`);
+    }
+    return res.json();
+  }
+
+  async function getFileContent(pat, path) {
+    const data = await ghFetch(pat, `/repos/${REPO}/contents/${path}`);
+    return { content: b64Decode(data.content), sha: data.sha };
+  }
+
+  function b64Decode(b64) {
+    return decodeURIComponent(
+      atob(b64.replace(/\n/g, '')).split('').map(c =>
+        '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
+      ).join('')
+    );
+  }
+
+  function b64Encode(str) {
+    return btoa(unescape(encodeURIComponent(str)));
+  }
+
+  // ── TBR parser ────────────────────────────────────────────────────────────
+
+  function parseTBR(md) {
+    const result = { tiers: [], alreadyRead: [] };
+    const parts = md.split(/^(?=## )/m);
+
+    for (const part of parts) {
+      if (!part.startsWith('## ')) continue;
+      const nl = part.indexOf('\n');
+      const heading = part.slice(3, nl).trim();
+      const body    = part.slice(nl + 1);
+
+      if (heading.startsWith('Already Read')) {
+        result.alreadyRead = parseAlreadyRead(body);
+      } else if (heading.startsWith('Tier')) {
+        result.tiers.push({ name: heading, books: parseTierBooks(body) });
+      }
+    }
+    return result;
+  }
+
+  function parseTierBooks(body) {
+    const books = [];
+    const parts = body.split(/^(?=### )/m);
+    for (const part of parts) {
+      if (!part.startsWith('### ')) continue;
+      const book = parseBook(part.slice(4));
+      if (book) books.push(book);
+    }
+    return books;
+  }
+
+  function parseBook(text) {
+    const lines  = text.split('\n');
+    const header = lines[0].trim();
+
+    const recMatch  = header.match(/\*\(rec from ([^)]+)\)\*/);
+    const recSource = recMatch ? recMatch[1].trim() : null;
+    const clean     = header.replace(/\s*\*\(rec from [^)]+\)\*/, '').trim();
+
+    const dash = clean.indexOf(' — ');
+    if (dash === -1) return null;
+    const title  = clean.slice(0, dash).trim();
+    const author = clean.slice(dash + 3).trim();
+
+    let kindleUrl = null, price = null, origPrice = null, alertPrice = null;
+    let whyHere = '', caveat = '';
+    let field = null;
+
+    for (let i = 1; i < lines.length; i++) {
+      const t = lines[i].trim();
+
+      if (/^-{3,}$/.test(t) || t === '') continue;
+
+      if (t.startsWith('**Kindle:**')) {
+        field = 'kindle';
+        const urlM = t.match(/\[(?:[^\]]+)\]\(([^)]+)\)/);
+        if (urlM) kindleUrl = urlM[1];
+        const priceM = t.match(/Price:\s*(.+)/);
+        if (priceM) {
+          const ps = priceM[1];
+          if (!ps.includes('not yet tracked')) {
+            const cur  = ps.match(/\$[\d.]+/);
+            if (cur) price = cur[0];
+            const orig = ps.match(/~~(\$[\d.]+)~~/);
+            if (orig) origPrice = orig[1];
+            const alrt = ps.match(/alert set @ (\$[\d.]+)/);
+            if (alrt) alertPrice = alrt[1];
+          }
+        }
+      } else if (t.startsWith("**Why it’s here:**") || t.startsWith("**Why it's here:**")) {
+        field = 'why';
+        whyHere = t.replace(/^\*\*Why it[’']s here:\*\*\s*/, '');
+      } else if (/^\*\*The (?:caveat|bet):\*\*/.test(t)) {
+        field = 'caveat';
+        caveat = t.replace(/^\*\*The (?:caveat|bet):\*\*\s*/, '');
+      } else if (t.startsWith('**')) {
+        field = null;
+      } else if (field === 'why') {
+        whyHere += ' ' + t;
+      } else if (field === 'caveat') {
+        caveat += ' ' + t;
+      }
+    }
+
+    return { title, author, recSource, kindleUrl, price, origPrice, alertPrice,
+             whyHere: whyHere.trim(), caveat: caveat.trim() };
+  }
+
+  function parseAlreadyRead(body) {
+    return body.split('\n')
+      .filter(l => l.trim().startsWith('- '))
+      .map(l => l.replace(/^-\s+/, '').trim())
+      .filter(Boolean);
+  }
+
+  // ── Ratings parser ────────────────────────────────────────────────────────
+
+  function parseRatings(md) {
+    const books = [];
+    const parts = md.split(/^(?=## )/m);
+
+    for (const part of parts) {
+      if (!part.startsWith('## ')) continue;
+      const nl      = part.indexOf('\n');
+      const heading = part.slice(3, nl).trim();
+      const body    = part.slice(nl + 1);
+      const isDNF   = /not finish/i.test(heading);
+
+      const bookParts = body.split(/^(?=### )/m);
+      for (const bp of bookParts) {
+        if (!bp.startsWith('### ')) continue;
+        const book = parseRatedBook(bp.slice(4), isDNF);
+        if (book) books.push(book);
+      }
+    }
+
+    books.sort((a, b) => {
+      if (a.isDNF !== b.isDNF) return a.isDNF ? 1 : -1;
+      return b.score - a.score;
+    });
+    return books;
+  }
+
+  function parseRatedBook(text, isDNF) {
+    const lines  = text.split('\n');
+    const header = lines[0].trim();
+
+    const fmtMatch  = header.match(/\*\(([^)]+)\)\*/);
+    const formatNote = fmtMatch ? fmtMatch[1] : null;
+    const clean = header.replace(/\s*\*\([^)]+\)\*/, '').trim();
+
+    // "Title — Author · Score/10"  or  "Title · Score/10"
+    const m = clean.match(/^(.+?)\s+·\s+([\d.]+(?:-[\d.]+)?)\/10$/);
+    if (!m) return null;
+
+    const titleAuthor = m[1].trim();
+    const scoreStr    = m[2];
+
+    let title, author;
+    const dash = titleAuthor.indexOf(' — ');
+    if (dash !== -1) {
+      title  = titleAuthor.slice(0, dash).trim();
+      author = titleAuthor.slice(dash + 3).trim();
+    } else {
+      title  = titleAuthor;
+      author = '';
+    }
+
+    const score = scoreStr.includes('-')
+      ? (parseFloat(scoreStr) + parseFloat(scoreStr.split('-')[1])) / 2
+      : parseFloat(scoreStr);
+
+    const notes = lines.slice(1)
+      .filter(l => l.trim() && !/^-{3,}$/.test(l.trim()))
+      .join('\n').trim();
+
+    return { title, author, score, scoreStr, formatNote, notes, isDNF };
+  }
+
+  // ── Render TBR ────────────────────────────────────────────────────────────
+
+  function renderTBR(data) {
+    let html = '';
+
+    for (const tier of data.tiers) {
+      html += `<section class="tier-section">`;
+      html += `<div class="tier-heading">${e(tier.name)}</div>`;
+      for (const book of tier.books) html += renderTBRBook(book);
+      html += `</section>`;
+    }
+
+    if (data.alreadyRead.length) {
+      html += `<section class="already-read">`;
+      html += `<div class="tier-heading">Already Read / Removed</div>`;
+      html += `<ul>`;
+      for (const item of data.alreadyRead) html += `<li>${e(item)}</li>`;
+      html += `</ul></section>`;
+    }
+
+    document.getElementById('tbr-content').innerHTML = html;
+  }
+
+  function renderTBRBook(b) {
+    let h = `<article class="tbr-book">`;
+    h += `<div class="book-title">${e(b.title)}</div>`;
+    h += `<div class="book-byline">${e(b.author)}`;
+    if (b.recSource) h += ` <span class="book-rec">· rec from ${e(b.recSource)}</span>`;
+    h += `</div>`;
+
+    h += `<div class="kindle-line">`;
+    if (b.kindleUrl) h += `<a href="${e(b.kindleUrl)}" target="_blank" rel="noopener">Track on eReaderIQ</a>`;
+    if (b.price) {
+      h += `<span class="price">${e(b.price)}</span>`;
+      if (b.origPrice) h += ` <span class="price-orig">${e(b.origPrice)}</span>`;
+      if (b.alertPrice) h += ` <span class="price-alert">🔔 ${e(b.alertPrice)}</span>`;
+    } else if (b.kindleUrl) {
+      h += `<span class="price-untracked">price not yet tracked</span>`;
+    }
+    h += `</div>`;
+
+    if (b.whyHere) {
+      h += `<div class="book-field"><div class="field-label">Why it’s here</div>`;
+      h += `<div class="field-body">${e(b.whyHere)}</div></div>`;
+    }
+    if (b.caveat) {
+      h += `<div class="book-field"><div class="field-label">The caveat</div>`;
+      h += `<div class="field-body">${e(b.caveat)}</div></div>`;
+    }
+
+    h += `</article>`;
+    return h;
+  }
+
+  // ── Render Ratings ────────────────────────────────────────────────────────
+
+  function renderRatings(books) {
+    let html = '';
+    for (const book of books) html += renderRatedBook(book);
+    document.getElementById('ratings-content').innerHTML = html;
+  }
+
+  function renderRatedBook(b) {
+    const cls = b.isDNF ? 'sdnf'
+      : b.score >= 9 ? 's9'
+      : b.score >= 7 ? 's7'
+      : b.score >= 6 ? 's6' : 's4';
+
+    let h = `<article class="rating-book">`;
+
+    h += `<div class="score-col">`;
+    if (b.isDNF && !b.scoreStr) {
+      h += `<span class="score-val ${cls} score-dnf-label">DNF</span>`;
+    } else {
+      h += `<span class="score-val ${cls}">${e(b.scoreStr)}</span>`;
+      h += `<span class="score-denom">/10</span>`;
+    }
+    h += `</div>`;
+
+    h += `<div>`;
+    h += `<div class="rating-title">${e(b.title)}</div>`;
+    if (b.author) h += `<div class="rating-author">${e(b.author)}</div>`;
+    if (b.formatNote) h += `<div class="rating-format">${e(b.formatNote)}</div>`;
+    if (b.notes) {
+      h += `<div class="rating-notes">`;
+      h += b.notes.split(/\n\n+/).map(p => `<p>${e(p.replace(/\n/g, ' '))}</p>`).join('');
+      h += `</div>`;
+    }
+    h += `</div>`;
+
+    h += `</article>`;
+    return h;
+  }
+
+  // ── HTML escape ───────────────────────────────────────────────────────────
+
+  function e(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── PR submission ─────────────────────────────────────────────────────────
+
+  function slugify(s) {
+    return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
+  }
+
+  async function submitBook(pat, { title, author, recSource, submitterName }) {
+    const json = (body) => ({
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+
+    // Get main branch SHA
+    const mainRef = await ghFetch(pat, `/repos/${REPO}/git/ref/heads/main`);
+    const mainSha = mainRef.object.sha;
+
+    // Create branch
+    const branch = `submit/${slugify(title)}-${Date.now()}`;
+    await ghFetch(pat, `/repos/${REPO}/git/refs`, json({ ref: `refs/heads/${branch}`, sha: mainSha }));
+
+    // Get current tbr.md
+    const { content, sha: fileSha } = await getFileContent(pat, 'tbr.md');
+
+    // Build stub
+    const ereaderUrl = `https://www.ereaderiq.com/search/?q=${encodeURIComponent(title + ' ' + author)}`;
+    const recLine = recSource ? ` *(rec from ${recSource})*` : '';
+    const stub = [
+      '',
+      `### ${title} — ${author}${recLine}`,
+      '',
+      `**Kindle:** [Track on eReaderIQ](${ereaderUrl})`,
+      '',
+      `**Why it's here:** [To be filled during triage]`,
+      '',
+      `**The caveat:** [To be filled during triage]`,
+      ''
+    ].join('\n');
+
+    // Insert before "Already Read" section
+    const marker = '\n## Already Read';
+    const idx = content.indexOf(marker);
+    const newContent = idx !== -1
+      ? content.slice(0, idx) + '\n' + stub + content.slice(idx)
+      : content.trimEnd() + '\n' + stub;
+
+    // Update file on branch
+    await ghFetch(pat, `/repos/${REPO}/contents/tbr.md`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Add TBR stub: ${title} — ${author}`,
+        content: b64Encode(newContent),
+        sha: fileSha,
+        branch
+      })
+    });
+
+    // Create PR
+    const prBody = submitterName
+      ? `Submitted by ${submitterName} via tefleming.com`
+      : 'Submitted via tefleming.com';
+
+    const pr = await ghFetch(pat, `/repos/${REPO}/pulls`, json({
+      title: `TBR: ${title} — ${author}`,
+      body: prBody,
+      head: branch,
+      base: 'main'
+    }));
+
+    return pr.html_url;
+  }
+
+  // ── Data loading ──────────────────────────────────────────────────────────
+
+  let tbrLoaded = false;
+  let ratingsLoaded = false;
+
+  async function loadTBR(pat) {
+    const loading = document.getElementById('tbr-loading');
+    const errEl   = document.getElementById('tbr-error');
+    const content = document.getElementById('tbr-content');
+    const submit  = document.getElementById('submit-section');
+
+    loading.style.display = '';
+    errEl.style.display   = 'none';
+    content.style.display = 'none';
+    submit.style.display  = 'none';
+
+    try {
+      const { content: md } = await getFileContent(pat, 'tbr.md');
+      renderTBR(parseTBR(md));
+      content.style.display = '';
+      submit.style.display  = '';
+      tbrLoaded = true;
+    } catch (err) {
+      errEl.textContent   = err.message;
+      errEl.style.display = '';
+    } finally {
+      loading.style.display = 'none';
+    }
+  }
+
+  async function loadRatings(pat) {
+    const loading = document.getElementById('ratings-loading');
+    const errEl   = document.getElementById('ratings-error');
+    const content = document.getElementById('ratings-content');
+
+    loading.style.display = '';
+    errEl.style.display   = 'none';
+    content.style.display = 'none';
+
+    try {
+      const { content: md } = await getFileContent(pat, 'ratings.md');
+      renderRatings(parseRatings(md));
+      content.style.display = '';
+      ratingsLoaded = true;
+    } catch (err) {
+      errEl.textContent   = err.message;
+      errEl.style.display = '';
+    } finally {
+      loading.style.display = 'none';
+    }
+  }
+
+  // ── App state ─────────────────────────────────────────────────────────────
+
+  function showApp(pat) {
+    document.getElementById('pat-modal').classList.add('hidden');
+    document.getElementById('app').style.display = '';
+    loadTBR(pat);
+  }
+
+  function showModal() {
+    document.getElementById('pat-modal').classList.remove('hidden');
+    document.getElementById('app').style.display = 'none';
+    tbrLoaded = false;
+    ratingsLoaded = false;
+  }
+
+  // ── Event wiring ──────────────────────────────────────────────────────────
+
+  document.getElementById('pat-submit').addEventListener('click', async () => {
+    const pat   = document.getElementById('pat-input').value.trim();
+    const btn   = document.getElementById('pat-submit');
+    const errEl = document.getElementById('pat-error');
+    if (!pat) return;
+
+    btn.disabled   = true;
+    btn.textContent = 'Checking…';
+    errEl.textContent = '';
+
+    try {
+      await ghFetch(pat, `/repos/${REPO}`);
+      setPAT(pat);
+      showApp(pat);
+    } catch (err) {
+      errEl.textContent = err.message || 'Invalid PAT or no repo access';
+    } finally {
+      btn.disabled   = false;
+      btn.textContent = 'Load';
+    }
+  });
+
+  document.getElementById('pat-input').addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') document.getElementById('pat-submit').click();
+  });
+
+  document.getElementById('clear-pat').addEventListener('click', () => {
+    clearPAT();
+    document.getElementById('pat-input').value = '';
+    document.getElementById('pat-error').textContent = '';
+  });
+
+  document.getElementById('change-pat').addEventListener('click', showModal);
+
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.dataset.tab;
+      document.getElementById('tab-tbr').style.display     = target === 'tbr'     ? '' : 'none';
+      document.getElementById('tab-ratings').style.display = target === 'ratings' ? '' : 'none';
+      if (target === 'ratings' && !ratingsLoaded) {
+        const pat = getPAT();
+        if (pat) loadRatings(pat);
+      }
+    });
+  });
+
+  document.getElementById('submit-form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const btn      = document.getElementById('submit-btn');
+    const statusEl = document.getElementById('submit-status');
+    const title    = document.getElementById('sub-title').value.trim();
+    const author   = document.getElementById('sub-author').value.trim();
+    const recSource     = document.getElementById('sub-source').value.trim() || null;
+    const submitterName = document.getElementById('sub-name').value.trim()   || null;
+    if (!title || !author) return;
+
+    btn.disabled    = true;
+    btn.textContent = 'Opening PR…';
+    statusEl.className   = '';
+    statusEl.textContent = '';
+
+    try {
+      const prUrl = await submitBook(getPAT(), { title, author, recSource, submitterName });
+      statusEl.className = 'success';
+      statusEl.innerHTML = `PR opened: <a href="${e(prUrl)}" target="_blank" rel="noopener">${e(prUrl)}</a>`;
+      ev.target.reset();
+    } catch (err) {
+      statusEl.className   = 'error';
+      statusEl.textContent = err.message || 'Failed to open PR';
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Open PR';
+    }
+  });
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+
+  (function init() {
+    const pat = getPAT();
+    if (pat) {
+      document.getElementById('pat-input').value = pat;
+      showApp(pat);
+    }
+  })();
+</script>
+</body>
+</html>
