@@ -50,6 +50,7 @@
       width: 100%; max-width: 400px;
       margin: 16px;
       box-shadow: 0 8px 32px rgba(0,0,0,.18);
+      position: relative;
     }
     .modal h2 {
       font-family: var(--serif);
@@ -69,11 +70,23 @@
       padding: 1px 5px;
       border-radius: 2px;
     }
+    .modal-close {
+      position: absolute;
+      top: 10px; right: 14px;
+      background: none; border: none;
+      font-size: 22px; line-height: 1;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 4px 6px;
+    }
+    .modal-close:hover { color: var(--text); }
 
     /* ── Inputs ────────────────────────────────────────────────────── */
 
     input[type="text"],
-    input[type="password"] {
+    input[type="password"],
+    select,
+    textarea {
       display: block;
       width: 100%;
       border: 1px solid var(--border);
@@ -84,10 +97,15 @@
       background: var(--surface);
       color: var(--text);
       margin-bottom: 8px;
-      -webkit-appearance: none;
     }
-    input:focus { outline: none; border-color: var(--accent); }
-    input::placeholder { color: #bbb; }
+    input[type="text"],
+    input[type="password"] { -webkit-appearance: none; }
+    input:focus, select:focus, textarea:focus {
+      outline: none; border-color: var(--accent);
+    }
+    input::placeholder, textarea::placeholder { color: #bbb; }
+    textarea { resize: vertical; min-height: 80px; }
+    select { cursor: pointer; }
 
     /* ── Buttons ───────────────────────────────────────────────────── */
 
@@ -103,6 +121,7 @@
       font-size: 14px;
       cursor: pointer;
       margin-top: 4px;
+      min-height: 44px;
     }
     .btn-primary:hover { background: var(--accent-hover); }
     .btn-primary:disabled { opacity: .5; cursor: not-allowed; }
@@ -159,6 +178,7 @@
       cursor: pointer;
       margin-bottom: -1px;
       letter-spacing: .02em;
+      min-height: 44px;
     }
     .tab:hover { color: var(--text); }
     .tab.active { color: var(--text); border-bottom-color: var(--accent); font-weight: 500; }
@@ -204,9 +224,7 @@
       color: var(--muted);
       margin-bottom: 10px;
     }
-    .book-rec {
-      font-style: italic;
-    }
+    .book-rec { font-style: italic; }
 
     .kindle-line {
       display: flex;
@@ -256,20 +274,20 @@
     }
     .already-read li:last-child { border-bottom: none; }
 
-    /* ── Submission form ───────────────────────────────────────────── */
+    /* ── Submission forms ──────────────────────────────────────────── */
 
-    #submit-section {
+    .submit-section {
       margin-top: 60px;
       border-top: 2px solid var(--border);
       padding-top: 36px;
     }
-    #submit-section h2 {
+    .submit-section h2 {
       font-family: var(--serif);
       font-size: 19px;
       font-weight: normal;
       margin-bottom: 6px;
     }
-    #submit-section .sub-desc {
+    .sub-desc {
       font-size: 13px;
       color: var(--muted);
       margin-bottom: 24px;
@@ -284,10 +302,10 @@
       color: var(--muted);
       margin-bottom: 5px;
     }
-    #submit-status { font-size: 13px; margin: 10px 0 4px; min-height: 20px; }
-    #submit-status.success { color: var(--green); }
-    #submit-status.success a { color: var(--green); }
-    #submit-status.error { color: #c0392b; }
+    .submit-status { font-size: 13px; margin: 10px 0 4px; min-height: 20px; }
+    .submit-status.success { color: var(--green); }
+    .submit-status.success a { color: var(--green); }
+    .submit-status.error { color: #c0392b; }
 
     /* ── Ratings ───────────────────────────────────────────────────── */
 
@@ -330,27 +348,35 @@
     .rating-format { font-size: 12px; color: var(--muted); font-style: italic; margin-bottom: 10px; }
     .rating-notes { font-size: 14px; line-height: 1.75; }
     .rating-notes p + p { margin-top: 10px; }
+
+    /* ── Mobile ────────────────────────────────────────────────────── */
+
+    @media (max-width: 480px) {
+      .tab { padding: 12px 14px; }
+      .modal { padding: 24px 20px; }
+    }
   </style>
 </head>
 <body>
 
-<!-- PAT Modal -->
-<div id="pat-modal" class="modal-overlay">
+<!-- PAT modal — shown only when submitting without a stored token -->
+<div id="pat-modal" class="modal-overlay hidden">
   <div class="modal">
+    <button class="modal-close" id="pat-close" aria-label="Close">&times;</button>
     <h2>GitHub Access</h2>
-    <p>Enter a GitHub PAT with read access to <code>teddyballgm/TBR</code> and pull request write access.</p>
+    <p>Enter a personal access token with <code>repo</code> scope to open a pull request on <code>teddyballgm/TBR</code>.</p>
     <input type="password" id="pat-input" placeholder="ghp_…" autocomplete="off" spellcheck="false">
     <div id="pat-error" class="error-msg"></div>
-    <button class="btn-primary" id="pat-submit">Load</button>
-    <p class="pat-note">Stored in localStorage on this device. <button class="link-btn" id="clear-pat">Clear</button></p>
+    <button class="btn-primary" id="pat-submit">Continue</button>
+    <p class="pat-note">Stored in localStorage on this device. <button class="link-btn" id="pat-modal-clear">Clear saved token</button></p>
   </div>
 </div>
 
 <!-- App -->
-<div id="app" style="display:none">
+<div id="app">
   <header>
     <h1>tefleming</h1>
-    <button class="link-btn" id="change-pat">change PAT</button>
+    <button class="link-btn" id="clear-pat-btn" style="display:none">clear PAT</button>
   </header>
 
   <nav class="tabs">
@@ -363,7 +389,7 @@
       <div id="tbr-loading" class="loading">Loading…</div>
       <div id="tbr-error" class="error-msg" style="display:none"></div>
       <div id="tbr-content" style="display:none"></div>
-      <section id="submit-section" style="display:none">
+      <section id="submit-section" class="submit-section" style="display:none">
         <h2>Submit a Book</h2>
         <p class="sub-desc">Opens a PR adding a stub to tbr.md for triage.</p>
         <form id="submit-form">
@@ -383,7 +409,7 @@
             <label for="sub-name">Your name <span style="text-transform:none;font-weight:400">(optional)</span></label>
             <input type="text" id="sub-name" placeholder="for PR attribution">
           </div>
-          <div id="submit-status"></div>
+          <div id="submit-status" class="submit-status"></div>
           <button type="submit" id="submit-btn" class="btn-primary">Open PR</button>
         </form>
       </section>
@@ -393,6 +419,55 @@
       <div id="ratings-loading" class="loading">Loading…</div>
       <div id="ratings-error" class="error-msg" style="display:none"></div>
       <div id="ratings-content" style="display:none"></div>
+      <section id="ratings-submit-section" class="submit-section" style="display:none">
+        <h2>Log a Rating</h2>
+        <p class="sub-desc">Opens a PR adding your rating to ratings.md.</p>
+        <form id="ratings-form">
+          <div class="field-row">
+            <label for="rat-title">Title</label>
+            <input type="text" id="rat-title" required placeholder="e.g. Piranesi">
+          </div>
+          <div class="field-row">
+            <label for="rat-author">Author</label>
+            <input type="text" id="rat-author" required placeholder="e.g. Susanna Clarke">
+          </div>
+          <div class="field-row">
+            <label for="rat-score">Score</label>
+            <select id="rat-score" required>
+              <option value="">Select…</option>
+              <option value="10">10</option>
+              <option value="9.5">9.5</option>
+              <option value="9">9</option>
+              <option value="8.5">8.5</option>
+              <option value="8">8</option>
+              <option value="7.5">7.5</option>
+              <option value="7">7</option>
+              <option value="6.5">6.5</option>
+              <option value="6">6</option>
+              <option value="5.5">5.5</option>
+              <option value="5">5</option>
+              <option value="4.5">4.5</option>
+              <option value="4">4</option>
+              <option value="3.5">3.5</option>
+              <option value="3">3</option>
+              <option value="2.5">2.5</option>
+              <option value="2">2</option>
+              <option value="1.5">1.5</option>
+              <option value="1">1</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <label for="rat-format">Format <span style="text-transform:none;font-weight:400">(optional)</span></label>
+            <input type="text" id="rat-format" placeholder="e.g. Kindle, Audible">
+          </div>
+          <div class="field-row">
+            <label for="rat-notes">Notes <span style="text-transform:none;font-weight:400">(optional)</span></label>
+            <textarea id="rat-notes" rows="4" placeholder="Your thoughts…"></textarea>
+          </div>
+          <div id="ratings-submit-status" class="submit-status"></div>
+          <button type="submit" id="ratings-submit-btn" class="btn-primary">Open PR</button>
+        </form>
+      </section>
     </div>
   </main>
 </div>
@@ -404,20 +479,90 @@
   // ── PAT ──────────────────────────────────────────────────────────────────
 
   const getPAT   = () => localStorage.getItem('gh_pat') || '';
-  const setPAT   = p  => localStorage.setItem('gh_pat', p);
-  const clearPAT = () => localStorage.removeItem('gh_pat');
+  const setPAT   = p  => { localStorage.setItem('gh_pat', p); updateClearPATBtn(); };
+  const clearPAT = () => { localStorage.removeItem('gh_pat'); updateClearPATBtn(); };
+
+  function updateClearPATBtn() {
+    document.getElementById('clear-pat-btn').style.display = getPAT() ? '' : 'none';
+  }
+
+  // ── PAT modal ─────────────────────────────────────────────────────────────
+
+  let pendingPATResolve = null;
+  let pendingPATReject  = null;
+
+  function requirePAT() {
+    return new Promise((resolve, reject) => {
+      const pat = getPAT();
+      if (pat) { resolve(pat); return; }
+      pendingPATResolve = resolve;
+      pendingPATReject  = reject;
+      document.getElementById('pat-modal').classList.remove('hidden');
+      setTimeout(() => document.getElementById('pat-input').focus(), 50);
+    });
+  }
+
+  function closePATModal(cancelled) {
+    document.getElementById('pat-modal').classList.add('hidden');
+    document.getElementById('pat-error').textContent = '';
+    if (cancelled && pendingPATReject) {
+      const rej = pendingPATReject;
+      pendingPATResolve = null;
+      pendingPATReject  = null;
+      rej(new Error('cancelled'));
+    }
+  }
+
+  document.getElementById('pat-close').addEventListener('click', () => closePATModal(true));
+
+  document.getElementById('pat-modal-clear').addEventListener('click', () => {
+    clearPAT();
+    document.getElementById('pat-input').value = '';
+    document.getElementById('pat-error').textContent = '';
+  });
+
+  document.getElementById('clear-pat-btn').addEventListener('click', clearPAT);
+
+  document.getElementById('pat-submit').addEventListener('click', async () => {
+    const pat   = document.getElementById('pat-input').value.trim();
+    const btn   = document.getElementById('pat-submit');
+    const errEl = document.getElementById('pat-error');
+    if (!pat) return;
+
+    btn.disabled    = true;
+    btn.textContent = 'Checking…';
+    errEl.textContent = '';
+
+    try {
+      await ghFetch(pat, `/repos/${REPO}`);
+      setPAT(pat);
+      const resolve = pendingPATResolve;
+      pendingPATResolve = null;
+      pendingPATReject  = null;
+      closePATModal(false);
+      if (resolve) resolve(pat);
+    } catch (err) {
+      errEl.textContent = err.message || 'Invalid PAT or no repo access';
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Continue';
+    }
+  });
+
+  document.getElementById('pat-input').addEventListener('keydown', ev => {
+    if (ev.key === 'Enter') document.getElementById('pat-submit').click();
+  });
 
   // ── GitHub API ────────────────────────────────────────────────────────────
 
   async function ghFetch(pat, path, opts = {}) {
-    const res = await fetch(`${API}${path}`, {
-      ...opts,
-      headers: {
-        Authorization: `token ${pat}`,
-        Accept: 'application/vnd.github.v3+json',
-        ...(opts.headers || {})
-      }
-    });
+    const headers = {
+      Accept: 'application/vnd.github.v3+json',
+      ...(opts.headers || {})
+    };
+    if (pat) headers.Authorization = `token ${pat}`;
+
+    const res = await fetch(`${API}${path}`, { ...opts, headers });
     if (!res.ok) {
       const body = await res.json().catch(() => ({}));
       throw new Error(body.message || `GitHub API error ${res.status}`);
@@ -512,7 +657,7 @@
             if (alrt) alertPrice = alrt[1];
           }
         }
-      } else if (t.startsWith("**Why it’s here:**") || t.startsWith("**Why it's here:**")) {
+      } else if (t.startsWith("**Why it's here:**") || t.startsWith("**Why it’s here:**")) {
         field = 'why';
         whyHere = t.replace(/^\*\*Why it[’']s here:\*\*\s*/, '');
       } else if (/^\*\*The (?:caveat|bet):\*\*/.test(t)) {
@@ -570,11 +715,10 @@
     const lines  = text.split('\n');
     const header = lines[0].trim();
 
-    const fmtMatch  = header.match(/\*\(([^)]+)\)\*/);
+    const fmtMatch   = header.match(/\*\(([^)]+)\)\*/);
     const formatNote = fmtMatch ? fmtMatch[1] : null;
     const clean = header.replace(/\s*\*\([^)]+\)\*/, '').trim();
 
-    // "Title — Author · Score/10"  or  "Title · Score/10"
     const m = clean.match(/^(.+?)\s+·\s+([\d.]+(?:-[\d.]+)?)\/10$/);
     if (!m) return null;
 
@@ -644,7 +788,7 @@
     h += `</div>`;
 
     if (b.whyHere) {
-      h += `<div class="book-field"><div class="field-label">Why it’s here</div>`;
+      h += `<div class="book-field"><div class="field-label">Why it's here</div>`;
       h += `<div class="field-body">${e(b.whyHere)}</div></div>`;
     }
     if (b.caveat) {
@@ -706,31 +850,31 @@
       .replace(/"/g, '&quot;');
   }
 
-  // ── PR submission ─────────────────────────────────────────────────────────
+  // ── Helpers ───────────────────────────────────────────────────────────────
 
   function slugify(s) {
     return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 40);
   }
 
-  async function submitBook(pat, { title, author, recSource, submitterName }) {
-    const json = (body) => ({
+  function jsonPost(body) {
+    return {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body)
-    });
+    };
+  }
 
-    // Get main branch SHA
+  // ── PR submission: TBR ────────────────────────────────────────────────────
+
+  async function submitBook(pat, { title, author, recSource, submitterName }) {
     const mainRef = await ghFetch(pat, `/repos/${REPO}/git/ref/heads/main`);
     const mainSha = mainRef.object.sha;
 
-    // Create branch
     const branch = `submit/${slugify(title)}-${Date.now()}`;
-    await ghFetch(pat, `/repos/${REPO}/git/refs`, json({ ref: `refs/heads/${branch}`, sha: mainSha }));
+    await ghFetch(pat, `/repos/${REPO}/git/refs`, jsonPost({ ref: `refs/heads/${branch}`, sha: mainSha }));
 
-    // Get current tbr.md
     const { content, sha: fileSha } = await getFileContent(pat, 'tbr.md');
 
-    // Build stub
     const ereaderUrl = `https://www.ereaderiq.com/search/?q=${encodeURIComponent(title + ' ' + author)}`;
     const recLine = recSource ? ` *(rec from ${recSource})*` : '';
     const stub = [
@@ -745,14 +889,12 @@
       ''
     ].join('\n');
 
-    // Insert before "Already Read" section
     const marker = '\n## Already Read';
     const idx = content.indexOf(marker);
     const newContent = idx !== -1
       ? content.slice(0, idx) + '\n' + stub + content.slice(idx)
       : content.trimEnd() + '\n' + stub;
 
-    // Update file on branch
     await ghFetch(pat, `/repos/${REPO}/contents/tbr.md`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -764,12 +906,11 @@
       })
     });
 
-    // Create PR
     const prBody = submitterName
       ? `Submitted by ${submitterName} via tefleming.com`
       : 'Submitted via tefleming.com';
 
-    const pr = await ghFetch(pat, `/repos/${REPO}/pulls`, json({
+    const pr = await ghFetch(pat, `/repos/${REPO}/pulls`, jsonPost({
       title: `TBR: ${title} — ${author}`,
       body: prBody,
       head: branch,
@@ -779,12 +920,94 @@
     return pr.html_url;
   }
 
+  // ── PR submission: Rating ─────────────────────────────────────────────────
+
+  async function submitRating(pat, { title, author, scoreStr, format, notes }) {
+    const mainRef = await ghFetch(pat, `/repos/${REPO}/git/ref/heads/main`);
+    const mainSha = mainRef.object.sha;
+
+    const branch = `rating/${slugify(title)}-${Date.now()}`;
+    await ghFetch(pat, `/repos/${REPO}/git/refs`, jsonPost({ ref: `refs/heads/${branch}`, sha: mainSha }));
+
+    const { content, sha: fileSha } = await getFileContent(pat, 'ratings.md');
+
+    const formatNote = format ? ` *(${format})*` : '';
+    const notesLine  = notes ? '\n' + notes : '';
+    const stub = [
+      '',
+      `### ${title} — ${author} · ${scoreStr}/10${formatNote}`,
+      notesLine,
+      ''
+    ].join('\n');
+
+    const score = parseFloat(scoreStr);
+    const newContent = insertIntoRatingsSection(content, score, stub);
+
+    await ghFetch(pat, `/repos/${REPO}/contents/ratings.md`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        message: `Add rating: ${title} — ${author} · ${scoreStr}/10`,
+        content: b64Encode(newContent),
+        sha: fileSha,
+        branch
+      })
+    });
+
+    const pr = await ghFetch(pat, `/repos/${REPO}/pulls`, jsonPost({
+      title: `Rating: ${title} — ${author} · ${scoreStr}/10`,
+      body: 'Submitted via tefleming.com',
+      head: branch,
+      base: 'main'
+    }));
+
+    return pr.html_url;
+  }
+
+  function insertIntoRatingsSection(md, score, stub) {
+    const parts = md.split(/^(?=## )/m);
+    let bestSection = null;
+    let bestDist    = Infinity;
+
+    for (const part of parts) {
+      if (!part.startsWith('## ')) continue;
+      const nl      = part.indexOf('\n');
+      const heading = part.slice(3, nl).trim();
+      if (/not finish/i.test(heading)) continue;
+
+      const scoreMatches = [...part.matchAll(/·\s*([\d.]+(?:-[\d.]+)?)\/10/g)];
+      if (!scoreMatches.length) continue;
+
+      const scores = scoreMatches.map(m => {
+        const s = m[1];
+        return s.includes('-')
+          ? (parseFloat(s) + parseFloat(s.split('-')[1])) / 2
+          : parseFloat(s);
+      });
+      const avg  = scores.reduce((a, b) => a + b, 0) / scores.length;
+      const dist = Math.abs(score - avg);
+      if (dist < bestDist) { bestDist = dist; bestSection = `## ${heading}`; }
+    }
+
+    if (bestSection) {
+      const idx     = md.indexOf(bestSection);
+      const lineEnd = md.indexOf('\n', idx) + 1;
+      let insertAt  = lineEnd;
+      if (md[insertAt] === '\n') insertAt++;
+      return md.slice(0, insertAt) + stub + md.slice(insertAt);
+    }
+
+    const firstSection = md.search(/^## /m);
+    if (firstSection > 0) return md.slice(0, firstSection) + stub + '\n' + md.slice(firstSection);
+    return md.trimEnd() + '\n' + stub;
+  }
+
   // ── Data loading ──────────────────────────────────────────────────────────
 
-  let tbrLoaded = false;
+  let tbrLoaded     = false;
   let ratingsLoaded = false;
 
-  async function loadTBR(pat) {
+  async function loadTBR() {
     const loading = document.getElementById('tbr-loading');
     const errEl   = document.getElementById('tbr-error');
     const content = document.getElementById('tbr-content');
@@ -796,7 +1019,7 @@
     submit.style.display  = 'none';
 
     try {
-      const { content: md } = await getFileContent(pat, 'tbr.md');
+      const { content: md } = await getFileContent(null, 'tbr.md');
       renderTBR(parseTBR(md));
       content.style.display = '';
       submit.style.display  = '';
@@ -809,19 +1032,22 @@
     }
   }
 
-  async function loadRatings(pat) {
+  async function loadRatings() {
     const loading = document.getElementById('ratings-loading');
     const errEl   = document.getElementById('ratings-error');
     const content = document.getElementById('ratings-content');
+    const submit  = document.getElementById('ratings-submit-section');
 
     loading.style.display = '';
     errEl.style.display   = 'none';
     content.style.display = 'none';
+    submit.style.display  = 'none';
 
     try {
-      const { content: md } = await getFileContent(pat, 'ratings.md');
+      const { content: md } = await getFileContent(null, 'ratings.md');
       renderRatings(parseRatings(md));
       content.style.display = '';
+      submit.style.display  = '';
       ratingsLoaded = true;
     } catch (err) {
       errEl.textContent   = err.message;
@@ -831,56 +1057,7 @@
     }
   }
 
-  // ── App state ─────────────────────────────────────────────────────────────
-
-  function showApp(pat) {
-    document.getElementById('pat-modal').classList.add('hidden');
-    document.getElementById('app').style.display = '';
-    loadTBR(pat);
-  }
-
-  function showModal() {
-    document.getElementById('pat-modal').classList.remove('hidden');
-    document.getElementById('app').style.display = 'none';
-    tbrLoaded = false;
-    ratingsLoaded = false;
-  }
-
-  // ── Event wiring ──────────────────────────────────────────────────────────
-
-  document.getElementById('pat-submit').addEventListener('click', async () => {
-    const pat   = document.getElementById('pat-input').value.trim();
-    const btn   = document.getElementById('pat-submit');
-    const errEl = document.getElementById('pat-error');
-    if (!pat) return;
-
-    btn.disabled   = true;
-    btn.textContent = 'Checking…';
-    errEl.textContent = '';
-
-    try {
-      await ghFetch(pat, `/repos/${REPO}`);
-      setPAT(pat);
-      showApp(pat);
-    } catch (err) {
-      errEl.textContent = err.message || 'Invalid PAT or no repo access';
-    } finally {
-      btn.disabled   = false;
-      btn.textContent = 'Load';
-    }
-  });
-
-  document.getElementById('pat-input').addEventListener('keydown', ev => {
-    if (ev.key === 'Enter') document.getElementById('pat-submit').click();
-  });
-
-  document.getElementById('clear-pat').addEventListener('click', () => {
-    clearPAT();
-    document.getElementById('pat-input').value = '';
-    document.getElementById('pat-error').textContent = '';
-  });
-
-  document.getElementById('change-pat').addEventListener('click', showModal);
+  // ── Tab switching ─────────────────────────────────────────────────────────
 
   document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -889,36 +1066,73 @@
       const target = tab.dataset.tab;
       document.getElementById('tab-tbr').style.display     = target === 'tbr'     ? '' : 'none';
       document.getElementById('tab-ratings').style.display = target === 'ratings' ? '' : 'none';
-      if (target === 'ratings' && !ratingsLoaded) {
-        const pat = getPAT();
-        if (pat) loadRatings(pat);
-      }
+      if (target === 'ratings' && !ratingsLoaded) loadRatings();
     });
   });
 
+  // ── TBR form ──────────────────────────────────────────────────────────────
+
   document.getElementById('submit-form').addEventListener('submit', async ev => {
     ev.preventDefault();
-    const btn      = document.getElementById('submit-btn');
-    const statusEl = document.getElementById('submit-status');
-    const title    = document.getElementById('sub-title').value.trim();
-    const author   = document.getElementById('sub-author').value.trim();
-    const recSource     = document.getElementById('sub-source').value.trim() || null;
-    const submitterName = document.getElementById('sub-name').value.trim()   || null;
+    const btn       = document.getElementById('submit-btn');
+    const statusEl  = document.getElementById('submit-status');
+    const title     = document.getElementById('sub-title').value.trim();
+    const author    = document.getElementById('sub-author').value.trim();
+    const recSource      = document.getElementById('sub-source').value.trim() || null;
+    const submitterName  = document.getElementById('sub-name').value.trim()   || null;
     if (!title || !author) return;
 
     btn.disabled    = true;
     btn.textContent = 'Opening PR…';
-    statusEl.className   = '';
+    statusEl.className   = 'submit-status';
     statusEl.textContent = '';
 
     try {
-      const prUrl = await submitBook(getPAT(), { title, author, recSource, submitterName });
-      statusEl.className = 'success';
+      const pat   = await requirePAT();
+      const prUrl = await submitBook(pat, { title, author, recSource, submitterName });
+      statusEl.className = 'submit-status success';
       statusEl.innerHTML = `PR opened: <a href="${e(prUrl)}" target="_blank" rel="noopener">${e(prUrl)}</a>`;
       ev.target.reset();
     } catch (err) {
-      statusEl.className   = 'error';
-      statusEl.textContent = err.message || 'Failed to open PR';
+      if (err.message !== 'cancelled') {
+        statusEl.className   = 'submit-status error';
+        statusEl.textContent = err.message || 'Failed to open PR';
+      }
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Open PR';
+    }
+  });
+
+  // ── Ratings form ──────────────────────────────────────────────────────────
+
+  document.getElementById('ratings-form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const btn      = document.getElementById('ratings-submit-btn');
+    const statusEl = document.getElementById('ratings-submit-status');
+    const title    = document.getElementById('rat-title').value.trim();
+    const author   = document.getElementById('rat-author').value.trim();
+    const scoreStr = document.getElementById('rat-score').value;
+    const format   = document.getElementById('rat-format').value.trim() || null;
+    const notes    = document.getElementById('rat-notes').value.trim()  || null;
+    if (!title || !author || !scoreStr) return;
+
+    btn.disabled    = true;
+    btn.textContent = 'Opening PR…';
+    statusEl.className   = 'submit-status';
+    statusEl.textContent = '';
+
+    try {
+      const pat   = await requirePAT();
+      const prUrl = await submitRating(pat, { title, author, scoreStr, format, notes });
+      statusEl.className = 'submit-status success';
+      statusEl.innerHTML = `PR opened: <a href="${e(prUrl)}" target="_blank" rel="noopener">${e(prUrl)}</a>`;
+      ev.target.reset();
+    } catch (err) {
+      if (err.message !== 'cancelled') {
+        statusEl.className   = 'submit-status error';
+        statusEl.textContent = err.message || 'Failed to open PR';
+      }
     } finally {
       btn.disabled    = false;
       btn.textContent = 'Open PR';
@@ -927,13 +1141,8 @@
 
   // ── Init ──────────────────────────────────────────────────────────────────
 
-  (function init() {
-    const pat = getPAT();
-    if (pat) {
-      document.getElementById('pat-input').value = pat;
-      showApp(pat);
-    }
-  })();
+  updateClearPATBtn();
+  loadTBR();
 </script>
 </body>
 </html>
