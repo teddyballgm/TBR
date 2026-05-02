@@ -74,6 +74,15 @@
 
 -----
 
+
+### Special Access — Mark A Hewitt *(rec from eReaderIQ sale)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Special%20Access%20Mark%20A%20Hewitt)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
