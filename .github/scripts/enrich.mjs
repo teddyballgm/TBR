@@ -239,6 +239,12 @@ run('git config user.name "github-actions[bot]"');
 run('git config user.email "github-actions[bot]@users.noreply.github.com"');
 run('git add tbr.md');
 run(`git commit -m "Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)"`);
+
+// Embed the PAT in the remote URL so git can authenticate without an
+// interactive terminal prompt. actions/checkout wires up credentials via an
+// HTTP extraheader on the checkout call, but that auth context doesn't
+// survive into child processes spawned later in the job.
+run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
 run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
 console.log('Enriched entry committed and pushed.');
 
