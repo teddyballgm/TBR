@@ -75,14 +75,6 @@
 -----
 
 
-### Special Access — Mark A Hewett *(rec from eReader IQ)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Special%20Access%20Mark%20A%20Hewett)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
-
 ## Already Read / Removed from Queue
 
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
@@ -90,6 +82,16 @@
 - Dungeon Crawler Carl — The benchmark.
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
+
+-----
+
+### Special Access — Mark A Hewett *(rec from eReader IQ)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Special%20Access%20Mark%20A%20Hewett)
+
+**Why it's here:** Military thriller in the Brad Thor / Vince Flynn lane — black ops, special access programs, government conspiracy. That genre rarely intersects with the DCC profile: the worldbuilding is procedural rather than weird, the wit tends toward grim competence rather than satirical teeth, and the protagonist is usually the point rather than a vehicle. Closer to genre-without-craft territory than to anything in the 7+ tier.
+
+**The caveat:** Self-published debut with limited signal beyond Amazon algorithmic surfacing — the eReaderIQ rec is a price-watch artifact, not a taste signal. High risk of competent-but-flat tradecraft prose with a protagonist the reader is expected to admire.
 
 -----
 
