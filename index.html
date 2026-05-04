@@ -183,6 +183,14 @@
       border-radius: 10px;
     }
     .kindle-line a:hover { background: #e8d8cc; }
+    .owned-pill {
+      font-size: 12px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border: 1px solid var(--accent-light);
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
     .price { color: var(--text); font-weight: 500; }
     .price-orig { text-decoration: line-through; color: var(--muted); }
     .price-alert { font-size: 12px; }
@@ -481,6 +489,7 @@
 
     let kindleUrl = null, price = null, origPrice = null, alertPrice = null;
     let whyHere = '', caveat = '';
+    let purchased = false;
     let field = null;
 
     for (let i = 1; i < lines.length; i++) {
@@ -510,6 +519,9 @@
       } else if (/^\*\*The (?:caveat|bet):\*\*/.test(t)) {
         field = 'caveat';
         caveat = t.replace(/^\*\*The (?:caveat|bet):\*\*\s*/, '');
+      } else if (t.startsWith('**Status:**')) {
+        field = null;
+        if (/purchased/i.test(t)) purchased = true;
       } else if (t.startsWith('**')) {
         field = null;
       } else if (field === 'why') {
@@ -520,7 +532,7 @@
     }
 
     return { title, author, recSource, kindleUrl, price, origPrice, alertPrice,
-             whyHere: whyHere.trim(), caveat: caveat.trim() };
+             whyHere: whyHere.trim(), caveat: caveat.trim(), purchased };
   }
 
   function parseAlreadyRead(body) {
@@ -624,13 +636,17 @@
     h += `</div>`;
 
     h += `<div class="kindle-line">`;
-    if (b.kindleUrl) h += `<a href="${e(b.kindleUrl)}" target="_blank" rel="noopener">Track on eReaderIQ</a>`;
-    if (b.price) {
-      h += `<span class="price">${e(b.price)}</span>`;
-      if (b.origPrice) h += ` <span class="price-orig">${e(b.origPrice)}</span>`;
-      if (b.alertPrice) h += ` <span class="price-alert">🔔 ${e(b.alertPrice)}</span>`;
-    } else if (b.kindleUrl) {
-      h += `<span class="price-untracked">price not yet tracked</span>`;
+    if (b.purchased) {
+      h += `<span class="owned-pill">owned</span>`;
+    } else {
+      if (b.kindleUrl) h += `<a href="${e(b.kindleUrl)}" target="_blank" rel="noopener">Track on eReaderIQ</a>`;
+      if (b.price) {
+        h += `<span class="price">${e(b.price)}</span>`;
+        if (b.origPrice) h += ` <span class="price-orig">${e(b.origPrice)}</span>`;
+        if (b.alertPrice) h += ` <span class="price-alert">🔔 ${e(b.alertPrice)}</span>`;
+      } else if (b.kindleUrl) {
+        h += `<span class="price-untracked">price not yet tracked</span>`;
+      }
     }
     h += `</div>`;
 
