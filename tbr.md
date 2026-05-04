@@ -75,14 +75,6 @@
 -----
 
 
-### Test One — Mike Hunt *(rec from Mopsy)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Test%20One%20Mike%20Hunt)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
-
 ## Already Read / Removed from Queue
 
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
@@ -90,6 +82,16 @@
 - Dungeon Crawler Carl — The benchmark.
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
+
+-----
+
+### Test One — Mike Hunt *(rec from Mopsy)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Test%20One%20Mike%20Hunt)
+
+**Why it's here:** No verifiable record of this title or author against the taste profile. The submitter handle and author name read as a prank rather than a genuine recommendation, and there is no text, voice, or structure to assess against DCC or the secondary references.
+
+**The caveat:** Likely not a real book. If it is, there is zero signal on whether it has the authorial control, earned weirdness, or dark wit the profile demands — treat as unverified until a source or sample is provided.
 
 -----
 
