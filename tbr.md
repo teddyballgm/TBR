@@ -74,6 +74,15 @@
 
 -----
 
+
+### Test One — Mike Hunt *(rec from Mopsy)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Test%20One%20Mike%20Hunt)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
