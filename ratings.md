@@ -22,6 +22,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 ## 7-8
 
+
+### Wool (Silo Series) — Hugh Howey · 8/10 *(Kindle)*
+
+Been a few years - but enjoyed reading the books after the first season of the show.  having the visuals from the show definitely made it more immersive.
 ### He Who Fights with Monsters — Shirtaloon · 7/10
 
 Tolerated Jason rather than loved him — which was enough to get through 12 books, which says something. The progression system is inventive and the world has genuine density. Unevenly distributed — probably 4 books worth of 9/10 material across 12, including genuinely emotionally mature character work in the later volumes. The 7 reflects structural bloat more than a craft ceiling; the emotional high points are legitimately high. A series with more patience-rewarding peaks than the average suggests.
