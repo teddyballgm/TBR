@@ -82,7 +82,7 @@
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Starter+Villain+John+Scalzi) | Price: $4.99 ~~$11.99~~ 🔔 *alert set @ $4.98*
 
-**Status:** Purchased
+**Status:** Purchased (Audible, $5.99 — May 2026)
 
 **Why it's here:** Everyman inherits a supervillain empire. Carl energy in a standalone novel. Fast, fun, done in a weekend — good palette cleanser and a low-risk way to test whether Scalzi's voice works.
 
