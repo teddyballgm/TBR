@@ -42,6 +42,10 @@ Incredible world-architect, but the texture of living inside the longer books ca
 
 ## 6-6.5
 
+
+### Special Access — Mark Hewett · 3/10 *(Audible)*
+
+DNF
 ### Piranesi — Susanna Clarke · 6.5/10 *(listened on Audible)*
 
 The mystery structure is the strongest element — the slow reconstruction of what the House is and isn't has real pull. But the twist underwhelmed compared to Evelyn Hardcastle, which is the natural comp: same identity-reconstruction skeleton, less satisfying payoff. The nature of the House itself (the halls, the flooding, the water) stayed too ambiguous to fully resolve — not earned strangeness so much as unresolved strangeness. A miss relative to the TBR prediction; was the top 9/10 candidate and landed well short.
