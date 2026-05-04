@@ -16,6 +16,15 @@
 
 **The bet:** High ceiling, possibly a 10. Slower pace may be a variable.
 
+### The Road — Cormac McCarthy
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy)
+
+**Predicted rating:** 9/10
+
+**Why it's here:** The definitive post-apocalyptic novel — earns its ending in a way Dust couldn't. McCarthy refuses to blink. Directly relevant to what you're thinking about in the genre right now.
+
+**The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
 -----
 
 ## Tier 2 — Strong Recommendation
