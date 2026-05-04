@@ -108,6 +108,18 @@
 
 **The caveat:** Not yet assessed against your specific profile. Flagged as a rec to investigate.
 
+### The Girl with All the Gifts — M.R. Carey
+
+**Audible:** Purchased ($7.99 — May 2026)
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Post-apocalyptic horror with a genuinely subversive premise — the protagonist reframes the genre's usual moral architecture. Carey follows the internal logic of his world without flinching. Strong structural ambition.
+
+**The caveat:** Horror-adjacent, which isn't a guaranteed fit. Emotional register is bleaker than HWFWM, closer to The Road territory.
+
+---
+
 ### The Goblin Emperor — Katherine Addison
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: *not yet tracked*
@@ -125,6 +137,7 @@
 - Dungeon Crawler Carl — The benchmark.
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
+- Royal Gambit (The Rook Files Book 4) — Read. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
 
 -----
 
