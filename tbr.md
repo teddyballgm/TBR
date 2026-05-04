@@ -18,7 +18,7 @@
 
 ### The Road — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
 
 **Predicted rating:** 9/10
 
@@ -28,7 +28,7 @@
 
 ### No Country for Old Men — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
 
 **Predicted rating:** 8.5/10
 
@@ -66,7 +66,7 @@
 
 ### Blood Meridian — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
 
 **Predicted rating:** 8/10
 
@@ -87,6 +87,18 @@
 **Why it's here:** Everyman inherits a supervillain empire. Carl energy in a standalone novel. Fast, fun, done in a weekend — good palette cleanser and a low-risk way to test whether Scalzi's voice works.
 
 **The caveat:** Lighter than the Tier 1/2 picks. Probably a 7 ceiling, but a very enjoyable 7.
+
+### 1% Lifesteal — Robert Blaise *(rec from David Rice)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=1%25+Lifesteal+Robert+Blaise) | Price: $4.99 🔔 *alert set @ $4.98*
+
+**Predicted rating:** 7/10
+
+**Why it's here:** LitRPG progression fantasy rec from David Rice. Quirky stat-based mechanics and underdog energy — similar appeal to early DCC in terms of scrappy protagonist punching up.
+
+**The caveat:** Lighter in tone and craft than the Tier 1/2 picks. Worth trying given the rec source.
+
+-----
 
 ### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
 
