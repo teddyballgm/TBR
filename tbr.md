@@ -75,14 +75,6 @@
 -----
 
 
-### Test Book — Test Author
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Test%20Book%20Test%20Author)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
-
 ## Already Read / Removed from Queue
 
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
@@ -90,6 +82,16 @@
 - Dungeon Crawler Carl — The benchmark.
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
+
+-----
+
+### Test Book — Test Author
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Test%20Book%20Test%20Author)
+
+**Why it's here:** No identifiable signal here. 'Test Book' by 'Test Author' returns nothing to assess against the profile — no voice, no structure, no genre, no comp titles. Cannot map to DCC or any secondary reference. Default to Tier 3 pending real metadata.
+
+**The caveat:** This appears to be a placeholder submission rather than a real book. If a genuine title is intended, resubmit with accurate author and title so voice and structure can actually be evaluated.
 
 -----
 
