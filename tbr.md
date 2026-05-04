@@ -25,6 +25,16 @@
 **Why it's here:** The definitive post-apocalyptic novel — earns its ending in a way Dust couldn't. McCarthy refuses to blink. Directly relevant to what you're thinking about in the genre right now.
 
 **The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
+
+### No Country for Old Men — Cormac McCarthy
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy)
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** Closer to your thriller background than his other work. Chigurh is one of the great antagonists in fiction — the kind of villain who reframes everything around him. Tight, relentless, no fat.
+
+**The caveat:** The ending is deliberately withholding — divisive for exactly the same reason Dust's ending bothered you, but intentionally so.
 -----
 
 ## Tier 2 — Strong Recommendation
@@ -53,6 +63,16 @@
 **Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
 
 **The caveat:** Deliberately brutal. Go in knowing that.
+
+### Blood Meridian — Cormac McCarthy
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy)
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Extraordinary prose and one of the most terrifying antagonists ever written (the Judge). Literary benchmark — the kind of book that changes how you read everything after it.
+
+**The caveat:** Genuinely difficult. The violence is operatic and relentless, the prose demands patience. Read The Road and No Country first.
 
 -----
 
