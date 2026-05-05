@@ -31,6 +31,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8
 
 
+### Starter Villain — John scalzi · 8/10 *(Audible)*
+
+Very enjoyable - kinda breezy, fun. Snarky and satirical. Didn’t love wil wheaton as narrator - he lacks the range of Bray or Hayes
+
 ### The Martian — Andy Weir · 8.5/10 *(Audible)*
 
 Half a point behind PHM — same problem-solving energy, slightly less ambitious in scope and emotional payoff. The audiobook narration makes it; the movie is fine but the book is better experienced with R.C. Bray's performance. Read before the movie.
