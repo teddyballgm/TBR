@@ -26,6 +26,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ### Wool (Silo Series) — Hugh Howey · 8/10 *(Kindle)*
 
 Been a few years - but enjoyed reading the books after the first season of the show.  having the visuals from the show definitely made it more immersive.
+### Expeditionary Force — Craig Alanson · Books 1–3: 8.5/10 | Series overall: 6.5/10
+
+First three books are fantastic — voice, pacing, and the Skippy dynamic all firing on all cylinders. Once caught up and returning for Ground State onward: formulaic, clearly unplanned — new big baddie each arc with no sense of a destination. Classic case of a series outlasting its premise.
+
 ### He Who Fights with Monsters — Shirtaloon · 7/10
 
 Tolerated Jason rather than loved him — which was enough to get through 12 books, which says something. The progression system is inventive and the world has genuine density. Unevenly distributed — probably 4 books worth of 9/10 material across 12, including genuinely emotionally mature character work in the later volumes. The 7 reflects structural bloat more than a craft ceiling; the emotional high points are legitimately high. A series with more patience-rewarding peaks than the average suggests.

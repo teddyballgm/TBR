@@ -10,7 +10,9 @@
 
 ### The Left Hand of Darkness — Ursula Le Guin
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Left+Hand+of+Darkness+Le+Guin) | Price: $6.99 ~~$9.99~~ 🔔 *alert set @ $6.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Left+Hand+of+Darkness+Le+Guin) | Price: $6.99 🔔 *alert set @ $6.98*
+
+**Predicted rating:** 8.5/10
 
 **Why it's here:** Genly Ai is a deliberately imperfect lens — the world and its ideas are the real subject, not the protagonist. Le Guin has complete authorial control. The ending hits with the same quiet punch as Emperor's Soul. One of the few books where the anthropological worldbuilding is as inventive as DCC's satirical worldbuilding, just in a different register.
 
@@ -28,7 +30,7 @@
 
 ### No Country for Old Men — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
 
 **Predicted rating:** 8.5/10
 
@@ -58,7 +60,7 @@
 
 ### The Traitor Baru Cormorant — Seth Dickinson
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $9.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $2.99*
 
 **Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
 
@@ -80,7 +82,7 @@
 
 ### Starter Villain — John Scalzi
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Starter+Villain+John+Scalzi) | Price: $4.99 ~~$11.99~~ 🔔 *alert set @ $4.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Starter+Villain+John+Scalzi) | Price: $4.99 🔔 *alert set @ $4.98*
 
 **Status:** Purchased (Audible, $5.99 — May 2026)
 
@@ -90,7 +92,7 @@
 
 ### 1% Lifesteal — Robert Blaise *(rec from David Rice)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=1%25+Lifesteal+Robert+Blaise) | Price: $4.99 🔔 *alert set @ $4.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=1%25+Lifesteal+Robert+Blaise) | Price: $4.99 🔔 *alert set @ $0.99*
 
 **Predicted rating:** 7/10
 
@@ -102,7 +104,7 @@
 
 ### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $9.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
 
 **Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — potentially in the DCC ballpark.
 
@@ -111,6 +113,8 @@
 ### The Girl with All the Gifts — M.R. Carey
 
 **Audible:** Purchased ($7.99 — May 2026)
+
+**Status:** Purchased
 
 **Predicted rating:** 7.5/10
 
@@ -122,7 +126,7 @@
 
 ### The Goblin Emperor — Katherine Addison
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
 
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
