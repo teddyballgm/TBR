@@ -139,7 +139,21 @@
       border-bottom: 1px solid var(--border);
       padding-bottom: 8px;
       margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      user-select: none;
     }
+    .tier-chevron { font-size: 9px; flex-shrink: 0; }
+
+    .tier-body {
+      overflow: hidden;
+      max-height: 20000px;
+      transition: max-height 0.35s ease;
+    }
+    .tier-section.collapsed .tier-body,
+    .already-read.collapsed .tier-body { max-height: 0; }
 
     /* ── TBR book entries ──────────────────────────────────────────── */
 
@@ -160,9 +174,32 @@
     .book-byline {
       font-size: 13px;
       color: var(--muted);
-      margin-bottom: 10px;
     }
     .book-rec { font-style: italic; }
+
+    .book-header {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .book-header:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .book-chevron {
+      font-size: 10px;
+      color: var(--muted);
+      padding-top: 4px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .book-header-text { flex: 1; min-width: 0; }
+    .book-body {
+      overflow: hidden;
+      max-height: 2000px;
+      padding-top: 10px;
+      transition: max-height 0.25s ease;
+    }
+    .tbr-book.collapsed .book-body { max-height: 0; }
 
     .kindle-line {
       display: flex;
@@ -610,31 +647,47 @@
   function renderTBR(data) {
     let html = '';
 
-    for (const tier of data.tiers) {
-      html += `<section class="tier-section">`;
-      html += `<div class="tier-heading">${e(tier.name)}</div>`;
-      for (const book of tier.books) html += renderTBRBook(book);
+    data.tiers.forEach((tier, idx) => {
+      const expanded = idx === 0;
+      html += `<section class="tier-section${expanded ? '' : ' collapsed'}">`;
+      html += `<div class="tier-heading" role="button" tabindex="0" aria-expanded="${expanded}">`;
+      html += `<span class="tier-chevron">${expanded ? '▾' : '▸'}</span>`;
+      html += `${e(tier.name)}`;
+      html += `</div>`;
+      html += `<div class="tier-body">`;
+      for (const book of tier.books) html += renderTBRBook(book, expanded);
+      html += `</div>`;
+      html += `</section>`;
+    });
+
+    if (data.alreadyRead.length) {
+      html += `<section class="already-read collapsed">`;
+      html += `<div class="tier-heading" role="button" tabindex="0" aria-expanded="false">`;
+      html += `<span class="tier-chevron">▸</span>`;
+      html += `Already Read / Removed`;
+      html += `</div>`;
+      html += `<div class="tier-body"><ul>`;
+      for (const item of data.alreadyRead) html += `<li>${e(item)}</li>`;
+      html += `</ul></div>`;
       html += `</section>`;
     }
 
-    if (data.alreadyRead.length) {
-      html += `<section class="already-read">`;
-      html += `<div class="tier-heading">Already Read / Removed</div>`;
-      html += `<ul>`;
-      for (const item of data.alreadyRead) html += `<li>${e(item)}</li>`;
-      html += `</ul></section>`;
-    }
-
     document.getElementById('tbr-content').innerHTML = html;
+    wireCollapse();
   }
 
-  function renderTBRBook(b) {
-    let h = `<article class="tbr-book">`;
+  function renderTBRBook(b, expanded = true) {
+    let h = `<article class="tbr-book${expanded ? '' : ' collapsed'}">`;
+
+    h += `<div class="book-header" role="button" tabindex="0" aria-expanded="${expanded}">`;
+    h += `<span class="book-chevron">${expanded ? '▾' : '▸'}</span>`;
+    h += `<div class="book-header-text">`;
     h += `<div class="book-title">${e(b.title)}</div>`;
     h += `<div class="book-byline">${e(b.author)}`;
     if (b.recSource) h += ` <span class="book-rec">· rec from ${e(b.recSource)}</span>`;
-    h += `</div>`;
+    h += `</div></div></div>`;
 
+    h += `<div class="book-body">`;
     h += `<div class="kindle-line">`;
     if (b.purchased) {
       h += `<span class="owned-pill">owned</span>`;
@@ -649,7 +702,6 @@
       }
     }
     h += `</div>`;
-
     if (b.whyHere) {
       h += `<div class="book-field"><div class="field-label">Why it's here</div>`;
       h += `<div class="field-body">${e(b.whyHere)}</div></div>`;
@@ -658,9 +710,40 @@
       h += `<div class="book-field"><div class="field-label">The caveat</div>`;
       h += `<div class="field-body">${e(b.caveat)}</div></div>`;
     }
+    h += `</div>`; // .book-body
 
     h += `</article>`;
     return h;
+  }
+
+  function wireCollapse() {
+    const content = document.getElementById('tbr-content');
+
+    content.querySelectorAll('.tier-heading[role="button"]').forEach(heading => {
+      const toggle = () => {
+        const section = heading.parentElement;
+        const nowCollapsed = section.classList.toggle('collapsed');
+        heading.querySelector('.tier-chevron').textContent = nowCollapsed ? '▸' : '▾';
+        heading.setAttribute('aria-expanded', String(!nowCollapsed));
+      };
+      heading.addEventListener('click', toggle);
+      heading.addEventListener('keydown', ev => {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle(); }
+      });
+    });
+
+    content.querySelectorAll('.book-header').forEach(header => {
+      const toggle = () => {
+        const book = header.parentElement;
+        const nowCollapsed = book.classList.toggle('collapsed');
+        header.querySelector('.book-chevron').textContent = nowCollapsed ? '▸' : '▾';
+        header.setAttribute('aria-expanded', String(!nowCollapsed));
+      };
+      header.addEventListener('click', toggle);
+      header.addEventListener('keydown', ev => {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); toggle(); }
+      });
+    });
   }
 
   // ── Render Ratings ────────────────────────────────────────────────
