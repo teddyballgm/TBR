@@ -87,6 +87,54 @@ async function submitTBR({ title, author, recSource, submitterName }) {
   return pr.html_url;
 }
 
+function removeFromTBR(tbrContent, title, author) {
+  const normalTitle  = title.toLowerCase().trim();
+  const normalAuthor = author.toLowerCase().trim();
+
+  const lines = tbrContent.split('\n');
+  let startIdx = -1;
+
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i].startsWith('### ')) continue;
+    const header = lines[i].slice(4);
+    const clean  = header.replace(/\s*\*\(rec from [^)]+\)\*/, '').trim();
+    const dash   = clean.indexOf(' — ');
+    if (dash === -1) continue;
+    const lineTitle  = clean.slice(0, dash).trim().toLowerCase();
+    const lineAuthor = clean.slice(dash + 3).trim().toLowerCase();
+    if (lineTitle === normalTitle && lineAuthor === normalAuthor) {
+      startIdx = i;
+      break;
+    }
+  }
+
+  if (startIdx === -1) return { content: tbrContent, found: false };
+
+  let endIdx = lines.length;
+  for (let j = startIdx + 1; j < lines.length; j++) {
+    if (lines[j].startsWith('### ') || lines[j].startsWith('## ') || /^-{3,}/.test(lines[j])) {
+      endIdx = j;
+      break;
+    }
+  }
+
+  const newLines = [...lines.slice(0, startIdx), ...lines.slice(endIdx)];
+  return { content: newLines.join('\n'), found: true };
+}
+
+function addToAlreadyRead(tbrContent, title, author, scoreStr, format) {
+  const formatNote = format ? ` (${format})` : '';
+  const entry = `- ${title} — ${author}. Read${formatNote}. ${scoreStr}/10.`;
+
+  const match = /^## Already Read/m.exec(tbrContent);
+  if (!match) return tbrContent;
+
+  let insertAt = tbrContent.indexOf('\n', match.index) + 1;
+  while (insertAt < tbrContent.length && tbrContent[insertAt] === '\n') insertAt++;
+
+  return tbrContent.slice(0, insertAt) + entry + '\n' + tbrContent.slice(insertAt);
+}
+
 async function submitRating({ title, author, scoreStr, format, notes }) {
   const mainRef = await ghFetch(`/repos/${REPO}/git/ref/heads/main`);
   const mainSha = mainRef.object.sha;
@@ -94,7 +142,10 @@ async function submitRating({ title, author, scoreStr, format, notes }) {
   const branch = `rating/${slugify(title)}-${Date.now()}`;
   await ghFetch(`/repos/${REPO}/git/refs`, jsonPost({ ref: `refs/heads/${branch}`, sha: mainSha }));
 
-  const { content, sha: fileSha } = await getFileContent('ratings.md');
+  const [ratingsFile, tbrFile] = await Promise.all([
+    getFileContent('ratings.md'),
+    getFileContent('tbr.md'),
+  ]);
 
   const formatNote = format ? ` *(${format})*` : '';
   const notesLine  = notes ? '\n' + notes : '';
@@ -106,17 +157,31 @@ async function submitRating({ title, author, scoreStr, format, notes }) {
   ].join('\n');
 
   const score = parseFloat(scoreStr);
-  const newContent = insertIntoRatingsSection(content, score, stub);
+  const newRatingsContent = insertIntoRatingsSection(ratingsFile.content, score, stub);
 
   await ghFetch(`/repos/${REPO}/contents/ratings.md`, {
     method: 'PUT',
     body: JSON.stringify({
       message: `Add rating: ${title} — ${author} · ${scoreStr}/10`,
-      content: b64Encode(newContent),
-      sha: fileSha,
+      content: b64Encode(newRatingsContent),
+      sha: ratingsFile.sha,
       branch,
     }),
   });
+
+  const { content: tbrWithRemoval, found } = removeFromTBR(tbrFile.content, title, author);
+  if (found) {
+    const newTbrContent = addToAlreadyRead(tbrWithRemoval, title, author, scoreStr, format);
+    await ghFetch(`/repos/${REPO}/contents/tbr.md`, {
+      method: 'PUT',
+      body: JSON.stringify({
+        message: `Move ${title} to already-read`,
+        content: b64Encode(newTbrContent),
+        sha: tbrFile.sha,
+        branch,
+      }),
+    });
+  }
 
   const pr = await ghFetch(`/repos/${REPO}/pulls`, jsonPost({
     title: `Rating: ${title} — ${author} · ${scoreStr}/10`,
