@@ -135,11 +135,12 @@ function addToAlreadyRead(tbrContent, title, author, scoreStr, format) {
   return tbrContent.slice(0, insertAt) + entry + '\n' + tbrContent.slice(insertAt);
 }
 
-async function submitRating({ title, author, scoreStr, format, notes }) {
+async function submitRating({ title, author, series, scoreStr, format, notes }) {
   const mainRef = await ghFetch(`/repos/${REPO}/git/ref/heads/main`);
   const mainSha = mainRef.object.sha;
 
-  const branch = `rating/${slugify(title)}-${Date.now()}`;
+  const displayTitle = series ? `${title} (${series})` : title;
+  const branch = `rating/${slugify(displayTitle)}-${Date.now()}`;
   await ghFetch(`/repos/${REPO}/git/refs`, jsonPost({ ref: `refs/heads/${branch}`, sha: mainSha }));
 
   const [ratingsFile, tbrFile] = await Promise.all([
@@ -151,7 +152,7 @@ async function submitRating({ title, author, scoreStr, format, notes }) {
   const notesLine  = notes ? '\n' + notes : '';
   const stub = [
     '',
-    `### ${title} — ${author} · ${scoreStr}/10${formatNote}`,
+    `### ${displayTitle} — ${author} · ${scoreStr}/10${formatNote}`,
     notesLine,
     ''
   ].join('\n');
@@ -162,7 +163,7 @@ async function submitRating({ title, author, scoreStr, format, notes }) {
   await ghFetch(`/repos/${REPO}/contents/ratings.md`, {
     method: 'PUT',
     body: JSON.stringify({
-      message: `Add rating: ${title} — ${author} · ${scoreStr}/10`,
+      message: `Add rating: ${displayTitle} — ${author} · ${scoreStr}/10`,
       content: b64Encode(newRatingsContent),
       sha: ratingsFile.sha,
       branch,
@@ -184,7 +185,7 @@ async function submitRating({ title, author, scoreStr, format, notes }) {
   }
 
   const pr = await ghFetch(`/repos/${REPO}/pulls`, jsonPost({
-    title: `Rating: ${title} — ${author} · ${scoreStr}/10`,
+    title: `Rating: ${displayTitle} — ${author} · ${scoreStr}/10`,
     body: 'Submitted via tefleming.com',
     head: branch,
     base: 'main',

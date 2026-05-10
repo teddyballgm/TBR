@@ -332,6 +332,66 @@
     .rating-notes { font-size: 14px; line-height: 1.75; }
     .rating-notes p + p { margin-top: 10px; }
 
+    /* ── Rate button ───────────────────────────────────────────────── */
+
+    .btn-rate {
+      font-size: 12px;
+      color: var(--green);
+      border: 1px solid var(--green);
+      background: none;
+      padding: 2px 8px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: var(--sans);
+      line-height: 1.5;
+    }
+    .btn-rate:hover { background: rgba(42, 92, 63, 0.08); }
+
+    /* ── Rate modal ────────────────────────────────────────────────── */
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      padding: 16px;
+    }
+    .modal-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--r);
+      padding: 28px 24px;
+      max-width: 460px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .modal-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+    .modal-title {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: normal;
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 22px;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0 2px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .modal-close:hover { color: var(--text); }
+
     /* ── Mobile ────────────────────────────────────────────────────── */
 
     @media (max-width: 480px) {
@@ -437,6 +497,65 @@
       </section>
     </div>
   </main>
+
+  <div id="rate-modal" class="modal-overlay" style="display:none" role="dialog" aria-modal="true" aria-labelledby="rate-modal-title">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="rate-modal-title" class="modal-title">Log a Rating</h2>
+        <button class="modal-close" id="rate-modal-close" aria-label="Close">&times;</button>
+      </div>
+      <p class="sub-desc">Submitting opens a GitHub PR to add your rating to ratings.md.</p>
+      <form id="rate-form">
+        <div class="field-row">
+          <label for="rate-title">Title</label>
+          <input type="text" id="rate-title" required>
+        </div>
+        <div class="field-row">
+          <label for="rate-author">Author</label>
+          <input type="text" id="rate-author" required>
+        </div>
+        <div class="field-row">
+          <label for="rate-series">Series <span style="text-transform:none;font-weight:400">(optional)</span></label>
+          <input type="text" id="rate-series" placeholder="e.g. Silo Series">
+        </div>
+        <div class="field-row">
+          <label for="rate-score">Score</label>
+          <select id="rate-score" required>
+            <option value="">Select…</option>
+            <option value="10">10</option>
+            <option value="9.5">9.5</option>
+            <option value="9">9</option>
+            <option value="8.5">8.5</option>
+            <option value="8">8</option>
+            <option value="7.5">7.5</option>
+            <option value="7">7</option>
+            <option value="6.5">6.5</option>
+            <option value="6">6</option>
+            <option value="5.5">5.5</option>
+            <option value="5">5</option>
+            <option value="4.5">4.5</option>
+            <option value="4">4</option>
+            <option value="3.5">3.5</option>
+            <option value="3">3</option>
+            <option value="2.5">2.5</option>
+            <option value="2">2</option>
+            <option value="1.5">1.5</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+        <div class="field-row">
+          <label for="rate-format">Format <span style="text-transform:none;font-weight:400">(optional)</span></label>
+          <input type="text" id="rate-format" placeholder="e.g. Kindle, Audible">
+        </div>
+        <div class="field-row">
+          <label for="rate-notes">Notes <span style="text-transform:none;font-weight:400">(optional)</span></label>
+          <textarea id="rate-notes" rows="4" placeholder="Your thoughts…"></textarea>
+        </div>
+        <div id="rate-submit-status" class="submit-status"></div>
+        <button type="submit" id="rate-submit-btn" class="btn-primary">Open PR</button>
+      </form>
+    </div>
+  </div>
 </div>
 
 <script>
@@ -525,8 +644,8 @@
     const author = clean.slice(dash + 3).trim();
 
     let kindleUrl = null, price = null, origPrice = null, alertPrice = null;
-    let whyHere = '', caveat = '';
-    let purchased = false;
+    let whyHere = '', caveat = '', series = null;
+    let purchased = false, purchaseFormat = null;
     let field = null;
 
     for (let i = 1; i < lines.length; i++) {
@@ -538,6 +657,10 @@
         field = 'kindle';
         const urlM = t.match(/\[(?:[^\]]+)\]\(([^)]+)\)/);
         if (urlM) kindleUrl = urlM[1];
+        if (/purchased/i.test(t) && !urlM) {
+          purchased = true;
+          purchaseFormat = 'kindle';
+        }
         const priceM = t.match(/Price:\s*(.+)/);
         if (priceM) {
           const ps = priceM[1];
@@ -550,15 +673,31 @@
             if (alrt) alertPrice = alrt[1];
           }
         }
-      } else if (t.startsWith("**Why it's here:**") || t.startsWith("**Why it's here:**")) {
+      } else if (t.startsWith('**Audible:**')) {
+        field = null;
+        if (/purchased/i.test(t)) { purchased = true; purchaseFormat = 'audible'; }
+      } else if (t.startsWith('**Whispersync:**')) {
+        field = null;
+        if (/purchased/i.test(t)) { purchased = true; purchaseFormat = 'whispersync'; }
+      } else if (t.startsWith("**Why it's here:**") || t.startsWith("**Why it’s here:**")) {
         field = 'why';
         whyHere = t.replace(/^\*\*Why it['']s here:\*\*\s*/, '');
       } else if (/^\*\*The (?:caveat|bet):\*\*/.test(t)) {
         field = 'caveat';
         caveat = t.replace(/^\*\*The (?:caveat|bet):\*\*\s*/, '');
+      } else if (t.startsWith('**Series:**')) {
+        field = null;
+        series = t.replace(/^\*\*Series:\*\*\s*/, '').trim();
       } else if (t.startsWith('**Status:**')) {
         field = null;
-        if (/purchased/i.test(t)) purchased = true;
+        if (/purchased/i.test(t)) {
+          purchased = true;
+          if (!purchaseFormat) {
+            if (/kindle/i.test(t))      purchaseFormat = 'kindle';
+            else if (/audible/i.test(t))      purchaseFormat = 'audible';
+            else if (/whispersync/i.test(t))  purchaseFormat = 'whispersync';
+          }
+        }
       } else if (t.startsWith('**')) {
         field = null;
       } else if (field === 'why') {
@@ -568,8 +707,8 @@
       }
     }
 
-    return { title, author, recSource, kindleUrl, price, origPrice, alertPrice,
-             whyHere: whyHere.trim(), caveat: caveat.trim(), purchased };
+    return { title, author, series, recSource, kindleUrl, price, origPrice, alertPrice,
+             whyHere: whyHere.trim(), caveat: caveat.trim(), purchased, purchaseFormat };
   }
 
   function parseAlreadyRead(body) {
@@ -691,6 +830,12 @@
     h += `<div class="kindle-line">`;
     if (b.purchased) {
       h += `<span class="owned-pill">owned</span>`;
+      if (b.purchaseFormat) {
+        const rateKey = `${b.title.toLowerCase()}|${b.author.toLowerCase()}`;
+        if (!ratedSet.has(rateKey)) {
+          h += `<button class="btn-rate" data-title="${e(b.title)}" data-author="${e(b.author)}" data-series="${e(b.series || '')}">Rate</button>`;
+        }
+      }
     } else {
       if (b.kindleUrl) h += `<a href="${e(b.kindleUrl)}" target="_blank" rel="noopener">Track on eReaderIQ</a>`;
       if (b.price) {
@@ -799,6 +944,26 @@
   // ── Data loading ──────────────────────────────────────────────────
 
   let ratingsLoaded = false;
+  let ratedSet = new Set();
+  let cachedRatingsMd = null;
+
+  async function fetchRatingsMd() {
+    if (!cachedRatingsMd) {
+      const { content } = await getFileContent('ratings.md');
+      cachedRatingsMd = content;
+    }
+    return cachedRatingsMd;
+  }
+
+  function buildRatedSet(md) {
+    const set = new Set();
+    const regex = /^### (.+?) — (.+?) ·/gm;
+    let m;
+    while ((m = regex.exec(md)) !== null) {
+      set.add(`${m[1].trim().toLowerCase()}|${m[2].trim().toLowerCase()}`);
+    }
+    return set;
+  }
 
   async function loadTBR() {
     const loading = document.getElementById('tbr-loading');
@@ -812,8 +977,11 @@
     submit.style.display  = 'none';
 
     try {
-      const { content: md } = await getFileContent('tbr.md');
-      renderTBR(parseTBR(md));
+      const [{ content: tbrMd }] = await Promise.all([
+        getFileContent('tbr.md'),
+        fetchRatingsMd().then(md => { ratedSet = buildRatedSet(md); }).catch(() => {})
+      ]);
+      renderTBR(parseTBR(tbrMd));
       content.style.display = '';
       submit.style.display  = '';
     } catch (err) {
@@ -836,7 +1004,7 @@
     submit.style.display  = 'none';
 
     try {
-      const { content: md } = await getFileContent('ratings.md');
+      const md = await fetchRatingsMd();
       renderRatings(parseRatings(md));
       content.style.display = '';
       submit.style.display  = '';
@@ -924,6 +1092,78 @@
       statusEl.className   = 'submit-status error';
       statusEl.textContent = err.message || 'Failed to open PR';
     } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Open PR';
+    }
+  });
+
+  // ── Rate modal ────────────────────────────────────────────────────
+
+  function openRateModal(title, author, series) {
+    document.getElementById('rate-title').value  = title;
+    document.getElementById('rate-author').value = author;
+    document.getElementById('rate-series').value = series || '';
+    document.getElementById('rate-score').value  = '';
+    document.getElementById('rate-format').value = '';
+    document.getElementById('rate-notes').value  = '';
+    const statusEl = document.getElementById('rate-submit-status');
+    statusEl.className   = 'submit-status';
+    statusEl.textContent = '';
+    const btn = document.getElementById('rate-submit-btn');
+    btn.disabled    = false;
+    btn.textContent = 'Open PR';
+    document.getElementById('rate-modal').style.display = '';
+    document.getElementById('rate-score').focus();
+  }
+
+  function closeRateModal() {
+    document.getElementById('rate-modal').style.display = 'none';
+  }
+
+  document.getElementById('rate-modal-close').addEventListener('click', closeRateModal);
+
+  document.getElementById('rate-modal').addEventListener('click', ev => {
+    if (ev.target === ev.currentTarget) closeRateModal();
+  });
+
+  document.addEventListener('keydown', ev => {
+    if (ev.key === 'Escape') closeRateModal();
+  });
+
+  document.getElementById('tbr-content').addEventListener('click', ev => {
+    const btn = ev.target.closest('.btn-rate');
+    if (btn) {
+      ev.stopPropagation();
+      openRateModal(btn.dataset.title, btn.dataset.author, btn.dataset.series);
+    }
+  });
+
+  document.getElementById('rate-form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const btn      = document.getElementById('rate-submit-btn');
+    const statusEl = document.getElementById('rate-submit-status');
+    const title    = document.getElementById('rate-title').value.trim();
+    const author   = document.getElementById('rate-author').value.trim();
+    const series   = document.getElementById('rate-series').value.trim() || null;
+    const scoreStr = document.getElementById('rate-score').value;
+    const format   = document.getElementById('rate-format').value.trim() || null;
+    const notes    = document.getElementById('rate-notes').value.trim()  || null;
+    if (!title || !author || !scoreStr) return;
+
+    btn.disabled    = true;
+    btn.textContent = 'Opening PR…';
+    statusEl.className   = 'submit-status';
+    statusEl.textContent = '';
+
+    try {
+      const res  = await fetch('/api/submit', jsonPost({ type: 'rating', title, author, series, scoreStr, format, notes }));
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Failed to open PR');
+      statusEl.className = 'submit-status success';
+      statusEl.innerHTML = `PR opened: <a href="${e(data.prUrl)}" target="_blank" rel="noopener">${e(data.prUrl)}</a>`;
+    } catch (err) {
+      statusEl.className   = 'submit-status error';
+      statusEl.textContent = err.message || 'Failed to open PR';
       btn.disabled    = false;
       btn.textContent = 'Open PR';
     }
