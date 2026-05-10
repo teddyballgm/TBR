@@ -51,8 +51,8 @@
 
 ### Catch-22 — Joseph Heller
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
-**Status:** Purchased
+**Kindle:** Purchased
+**Status:** Purchased (Kindle)
 
 **Why it's here:** The spiritual ancestor of DCC. A predatory bureaucratic system followed to its absurd, terrifying logical conclusion — played completely straight. The satire has genuine teeth. If DCC's satirical coherence is the thing, this is the source.
 
