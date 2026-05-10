@@ -110,18 +110,6 @@
 
 **The caveat:** Not yet assessed against your specific profile. Flagged as a rec to investigate.
 
-### The Girl with All the Gifts — M.R. Carey
-
-**Audible:** Purchased ($7.99 — May 2026)
-
-**Status:** Purchased
-
-**Predicted rating:** 7.5/10
-
-**Why it's here:** Post-apocalyptic horror with a genuinely subversive premise — the protagonist reframes the genre's usual moral architecture. Carey follows the internal logic of his world without flinching. Strong structural ambition.
-
-**The caveat:** Horror-adjacent, which isn't a guaranteed fit. Emotional register is bleaker than HWFWM, closer to The Road territory.
-
 ---
 
 ### The Yiddish Policemen's Union — Michael Chabon
@@ -160,6 +148,7 @@
 
 ## Already Read / Removed from Queue
 
+- The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
 - A Wizard's Guide to Defensive Baking — Read. 6/10.
 - Dungeon Crawler Carl — The benchmark.

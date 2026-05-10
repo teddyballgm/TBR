@@ -31,6 +31,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8
 
 
+### The Girl with All the Gifts — M.R. Carey · 8/10 *(Audible)*
+
+A very personal zombie story. Intriguing build towards the inevitable
+
 ### Starter Villain — John scalzi · 8/10 *(Audible)*
 
 Very enjoyable - kinda breezy, fun. Snarky and satirical. Didn’t love wil wheaton as narrator - he lacks the range of Bray or Hayes
