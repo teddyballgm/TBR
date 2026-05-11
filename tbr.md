@@ -76,6 +76,16 @@
 
 **The caveat:** Genuinely difficult. The violence is operatic and relentless, the prose demands patience. Read The Road and No Country first.
 
+### The Boy on the Bridge — M.R. Carey *(The Girl With All the Gifts #2)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Boy+on+the+Bridge+MR+Carey) | Price: *not yet tracked*
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Companion novel to The Girl With All the Gifts — same Ophiocordyceps fungal-zombie world, different crew. Carey's prose is controlled and the first book had real stakes and a genuinely unexpected ending.
+
+**The caveat:** Sequels in this mode tend to diminish slightly; predicting a strong but not transcendent read.
+
 -----
 
 ## Tier 3 — Worth Trying
