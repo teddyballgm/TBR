@@ -147,14 +147,6 @@
 -----
 
 
-### The magicians — Lev grossman *(rec from Ian)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
-
 ## Already Read / Removed from Queue
 
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
@@ -164,6 +156,16 @@
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
 - Royal Gambit (The Rook Files Book 4) — Read. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
+
+-----
+
+### The magicians — Lev grossman *(rec from Ian)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
+
+**Why it's here:** Deconstructive take on the magical-school genre with a literate, ironic register and real darkness underneath — Grossman has authorial control and a clear thesis about disillusionment and entitlement. The worldbuilding is dense and the satire of fantasy tropes has teeth, which gestures toward the profile. But it's protagonist-forward in a way DCC is not: the book lives or dies on tolerating Quentin Coldwater, whose unhappiness is the engine.
+
+**The caveat:** This is exactly the 'protagonist-forward narrative that requires you to love the main character' risk flagged in the profile — Quentin is deliberately insufferable and many readers bounce off him hard. The wit is dry and melancholic rather than savage; the satire critiques fantasy from within rather than following weirdness to coherent extremes. Closer to a literary-fiction sensibility than the Dinniman/O'Malley register.
 
 -----
 
