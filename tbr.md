@@ -146,6 +146,15 @@
 
 -----
 
+
+### The magicians — Lev grossman *(rec from Ian)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
