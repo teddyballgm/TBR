@@ -148,14 +148,6 @@
 
 
 
-### Red rising — Pierce brown *(rec from Gavin)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
-
 ## Already Read / Removed from Queue
 
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
@@ -175,6 +167,16 @@
 **Why it's here:** Deconstructive take on the magical-school genre with a literate, ironic register and real darkness underneath — Grossman has authorial control and a clear thesis about disillusionment and entitlement. The worldbuilding is dense and the satire of fantasy tropes has teeth, which gestures toward the profile. But it's protagonist-forward in a way DCC is not: the book lives or dies on tolerating Quentin Coldwater, whose unhappiness is the engine.
 
 **The caveat:** This is exactly the 'protagonist-forward narrative that requires you to love the main character' risk flagged in the profile — Quentin is deliberately insufferable and many readers bounce off him hard. The wit is dry and melancholic rather than savage; the satire critiques fantasy from within rather than following weirdness to coherent extremes. Closer to a literary-fiction sensibility than the Dinniman/O'Malley register.
+
+-----
+
+### Red rising — Pierce brown *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
+
+**Why it's here:** Brutal sci-fi with a stratified color-caste system and gladiatorial politics — surface-level overlap with DCC's escalating-stakes-in-a-rigged-game structure. Pierce Brown commits to his world's cruelty, which gives it some of the dark-teeth quality the profile values. But the register is operatic and earnest where DCC is satirical and self-aware, and the worldbuilding leans on heavy exposition rather than earned weirdness.
+
+**The caveat:** This is a protagonist-forward revenge arc where loving Darrow is most of the contract — exactly the mode the profile flags as risky. Tonal earnestness and YA-adjacent dramatics may read as sentimentality rather than real stakes; the satirical coherence that defines a 9/10 here isn't really what Brown is doing.
 
 -----
 
