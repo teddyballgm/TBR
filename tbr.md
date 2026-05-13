@@ -148,6 +148,15 @@
 
 
 
+
+### Dark matter — Blake crouch *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
