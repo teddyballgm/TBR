@@ -148,6 +148,7 @@
 
 
 
+
 ## Already Read / Removed from Queue
 
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
@@ -177,6 +178,16 @@
 **Why it's here:** Brutal sci-fi with a stratified color-caste system and gladiatorial politics — surface-level overlap with DCC's escalating-stakes-in-a-rigged-game structure. Pierce Brown commits to his world's cruelty, which gives it some of the dark-teeth quality the profile values. But the register is operatic and earnest where DCC is satirical and self-aware, and the worldbuilding leans on heavy exposition rather than earned weirdness.
 
 **The caveat:** This is a protagonist-forward revenge arc where loving Darrow is most of the contract — exactly the mode the profile flags as risky. Tonal earnestness and YA-adjacent dramatics may read as sentimentality rather than real stakes; the satirical coherence that defines a 9/10 here isn't really what Brown is doing.
+
+-----
+
+### Dark matter — Blake crouch *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
+
+**Why it's here:** Crouch writes tight, propulsive thrillers with high-concept hooks — the multiverse premise here has the kind of structural cleanness that rewards economy. But the register is earnest sci-fi thriller, not the dark-wit satire of DCC, and the protagonist is very much the point rather than a vehicle. Closer to airport-paperback craft than authorial-control-as-felt-presence.
+
+**The caveat:** Crouch's prose is functional rather than distinctive, and the emotional stakes lean on loving the protagonist and his family — exactly the protagonist-forward mode flagged as a risk. The high concept may also over-explain itself as the plot mechanics demand exposition.
 
 -----
 
