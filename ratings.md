@@ -6,6 +6,10 @@ What makes a 9/10: strong authorial control, original worldbuilding that doesn't
 
 ## 9-10
 
+
+### Parade of Horribles — Matt Diniman · 9.5/10 *(Whispersync (mostly audible))*
+
+Wow. Even as this book shifted some of the early series dynamics up it packed a frickin wallop on every level from a man and his ex girlfriends cat to intergalactic political history
 ### Dungeon Crawler Carl — Matt Dinniman · 9/10
 
 The satire is the star. Dinniman builds a predatory alien entertainment empire and follows its internal logic to absurd, coherent extremes — the weirdness is earned, not random. The world rewards paying attention; the humor has teeth. Less about Carl specifically, more about marveling at the whole deranged system Dinniman has constructed. The benchmark everything else gets measured against.
