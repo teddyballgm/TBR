@@ -36,6 +36,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 ## 7-8
 
+
+### 1% lifesteal — Robert Blaise · 7/10 *(Whispersync (mostly audible))*
+
+Would have liked more if I’d read before HWFWM. More complicate magic system - kinda jarring cuts as the story progresses
 ### The Girl with All the Gifts — M.R. Carey · 8/10 *(Audible)*
 
 A very personal zombie story. Intriguing build towards the inevitable.
