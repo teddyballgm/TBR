@@ -90,16 +90,6 @@
 
 **The caveat:** Lighter than the Tier 1/2 picks. Probably a 7 ceiling, but a very enjoyable 7.
 
-### 1% Lifesteal — Robert Blaise *(rec from David Rice)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=1%25+Lifesteal+Robert+Blaise) | Price: $4.99 🔔 *alert set @ $0.99*
-
-**Predicted rating:** 7/10
-
-**Why it's here:** LitRPG progression fantasy rec from David Rice. Quirky stat-based mechanics and underdog energy — similar appeal to early DCC in terms of scrappy protagonist punching up.
-
-**The caveat:** Lighter in tone and craft than the Tier 1/2 picks. Worth trying given the rec source.
-
 -----
 
 ### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
@@ -151,6 +141,7 @@
 
 ## Already Read / Removed from Queue
 
+- 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
 - A Wizard's Guide to Defensive Baking — Read. 6/10.
