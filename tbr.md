@@ -2,7 +2,7 @@
 
 *Ranked by confidence of hitting 9/10, based on ratings profile. Key criteria: authorial control, satirical coherence, earned weirdness, productive distance from protagonist, economy of craft.*
 
-*Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of April 2026. 🔔 = alert set at threshold price.*
+*Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of May 2026. 🔔 = alert set at threshold price.*
 
 -----
 
@@ -81,18 +81,6 @@
 
 ## Tier 3 — Worth Trying
 
-### Starter Villain — John Scalzi
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Starter+Villain+John+Scalzi) | Price: $4.99 🔔 *alert set @ $4.98*
-
-**Status:** Purchased (Audible, $5.99 — May 2026)
-
-**Why it's here:** Everyman inherits a supervillain empire. Carl energy in a standalone novel. Fast, fun, done in a weekend — good palette cleanser and a low-risk way to test whether Scalzi's voice works.
-
-**The caveat:** Lighter than the Tier 1/2 picks. Probably a 7 ceiling, but a very enjoyable 7.
-
------
-
 ### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
@@ -149,13 +137,11 @@
 
 -----
 
-
-
-
 ## Already Read / Removed from Queue
 
 - 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
+- Starter Villain — John Scalzi. Read (Audible — Wil Wheaton). 8/10.
 - Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
 - A Wizard's Guide to Defensive Baking — Read. 6/10.
 - Dungeon Crawler Carl — The benchmark.
