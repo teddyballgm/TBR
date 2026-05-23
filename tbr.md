@@ -37,6 +37,7 @@
 **Why it's here:** Closer to your thriller background than his other work. Chigurh is one of the great antagonists in fiction — the kind of villain who reframes everything around him. Tight, relentless, no fat.
 
 **The caveat:** The ending is deliberately withholding — divisive for exactly the same reason Dust's ending bothered you, but intentionally so.
+
 -----
 
 ## Tier 2 — Strong Recommendation
@@ -89,6 +90,18 @@
 **Why it's here:** Everyman inherits a supervillain empire. Carl energy in a standalone novel. Fast, fun, done in a weekend — good palette cleanser and a low-risk way to test whether Scalzi's voice works.
 
 **The caveat:** Lighter than the Tier 1/2 picks. Probably a 7 ceiling, but a very enjoyable 7.
+
+-----
+
+### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
+
+**Predicted rating:** 7.0–7.5/10
+
+**Why it's here:** LitRPG set in the Backrooms — a guy noclips into an infinite liminal dimension during a bachelor party and has to survive floor-by-floor while being hunted. Companion is Croc, a shapeshifting blue plastic dog from New Zealand with a pop culture obsession. Reviewers explicitly comp it to DCC in tone and humor, and the level-by-level worldbuilding has genuine inventiveness — no two floors alike. Three books out as of 2026.
+
+**The caveat:** The Dan/Croc dynamic is consciously Carl/Donut-adjacent, which cuts both ways — comfortable entry point, but lower ceiling if it never escapes the shadow. Reviewers flag thin character interiority and the store mechanic feels underdeveloped. Probably delivers the early-DCC experience more than the later-DCC ambition.
 
 -----
 
@@ -195,4 +208,4 @@ When adding a new book, include:
 
 -----
 
-*Last updated: April 2026*
+*Last updated: May 2026*
