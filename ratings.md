@@ -1,196 +1,140 @@
-# TBR — Reading Queue
+# Book Ratings
 
-*Ranked by confidence of hitting 9/10, based on ratings profile. Key criteria: authorial control, satirical coherence, earned weirdness, productive distance from protagonist, economy of craft.*
+What makes a 9/10: strong authorial control, original worldbuilding that doesn’t over-explain itself, dark wit, real emotional stakes, protagonist as vehicle rather than the point. Distance from the protagonist is fine — trust in the author is essential.
 
-*Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of May 2026. 🔔 = alert set at threshold price.*
-
------
-
-## Tier 1 — Highest Confidence
-
-### The Left Hand of Darkness — Ursula Le Guin
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Left+Hand+of+Darkness+Le+Guin) | Price: $6.99 🔔 *alert set @ $6.98*
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Genly Ai is a deliberately imperfect lens — the world and its ideas are the real subject, not the protagonist. Le Guin has complete authorial control. The ending hits with the same quiet punch as Emperor's Soul. One of the few books where the anthropological worldbuilding is as inventive as DCC's satirical worldbuilding, just in a different register.
-
-**The bet:** High ceiling, possibly a 10. Slower pace may be a variable.
-
-### The Road — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
-
-**Predicted rating:** 9/10
-
-**Why it's here:** The definitive post-apocalyptic novel — earns its ending in a way Dust couldn't. McCarthy refuses to blink. Directly relevant to what you're thinking about in the genre right now.
-
-**The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
-
-### No Country for Old Men — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Closer to your thriller background than his other work. Chigurh is one of the great antagonists in fiction — the kind of villain who reframes everything around him. Tight, relentless, no fat.
-
-**The caveat:** The ending is deliberately withholding — divisive for exactly the same reason Dust's ending bothered you, but intentionally so.
+Narrator quality is tracked where relevant — narration has meaningfully affected ratings in both directions. Jeff Hayes and R.C. Bray are known floor-raisers; a weak narrator on a voice-dependent or character-dense book is a real ceiling suppressor.
 
 -----
 
-## Tier 2 — Strong Recommendation
+## 9-10
 
-### The Lies of Locke Lamora — Scott Lynch
+### Parade of Horribles — Matt Dinniman · 9.5/10 *(Whispersync, mostly Audible)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $3.98*
+Wow. Even as this book shifted some of the early series dynamics it packed a frickin wallop on every level — from a man and his ex-girlfriend’s cat to intergalactic political history.
 
-**Why it's here:** Dense, lived-in worldbuilding that rewards attention. Genuinely funny banter. Found family with real stakes. No game mechanics — pure craft. The city of Camorr feels as fully realised as DCC's dungeon world.
+### Dungeon Crawler Carl — Matt Dinniman · 9/10 *(Audible — Jeff Hayes)*
 
-**The caveat:** Lynch wants you charmed by Locke specifically, which is slightly riskier given the preference for protagonist-as-vehicle. Worth trying; high upside if Locke clicks.
+The satire is the star. Dinniman builds a predatory alien entertainment empire and follows its internal logic to absurd, coherent extremes — the weirdness is earned, not random. The world rewards paying attention; the humor has teeth. Less about Carl specifically, more about marveling at the whole deranged system Dinniman has constructed. Jeff Hayes’s narration is inseparable from the experience — the definitive version. The benchmark everything else gets measured against.
 
-### Catch-22 — Joseph Heller
+### The Hitchhiker’s Guide to the Galaxy — Douglas Adams · 9/10 *(read in high school)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
-**Status:** Purchased
+Memory rating — but a fond and confident one. The satire is the star: Adams builds an indifferent bureaucratic universe and follows its internal logic to absurd, coherent extremes. Complete authorial control, protagonist explicitly as vehicle. The direct ancestor of DCC’s DNA. Stephen Fry’s audiobook narration is the definitive version.
 
-**Why it's here:** The spiritual ancestor of DCC. A predatory bureaucratic system followed to its absurd, terrifying logical conclusion — played completely straight. The satire has genuine teeth. If DCC's satirical coherence is the thing, this is the source.
+### Project Hail Mary — Andy Weir · 9/10 *(Audible — Ray Porter)*
 
-**The caveat:** Deliberately repetitive structure that rewards patience. Not a fast read.
+Weir at his best — the problem-solving loop is relentless and the central relationship earns its emotional payoff without sentimentality. Ray Porter’s narration elevates it significantly; his performance is inseparable from the experience. Read before the movie.
 
-### The Traitor Baru Cormorant — Seth Dickinson
+### The Rook — Daniel O’Malley · 9/10
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $2.99*
+Building the world was the best part — the Checquy mythos is genuinely original and the bureaucratic-magic-institution angle is executed with real wit. Myfanwy piecing together her own identity is a strong structural hook — world discovery and protagonist arc are fused, you learn the Checquy at exactly the rate she does. The craft is there; the authorial control is there.
 
-**Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
+### Emperor’s Soul — Brandon Sanderson · 9.5-10/10
 
-**The caveat:** Deliberately brutal. Go in knowing that.
-
-### Blood Meridian — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Extraordinary prose and one of the most terrifying antagonists ever written (the Judge). Literary benchmark — the kind of book that changes how you read everything after it.
-
-**The caveat:** Genuinely difficult. The violence is operatic and relentless, the prose demands patience. Read The Road and No Country first.
+Deceptively small, then devastating. The magic system serves the themes rather than driving the plot. Liked it in spite of Shai rather than because of her — the slight character distance helped; kept it from becoming sentimental. A masterclass in economy of craft. Sanderson at his best when the scope is contained.
 
 -----
 
-## Tier 3 — Worth Trying
+## 7-8
 
-### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
+### 1% lifesteal — Robert Blaise · 7/10 *(Whispersync (mostly audible))*
 
-**Predicted rating:** 7.0–7.5/10
+Would have liked more if I’d read before HWFWM. More complicate magic system - kinda jarring cuts as the story progresses
+### The Girl with All the Gifts — M.R. Carey · 8/10 *(Audible)*
 
-**Why it's here:** LitRPG set in the Backrooms — a guy noclips into an infinite liminal dimension during a bachelor party and has to survive floor-by-floor while being hunted. Companion is Croc, a shapeshifting blue plastic dog from New Zealand with a pop culture obsession. Reviewers explicitly comp it to DCC in tone and humor, and the level-by-level worldbuilding has genuine inventiveness — no two floors alike. Three books out as of 2026.
+A very personal zombie story. Intriguing build towards the inevitable.
 
-**The caveat:** The Dan/Croc dynamic is consciously Carl/Donut-adjacent, which cuts both ways — comfortable entry point, but lower ceiling if it never escapes the shadow. Reviewers flag thin character interiority and the store mechanic feels underdeveloped. Probably delivers the early-DCC experience more than the later-DCC ambition.
+### Starter Villain — John Scalzi · 8/10 *(Audible — Wil Wheaton)*
 
------
+Very enjoyable — breezy, fun, snarky and satirical. Wheaton’s narration is serviceable but he lacks the range of Hayes or Bray; the back half suffers as character count grows and his limited range flattens the distinctions. Worth a re-read in print to see if the ceiling is higher.
 
-### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
+### The Martian — Andy Weir · 8.5/10 *(Audible — R.C. Bray)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
+Half a point behind PHM — same problem-solving energy, slightly less ambitious in scope and emotional payoff. R.C. Bray’s narration makes it; the movie is fine but the book is better experienced with his performance. Read before the movie.
 
-**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — potentially in the DCC ballpark.
+### Wool (Silo Series) — Hugh Howey · 8/10 *(Kindle)*
 
-**The caveat:** Not yet assessed against your specific profile. Flagged as a rec to investigate.
+Been a few years — but enjoyed reading the books after the first season of the show. Having the visuals from the show made it more immersive.
 
----
+### Expeditionary Force — Craig Alanson · Books 1–3: 8.5/10 | Series overall: 6.5/10
 
-### The Yiddish Policemen's Union — Michael Chabon
+First three books are fantastic — voice, pacing, and the Skippy dynamic all firing on all cylinders. Once caught up and returning for Ground State onward: formulaic, clearly unplanned — new big baddie each arc with no sense of a destination. Classic case of a series outlasting its premise.
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Yiddish+Policemens+Union+Michael+Chabon) | Price: $15.99 🔔 *alert set @ $15.98*
+### Dune — Frank Herbert · 7.5/10 *(read in high school)*
 
-**Predicted rating:** 8/10
+Memory rating. The worldbuilding and ambition are undeniable but the chosen-one protagonist structure works against it — the opposite of what tends to hit highest. Appreciated more than loved.
 
-**Why it's here:** Alt-history noir — Jewish homeland in Alaska, detective unravels a murder as the whole city-state faces extinction. Chabon's prose is controlled and genuinely funny. The alternate history is doing thematic work, not just window dressing. Hugo, Nebula, and Sidewise award winner.
+### He Who Fights with Monsters — Shirtaloon · 7/10
 
-**The caveat:** Pacing splits readers — some find it dense mid-book. Kindle recommended over Audible; the narrator's accent work has drawn similar criticism to what killed Man in the High Castle for you.
+Tolerated Jason rather than loved him — which was enough to get through 12 books, which says something. The engine was world curiosity: Pallimustus, the progression system, whether Jason gets back to Earth. Jason was the vehicle, not the point. The emotional high points — Neil and Cassandra, Clive and Belinda — worked because Shirtaloon resisted the obvious move and let those conversations be calmer than fiction usually allows. That authorial restraint is what made the peaks genuinely land. Unevenly distributed — probably 4 books worth of 9/10 material across 12. The 7 reflects structural bloat more than a craft ceiling.
 
----
+### Slough House (Slough House Series) — Mick Herron · Early books: 8/10 | Series overall: 7–7.5/10
 
-### The Spy Who Came in from the Cold — John le Carré
+Herron fights formula better than almost anyone in the genre — kills major characters unexpectedly, refuses clean wins, treats bureaucratic humiliation as a real stakes system. The wit is sharper than genre average and has some of the same internal-logic-to-extremes quality as DCC, just in a grittier register. Degrades as the series extends but never collapses; the formula resistance holds longer than most.
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Spy+Who+Came+in+from+the+Cold+le+Carre) | Price: $9.99 🔔 *alert set @ $9.98*
+### Mitch Rapp Series — Vince Flynn · 7/10
 
-**Predicted rating:** 8.5/10
+Great beach read fodder — similar energy to Reacher but less formulaic. Rapp has more moral complexity than Reacher and the geopolitical backdrop gives it texture. Doesn’t demand much but delivers consistently.
 
-**Why it's here:** The direct ancestor of Slow Horses — bureaucratic dysfunction, morally compromised protagonists, no clean wins. Le Carré at his leanest and most thriller-shaped. If Herron's prose worked across 8+ books, le Carré lands differently now than it did before.
+### Deaths of Evelyn Hardcastle — Stuart Turton · 7/10
 
-**The caveat:** Tinker Tailor is where people get lost — this isn't that. Start here.
+The premise and structural ambition earn the rating; the execution doesn’t always match. Strong twist. Characters felt slightly thin once the mechanism was revealed. Appreciated it more intellectually than emotionally.
 
----
+### The Checquy Files (series) — Daniel O’Malley · 7.5/10
 
-### The Goblin Emperor — Katherine Addison
+More fun to build than to live in. The worldbuilding high of The Rook never quite returned — specifically because Stiletto decoupled what made The Rook work: Myfanwy’s discovery of the Checquy was fused with the reader’s. Odette arrives as an inhabitant of an interesting world, not a discoverer of one, and she’s flat from introduction. A lesson in why the access structure matters as much as the world itself.
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
+### The Cosmere (overall) — Brandon Sanderson · 7.5/10
 
-**Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
-
-**The caveat:** May skew too cozy — similar risk as Kingfisher. Worth trying if Left Hand of Darkness lands well.
+Incredible world-architect, but the texture of living inside the longer books can feel thin. The magic systems are inventive; the characters less so. Emperor’s Soul is the exception that proves the rule — small scope, perfect balance of system and character. Stormlight Archive (all 5 books) sits at the same 7.5 ceiling — at its peak it’s nearly perfect, but it’s so long and plodding at points that the peaks get buried. The ratio of greatness to page count is the problem, not the greatness itself.
 
 -----
 
-## Already Read / Removed from Queue
+## 6-6.5
 
-- 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
-- The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
-- Starter Villain — John Scalzi. Read (Audible — Wil Wheaton). 8/10.
-- Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
-- A Wizard's Guide to Defensive Baking — Read. 6/10.
-- Dungeon Crawler Carl — The benchmark.
-- The Checquy Files — Complete.
-- He Who Fights with Monsters — Complete (12 books).
-- Royal Gambit (The Rook Files Book 4) — Read. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
+### Sapiens — Yuval Noah Harari · 6/10
 
------
+Brilliant premise, too in love with itself. The big ideas are genuinely interesting; Harari just makes sure you know how interesting they are.
 
-### The magicians — Lev grossman *(rec from Ian)*
+### Jack Reacher Series — Lee Child · 6.5/10
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
+Great concept, super repetitive in execution after a few books. The formula is airtight but it’s still a formula. Rapp does the same job with more texture.
 
-**Why it's here:** Deconstructive take on the magical-school genre with a literate, ironic register and real darkness underneath — Grossman has authorial control and a clear thesis about disillusionment and entitlement. The worldbuilding is dense and the satire of fantasy tropes has teeth, which gestures toward the profile. But it's protagonist-forward in a way DCC is not: the book lives or dies on tolerating Quentin Coldwater, whose unhappiness is the engine.
+### Piranesi — Susanna Clarke · 6.5/10 *(Audible)*
 
-**The caveat:** This is exactly the 'protagonist-forward narrative that requires you to love the main character' risk flagged in the profile — Quentin is deliberately insufferable and many readers bounce off him hard. The wit is dry and melancholic rather than savage; the satire critiques fantasy from within rather than following weirdness to coherent extremes. Closer to a literary-fiction sensibility than the Dinniman/O'Malley register.
+The mystery structure is the strongest element — the slow reconstruction of what the House is and isn’t has real pull. But it’s a protagonist-forward narrative that requires you to inhabit Piranesi’s perspective, and his voice reads as condescending “native” innocence — an authorial conceit rather than an earned worldview. The House itself never resolved into something spatially coherent; unresolved strangeness rather than earned strangeness. The narrator’s earnestness compounded the character problem rather than softening it. Natural comp is Evelyn Hardcastle — same identity-reconstruction skeleton, less satisfying payoff. Might land half a point higher in print, where Piranesi’s voice is filtered through imagination rather than performance.
+
+### A Wizard’s Guide to Defensive Baking — T. Kingfisher · 6/10
+
+Charming but not transcendent. Voice is warm, cozy-with-darkness energy. Confirmed: this register isn’t quite the core of what works — the craft and satirical coherence of DCC is what’s actually being chased.
 
 -----
 
-### Red rising — Pierce brown *(rec from Gavin)*
+## 5 and below
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
+### The Boys in the Boat — Daniel James Brown · 5/10
 
-**Why it's here:** Brutal sci-fi with a stratified color-caste system and gladiatorial politics — surface-level overlap with DCC's escalating-stakes-in-a-rigged-game structure. Pierce Brown commits to his world's cruelty, which gives it some of the dark-teeth quality the profile values. But the register is operatic and earnest where DCC is satirical and self-aware, and the worldbuilding leans on heavy exposition rather than earned weirdness.
+Not terribly incisive. The story is inherently compelling but Brown doesn’t dig deep enough to elevate it beyond the surface narrative.
 
-**The caveat:** This is a protagonist-forward revenge arc where loving Darrow is most of the contract — exactly the mode the profile flags as risky. Tonal earnestness and YA-adjacent dramatics may read as sentimentality rather than real stakes; the satirical coherence that defines a 9/10 here isn't really what Brown is doing.
+### Soul Fraud · 4/10
 
------
-
-### Dark matter — Blake crouch *(rec from Gavin)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
-
-**Why it's here:** Crouch writes tight, propulsive thrillers with high-concept hooks — the multiverse premise here has the kind of structural cleanness that rewards economy. But the register is earnest sci-fi thriller, not the dark-wit satire of DCC, and the protagonist is very much the point rather than a vehicle. Closer to airport-paperback craft than authorial-control-as-felt-presence.
-
-**The caveat:** Crouch's prose is functional rather than distinctive, and the emotional stakes lean on loving the protagonist and his family — exactly the protagonist-forward mode flagged as a risk. The high concept may also over-explain itself as the plot mechanics demand exposition.
+Promised the Rook experience — bureaucratic magic institution, original world — without the craft to back it up. Finished but no interest in continuing. Confirmed: genre alone isn’t enough, execution has to be there.
 
 -----
 
-## Adding a New TBR Book (Checklist)
+## Did Not Finish
 
-When adding a new book, include:
+### Burnout (Jessie Black Legal Thrillers #1) — Larry A. Winters · DNF
 
-1. **Title & Author**
-2. **Rec source** (if applicable)
-3. **Kindle price** — search: `https://www.ereaderiq.com/search/?q=Title+Author` → set alert at $0.01 below current price
-4. **Predicted rating** (Claude's estimate based on profile)
-5. **Why it fits** (voice / tone / structure match to DCC/HWFWM profile)
-6. **The caveat** (honest risk factors)
+Courtroom procedural authenticity collapsed the suspension of disbelief. Domain accuracy matters when you have reference points — the legal mechanics were wrong enough to break the contract entirely.
+
+### Special Access (Duncan Hunter Thriller #1) — Mark A. Hewitt · DNF
+
+Overt political editorializing early — not a craft problem, just an author showing who they are. No interest in continuing.
+
+### Malazan Book of the Fallen — Steven Erikson · DNF
+
+The canonical cold-drop-in series: Erikson throws you into an established world mid-action with no orientation, on explicit philosophical principle. No discovery engine — you’re disoriented while the characters aren’t. The opposite of controlled disorientation. Even massive worldbuilding density can’t compensate for a broken access structure.
 
 -----
 
