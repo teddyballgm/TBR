@@ -4,6 +4,8 @@
 
 `tefleming.com` is a personal book tracking site backed by this GitHub repo (`teddyballgm/TBR`). It displays a reading queue (TBR) and a ratings log, both sourced from markdown files in the repo. Visitors can submit new books or ratings via a form, which opens a GitHub PR for manual triage.
 
+For operations — rotating the GitHub token, troubleshooting failures — see **`RUNBOOK.md`**.
+
 ---
 
 ## Architecture
@@ -24,7 +26,8 @@ api/submit.js     — Vercel serverless function for write operations
 tbr.md            — TBR queue data
 ratings.md        — ratings log data
 CONSTITUTION.md   — taste profile, rating scale, triage workflow
-DEVELOPMENT.md    — this file
+development.md    — this file
+RUNBOOK.md        — operations: secret rotation, troubleshooting
 CNAME             — legacy GitHub Pages artifact, can be ignored
 ```
 
@@ -122,6 +125,13 @@ Field notes:
 | Variable | Where | Purpose |
 |---|---|---|
 | `GH_PAT` | Vercel project settings | GitHub fine-grained PAT for `teddyballgm/TBR` with `contents: write` and `pull-requests: write` |
+| `GH_PAT` | GitHub Actions secrets | **Same token as above** — used by the enrichment workflow to push and comment |
+| `ANTHROPIC_API_KEY` | GitHub Actions secrets | Claude API key for submission enrichment |
+| `ALLOWED_ORIGIN` | Vercel *(optional)* | CORS origin for `/api/submit`; defaults to `https://tefleming.com` |
+| `ANTHROPIC_MODEL` | GitHub Actions *(optional)* | Enrichment model; defaults to `claude-opus-4-7` |
+| `ANTHROPIC_VERSION` | GitHub Actions *(optional)* | Anthropic API version header; defaults to `2023-06-01` |
+
+The `GH_PAT` is stored in **two** places (Vercel and GitHub Actions). Rotating it requires updating both — see `RUNBOOK.md`.
 
 ---
 

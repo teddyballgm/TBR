@@ -17,6 +17,11 @@ const {
   PR_HEAD_REF,
 } = process.env;
 
+// Model and API version are overridable via env so they can be bumped without
+// a code change. Defaults preserve the previous hardcoded behavior.
+const ANTHROPIC_MODEL   = process.env.ANTHROPIC_MODEL   || 'claude-opus-4-7';
+const ANTHROPIC_VERSION = process.env.ANTHROPIC_VERSION || '2023-06-01';
+
 // ── Utilities ─────────────────────────────────────────────────────────────────
 
 function run(cmd) {
@@ -97,9 +102,9 @@ Field rules:
 
   const res = await apiPost('api.anthropic.com', '/v1/messages', {
     'x-api-key': ANTHROPIC_API_KEY,
-    'anthropic-version': '2023-06-01',
+    'anthropic-version': ANTHROPIC_VERSION,
   }, {
-    model: 'claude-opus-4-7',
+    model: ANTHROPIC_MODEL,
     max_tokens: 1024,
     messages: [{ role: 'user', content: userPrompt }],
   });
@@ -111,10 +116,25 @@ Field rules:
   let text = res.body.content[0].text.trim();
   // Strip accidental markdown fences just in case
   text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
-  const parsed = JSON.parse(text);
+
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    throw new Error(`Claude did not return valid JSON. Raw response: ${text.slice(0, 500)}`);
+  }
+
+  // Validate the fields we depend on before rewriting tbr.md.
+  const nonEmpty = (v) => typeof v === 'string' && v.trim().length > 0;
+  if (!nonEmpty(parsed.why) || !nonEmpty(parsed.caveat)) {
+    throw new Error(`Claude response missing "why"/"caveat". Got: ${JSON.stringify(parsed)}`);
+  }
+  if (parsed.predicted_rating == null || parsed.predicted_rating === '') {
+    throw new Error(`Claude response missing "predicted_rating". Got: ${JSON.stringify(parsed)}`);
+  }
 
   // Clamp tier to valid range
-  parsed.tier = Math.min(3, Math.max(1, Number(parsed.tier)));
+  parsed.tier = Math.min(3, Math.max(1, Number(parsed.tier) || 2));
   return parsed;
 }
 
@@ -191,8 +211,6 @@ function enrichTBR(title, author, recSource, enriched) {
 // ── 4. Post PR comment ────────────────────────────────────────────────────────
 
 async function postComment(title, author, enriched) {
-  const [owner, repo] = GITHUB_REPOSITORY.split('/');
-
   const body = [
     `### Claude enrichment — *${title}* by ${author}`,
     '',
@@ -206,8 +224,15 @@ async function postComment(title, author, enriched) {
     `**The caveat:** ${enriched.caveat}`,
     '',
     `---`,
-    `*Enriched by \`claude-opus-4-7\` · stub moved to Tier ${enriched.tier} and committed to this branch · edit or merge as-is*`,
+    `*Enriched by \`${ANTHROPIC_MODEL}\` · stub moved to Tier ${enriched.tier} and committed to this branch · edit or merge as-is*`,
   ].join('\n');
+
+  await postIssueComment(body);
+}
+
+// Low-level PR/issue comment poster, shared by success and failure paths.
+async function postIssueComment(body) {
+  const [owner, repo] = GITHUB_REPOSITORY.split('/');
 
   const res = await apiPost(
     'api.github.com',
@@ -225,28 +250,62 @@ async function postComment(title, author, enriched) {
   }
 }
 
+// Best-effort failure notice so a broken enrichment is visible on the PR
+// instead of only as a red ✗ in the Actions tab that nobody is watching.
+async function postFailureComment(err) {
+  const body = [
+    `### ⚠️ Automatic enrichment failed`,
+    '',
+    `This submission could **not** be auto-enriched. It still needs manual triage before merge.`,
+    '',
+    '```',
+    String(err && err.message ? err.message : err).slice(0, 800),
+    '```',
+    '',
+    `See the [Actions run](https://github.com/${GITHUB_REPOSITORY}/actions) for full logs. Common cause: an expired \`GH_PAT\` or \`ANTHROPIC_API_KEY\` — see \`RUNBOOK.md\`.`,
+  ].join('\n');
+
+  try {
+    await postIssueComment(body);
+  } catch (commentErr) {
+    // If even the comment fails (e.g. the PAT is what's expired), don't mask
+    // the original error — just log and let the job fail below.
+    console.error('Could not post failure comment:', commentErr.message);
+  }
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-const { title, author, recSource } = parseStub();
-console.log(`Enriching: "${title}" by ${author}${recSource ? ` (rec: ${recSource})` : ''}`);
+async function main() {
+  const { title, author, recSource } = parseStub();
+  console.log(`Enriching: "${title}" by ${author}${recSource ? ` (rec: ${recSource})` : ''}`);
 
-const enriched = await callClaude(title, author, recSource);
-console.log('Claude response:', JSON.stringify(enriched, null, 2));
+  const enriched = await callClaude(title, author, recSource);
+  console.log('Claude response:', JSON.stringify(enriched, null, 2));
 
-enrichTBR(title, author, recSource, enriched);
+  enrichTBR(title, author, recSource, enriched);
 
-run('git config user.name "github-actions[bot]"');
-run('git config user.email "github-actions[bot]@users.noreply.github.com"');
-run('git add tbr.md');
-run(`git commit -m "Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)"`);
+  run('git config user.name "github-actions[bot]"');
+  run('git config user.email "github-actions[bot]@users.noreply.github.com"');
+  run('git add tbr.md');
+  run(`git commit -m "Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)"`);
 
-// Embed the PAT in the remote URL so git can authenticate without an
-// interactive terminal prompt. actions/checkout wires up credentials via an
-// HTTP extraheader on the checkout call, but that auth context doesn't
-// survive into child processes spawned later in the job.
-run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
-run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
-console.log('Enriched entry committed and pushed.');
+  // Embed the PAT in the remote URL so git can authenticate without an
+  // interactive terminal prompt. actions/checkout wires up credentials via an
+  // HTTP extraheader on the checkout call, but that auth context doesn't
+  // survive into child processes spawned later in the job.
+  run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
+  run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
+  console.log('Enriched entry committed and pushed.');
 
-await postComment(title, author, enriched);
-console.log('PR comment posted.');
+  await postComment(title, author, enriched);
+  console.log('PR comment posted.');
+}
+
+try {
+  await main();
+} catch (err) {
+  console.error('Enrichment failed:', err);
+  await postFailureComment(err);
+  process.exit(1);
+}

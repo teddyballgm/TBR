@@ -12,7 +12,11 @@ async function ghFetch(path, opts = {}) {
     },
   });
   const body = await res.json();
-  if (!res.ok) throw new Error(body.message || `GitHub API error ${res.status}`);
+  if (!res.ok) {
+    const err = new Error(body.message || `GitHub API error ${res.status}`);
+    err.status = res.status;
+    throw err;
+  }
   return body;
 }
 
@@ -32,6 +36,30 @@ function slugify(s) {
 
 function jsonPost(body) {
   return { method: 'POST', body: JSON.stringify(body) };
+}
+
+// Returns an error string if the submission is invalid, or null if it's fine.
+function validateSubmission(type, fields) {
+  const nonEmpty = (v) => typeof v === 'string' && v.trim().length > 0;
+
+  if (!nonEmpty(fields.title))  return 'A title is required.';
+  if (!nonEmpty(fields.author)) return 'An author is required.';
+
+  // slugify() strips everything but [a-z0-9]; all-symbol input yields an empty
+  // slug and a malformed branch name, so require at least one usable character.
+  if (!slugify(fields.title)) return 'Title must contain letters or numbers.';
+
+  if (type === 'rating') {
+    const score = parseFloat(fields.scoreStr);
+    if (!nonEmpty(fields.scoreStr) || Number.isNaN(score)) {
+      return 'A numeric score is required.';
+    }
+    if (score < 1 || score > 10 || Math.round(score * 2) !== score * 2) {
+      return 'Score must be between 1 and 10 in 0.5 increments.';
+    }
+  }
+
+  return null;
 }
 
 async function submitTBR({ title, author, recSource, submitterName }) {
@@ -237,8 +265,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // CORS — lock this down to your domain once DNS is sorted
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  // CORS — restricted to the site's own origin. Override via ALLOWED_ORIGIN.
+  res.setHeader('Access-Control-Allow-Origin', process.env.ALLOWED_ORIGIN || 'https://tefleming.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -249,18 +277,30 @@ export default async function handler(req, res) {
   try {
     const { type, ...fields } = req.body;
 
-    let prUrl;
-    if (type === 'tbr') {
-      prUrl = await submitTBR(fields);
-    } else if (type === 'rating') {
-      prUrl = await submitRating(fields);
-    } else {
+    if (type !== 'tbr' && type !== 'rating') {
       return res.status(400).json({ error: 'Invalid type' });
     }
+
+    const invalid = validateSubmission(type, fields);
+    if (invalid) {
+      return res.status(400).json({ error: invalid });
+    }
+
+    const prUrl = type === 'tbr'
+      ? await submitTBR(fields)
+      : await submitRating(fields);
 
     res.status(200).json({ prUrl });
   } catch (err) {
     console.error(err);
+    // A 401 from GitHub almost always means the GH_PAT has expired or been
+    // revoked. Surface that clearly instead of leaking the raw API message.
+    if (err.status === 401) {
+      console.error('GitHub returned 401 — GH_PAT is likely expired. See RUNBOOK.md.');
+      return res.status(502).json({
+        error: 'GitHub authentication failed — the access token is likely expired. Please try again later.',
+      });
+    }
     res.status(500).json({ error: err.message || 'Unexpected error' });
   }
 }
