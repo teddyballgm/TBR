@@ -32,9 +32,35 @@
 
 ## Tier 2 — Strong Recommendation
 
+### Mother of Learning — nobody103
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: *not yet tracked*
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Time-loop academia LitRPG — protagonist and reader unravel the loop's mechanics together in real time. Systems followed to genuinely logical extremes with tight authorial control over a self-imposed puzzle-box structure. The closest thing on this list to DCC's "systems as narrative engine" without being DCC-adjacent LitRPG filler.
+
+**The caveat:** Web-serial prose is functional, not stylish — go in for structure and plotting, not voice.
+
+-----
+
+### City of Stairs — Robert Jackson Bennett
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=City+of+Stairs+Robert+Jackson+Bennett) | Price: *not yet tracked*
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Espionage-inflected fantasy — an intelligence operative investigates a murder in a city where the gods used to be real and got killed. Strong discovery engine (outsider protagonist, suppressed history reader learns alongside her), dark wit, original theology-as-worldbuilding.
+
+**The caveat:** Book two shifts POV and loses some of book one's tightness — flag now so it's not a surprise later.
+
+-----
+
 ### The Lies of Locke Lamora — Scott Lynch
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $3.98*
+
+**Predicted rating:** 8/10
 
 **Why it's here:** Dense, lived-in worldbuilding that rewards attention. Genuinely funny banter. Found family with real stakes. No game mechanics — pure craft. The city of Camorr feels as fully realised as DCC's dungeon world.
 
@@ -45,6 +71,8 @@
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
 **Status:** Purchased
 
+**Predicted rating:** 8/10
+
 **Why it's here:** The spiritual ancestor of DCC. A predatory bureaucratic system followed to its absurd, terrifying logical conclusion — played completely straight. The satire has genuine teeth. If DCC's satirical coherence is the thing, this is the source.
 
 **The caveat:** Deliberately repetitive structure that rewards patience. Not a fast read.
@@ -52,6 +80,8 @@
 ### The Traitor Baru Cormorant — Seth Dickinson
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $2.99*
+
+**Predicted rating:** 8.5/10
 
 **Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
 
@@ -71,6 +101,18 @@
 
 ## Tier 3 — Worth Trying
 
+### Gideon the Ninth — Tamsyn Muir
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Gideon+the+Ninth+Tamsyn+Muir) | Price: *not yet tracked*
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Necromancer space-fantasy, protagonist-as-smart-mouthed-vehicle rather than hero, voice does a lot of the load-bearing work. Genuinely funny in a way that's rare in the genre.
+
+**The caveat:** Riskiest of the recent additions — structure gets deliberately disorienting in the back half. If that reads as authorial control it lands well; if it reads as sloppy it won't. Real 50/50 outcome, not a hedge.
+
+-----
+
 ### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
@@ -87,9 +129,11 @@
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
 
-**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — potentially in the DCC ballpark.
+**Predicted rating:** 8/10
 
-**The caveat:** Not yet assessed against your specific profile. Flagged as a rec to investigate.
+**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — the engineer-narrator solving problems by exhausting every option is a direct match for DCC's "systems followed to logical extremes."
+
+**The caveat:** Unreliable narrator structure — some readers find the framing device more clever than satisfying. Real risk is tonal: dry can tip into flat without DCC's satirical warmth underneath it.
 
 ---
 
@@ -121,9 +165,11 @@
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
 
+**Predicted rating:** 7/10
+
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
-**The caveat:** May skew too cozy — similar risk as Kingfisher. Worth trying if Left Hand of Darkness lands well.
+**The caveat:** May skew too cozy — similar risk as Kingfisher. Left Hand of Darkness already tested this exact profile (low-action, thematic) and underperformed at 7/10. Treat this as a lower-confidence Tier 2 pick, not a wait-and-see.
 
 -----
 
