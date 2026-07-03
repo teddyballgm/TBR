@@ -137,6 +137,42 @@
 
 -----
 
+### The Magicians — Lev Grossman *(rec from Ian)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
+
+**Predicted rating:** 6.5–7.5/10
+
+**Why it's here:** Deconstructive take on the magical-school genre with a literate, ironic register and real darkness underneath — Grossman has authorial control and a clear thesis about disillusionment and entitlement. The worldbuilding is dense and the satire of fantasy tropes has teeth, which gestures toward the profile. But it's protagonist-forward in a way DCC is not: the book lives or dies on tolerating Quentin Coldwater, whose unhappiness is the engine.
+
+**The caveat:** This is exactly the 'protagonist-forward narrative that requires you to love the main character' risk flagged in the profile — Quentin is deliberately insufferable and many readers bounce off him hard. The wit is dry and melancholic rather than savage; the satire critiques fantasy from within rather than following weirdness to coherent extremes. Closer to a literary-fiction sensibility than the Dinniman/O'Malley register.
+
+-----
+
+### Red Rising — Pierce Brown *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
+
+**Predicted rating:** 6.5–7.5/10
+
+**Why it's here:** Brutal sci-fi with a stratified color-caste system and gladiatorial politics — surface-level overlap with DCC's escalating-stakes-in-a-rigged-game structure. Pierce Brown commits to his world's cruelty, which gives it some of the dark-teeth quality the profile values. But the register is operatic and earnest where DCC is satirical and self-aware, and the worldbuilding leans on heavy exposition rather than earned weirdness.
+
+**The caveat:** This is a protagonist-forward revenge arc where loving Darrow is most of the contract — exactly the mode the profile flags as risky. Tonal earnestness and YA-adjacent dramatics may read as sentimentality rather than real stakes; the satirical coherence that defines a 9/10 here isn't really what Brown is doing.
+
+-----
+
+### Dark Matter — Blake Crouch *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
+
+**Predicted rating:** 6.5/10
+
+**Why it's here:** Crouch writes tight, propulsive thrillers with high-concept hooks — the multiverse premise here has the kind of structural cleanness that rewards economy. But the register is earnest sci-fi thriller, not the dark-wit satire of DCC, and the protagonist is very much the point rather than a vehicle. Closer to airport-paperback craft than authorial-control-as-felt-presence.
+
+**The caveat:** Crouch's prose is functional rather than distinctive, and the emotional stakes lean on loving the protagonist and his family — exactly the protagonist-forward mode flagged as a risk. The high concept may also over-explain itself as the plot mechanics demand exposition.
+
+-----
+
 ## Already Read / Removed from Queue
 
 - 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
@@ -148,36 +184,6 @@
 - The Checquy Files — Complete.
 - He Who Fights with Monsters — Complete (12 books).
 - Royal Gambit (The Rook Files Book 4) — Read. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
-
------
-
-### The magicians — Lev grossman *(rec from Ian)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
-
-**Why it's here:** Deconstructive take on the magical-school genre with a literate, ironic register and real darkness underneath — Grossman has authorial control and a clear thesis about disillusionment and entitlement. The worldbuilding is dense and the satire of fantasy tropes has teeth, which gestures toward the profile. But it's protagonist-forward in a way DCC is not: the book lives or dies on tolerating Quentin Coldwater, whose unhappiness is the engine.
-
-**The caveat:** This is exactly the 'protagonist-forward narrative that requires you to love the main character' risk flagged in the profile — Quentin is deliberately insufferable and many readers bounce off him hard. The wit is dry and melancholic rather than savage; the satire critiques fantasy from within rather than following weirdness to coherent extremes. Closer to a literary-fiction sensibility than the Dinniman/O'Malley register.
-
------
-
-### Red rising — Pierce brown *(rec from Gavin)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
-
-**Why it's here:** Brutal sci-fi with a stratified color-caste system and gladiatorial politics — surface-level overlap with DCC's escalating-stakes-in-a-rigged-game structure. Pierce Brown commits to his world's cruelty, which gives it some of the dark-teeth quality the profile values. But the register is operatic and earnest where DCC is satirical and self-aware, and the worldbuilding leans on heavy exposition rather than earned weirdness.
-
-**The caveat:** This is a protagonist-forward revenge arc where loving Darrow is most of the contract — exactly the mode the profile flags as risky. Tonal earnestness and YA-adjacent dramatics may read as sentimentality rather than real stakes; the satirical coherence that defines a 9/10 here isn't really what Brown is doing.
-
------
-
-### Dark matter — Blake crouch *(rec from Gavin)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
-
-**Why it's here:** Crouch writes tight, propulsive thrillers with high-concept hooks — the multiverse premise here has the kind of structural cleanness that rewards economy. But the register is earnest sci-fi thriller, not the dark-wit satire of DCC, and the protagonist is very much the point rather than a vehicle. Closer to airport-paperback craft than authorial-control-as-felt-presence.
-
-**The caveat:** Crouch's prose is functional rather than distinctive, and the emotional stakes lean on loving the protagonist and his family — exactly the protagonist-forward mode flagged as a risk. The high concept may also over-explain itself as the plot mechanics demand exposition.
 
 -----
 
