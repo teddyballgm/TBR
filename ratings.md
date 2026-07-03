@@ -56,9 +56,9 @@ Half a point behind PHM — same problem-solving energy, slightly less ambitious
 
 Been a few years — but enjoyed reading the books after the first season of the show. Having the visuals from the show made it more immersive.
 
-### Expeditionary Force — Craig Alanson · Books 1–3: 8.5/10 | Series overall: 6.5/10
+### Expeditionary Force — Craig Alanson · 8.5/10
 
-First three books are fantastic — voice, pacing, and the Skippy dynamic all firing on all cylinders. Once caught up and returning for Ground State onward: formulaic, clearly unplanned — new big baddie each arc with no sense of a destination. Classic case of a series outlasting its premise.
+First three books are fantastic — voice, pacing, and the Skippy dynamic all firing on all cylinders. Once caught up and returning for Ground State onward: formulaic, clearly unplanned — new big baddie each arc with no sense of a destination. Classic case of a series outlasting its premise. (Series overall closer to 6.5/10.)
 
 ### Dune — Frank Herbert · 7.5/10 *(read in high school)*
 
@@ -68,9 +68,9 @@ Memory rating. The worldbuilding and ambition are undeniable but the chosen-one 
 
 Tolerated Jason rather than loved him — which was enough to get through 12 books, which says something. The engine was world curiosity: Pallimustus, the progression system, whether Jason gets back to Earth. Jason was the vehicle, not the point. The emotional high points — Neil and Cassandra, Clive and Belinda — worked because Shirtaloon resisted the obvious move and let those conversations be calmer than fiction usually allows. That authorial restraint is what made the peaks genuinely land. Unevenly distributed — probably 4 books worth of 9/10 material across 12. The 7 reflects structural bloat more than a craft ceiling.
 
-### Slough House (Slough House Series) — Mick Herron · Early books: 8/10 | Series overall: 7–7.5/10
+### Slough House (Slough House Series) — Mick Herron · 8/10
 
-Herron fights formula better than almost anyone in the genre — kills major characters unexpectedly, refuses clean wins, treats bureaucratic humiliation as a real stakes system. The wit is sharper than genre average and has some of the same internal-logic-to-extremes quality as DCC, just in a grittier register. Degrades as the series extends but never collapses; the formula resistance holds longer than most.
+Herron fights formula better than almost anyone in the genre — kills major characters unexpectedly, refuses clean wins, treats bureaucratic humiliation as a real stakes system. The wit is sharper than genre average and has some of the same internal-logic-to-extremes quality as DCC, just in a grittier register. Degrades as the series extends but never collapses; the formula resistance holds longer than most. (Series overall ~7–7.5/10.)
 
 ### Mitch Rapp Series — Vince Flynn · 7/10
 
