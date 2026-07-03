@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8
 
 
+### Left hand of darkness — Ursula leguin · 7/10 *(Audible)*
+
+Slow pacing - themes didn’t land.
+
 ### 1% lifesteal — Robert Blaise · 7/10 *(Whispersync (mostly audible))*
 
 Would have liked more if I’d read before HWFWM. More complicate magic system - kinda jarring cuts as the story progresses
