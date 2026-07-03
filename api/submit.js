@@ -115,54 +115,6 @@ async function submitTBR({ title, author, recSource, submitterName }) {
   return pr.html_url;
 }
 
-function removeFromTBR(tbrContent, title, author) {
-  const normalTitle  = title.toLowerCase().trim();
-  const normalAuthor = author.toLowerCase().trim();
-
-  const lines = tbrContent.split('\n');
-  let startIdx = -1;
-
-  for (let i = 0; i < lines.length; i++) {
-    if (!lines[i].startsWith('### ')) continue;
-    const header = lines[i].slice(4);
-    const clean  = header.replace(/\s*\*\(rec from [^)]+\)\*/, '').trim();
-    const dash   = clean.indexOf(' — ');
-    if (dash === -1) continue;
-    const lineTitle  = clean.slice(0, dash).trim().toLowerCase();
-    const lineAuthor = clean.slice(dash + 3).trim().toLowerCase();
-    if (lineTitle === normalTitle && lineAuthor === normalAuthor) {
-      startIdx = i;
-      break;
-    }
-  }
-
-  if (startIdx === -1) return { content: tbrContent, found: false };
-
-  let endIdx = lines.length;
-  for (let j = startIdx + 1; j < lines.length; j++) {
-    if (lines[j].startsWith('### ') || lines[j].startsWith('## ') || /^-{3,}/.test(lines[j])) {
-      endIdx = j;
-      break;
-    }
-  }
-
-  const newLines = [...lines.slice(0, startIdx), ...lines.slice(endIdx)];
-  return { content: newLines.join('\n'), found: true };
-}
-
-function addToAlreadyRead(tbrContent, title, author, scoreStr, format) {
-  const formatNote = format ? ` (${format})` : '';
-  const entry = `- ${title} — ${author}. Read${formatNote}. ${scoreStr}/10.`;
-
-  const match = /^## Already Read/m.exec(tbrContent);
-  if (!match) return tbrContent;
-
-  let insertAt = tbrContent.indexOf('\n', match.index) + 1;
-  while (insertAt < tbrContent.length && tbrContent[insertAt] === '\n') insertAt++;
-
-  return tbrContent.slice(0, insertAt) + entry + '\n' + tbrContent.slice(insertAt);
-}
-
 async function submitRating({ title, author, series, scoreStr, format, notes }) {
   const mainRef = await ghFetch(`/repos/${REPO}/git/ref/heads/main`);
   const mainSha = mainRef.object.sha;
@@ -171,10 +123,7 @@ async function submitRating({ title, author, series, scoreStr, format, notes }) 
   const branch = `rating/${slugify(displayTitle)}-${Date.now()}`;
   await ghFetch(`/repos/${REPO}/git/refs`, jsonPost({ ref: `refs/heads/${branch}`, sha: mainSha }));
 
-  const [ratingsFile, tbrFile] = await Promise.all([
-    getFileContent('ratings.md'),
-    getFileContent('tbr.md'),
-  ]);
+  const ratingsFile = await getFileContent('ratings.md');
 
   const formatNote = format ? ` *(${format})*` : '';
   const notesLine  = notes ? '\n' + notes : '';
@@ -198,23 +147,12 @@ async function submitRating({ title, author, series, scoreStr, format, notes }) 
     }),
   });
 
-  const { content: tbrWithRemoval, found } = removeFromTBR(tbrFile.content, title, author);
-  if (found) {
-    const newTbrContent = addToAlreadyRead(tbrWithRemoval, title, author, scoreStr, format);
-    await ghFetch(`/repos/${REPO}/contents/tbr.md`, {
-      method: 'PUT',
-      body: JSON.stringify({
-        message: `Move ${title} to already-read`,
-        content: b64Encode(newTbrContent),
-        sha: tbrFile.sha,
-        branch,
-      }),
-    });
-  }
-
+  // Reconciling the TBR queue (removing the book if it was queued, logging it
+  // under "Already Read") is handled by the enrichment Action on PR open, which
+  // matches on the underlying work rather than an exact title/author string.
   const pr = await ghFetch(`/repos/${REPO}/pulls`, jsonPost({
     title: `Rating: ${displayTitle} — ${author} · ${scoreStr}/10`,
-    body: 'Submitted via tefleming.com',
+    body: 'Submitted via tefleming.com — queue reconciliation runs automatically on open.',
     head: branch,
     base: 'main',
   }));

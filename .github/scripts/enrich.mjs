@@ -1,8 +1,18 @@
 #!/usr/bin/env node
 /**
- * Called by the enrich-submission workflow.
- * Reads the TBR stub from the PR diff, asks Claude to enrich it,
- * rewrites tbr.md on the PR branch, and posts a summary comment.
+ * Called by the enrich-submission workflow. Handles two kinds of submission,
+ * dispatched on the PR branch name:
+ *
+ *   submit/*  — a new TBR book. Reads the stub from the PR diff, asks Claude
+ *               to fill in tier / why / caveat, rewrites tbr.md, comments.
+ *
+ *   rating/*  — a new rating. Reads the rating from the ratings.md diff, asks
+ *               Claude to *examine the live queue* and identify whether the
+ *               rated book is still sitting in it (matching on the work, not
+ *               exact strings — author-name variants, series suffixes, etc.).
+ *               If so, it moves that entry into "Already Read / Removed from
+ *               Queue" with the real score, rewrites tbr.md, and comments.
+ *               Otherwise it leaves tbr.md untouched and says so.
  */
 
 import https from 'https';
@@ -208,6 +218,171 @@ function enrichTBR(title, author, recSource, enriched) {
   fs.writeFileSync('tbr.md', result, 'utf8');
 }
 
+// ── Rating path: parse, examine queue, reconcile ─────────────────────────────
+
+// Pull the rating that api/submit.js just added to ratings.md out of the diff.
+function parseRatingStub() {
+  const diff = run('git diff origin/main...HEAD -- ratings.md');
+  const added = diff.split('\n')
+    .filter(l => l.startsWith('+') && !l.startsWith('+++'))
+    .map(l => l.slice(1))
+    .join('\n');
+
+  // Matches: ### Title — Author · 8.5/10 *(Format)*   (score may be a range like 8-9)
+  const m = added.match(
+    /^### (.+?) — (.+?) · ([\d.]+(?:-[\d.]+)?)\/10(?:\s+\*\(([^)]+)\)\*)?\s*$/m,
+  );
+  if (!m) throw new Error('Could not find rating ### heading in ratings.md diff');
+
+  // Notes are whatever the submitter added after the heading line.
+  const afterHeading = added.slice(added.indexOf(m[0]) + m[0].length).trim();
+
+  return {
+    displayTitle: m[1].trim(),
+    author:       m[2].trim(),
+    scoreStr:     m[3].trim(),
+    format:       m[4]?.trim() ?? null,
+    notes:        afterHeading || null,
+  };
+}
+
+// Ask Claude to examine the live queue and tell us which entry (if any) the
+// just-rated book corresponds to. Claude does the fuzzy matching; the actual
+// file surgery stays deterministic in code below.
+async function callClaudeForReconcile(rating, tbrContent) {
+  const { displayTitle, author, scoreStr, format, notes } = rating;
+
+  const userPrompt = `A book was just rated on a personal reading site. Your job is to reconcile the reading queue: figure out whether the rated book is still sitting in the live "to be read" queue, so a stale entry can be moved out of it.
+
+The rating that was just logged:
+Title: ${displayTitle}
+Author: ${author}
+Score: ${scoreStr}/10${format ? `\nFormat: ${format}` : ''}${notes ? `\nNotes: ${notes}` : ''}
+
+Here is the current queue file (tbr.md):
+
+<tbr>
+${tbrContent}
+</tbr>
+
+The LIVE queue is only the book entries under the "## Tier 1", "## Tier 2", and "## Tier 3" headings. Anything under "## Already Read / Removed from Queue" is already done, and "## Adding a New TBR Book (Checklist)" is not a book. Do not match against those.
+
+Match on the underlying work, not exact string equality: allow for author-name variants (e.g. "Ursula Le Guin" vs "Ursula K. Le Guin"), series or subtitle differences, and punctuation/casing. A rating titled "X (Some Series)" still matches a live entry titled "X".
+
+Respond with ONLY a JSON object (no markdown fences, no surrounding text).
+
+If the rated book IS a live queue entry:
+{"in_queue": true, "match_title": "<title copied verbatim from that ### heading>", "match_author": "<author copied verbatim from that ### heading>", "note": "<optional: one short clause, <=15 words, on how it landed vs. its queue prediction — or empty string>"}
+
+If it is NOT a live queue entry:
+{"in_queue": false}
+
+Rules:
+- match_title and match_author must be copied exactly from the matching "### Title — Author" heading, excluding any "*(rec from ...)*" suffix.
+- Only set in_queue to true if you are confident it is the same work.`;
+
+  const res = await apiPost('api.anthropic.com', '/v1/messages', {
+    'x-api-key': ANTHROPIC_API_KEY,
+    'anthropic-version': ANTHROPIC_VERSION,
+  }, {
+    model: ANTHROPIC_MODEL,
+    max_tokens: 1024,
+    messages: [{ role: 'user', content: userPrompt }],
+  });
+
+  if (res.status !== 200) {
+    throw new Error(`Anthropic API ${res.status}: ${JSON.stringify(res.body)}`);
+  }
+
+  let text = res.body.content[0].text.trim();
+  text = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();
+
+  let parsed;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    throw new Error(`Claude did not return valid JSON. Raw response: ${text.slice(0, 500)}`);
+  }
+
+  if (parsed.in_queue) {
+    const nonEmpty = (v) => typeof v === 'string' && v.trim().length > 0;
+    if (!nonEmpty(parsed.match_title) || !nonEmpty(parsed.match_author)) {
+      throw new Error(`Claude flagged an in-queue match but omitted match_title/match_author. Got: ${JSON.stringify(parsed)}`);
+    }
+  }
+  return parsed;
+}
+
+// Remove a live queue entry by its exact heading title/author. Mirrors the
+// matcher api/submit.js used to use, but also consumes the trailing "-----"
+// separator so we don't leave a doubled divider behind.
+function removeFromTBR(tbrContent, title, author) {
+  const normalTitle  = title.toLowerCase().trim();
+  const normalAuthor = author.toLowerCase().trim();
+
+  const lines = tbrContent.split('\n');
+  let startIdx = -1;
+
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i].startsWith('### ')) continue;
+    const header = lines[i].slice(4);
+    const clean  = header.replace(/\s*\*\(rec from [^)]+\)\*/, '').trim();
+    const dash   = clean.indexOf(' — ');
+    if (dash === -1) continue;
+    const lineTitle  = clean.slice(0, dash).trim().toLowerCase();
+    const lineAuthor = clean.slice(dash + 3).trim().toLowerCase();
+    if (lineTitle === normalTitle && lineAuthor === normalAuthor) {
+      startIdx = i;
+      break;
+    }
+  }
+
+  if (startIdx === -1) return { content: tbrContent, found: false };
+
+  let endIdx = lines.length;
+  for (let j = startIdx + 1; j < lines.length; j++) {
+    if (lines[j].startsWith('### ') || lines[j].startsWith('## ') || /^-{3,}/.test(lines[j])) {
+      endIdx = j;
+      break;
+    }
+  }
+
+  // Some entries (Tier 3, the loose entries after "Already Read") are fenced by
+  // a "-----" separator on *both* sides. Removing one would leave two adjacent
+  // separators, so in that case consume the trailing one too. But when the
+  // entry is the last in its section, that trailing separator is the divider
+  // between sections (e.g. Tier 1 → Tier 2) and must be kept — detected by the
+  // absence of a leading separator.
+  const hasLeadingSep = (() => {
+    let k = startIdx - 1;
+    while (k >= 0 && lines[k].trim() === '') k--;
+    return k >= 0 && /^-{3,}/.test(lines[k]);
+  })();
+  if (hasLeadingSep && endIdx < lines.length && /^-{3,}/.test(lines[endIdx])) {
+    endIdx++;
+    while (endIdx < lines.length && lines[endIdx].trim() === '') endIdx++;
+  }
+
+  const newLines = [...lines.slice(0, startIdx), ...lines.slice(endIdx)];
+  return { content: newLines.join('\n'), found: true };
+}
+
+// Add a "- Title — Author. Read (Format). X/10. note" line to the top of the
+// "Already Read / Removed from Queue" list, matching the existing format.
+function addToAlreadyRead(tbrContent, title, author, scoreStr, format, note) {
+  const formatNote = format ? ` (${format})` : '';
+  const extra      = note && note.trim() ? ` ${note.trim()}` : '';
+  const entry = `- ${title} — ${author}. Read${formatNote}. ${scoreStr}/10.${extra}`;
+
+  const match = /^## Already Read/m.exec(tbrContent);
+  if (!match) return tbrContent;
+
+  let insertAt = tbrContent.indexOf('\n', match.index) + 1;
+  while (insertAt < tbrContent.length && tbrContent[insertAt] === '\n') insertAt++;
+
+  return tbrContent.slice(0, insertAt) + entry + '\n' + tbrContent.slice(insertAt);
+}
+
 // ── 4. Post PR comment ────────────────────────────────────────────────────────
 
 async function postComment(title, author, enriched) {
@@ -226,6 +401,36 @@ async function postComment(title, author, enriched) {
     `---`,
     `*Enriched by \`${ANTHROPIC_MODEL}\` · stub moved to Tier ${enriched.tier} and committed to this branch · edit or merge as-is*`,
   ].join('\n');
+
+  await postIssueComment(body);
+}
+
+// Comment summarizing what the rating enrichment did to the queue.
+async function postReconcileComment(rating, result) {
+  const { displayTitle, author, scoreStr } = rating;
+  const header = `### Claude enrichment — *${displayTitle}* by ${author} · ${scoreStr}/10`;
+
+  const body = result.changed
+    ? [
+        header,
+        '',
+        `Matched **${result.matchTitle} — ${result.matchAuthor}** in the live queue and moved it into *Already Read / Removed from Queue*:`,
+        '',
+        `> ${result.entryLine}`,
+        '',
+        `The stale queue entry has been removed; the rating itself stays in \`ratings.md\`.`,
+        '',
+        `---`,
+        `*Reconciled by \`${ANTHROPIC_MODEL}\` · tbr.md updated on this branch · edit or merge as-is*`,
+      ].join('\n')
+    : [
+        header,
+        '',
+        `This book isn't a live entry in the TBR queue, so no queue reconciliation was needed — only \`ratings.md\` changed.`,
+        '',
+        `---`,
+        `*Checked by \`${ANTHROPIC_MODEL}\` · tbr.md left untouched*`,
+      ].join('\n');
 
   await postIssueComment(body);
 }
@@ -276,7 +481,20 @@ async function postFailureComment(err) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-async function main() {
+// Commit the given file and push it back to the PR branch. Embeds the PAT in
+// the remote URL so git can authenticate without an interactive prompt — the
+// checkout's HTTP extraheader auth doesn't survive into this child process.
+function commitAndPush(path, message) {
+  run('git config user.name "github-actions[bot]"');
+  run('git config user.email "github-actions[bot]@users.noreply.github.com"');
+  run(`git add ${path}`);
+  run(`git commit -m ${JSON.stringify(message)}`);
+  run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
+  run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
+}
+
+// submit/* — new TBR book: fill in tier / why / caveat.
+async function enrichSubmission() {
   const { title, author, recSource } = parseStub();
   console.log(`Enriching: "${title}" by ${author}${recSource ? ` (rec: ${recSource})` : ''}`);
 
@@ -284,22 +502,60 @@ async function main() {
   console.log('Claude response:', JSON.stringify(enriched, null, 2));
 
   enrichTBR(title, author, recSource, enriched);
-
-  run('git config user.name "github-actions[bot]"');
-  run('git config user.email "github-actions[bot]@users.noreply.github.com"');
-  run('git add tbr.md');
-  run(`git commit -m "Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)"`);
-
-  // Embed the PAT in the remote URL so git can authenticate without an
-  // interactive terminal prompt. actions/checkout wires up credentials via an
-  // HTTP extraheader on the checkout call, but that auth context doesn't
-  // survive into child processes spawned later in the job.
-  run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
-  run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
+  commitAndPush('tbr.md', `Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)`);
   console.log('Enriched entry committed and pushed.');
 
   await postComment(title, author, enriched);
   console.log('PR comment posted.');
+}
+
+// rating/* — new rating: examine the queue and reconcile it against the read.
+async function reconcileRating() {
+  const rating = parseRatingStub();
+  console.log(`Reconciling rating: "${rating.displayTitle}" by ${rating.author} · ${rating.scoreStr}/10`);
+
+  const tbrContent = fs.readFileSync('tbr.md', 'utf8');
+  const claude = await callClaudeForReconcile(rating, tbrContent);
+  console.log('Claude response:', JSON.stringify(claude, null, 2));
+
+  if (!claude.in_queue) {
+    console.log('Rated book is not a live queue entry — leaving tbr.md untouched.');
+    await postReconcileComment(rating, { changed: false });
+    console.log('PR comment posted.');
+    return;
+  }
+
+  const { content: removed, found } = removeFromTBR(tbrContent, claude.match_title, claude.match_author);
+  if (!found) {
+    // Claude claimed a match but the heading didn't resolve — don't guess.
+    throw new Error(`Claude reported an in-queue match for "${claude.match_title} — ${claude.match_author}" but no matching ### heading was found in tbr.md.`);
+  }
+
+  const updated = addToAlreadyRead(removed, claude.match_title, claude.match_author, rating.scoreStr, rating.format, claude.note);
+  fs.writeFileSync('tbr.md', updated, 'utf8');
+
+  const formatNote = rating.format ? ` (${rating.format})` : '';
+  const extra      = claude.note && claude.note.trim() ? ` ${claude.note.trim()}` : '';
+  const entryLine  = `- ${claude.match_title} — ${claude.match_author}. Read${formatNote}. ${rating.scoreStr}/10.${extra}`;
+
+  commitAndPush('tbr.md', `Reconcile queue: move ${claude.match_title} — ${claude.match_author} to already-read (${rating.scoreStr}/10)`);
+  console.log('Queue reconciliation committed and pushed.');
+
+  await postReconcileComment(rating, {
+    changed:     true,
+    matchTitle:  claude.match_title,
+    matchAuthor: claude.match_author,
+    entryLine,
+  });
+  console.log('PR comment posted.');
+}
+
+async function main() {
+  if (PR_HEAD_REF.startsWith('rating/')) {
+    await reconcileRating();
+  } else {
+    await enrichSubmission();
+  }
 }
 
 try {
