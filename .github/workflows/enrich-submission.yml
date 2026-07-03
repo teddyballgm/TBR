@@ -1,4 +1,4 @@
-name: Enrich TBR Submission
+name: Enrich Submission
 
 on:
   pull_request:
@@ -12,7 +12,9 @@ jobs:
   enrich:
     # github.event.pull_request.head.ref is the source branch name from the
     # webhook payload — more reliable than github.head_ref in all runner versions.
-    if: ${{ startsWith(github.event.pull_request.head.ref, 'submit/') }}
+    # `submit/` = a new TBR book (fill in triage fields); `rating/` = a new
+    # rating (examine the queue and reconcile it against what was just read).
+    if: ${{ startsWith(github.event.pull_request.head.ref, 'submit/') || startsWith(github.event.pull_request.head.ref, 'rating/') }}
     runs-on: ubuntu-latest
 
     steps:
