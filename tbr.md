@@ -8,16 +8,6 @@
 
 ## Tier 1 — Highest Confidence
 
-### The Left Hand of Darkness — Ursula Le Guin
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Left+Hand+of+Darkness+Le+Guin) | Price: $6.99 🔔 *alert set @ $6.98*
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Genly Ai is a deliberately imperfect lens — the world and its ideas are the real subject, not the protagonist. Le Guin has complete authorial control. The ending hits with the same quiet punch as Emperor's Soul. One of the few books where the anthropological worldbuilding is as inventive as DCC's satirical worldbuilding, just in a different register.
-
-**The bet:** High ceiling, possibly a 10. Slower pace may be a variable.
-
 ### The Road — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
@@ -175,6 +165,7 @@
 
 ## Already Read / Removed from Queue
 
+- The Left Hand of Darkness — Ursula Le Guin. Read (Audible). 7/10. Underperformed its 8.5 prediction — slow pace, themes didn't land.
 - 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
 - Starter Villain — John Scalzi. Read (Audible — Wil Wheaton). 8/10.
