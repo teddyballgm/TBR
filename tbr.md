@@ -36,6 +36,8 @@
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $3.98*
 
+**Predicted rating:** 8/10
+
 **Why it's here:** Dense, lived-in worldbuilding that rewards attention. Genuinely funny banter. Found family with real stakes. No game mechanics — pure craft. The city of Camorr feels as fully realised as DCC's dungeon world.
 
 **The caveat:** Lynch wants you charmed by Locke specifically, which is slightly riskier given the preference for protagonist-as-vehicle. Worth trying; high upside if Locke clicks.
@@ -45,6 +47,8 @@
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
 **Status:** Purchased
 
+**Predicted rating:** 8/10
+
 **Why it's here:** The spiritual ancestor of DCC. A predatory bureaucratic system followed to its absurd, terrifying logical conclusion — played completely straight. The satire has genuine teeth. If DCC's satirical coherence is the thing, this is the source.
 
 **The caveat:** Deliberately repetitive structure that rewards patience. Not a fast read.
@@ -52,6 +56,8 @@
 ### The Traitor Baru Cormorant — Seth Dickinson
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $2.99*
+
+**Predicted rating:** 8.5/10
 
 **Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
 
@@ -87,9 +93,11 @@
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
 
-**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — potentially in the DCC ballpark.
+**Predicted rating:** 8/10
 
-**The caveat:** Not yet assessed against your specific profile. Flagged as a rec to investigate.
+**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — the engineer-narrator solving problems by exhausting every option is a direct match for DCC's "systems followed to logical extremes."
+
+**The caveat:** Unreliable narrator structure — some readers find the framing device more clever than satisfying. Real risk is tonal: dry can tip into flat without DCC's satirical warmth underneath it.
 
 ---
 
@@ -120,6 +128,8 @@
 ### The Goblin Emperor — Katherine Addison
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
+
+**Predicted rating:** 7/10
 
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
