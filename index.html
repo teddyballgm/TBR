@@ -750,15 +750,35 @@
     const lines  = text.split('\n');
     const header = lines[0].trim();
 
-    const fmtMatch   = header.match(/\*\(([^)]+)\)\*/);
+    // The format note (e.g. *(Kindle)*) is the last thing on the header line.
+    // Anchor to the end and allow nested parens — e.g. *(Whispersync (mostly
+    // audible))* — which a [^)]+ inner class would fail to strip, leaving
+    // trailing text that breaks the score match below.
+    const fmtMatch   = header.match(/\*\((.+)\)\*\s*$/);
     const formatNote = fmtMatch ? fmtMatch[1] : null;
-    const clean = header.replace(/\s*\*\([^)]+\)\*/, '').trim();
+    const clean = header.replace(/\s*\*\(.+\)\*\s*$/, '').trim();
 
     const m = clean.match(/^(.+?)\s+·\s+([\d.]+(?:-[\d.]+)?)\/10$/);
-    if (!m) return null;
 
-    const titleAuthor = m[1].trim();
-    const scoreStr    = m[2];
+    let titleAuthor, scoreStr, score;
+    if (m) {
+      titleAuthor = m[1].trim();
+      scoreStr    = m[2];
+      score = scoreStr.includes('-')
+        ? (parseFloat(scoreStr) + parseFloat(scoreStr.split('-')[1])) / 2
+        : parseFloat(scoreStr);
+    } else if (isDNF) {
+      // DNF entries may carry no numeric score — "Title — Author · DNF". The
+      // renderer already handles a scoreless DNF (shows a "DNF" badge); it just
+      // never received one because the score pattern above didn't match.
+      const d = clean.match(/^(.+?)\s+·/);
+      if (!d) return null;
+      titleAuthor = d[1].trim();
+      scoreStr    = null;
+      score       = -1; // sorts to the bottom within the DNF group
+    } else {
+      return null;
+    }
 
     let title, author;
     const dash = titleAuthor.indexOf(' — ');
@@ -769,10 +789,6 @@
       title  = titleAuthor;
       author = '';
     }
-
-    const score = scoreStr.includes('-')
-      ? (parseFloat(scoreStr) + parseFloat(scoreStr.split('-')[1])) / 2
-      : parseFloat(scoreStr);
 
     const notes = lines.slice(1)
       .filter(l => l.trim() && !/^-{3,}$/.test(l.trim()))
