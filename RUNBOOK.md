@@ -10,8 +10,8 @@ For architecture and data schemas, see `development.md`.
 | Secret | Where it lives | Used by | Purpose |
 |---|---|---|---|
 | `GH_PAT` | **Vercel** → Project Settings → Environment Variables | `api/submit.js` | Authenticated GitHub writes (create branch, commit stub, open PR) |
-| `GH_PAT` | **GitHub** → repo Settings → Secrets and variables → Actions | `.github/workflows/enrich-submission.yml` → `enrich.mjs` | Push the enriched commit to the PR branch and post the PR comment |
-| `ANTHROPIC_API_KEY` | **GitHub** → Actions secrets | `enrich.mjs` | Call Claude to generate the "Why it's here" / "The caveat" fields |
+| `GH_PAT` | **GitHub** → repo Settings → Secrets and variables → Actions | `.github/workflows/enrich-submission.yml` → `enrich.mjs` | Push the enriched / reconciled commit to the PR branch and post the PR comment |
+| `ANTHROPIC_API_KEY` | **GitHub** → Actions secrets | `enrich.mjs` | Call Claude to enrich book submissions ("Why it's here" / "The caveat") and reconcile the queue on rating submissions |
 
 > **Important:** the **same `GH_PAT` is stored in two independent places** (Vercel *and* GitHub Actions). Rotating it means updating **both** — miss one and half the system stays broken.
 
@@ -87,7 +87,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 ## Verification checklist (after any secret rotation)
 
 1. **Submit form:** on `tefleming.com`, submit a throwaway test book. You should get a PR link back (not an auth error).
-2. **Enrichment:** the submission PR's Action should go green and post a **"Claude enrichment"** comment within a minute.
+2. **Enrichment:** the submission PR's Action should go green and post a **"Claude enrichment"** comment within a minute. (For a rating submission, the comment reports whether the queue was reconciled or left untouched.)
 3. **Merge & deploy:** merge the PR; within ~10s Vercel redeploys `main` and the book appears on the site.
 4. **Clean up:** delete the test PR/branch and remove the test entry if merged.
 

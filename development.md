@@ -49,7 +49,10 @@ Form submissions POST to `/api/submit` (the Vercel serverless function). The fun
 Browser form → POST /api/submit → Vercel function → GitHub API (authenticated) → PR opened
 ```
 
-PRs are reviewed and merged manually. The enrichment GitHub Action fires on PR open to fill in predicted ratings and triage fields.
+PRs are reviewed and merged manually. The enrichment GitHub Action fires on PR open:
+
+- **Book submissions** (`submit/*` branches) — Claude fills in predicted rating, tier, "Why it's here," and "The caveat."
+- **Rating submissions** (`rating/*` branches) — Claude examines the live TBR queue and, if the just-rated book is still sitting in it, moves that entry into "Already Read / Removed from Queue" with the real score. Matching is on the underlying work (author-name variants, series suffixes, punctuation), not an exact title/author string — so `api/submit.js` no longer touches `tbr.md` for ratings; the Action owns queue reconciliation.
 
 **Never put the PAT in `index.html` or any client-side code.**
 
