@@ -209,6 +209,188 @@
 
 -----
 
+## John Scalzi Collection — Humble Bundle (Old Man's War & More by Tor Books, June 2026)
+
+*All titles below are **Owned (Humble Bundle EPUB, June 2026)** — EPUB via Humble Bundle / Kindle. No price tracking needed. Tiers and predicted ratings supplied at acquisition; kept as a cohesive block rather than interleaved into the confidence-ranked list above, since they arrived as one batch. Series entry points flagged per the series-entry-point rule.*
+
+*Note: **Starter Villain** was in this bundle but is already read and rated **8/10** — see "Already Read / Removed from Queue" and ratings.md. Not re-added as a queue entry to avoid a duplicate.*
+
+### Scalzi Tier 1 — Highest Confidence (predicted 7.5–8)
+
+#### The Collapsing Empire — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7.5–8/10
+
+**Why it's here:** The collapsing FTL trade network — the Flow — is the central system: a galaxy-spanning interdependency engineered (accidentally) to fail, followed through its political and economic consequences. Multi-POV discovery structure with court intrigue; the reader unravels the mechanics alongside the characters. The strongest systems-driven / discovery-engine fit in the bundle.
+
+**The caveat:** **Series entry point — start here.** Book 1 of the Interdependency trilogy (→ The Consuming Fire → The Last Emperox). Scalzi's snark runs lighter than the DCC register; the systems, not the voice, carry it.
+
+#### Lock In — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7.5–8/10
+
+**Why it's here:** Near-future tech-and-disability systems taken to a logical extreme — a "locked in" population navigating the world through robotic "threeps" and a shared neural network — wrapped around a procedural murder investigation. The worldbuilding does thematic and plot work simultaneously, which is the profile's sweet spot.
+
+**The caveat:** **Series entry point — read this first.** Book 1 of the Haden/Lock In series (→ Head On; prequel novella Unlocked). Risk is the mystery resolving more conventionally than the premise promises.
+
+#### The Android's Dream — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7.5–8/10
+
+**Why it's here:** Satirical SF with a dark comedic voice — an interstellar diplomatic crisis hinging on a specific breed of sheep. Standalone, so no series commitment, and the closest thing in the bundle to the DCC mode of following an absurd premise to coherent extremes.
+
+**The caveat:** **Standalone — no reading order.** Opens on a famously crude comic set piece; if that lands, the authorial control underneath it does too.
+
+### Scalzi Tier 2 — Strong Recommendation (predicted 7–7.5)
+
+#### Old Man's War — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Military SF, witty, and the well-regarded entry point to Scalzi's best-known universe — elderly recruits, transferred consciousness, and a war machine whose logic gets steadily unpacked.
+
+**The caveat:** **Series entry point — start here.** Book 1 of the Old Man's War series. More protagonist-forward than the systems-first Tier 1 picks, so more charm-dependent.
+
+#### The Ghost Brigades — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Same-universe follow-up; shifts to the Special Forces angle only gestured at in book 1, with more room for the identity/consciousness systems.
+
+**The caveat:** **Read Old Man's War first — this is book 2 of that series.**
+
+#### The Last Colony — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Returns to the book 1 protagonists and pushes the war's political machinery to the foreground.
+
+**The caveat:** **Read Old Man's War first — this is book 3 of that series** (after The Ghost Brigades).
+
+#### Zoe's Tale — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Retells the events of The Last Colony from a different POV — a structural experiment in re-access to a known story.
+
+**The caveat:** **Read Old Man's War first — this is book 4 of that series, and reads best after The Last Colony** (whose events it re-covers).
+
+#### The Human Division — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Episodic continuation of the Old Man's War universe, structured as linked installments — closest the series gets to a procedural cadence.
+
+**The caveat:** **Read Old Man's War first — this is book 5 of that series.** Episodic structure; originally serialized.
+
+#### The End of All Things — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Same episodic format as The Human Division; resolves the arc it left open.
+
+**The caveat:** **Read Old Man's War first — this is book 6 of that series, and follows The Human Division directly.**
+
+#### The Consuming Fire — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Middle volume of the Interdependency trilogy — the Flow-collapse systems from book 1 escalate into open political crisis.
+
+**The caveat:** **Read The Collapsing Empire first — this is book 2 of the Interdependency trilogy.**
+
+#### The Last Emperox — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Trilogy finale — pays off the collapsing-network premise and the political chessboard built across books 1–2.
+
+**The caveat:** **Read The Collapsing Empire first — this is book 3 (finale) of the Interdependency trilogy**, after The Consuming Fire.
+
+#### Head On — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Second Haden-universe procedural — reuses the threep/Lock In systems for a fresh near-future mystery (a lethal sport played through robotic bodies).
+
+**The caveat:** **Read Lock In first — this is book 2 of the Haden series.**
+
+#### Redshirts — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** Metafictional satire of the Star Trek "expendable crew" trope — narrative causality itself becomes a system followed to a self-aware, logical extreme. Hugo winner. Standalone.
+
+**The caveat:** **Standalone — no reading order.** The metafiction is the whole engine; the three codas may test patience if the central conceit doesn't land.
+
+#### Fuzzy Nation — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 7–7.5/10
+
+**Why it's here:** A "reboot" of H. Beam Piper's *Little Fuzzy* — corporate/legal SF turning on whether a newly found species is legally sentient. Standalone.
+
+**The caveat:** **Standalone — no reading order.** Courtroom-SF structure; lower stakes than the Interdependency books, more charm-forward.
+
+### Scalzi Tier 3 — Worth Trying (predicted 6–6.5, lower ceiling)
+
+#### The Kaiju Preservation Society — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 6–6.5/10
+
+**Why it's here:** Breezy, low-stakes comfort read — an organization protecting giant monsters in a parallel dimension; Scalzi has openly called it a "pop song" of a novel. Standalone.
+
+**The caveat:** **Standalone.** Cozy / low-stakes fiction is a flagged hard-pass pattern — Defensive Baking (6/10) and Left Hand of Darkness (7/10, underperformed) tested this exact register and it isn't the core of what works. Ceiling risk, not floor risk.
+
+#### Agent to the Stars — John Scalzi
+
+**Source:** Owned (Humble Bundle EPUB, June 2026)
+
+**Predicted rating:** 6–6.5/10
+
+**Why it's here:** Early/lighter Scalzi — a first-contact comedy told through a Hollywood agent negotiating on behalf of aliens. Less systems-driven than the Tier 1 picks. Standalone.
+
+**The caveat:** **Standalone.** Debut-era work; breezier and less structurally ambitious — read for voice, not for the systems engine.
+
+### Scalzi — Notes / Low-Priority & Out-of-Taxonomy (owned, no predicted rating)
+
+- **After the Coup** — Old Man's War-universe short story. Owned, low priority. (Read Old Man's War first for context.)
+- **Unlocked: An Oral History of Haden's Syndrome** — Lock In prequel novella. Owned, low priority. (Pairs with / precedes Lock In.)
+- **The President's Brain is Missing** — short story. Owned, low priority. Standalone.
+- **Your Hate Mail Will Be Graded** — nonfiction essay/blog collection, **not fiction**. Doesn't fit the fiction rating taxonomy as-is. **Flag for Ted:** decide whether it belongs in the system at all before assigning a rating. No predicted rating.
+- **Shadow War of the Night Dragons: Prologue** — a parody joke excerpt, **not a real standalone work**. Excluded from the system entirely; noted only as present in the bundle.
+
+-----
+
 ## Already Read / Removed from Queue
 
 - The Left Hand of Darkness — Ursula Le Guin. Read (Audible). 7/10. Underperformed its 8.5 prediction — slow pace, themes didn't land.
