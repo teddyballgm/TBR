@@ -8,16 +8,6 @@
 
 ## Tier 1 — Highest Confidence
 
-### The Road — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
-
-**Predicted rating:** 9/10
-
-**Why it's here:** The definitive post-apocalyptic novel — earns its ending in a way Dust couldn't. McCarthy refuses to blink. Directly relevant to what you're thinking about in the genre right now.
-
-**The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
-
 ### No Country for Old Men — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
@@ -100,6 +90,18 @@
 -----
 
 ## Tier 3 — Worth Trying
+
+### The Road — Cormac McCarthy
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Strong authorial control and real economy of craft — McCarthy does more with less than almost anyone in the genre, and it earns its ending in a way Dust couldn't. Set against the rest of the profile it's a partial match, not a lock: no dark wit, and the post-apocalyptic setting is well-worn rather than original worldbuilding. That's the same reputation-plus-topicality shape that made Piranesi and The Left Hand of Darkness miss high, so the prediction reflects the pattern rather than betting against it.
+
+**The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
+
+-----
 
 ### Gideon the Ninth — Tamsyn Muir
 

@@ -58,7 +58,7 @@ Half a point behind PHM — same problem-solving energy, slightly less ambitious
 
 ### Wool (Silo Series) — Hugh Howey · 8/10 *(Kindle)*
 
-Been a few years — but enjoyed reading the books after the first season of the show. Having the visuals from the show made it more immersive.
+Been a few years — but enjoyed reading the books after the first season of the show. Having the visuals from the show made it more immersive. Dust, the trilogy's finale, undercut itself: the time-shifting structure undermined the stakes built up in the earlier eras, so the ending didn't land as hard as it should have. Comp for future predictions when an ending is billed as a payoff for slow-built stakes.
 
 ### Expeditionary Force — Craig Alanson · 8.5/10
 
