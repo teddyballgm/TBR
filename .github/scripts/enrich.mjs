@@ -273,15 +273,17 @@ The LIVE queue is only the book entries under the "## Tier 1", "## Tier 2", and 
 
 Match on the underlying work, not exact string equality: allow for author-name variants (e.g. "Ursula Le Guin" vs "Ursula K. Le Guin"), series or subtitle differences, and punctuation/casing. A rating titled "X (Some Series)" still matches a live entry titled "X".
 
-Respond with ONLY a JSON object (no markdown fences, no surrounding text).
+Respond with ONLY a JSON object (no markdown fences, no surrounding text). Always include canonical_title and canonical_author (the rated book as logged, not the queue entry).
 
 If the rated book IS a live queue entry:
-{"in_queue": true, "match_title": "<title copied verbatim from that ### heading>", "match_author": "<author copied verbatim from that ### heading>", "note": "<optional: one short clause, <=15 words, on how it landed vs. its queue prediction — or empty string>"}
+{"canonical_title": "<see rules>", "canonical_author": "<see rules>", "in_queue": true, "match_title": "<title copied verbatim from that ### heading>", "match_author": "<author copied verbatim from that ### heading>", "note": "<optional: one short clause, <=15 words, on how it landed vs. its queue prediction — or empty string>"}
 
 If it is NOT a live queue entry:
-{"in_queue": false}
+{"canonical_title": "<see rules>", "canonical_author": "<see rules>", "in_queue": false}
 
 Rules:
+- canonical_title: the rated book's title in canonical published form — fix the submitter's casing/spelling (e.g. "dark matter" → "Dark Matter"). Preserve any parenthetical suffix the submitted title carries (e.g. "X (Some Series)") exactly. If you are genuinely unsure of the exact canonical form, copy the submitted title verbatim rather than guessing.
+- canonical_author: the author's canonical name, casing and spelling corrected (e.g. "ursula leguin" → "Ursula K. Le Guin"). If genuinely unsure, copy the submitted author verbatim rather than guessing a different person.
 - match_title and match_author must be copied exactly from the matching "### Title — Author" heading, excluding any "*(rec from ...)*" suffix.
 - Only set in_queue to true if you are confident it is the same work.`;
 
@@ -308,12 +310,14 @@ Rules:
     throw new Error(`Claude did not return valid JSON. Raw response: ${text.slice(0, 500)}`);
   }
 
+  const nonEmpty = (v) => typeof v === 'string' && v.trim().length > 0;
   if (parsed.in_queue) {
-    const nonEmpty = (v) => typeof v === 'string' && v.trim().length > 0;
     if (!nonEmpty(parsed.match_title) || !nonEmpty(parsed.match_author)) {
       throw new Error(`Claude flagged an in-queue match but omitted match_title/match_author. Got: ${JSON.stringify(parsed)}`);
     }
   }
+  // canonical_title/author are best-effort; the caller falls back to the
+  // submitted values when they're missing, so don't hard-fail on their absence.
   return parsed;
 }
 
@@ -420,6 +424,58 @@ function addToAlreadyRead(tbrContent, title, author, scoreStr, format, note, pre
   return tbrContent.slice(0, insertAt) + entry + '\n' + tbrContent.slice(insertAt);
 }
 
+// Rewrite the just-added ratings.md heading with canonical title/author,
+// preserving the score and any *(format)* suffix. api/submit.js writes the
+// heading verbatim from the submission form, so a mis-cased/misspelled rating
+// (e.g. "dark matter — Blake crouch") lands uncorrected; this is the ratings-side
+// analogue of the enrichment step that canonicalizes tbr.md submissions. Matches
+// the specific entry by submitted title+author+score so a re-rating of a
+// same-titled book can't rewrite the wrong heading. Returns {content, changed}.
+function canonicalizeRatingHeading(ratingsContent, rating, canonTitle, canonAuthor) {
+  const lines = ratingsContent.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(
+      /^### (.+?) — (.+?) · ([\d.]+(?:-[\d.]+)?)\/10(\s+\*\([^)]+\)\*)?\s*$/,
+    );
+    if (!m) continue;
+    if (
+      m[1].trim() === rating.displayTitle.trim() &&
+      m[2].trim() === rating.author.trim() &&
+      m[3].trim() === rating.scoreStr.trim()
+    ) {
+      const formatPart = m[4] || '';
+      lines[i] = `### ${canonTitle} — ${canonAuthor} · ${m[3]}/10${formatPart}`;
+      return { content: lines.join('\n'), changed: true };
+    }
+  }
+  return { content: ratingsContent, changed: false };
+}
+
+// Resolve the canonical title/author for the rating (falling back to the
+// submitted values when Claude omits or declines to correct them) and, if they
+// differ from what api/submit.js wrote, rewrite ratings.md on disk. Returns the
+// title/author to display plus whether the file changed.
+function canonicalizeRatings(rating, claude) {
+  const canonTitle  = typeof claude.canonical_title  === 'string' && claude.canonical_title.trim()  ? claude.canonical_title.trim()  : rating.displayTitle;
+  const canonAuthor = typeof claude.canonical_author === 'string' && claude.canonical_author.trim() ? claude.canonical_author.trim() : rating.author;
+
+  if (canonTitle === rating.displayTitle && canonAuthor === rating.author) {
+    return { title: canonTitle, author: canonAuthor, changed: false };
+  }
+
+  const ratingsContent = fs.readFileSync('ratings.md', 'utf8');
+  const { content, changed } = canonicalizeRatingHeading(ratingsContent, rating, canonTitle, canonAuthor);
+  if (changed) {
+    fs.writeFileSync('ratings.md', content, 'utf8');
+    console.log(`Canonicalized rating heading: "${rating.displayTitle} — ${rating.author}" → "${canonTitle} — ${canonAuthor}"`);
+  } else {
+    // Claude proposed a correction but the exact submitted heading wasn't found
+    // (e.g. it was hand-edited before the Action ran) — don't guess, leave it.
+    console.log(`Canonical form differs ("${canonTitle} — ${canonAuthor}") but the submitted heading wasn't found in ratings.md — leaving it untouched.`);
+  }
+  return { title: canonTitle, author: canonAuthor, changed };
+}
+
 // ── 4. Post PR comment ────────────────────────────────────────────────────────
 
 async function postComment(title, author, enriched) {
@@ -447,6 +503,11 @@ async function postReconcileComment(rating, result) {
   const { displayTitle, author, scoreStr } = rating;
   const header = `### Claude enrichment — *${displayTitle}* by ${author} · ${scoreStr}/10`;
 
+  // Optional line noting a canonical-casing correction to the ratings.md heading.
+  const canonLine = result.ratingsCanon
+    ? `Corrected the \`ratings.md\` heading to canonical form: **${result.canonTitle} — ${result.canonAuthor}**.`
+    : null;
+
   const body = result.changed
     ? [
         header,
@@ -456,6 +517,7 @@ async function postReconcileComment(rating, result) {
         `> ${result.entryLine}`,
         '',
         `The stale queue entry has been removed; the rating itself stays in \`ratings.md\`.`,
+        ...(canonLine ? ['', canonLine] : []),
         '',
         `---`,
         `*Reconciled by \`${ANTHROPIC_MODEL}\` · tbr.md updated on this branch · edit or merge as-is*`,
@@ -463,7 +525,9 @@ async function postReconcileComment(rating, result) {
     : [
         header,
         '',
-        `This book isn't a live entry in the TBR queue, so no queue reconciliation was needed — only \`ratings.md\` changed.`,
+        canonLine
+          ? `This book isn't a live entry in the TBR queue, so no queue reconciliation was needed. ${canonLine}`
+          : `This book isn't a live entry in the TBR queue, so no queue reconciliation was needed — \`tbr.md\` and \`ratings.md\` are left as submitted.`,
         '',
         `---`,
         `*Checked by \`${ANTHROPIC_MODEL}\` · tbr.md left untouched*`,
@@ -518,13 +582,14 @@ async function postFailureComment(err) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-// Commit the given file and push it back to the PR branch. Embeds the PAT in
+// Commit the given file(s) and push back to the PR branch. Embeds the PAT in
 // the remote URL so git can authenticate without an interactive prompt — the
 // checkout's HTTP extraheader auth doesn't survive into this child process.
-function commitAndPush(path, message) {
+function commitAndPush(paths, message) {
+  const list = Array.isArray(paths) ? paths : [paths];
   run('git config user.name "github-actions[bot]"');
   run('git config user.email "github-actions[bot]@users.noreply.github.com"');
-  run(`git add ${path}`);
+  run(`git add ${list.join(' ')}`);
   run(`git commit -m ${JSON.stringify(message)}`);
   run(`git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${GITHUB_REPOSITORY}.git`);
   run(`git push origin HEAD:refs/heads/${PR_HEAD_REF}`);
@@ -563,9 +628,19 @@ async function reconcileRating() {
   const claude = await callClaudeForReconcile(rating, tbrContent);
   console.log('Claude response:', JSON.stringify(claude, null, 2));
 
+  // Canonicalize the just-added ratings.md heading (independent of any queue
+  // match) — api/submit.js writes it verbatim from the form. Returns the final
+  // title/author to use and whether ratings.md was rewritten.
+  const { title: canonTitle, author: canonAuthor, changed: ratingsCanon } =
+    canonicalizeRatings(rating, claude);
+
   if (!claude.in_queue) {
     console.log('Rated book is not a live queue entry — leaving tbr.md untouched.');
-    await postReconcileComment(rating, { changed: false });
+    if (ratingsCanon) {
+      commitAndPush('ratings.md', `Canonicalize rating heading: ${canonTitle} — ${canonAuthor} · ${rating.scoreStr}/10`);
+      console.log('Canonicalized ratings.md committed and pushed.');
+    }
+    await postReconcileComment(rating, { changed: false, ratingsCanon, canonTitle, canonAuthor });
     console.log('PR comment posted.');
     return;
   }
@@ -590,7 +665,11 @@ async function reconcileRating() {
   const extra      = claude.note && claude.note.trim() ? ` ${claude.note.trim()}` : '';
   const entryLine  = `- ${claude.match_title} — ${claude.match_author}. Read${formatNote}. ${outcomeClause(rating.scoreStr, predicted)}${extra}`;
 
-  commitAndPush('tbr.md', `Reconcile queue: move ${claude.match_title} — ${claude.match_author} to already-read (${rating.scoreStr}/10)`);
+  const paths   = ratingsCanon ? ['tbr.md', 'ratings.md'] : 'tbr.md';
+  const message = ratingsCanon
+    ? `Reconcile queue: move ${claude.match_title} — ${claude.match_author} to already-read (${rating.scoreStr}/10); canonicalize rating heading`
+    : `Reconcile queue: move ${claude.match_title} — ${claude.match_author} to already-read (${rating.scoreStr}/10)`;
+  commitAndPush(paths, message);
   console.log('Queue reconciliation committed and pushed.');
 
   await postReconcileComment(rating, {
@@ -598,6 +677,9 @@ async function reconcileRating() {
     matchTitle:  claude.match_title,
     matchAuthor: claude.match_author,
     entryLine,
+    ratingsCanon,
+    canonTitle,
+    canonAuthor,
   });
   console.log('PR comment posted.');
 }
