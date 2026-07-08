@@ -102,9 +102,11 @@ Author: ${author}${recNote}
 Assess this book strictly against the taste profile above — not against general literary reputation.
 Respond with ONLY a JSON object (no markdown fences, no surrounding text):
 
-{"tier":2,"predicted_rating":"7.5","why":"...","caveat":"..."}
+{"title":"Dark Matter","author":"Blake Crouch","tier":2,"predicted_rating":"7.5","why":"...","caveat":"..."}
 
 Field rules:
+- title: the book's canonical published title, correctly capitalized (the submitter's casing may be wrong — e.g. "dark matter" → "Dark Matter"). Do not add a subtitle or series suffix that isn't part of the book's main title.
+- author: the author's canonical name, correctly spelled and capitalized (e.g. "ursula leguin" → "Ursula K. Le Guin"). If genuinely unsure of the exact canonical form, return the submitter's value unchanged rather than guessing a different person.
 - tier: 1, 2, or 3 (1 = highest confidence of hitting a 9/10 against the profile)
 - predicted_rating: a string like "7", "7.5", or "8-9"
 - why: 2–4 sentences. Explain the voice/tone/structure match to the taste profile. Reference Dungeon Crawler Carl or other rated books where relevant. Write in the spare, direct register of the existing tbr.md entries — no hype.
@@ -315,15 +317,13 @@ Rules:
   return parsed;
 }
 
-// Remove a live queue entry by its exact heading title/author. Mirrors the
-// matcher api/submit.js used to use, but also consumes the trailing "-----"
-// separator so we don't leave a doubled divider behind.
-function removeFromTBR(tbrContent, title, author) {
+// Locate a "### Title — Author" heading by exact (case-insensitive) match,
+// ignoring any "*(rec from ...)*" suffix. Returns the 0-based line index or -1.
+// Shared by removeFromTBR and extractPredictedRating so they can never disagree
+// about which entry a match resolves to.
+function findHeadingIndex(lines, title, author) {
   const normalTitle  = title.toLowerCase().trim();
   const normalAuthor = author.toLowerCase().trim();
-
-  const lines = tbrContent.split('\n');
-  let startIdx = -1;
 
   for (let i = 0; i < lines.length; i++) {
     if (!lines[i].startsWith('### ')) continue;
@@ -333,11 +333,36 @@ function removeFromTBR(tbrContent, title, author) {
     if (dash === -1) continue;
     const lineTitle  = clean.slice(0, dash).trim().toLowerCase();
     const lineAuthor = clean.slice(dash + 3).trim().toLowerCase();
-    if (lineTitle === normalTitle && lineAuthor === normalAuthor) {
-      startIdx = i;
-      break;
-    }
+    if (lineTitle === normalTitle && lineAuthor === normalAuthor) return i;
   }
+  return -1;
+}
+
+// Pull the predicted-rating value out of a live queue entry so the calibration
+// loop can record predicted→actual when the book graduates. Returns the value
+// without the trailing "/10" (e.g. "8.5", or a range like "7.5–8"), or null if
+// the entry has no such line. Ranges are preserved verbatim — collapsing them
+// is a separate (taste) decision, not this function's job.
+function extractPredictedRating(tbrContent, title, author) {
+  const lines    = tbrContent.split('\n');
+  const startIdx = findHeadingIndex(lines, title, author);
+  if (startIdx === -1) return null;
+
+  for (let j = startIdx + 1; j < lines.length; j++) {
+    // Stop at the next entry/section/separator — stay within this block.
+    if (lines[j].startsWith('### ') || lines[j].startsWith('## ') || /^-{3,}/.test(lines[j])) break;
+    const m = lines[j].match(/^\*\*Predicted rating:\*\*\s*(.+?)\s*$/);
+    if (m) return m[1].replace(/\/10\s*$/, '').trim();
+  }
+  return null;
+}
+
+// Remove a live queue entry by its exact heading title/author. Mirrors the
+// matcher api/submit.js used to use, but also consumes the trailing "-----"
+// separator so we don't leave a doubled divider behind.
+function removeFromTBR(tbrContent, title, author) {
+  const lines    = tbrContent.split('\n');
+  const startIdx = findHeadingIndex(lines, title, author);
 
   if (startIdx === -1) return { content: tbrContent, found: false };
 
@@ -369,12 +394,22 @@ function removeFromTBR(tbrContent, title, author) {
   return { content: newLines.join('\n'), found: true };
 }
 
-// Add a "- Title — Author. Read (Format). X/10. note" line to the top of the
-// "Already Read / Removed from Queue" list, matching the existing format.
-function addToAlreadyRead(tbrContent, title, author, scoreStr, format, note) {
+// Compose the "Already Read" outcome clause: "Predicted P → actual Y." when the
+// graduating entry carried a prediction, else "Y/10. No prediction recorded."
+// This is what closes the calibration loop, so it's deterministic — it does not
+// depend on Claude's optional `note`.
+function outcomeClause(scoreStr, predicted) {
+  return predicted
+    ? `Predicted ${predicted} → actual ${scoreStr}.`
+    : `${scoreStr}/10. No prediction recorded.`;
+}
+
+// Add a "- Title — Author. Read (Format). <outcome>. note" line to the top of
+// the "Already Read / Removed from Queue" list, matching the existing format.
+function addToAlreadyRead(tbrContent, title, author, scoreStr, format, note, predicted) {
   const formatNote = format ? ` (${format})` : '';
   const extra      = note && note.trim() ? ` ${note.trim()}` : '';
-  const entry = `- ${title} — ${author}. Read${formatNote}. ${scoreStr}/10.${extra}`;
+  const entry = `- ${title} — ${author}. Read${formatNote}. ${outcomeClause(scoreStr, predicted)}${extra}`;
 
   const match = /^## Already Read/m.exec(tbrContent);
   if (!match) return tbrContent;
@@ -503,11 +538,19 @@ async function enrichSubmission() {
   const enriched = await callClaude(title, author, recSource);
   console.log('Claude response:', JSON.stringify(enriched, null, 2));
 
-  enrichTBR(title, author, recSource, enriched);
-  commitAndPush('tbr.md', `Enrich: ${title} — ${author} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)`);
+  // Prefer Claude's canonical casing/spelling over the submitter's raw form
+  // input, falling back to the submitted values if the model omitted them.
+  const finalTitle  = typeof enriched.title  === 'string' && enriched.title.trim()  ? enriched.title.trim()  : title;
+  const finalAuthor = typeof enriched.author === 'string' && enriched.author.trim() ? enriched.author.trim() : author;
+  if (finalTitle !== title || finalAuthor !== author) {
+    console.log(`Canonicalized title/author: "${title} — ${author}" → "${finalTitle} — ${finalAuthor}"`);
+  }
+
+  enrichTBR(finalTitle, finalAuthor, recSource, enriched);
+  commitAndPush('tbr.md', `Enrich: ${finalTitle} — ${finalAuthor} (Tier ${enriched.tier}, ~${enriched.predicted_rating}/10)`);
   console.log('Enriched entry committed and pushed.');
 
-  await postComment(title, author, enriched);
+  await postComment(finalTitle, finalAuthor, enriched);
   console.log('PR comment posted.');
 }
 
@@ -527,18 +570,25 @@ async function reconcileRating() {
     return;
   }
 
+  // Capture the prediction from the live entry BEFORE removing it, so the
+  // Already Read line can record predicted→actual deterministically.
+  const predicted = extractPredictedRating(tbrContent, claude.match_title, claude.match_author);
+  console.log(predicted
+    ? `Prediction for graduating entry: ${predicted}/10 (actual ${rating.scoreStr}/10)`
+    : 'Graduating entry has no predicted-rating line — recording "no prediction recorded".');
+
   const { content: removed, found } = removeFromTBR(tbrContent, claude.match_title, claude.match_author);
   if (!found) {
     // Claude claimed a match but the heading didn't resolve — don't guess.
     throw new Error(`Claude reported an in-queue match for "${claude.match_title} — ${claude.match_author}" but no matching ### heading was found in tbr.md.`);
   }
 
-  const updated = addToAlreadyRead(removed, claude.match_title, claude.match_author, rating.scoreStr, rating.format, claude.note);
+  const updated = addToAlreadyRead(removed, claude.match_title, claude.match_author, rating.scoreStr, rating.format, claude.note, predicted);
   fs.writeFileSync('tbr.md', updated, 'utf8');
 
   const formatNote = rating.format ? ` (${rating.format})` : '';
   const extra      = claude.note && claude.note.trim() ? ` ${claude.note.trim()}` : '';
-  const entryLine  = `- ${claude.match_title} — ${claude.match_author}. Read${formatNote}. ${rating.scoreStr}/10.${extra}`;
+  const entryLine  = `- ${claude.match_title} — ${claude.match_author}. Read${formatNote}. ${outcomeClause(rating.scoreStr, predicted)}${extra}`;
 
   commitAndPush('tbr.md', `Reconcile queue: move ${claude.match_title} — ${claude.match_author} to already-read (${rating.scoreStr}/10)`);
   console.log('Queue reconciliation committed and pushed.');

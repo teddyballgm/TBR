@@ -401,16 +401,16 @@
 
 ## Already Read / Removed from Queue
 
-- The Left Hand of Darkness — Ursula Le Guin. Read (Audible). 7/10. Underperformed its 8.5 prediction — slow pace, themes didn't land.
-- 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). 7/10.
-- The Girl with All the Gifts — M.R. Carey. Read (Audible). 8/10.
-- Starter Villain — John Scalzi. Read (Audible — Wil Wheaton). 8/10.
-- Piranesi — Read (Audible). 6.5/10. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
-- A Wizard's Guide to Defensive Baking — Read. 6/10.
-- Dungeon Crawler Carl — The benchmark.
-- The Checquy Files — Complete.
-- He Who Fights with Monsters — Complete (12 books).
-- Royal Gambit (The Rook Files Book 4) — Read. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
+- The Left Hand of Darkness — Ursula Le Guin. Read (Audible). Predicted 8.5 → actual 7. Slow pace, themes didn't land — the slow/thematic literary underperformance pattern (see Known risks).
+- 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). Predicted 7 → actual 7. On target.
+- The Girl with All the Gifts — M.R. Carey. Read (Audible). Predicted 7.5 → actual 8. Slightly beat its prediction.
+- Starter Villain — John Scalzi. Read (Audible — Wil Wheaton). 8/10. No prediction recorded (read before the predicted-rating field existed).
+- Piranesi — Read (Audible). Predicted 9 → actual 6.5. Mystery structure worked; twist and world ambiguity underwhelmed vs. Evelyn Hardcastle comp. Was the top 9/10 prediction — a meaningful miss.
+- A Wizard's Guide to Defensive Baking — Read. 6/10. No prediction recorded.
+- Dungeon Crawler Carl — The benchmark. No prediction recorded.
+- The Checquy Files — Complete. No prediction recorded.
+- He Who Fights with Monsters — Complete (12 books). No prediction recorded.
+- Royal Gambit (The Rook Files Book 4) — Read. No prediction recorded. Enjoyed it, but Myfanwy and the original Rook remain the high point of the series. The follow-up series didn't recapture what made the first book special.
 
 -----
 
