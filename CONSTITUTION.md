@@ -107,7 +107,7 @@ Rules:
 - **Required fields:** Title, Author, "Predicted rating," "Why it's here," "The caveat"
 - **Optional fields:** Rec source, Kindle pricing, eReaderIQ alert, Status (owned/purchased books)
 - Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com). Set alert at $0.01 below current price. Use ~~strikethrough~~ for original price when discounted.
-- Tiers (1/2/3) reflect confidence of hitting 9/10 based on the taste profile. They are a ranking tool, not a quality judgment — a Tier 3 book may be excellent, just less certain to match the specific profile.
+- Tiers (1/2/3) reflect confidence of hitting 9/10 based on the taste profile. They are a ranking tool, not a quality judgment — a Tier 3 book may be excellent, just less certain to match the specific profile. Predicted rating is a separate axis (expected score, not confidence); the two usually move together, but if a book's own rationale argues for higher confidence than its tier implies, move it up or rewrite the rationale — don't leave the contradiction standing.
 - When a book is read, move it to "Already Read / Removed from Queue" with outcome and score. Do not delete it.
 
 ---

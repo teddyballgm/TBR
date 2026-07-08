@@ -87,6 +87,26 @@
 
 **The caveat:** Genuinely difficult. The violence is operatic and relentless, the prose demands patience. Read The Road and No Country first.
 
+### The Spy Who Came in from the Cold — John le Carré
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Spy+Who+Came+in+from+the+Cold+le+Carre) | Price: $9.99 🔔 *alert set @ $9.98*
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** The direct ancestor of Slow Horses — bureaucratic dysfunction, morally compromised protagonists, no clean wins. Le Carré at his leanest and most thriller-shaped. If Herron's prose worked across 8+ books, le Carré lands differently now than it did before.
+
+**The caveat:** Tinker Tailor is where people get lost — this isn't that. Start here.
+
+### The Goblin Emperor — Katherine Addison
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
+
+**The caveat:** May skew too cozy — similar risk as Kingfisher. Left Hand of Darkness already tested this exact profile (low-action, thematic) and underperformed at 7/10.
+
 -----
 
 ## Tier 3 — Worth Trying
@@ -150,30 +170,6 @@
 **The caveat:** Pacing splits readers — some find it dense mid-book. Kindle recommended over Audible; the narrator's accent work has drawn similar criticism to what killed Man in the High Castle for you.
 
 ---
-
-### The Spy Who Came in from the Cold — John le Carré
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Spy+Who+Came+in+from+the+Cold+le+Carre) | Price: $9.99 🔔 *alert set @ $9.98*
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** The direct ancestor of Slow Horses — bureaucratic dysfunction, morally compromised protagonists, no clean wins. Le Carré at his leanest and most thriller-shaped. If Herron's prose worked across 8+ books, le Carré lands differently now than it did before.
-
-**The caveat:** Tinker Tailor is where people get lost — this isn't that. Start here.
-
----
-
-### The Goblin Emperor — Katherine Addison
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
-
-**Predicted rating:** 7/10
-
-**Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
-
-**The caveat:** May skew too cozy — similar risk as Kingfisher. Left Hand of Darkness already tested this exact profile (low-action, thematic) and underperformed at 7/10. Treat this as a lower-confidence Tier 2 pick, not a wait-and-see.
-
------
 
 ### The Magicians — Lev Grossman *(rec from Ian)*
 
