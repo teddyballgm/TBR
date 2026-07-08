@@ -644,7 +644,7 @@
     const author = clean.slice(dash + 3).trim();
 
     let kindleUrl = null, price = null, origPrice = null, alertPrice = null;
-    let whyHere = '', caveat = '', series = null;
+    let whyHere = '', caveat = '', series = null, predicted = null;
     let purchased = false, purchaseFormat = null;
     let field = null;
 
@@ -685,6 +685,9 @@
       } else if (/^\*\*The (?:caveat|bet):\*\*/.test(t)) {
         field = 'caveat';
         caveat = t.replace(/^\*\*The (?:caveat|bet):\*\*\s*/, '');
+      } else if (t.startsWith('**Predicted rating:**')) {
+        field = null;
+        predicted = t.replace(/^\*\*Predicted rating:\*\*\s*/, '').trim();
       } else if (t.startsWith('**Series:**')) {
         field = null;
         series = t.replace(/^\*\*Series:\*\*\s*/, '').trim();
@@ -708,7 +711,7 @@
     }
 
     return { title, author, series, recSource, kindleUrl, price, origPrice, alertPrice,
-             whyHere: whyHere.trim(), caveat: caveat.trim(), purchased, purchaseFormat };
+             whyHere: whyHere.trim(), caveat: caveat.trim(), purchased, purchaseFormat, predicted };
   }
 
   function parseAlreadyRead(body) {
@@ -840,17 +843,16 @@
     h += `<div class="book-title">${e(b.title)}</div>`;
     h += `<div class="book-byline">${e(b.author)}`;
     if (b.recSource) h += ` <span class="book-rec">· rec from ${e(b.recSource)}</span>`;
+    if (b.predicted) h += ` <span class="owned-pill">~${e(b.predicted)}</span>`;
     h += `</div></div></div>`;
 
     h += `<div class="book-body">`;
     h += `<div class="kindle-line">`;
     if (b.purchased) {
       h += `<span class="owned-pill">owned</span>`;
-      if (b.purchaseFormat) {
-        const rateKey = `${b.title.toLowerCase()}|${b.author.toLowerCase()}`;
-        if (!ratedSet.has(rateKey)) {
-          h += `<button class="btn-rate" data-title="${e(b.title)}" data-author="${e(b.author)}" data-series="${e(b.series || '')}">Rate</button>`;
-        }
+      const rateKey = `${b.title.toLowerCase()}|${b.author.toLowerCase()}`;
+      if (!ratedSet.has(rateKey)) {
+        h += `<button class="btn-rate" data-title="${e(b.title)}" data-author="${e(b.author)}" data-series="${e(b.series || '')}">Rate</button>`;
       }
     } else {
       if (b.kindleUrl) h += `<a href="${e(b.kindleUrl)}" target="_blank" rel="noopener">Track on eReaderIQ</a>`;
