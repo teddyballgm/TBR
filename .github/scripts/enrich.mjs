@@ -175,6 +175,8 @@ function enrichTBR(title, author, recSource, enriched) {
   if (kindleLine) lines.push('', kindleLine);
   lines.push(
     '',
+    `**Predicted rating:** ${enriched.predicted_rating}/10`,
+    '',
     `**Why it's here:** ${enriched.why}`,
     '',
     `**The caveat:** ${enriched.caveat}`,
