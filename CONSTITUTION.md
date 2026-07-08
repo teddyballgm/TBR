@@ -25,7 +25,7 @@ What makes a 9/10:
 
 Secondary reference points: *The Rook* (O'Malley), *Emperor's Soul* (Sanderson), *He Who Fights With Monsters* (Shirtaloon — for progression systems and world density, despite structural bloat).
 
-Known risks: books that are warm/cozy without satirical coherence (*Wizard's Guide to Defensive Baking*), identity-reconstruction mysteries where the payoff undershoots the structure (*Piranesi*), protagonist-forward narratives that require you to love the main character.
+Known risks: books that are warm/cozy without satirical coherence (*Wizard's Guide to Defensive Baking*), identity-reconstruction mysteries where the payoff undershoots the structure (*Piranesi*), slow/thematic literary fiction that leans on reputation over voice and worldbuilding (*The Left Hand of Darkness* — predicted 8.5, actual 7), protagonist-forward narratives that require you to love the main character.
 
 ---
 
@@ -108,7 +108,8 @@ Rules:
 - **Optional fields:** Rec source, Kindle pricing, eReaderIQ alert, Status (owned/purchased books)
 - Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com). Set alert at $0.01 below current price. Use ~~strikethrough~~ for original price when discounted.
 - Tiers (1/2/3) reflect confidence of hitting 9/10 based on the taste profile. They are a ranking tool, not a quality judgment — a Tier 3 book may be excellent, just less certain to match the specific profile. Predicted rating is a separate axis (expected score, not confidence); the two usually move together, but if a book's own rationale argues for higher confidence than its tier implies, move it up or rewrite the rationale — don't leave the contradiction standing.
-- When a book is read, move it to "Already Read / Removed from Queue" with outcome and score. Do not delete it.
+- When a book is read, move it to "Already Read / Removed from Queue" and close the calibration loop: record `Predicted X → actual Y` (or an explicit "No prediction recorded" if it entered the queue without one), not just the raw score. The enrichment Action does this automatically when a rating reconciles a live queue entry. Do not delete the entry.
+- On any miss of ≥ 1.5 between predicted and actual, add the lesson to Known risks above so the predictor (which reads this file on every enrichment call) stops repeating it.
 
 ---
 
