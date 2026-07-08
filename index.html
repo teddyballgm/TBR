@@ -761,14 +761,14 @@
     const formatNote = fmtMatch ? fmtMatch[1] : null;
     const clean = header.replace(/\s*\*\(.+\)\*\s*$/, '').trim();
 
-    const m = clean.match(/^(.+?)\s+·\s+([\d.]+(?:-[\d.]+)?)\/10$/);
+    const m = clean.match(/^(.+?)\s+·\s+([\d.]+(?:[-–][\d.]+)?)\/10$/);
 
     let titleAuthor, scoreStr, score;
     if (m) {
       titleAuthor = m[1].trim();
       scoreStr    = m[2];
-      score = scoreStr.includes('-')
-        ? (parseFloat(scoreStr) + parseFloat(scoreStr.split('-')[1])) / 2
+      score = /[-–]/.test(scoreStr)
+        ? (parseFloat(scoreStr) + parseFloat(scoreStr.split(/[-–]/)[1])) / 2
         : parseFloat(scoreStr);
     } else if (isDNF) {
       // DNF entries may carry no numeric score — "Title — Author · DNF". The

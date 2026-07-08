@@ -34,12 +34,12 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 -----
 
-## 7-8
+## 7-8.5
 
 
-### Left hand of darkness — Ursula leguin · 7/10 *(Audible)*
+### The Left Hand of Darkness — Ursula K. Le Guin · 7/10 *(Audible)*
 
-Slow pacing - themes didn’t land.
+Predicted 8.5, landed at 7 — the biggest miss on record. A slow, thematic, low-action read: exactly the register Piranesi also underperformed in, but here the gap is worse because there’s no mystery-structure hook to carry it. Protagonist-forward and idea-driven rather than world-discovery-driven, so the “protagonist as vehicle” criterion doesn’t hold and the pacing has nothing to compensate with. Comp for future predictions: cozy/thematic/low-action literary fiction is a flagged underperformance pattern, not a safe bet on reputation alone.
 
 ### 1% lifesteal — Robert Blaise · 7/10 *(Whispersync (mostly audible))*
 
@@ -120,7 +120,7 @@ Charming but not transcendent. Voice is warm, cozy-with-darkness energy. Confirm
 
 Not terribly incisive. The story is inherently compelling but Brown doesn’t dig deep enough to elevate it beyond the surface narrative.
 
-### Soul Fraud · 4/10
+### Soul Fraud — Andrew Givler · 4/10
 
 Promised the Rook experience — bureaucratic magic institution, original world — without the craft to back it up. Finished but no interest in continuing. Confirmed: genre alone isn’t enough, execution has to be there.
 
