@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 Really enjoyed the hard sci-fi - appreciated being anchored to a different perspective than is so often the default.
 
+### Dark forest — Cixin liu · 8/10 *(Libby audiobook)*
+
+Interesting sequel - probably a touch behind book one but really enjoyed. The anti-humanity vibe was odd (required suspension of disbelief on my end)
+
 ### The Left Hand of Darkness — Ursula K. Le Guin · 7/10 *(Audible)*
 
 Predicted 8.5, landed at 7 — the biggest miss on record. A slow, thematic, low-action read: exactly the register Piranesi also underperformed in, but here the gap is worse because there’s no mystery-structure hook to carry it. Protagonist-forward and idea-driven rather than world-discovery-driven, so the “protagonist as vehicle” criterion doesn’t hold and the pacing has nothing to compensate with. Comp for future predictions: cozy/thematic/low-action literary fiction is a flagged underperformance pattern, not a safe bet on reputation alone.
