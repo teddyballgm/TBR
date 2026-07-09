@@ -41,7 +41,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 Really enjoyed the hard sci-fi - appreciated being anchored to a different perspective than is so often the default.
 
-### Dark forest — Cixin liu · 8/10 *(Libby audiobook)*
+### The Dark Forest — Cixin Liu · 8/10 *(Libby audiobook)*
 
 Interesting sequel - probably a touch behind book one but really enjoyed. The anti-humanity vibe was odd (required suspension of disbelief on my end)
 
