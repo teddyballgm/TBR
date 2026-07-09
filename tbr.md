@@ -2,7 +2,7 @@
 
 *Ranked by confidence of hitting 9/10, based on ratings profile. Key criteria: authorial control, satirical coherence, earned weirdness, productive distance from protagonist, economy of craft.*
 
-*Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of May 2026. 🔔 = alert set at threshold price.*
+*Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of July 2026. 🔔 = alert set at threshold price.*
 
 -----
 
@@ -24,7 +24,7 @@
 
 ### Mother of Learning — nobody103
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
 
 **Predicted rating:** 8/10
 
@@ -36,7 +36,7 @@
 
 ### City of Stairs — Robert Jackson Bennett
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=City+of+Stairs+Robert+Jackson+Bennett) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=City+of+Stairs+Robert+Jackson+Bennett) | Price: $9.99 🔔 *alert set @ $9.98*
 
 **Predicted rating:** 8/10
 
@@ -48,7 +48,7 @@
 
 ### The Lies of Locke Lamora — Scott Lynch
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $3.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $1.98*
 
 **Predicted rating:** 8/10
 
@@ -69,7 +69,7 @@
 
 ### The Traitor Baru Cormorant — Seth Dickinson
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $2.99*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $9.98*
 
 **Predicted rating:** 8.5/10
 
@@ -113,7 +113,7 @@
 
 ### The Road — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $7.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $2.98*
 
 **Predicted rating:** 7.5/10
 
@@ -125,13 +125,25 @@
 
 ### Gideon the Ninth — Tamsyn Muir
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Gideon+the+Ninth+Tamsyn+Muir) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Gideon+the+Ninth+Tamsyn+Muir) | Price: $9.99 🔔 *alert set @ $9.98*
 
 **Predicted rating:** 7.5/10
 
 **Why it's here:** Necromancer space-fantasy, protagonist-as-smart-mouthed-vehicle rather than hero, voice does a lot of the load-bearing work. Genuinely funny in a way that's rare in the genre.
 
 **The caveat:** Riskiest of the recent additions — structure gets deliberately disorienting in the back half. If that reads as authorial control it lands well; if it reads as sloppy it won't. Real 50/50 outcome, not a hedge.
+
+-----
+
+### The Boy on the Bridge — M. R. Carey
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Boy+on+the+Bridge+M+R+Carey) | Price: $9.99 🔔 *alert set @ $9.98*
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Companion novel to The Girl with All the Gifts (read, predicted 7.5 → actual 8 — beat its own prediction), set earlier in the same outbreak. Carey's control over slow-build, personal-scale horror already proved out on that read. Ensemble cast built around a scientific expedition rather than a single protagonist-as-vehicle, which sidesteps some of the "must love the lead" risk flagged in Known risks.
+
+**The caveat:** Reviews consistently note it's slower and more conventional survival-outbreak plotting than Girl with All the Gifts, without an equivalent to that book's structural hook. Ceiling risk — could land closer to 7 than 8 without a comparable twist.
 
 -----
 
@@ -174,7 +186,7 @@
 
 ### The Magicians — Lev Grossman *(rec from Ian)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman) | Price: $12.99 🔔 *alert set @ $12.98*
 
 **Predicted rating:** 6.5–7.5/10
 
@@ -428,4 +440,4 @@ When adding a new book, include:
 
 -----
 
-*Last updated: May 2026*
+*Last updated: July 2026*
