@@ -104,6 +104,10 @@ Incredible world-architect, but the texture of living inside the longer books ca
 
 ## 6-6.5
 
+
+### Deaths end — Cixin liu · 6.5/10 *(Libby audiobook)*
+
+Definitely goes to some off the walls places. Time & character jumps caused it not to land for me.
 ### Sapiens — Yuval Noah Harari · 6/10
 
 Brilliant premise, too in love with itself. The big ideas are genuinely interesting; Harari just makes sure you know how interesting they are.
