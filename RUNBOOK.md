@@ -10,20 +10,21 @@ For architecture and data schemas, see `development.md`.
 | Secret | Where it lives | Used by | Purpose |
 |---|---|---|---|
 | `GH_PAT` | **Vercel** → Project Settings → Environment Variables | `api/submit.js` | Authenticated GitHub writes (create branch, commit stub, open PR) |
-| `GH_PAT` | **GitHub** → repo Settings → Secrets and variables → Actions | `.github/workflows/enrich-submission.yml` → `enrich.mjs` | Push the enriched / reconciled commit to the PR branch and post the PR comment |
 | `ANTHROPIC_API_KEY` | **GitHub** → Actions secrets | `enrich.mjs` | Call Claude to enrich book submissions ("Why it's here" / "The caveat") and reconcile the queue on rating submissions |
 
-> **Important:** the **same `GH_PAT` is stored in two independent places** (Vercel *and* GitHub Actions). Rotating it means updating **both** — miss one and half the system stays broken.
+> **`GH_PAT` lives only in Vercel.** The enrichment workflow (`.github/workflows/enrich-submission.yml`) no longer uses a stored PAT — it authenticates with the run's default `GITHUB_TOKEN` (via `permissions: contents: write, pull-requests: write` in the workflow), which GitHub issues and scopes automatically per run. There is nothing to rotate on the Actions side.
 
 The PAT is a **fine-grained** token scoped to `teddyballgm/TBR` with:
 - **Contents:** Read and write
 - **Pull requests:** Read and write
 
+Note: `enrich.mjs` still reads this token from an env var it calls `GH_PAT` — that's just the variable's internal name in the script; the workflow sets it to `${{ secrets.GITHUB_TOKEN }}`, not the Vercel secret. Don't confuse the two when reading the code.
+
 ---
 
 ## Runbook: rotate the `GH_PAT` (expired or compromised)
 
-This is the most common maintenance task. GitHub emails you before a fine-grained PAT expires.
+This is the most common maintenance task. GitHub emails you before a fine-grained PAT expires. Rotation is now a **single-place** update — `GH_PAT` only lives in Vercel.
 
 1. **Create the new token**
    - GitHub → Settings → Developer settings → **Fine-grained personal access tokens** → *Generate new token*.
@@ -36,12 +37,11 @@ This is the most common maintenance task. GitHub emails you before a fine-graine
    - Vercel → the TBR project → Settings → Environment Variables → edit `GH_PAT` → paste the new value → Save.
    - Redeploy: Deployments → latest → **Redeploy** (env changes only take effect on a new deployment).
 
-3. **Update GitHub Actions** (fixes enrichment)
-   - GitHub → repo Settings → Secrets and variables → **Actions** → update `GH_PAT` with the new value.
+3. **Verify** (see the checklist below).
 
-4. **Verify** (see the checklist below).
+4. **Revoke the old token** in GitHub Developer settings once the new one is confirmed working.
 
-5. **Revoke the old token** in GitHub Developer settings once the new one is confirmed working.
+There is no GitHub Actions step anymore — the enrichment workflow authenticates with the run's default `GITHUB_TOKEN`, which GitHub issues fresh per run and never expires or needs rotating.
 
 ---
 
@@ -50,9 +50,8 @@ This is the most common maintenance task. GitHub emails you before a fine-graine
 | Path | Symptom | Where |
 |---|---|---|
 | Submission form | Form shows *"GitHub authentication failed — the access token is likely expired."* | `api/submit.js` now detects the 401 and returns this message (HTTP 502) |
-| Enrichment Action | Action run fails; PR gets a **"⚠️ Automatic enrichment failed"** comment | `enrich.mjs` posts a failure comment before exiting non-zero |
 
-If the PAT dies, the enrichment failure-comment step may *also* fail to post (it needs the same token). In that case you'll only see the red ✗ in the **Actions** tab — that alone is a strong signal the PAT expired.
+The enrichment Action is unaffected by `GH_PAT` expiry — it doesn't use that secret. If the Action fails, the cause is elsewhere (see the troubleshooting matrix below); it posts a **"⚠️ Automatic enrichment failed"** comment on the PR before exiting non-zero.
 
 ---
 
@@ -60,15 +59,17 @@ If the PAT dies, the enrichment failure-comment step may *also* fail to post (it
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
-| Form: "GitHub authentication failed… token is likely expired" | `GH_PAT` expired/revoked in Vercel | Rotate the PAT (both places) |
+| Form: "GitHub authentication failed… token is likely expired" | `GH_PAT` expired/revoked in Vercel | Rotate the PAT (Vercel only — see above) |
 | Form: "GH_PAT not configured" | Env var missing in Vercel | Add `GH_PAT` in Vercel, redeploy |
 | Form: "A title is required." / "Score must be…" | Invalid submission input | Expected — user needs to fix the form fields |
-| Action ✗ with a "⚠️ Automatic enrichment failed" comment | Read the error in the comment / Actions logs | Usually expired `ANTHROPIC_API_KEY` or `GH_PAT`, or malformed Claude output |
-| Action ✗ with **no** comment | The PAT itself is dead (comment couldn't post) | Rotate the PAT (both places), then re-run the workflow |
+| Form: 429 "Too many submissions…" | Per-IP rate limit hit (5/hour, best-effort per serverless instance) | Expected under abuse; a legitimate user just waits, or you widen `RATE_LIMIT_MAX` in `api/submit.js` |
+| Action ✗ with a "⚠️ Automatic enrichment failed" comment | Read the error in the comment / Actions logs | Usually expired `ANTHROPIC_API_KEY`, a permissions misconfiguration, or malformed Claude output — **not** `GH_PAT`, which the Action no longer uses |
+| Action ✗ with **no** comment | `GITHUB_TOKEN` couldn't post (unlikely — check `permissions:` in the workflow are still `contents: write` / `pull-requests: write`) | Fix the workflow's `permissions:` block, then re-run via `workflow_dispatch` (pass `pr_number` and `head_ref`) |
 | Enrichment: "Placeholder not found… stub may already be enriched" | The `[To be filled during triage]` stub was edited/removed before the Action ran | Re-add the stub, or triage the entry manually |
-| Enrichment: "Claude did not return valid JSON" | Model returned prose/fenced output | Re-run the workflow; if persistent, check the prompt / model in `enrich.mjs` |
+| Enrichment: "Claude did not return valid JSON" | Model returned prose/fenced output | Re-run the workflow (Actions tab → Enrich Submission → Run workflow, or `workflow_dispatch` with `pr_number`/`head_ref`); if persistent, check the prompt / model in `enrich.mjs` |
 | Site shows stale data after a merge | Vercel deploy lag or cache | Wait ~10s; check Vercel Deployments for a successful build on `main` |
 | Site fails to load any books | GitHub API read blip, or `tbr.md`/`ratings.md` markdown broke the parser | Check the raw markdown formatting against the schemas in `development.md` |
+| PR fails the "Lint Schema" check | `tbr.md` or `ratings.md` doesn't match the documented schema | Read the job's error output — it names the offending heading/entry — and fix the markdown (see schema in `development.md`) |
 
 ---
 

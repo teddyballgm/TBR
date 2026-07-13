@@ -45,14 +45,18 @@ Browser → /tbr.md, /ratings.md (same origin) → markdown → parsed + rendere
 
 Form submissions POST to `/api/submit` (the Vercel serverless function). The function holds a GitHub PAT as the `GH_PAT` environment variable (set in Vercel project settings — never in code). It creates a branch, commits a stub entry to the appropriate markdown file, and opens a PR.
 
+The endpoint is unauthenticated (anyone can hit it), and each submission triggers a paid GitHub API call chain plus a paid Claude call in the enrichment Action below, so `api/submit.js` has two cheap abuse-protection layers: a honeypot field (`website` — every submission form has a hidden input of that name; a filled-in value means a bot, and the request gets a fake-success response with no further action) and a best-effort per-instance rate limit (max 5 submissions/hour/IP, tracked in an in-module `Map`). Neither requires an external service or a new dependency.
+
 ```
 Browser form → POST /api/submit → Vercel function → GitHub API (authenticated) → PR opened
 ```
 
-PRs are reviewed and merged manually. The enrichment GitHub Action fires on PR open:
+PRs are reviewed and merged manually. The enrichment GitHub Action fires on PR open (and reopen):
 
 - **Book submissions** (`submit/*` branches) — Claude fills in predicted rating, tier, "Why it's here," and "The caveat."
 - **Rating submissions** (`rating/*` branches) — Claude examines the live TBR queue and, if the just-rated book is still sitting in it, moves that entry into "Already Read / Removed from Queue" with the real score. Matching is on the underlying work (author-name variants, series suffixes, punctuation), not an exact title/author string — so `api/submit.js` no longer touches `tbr.md` for ratings; the Action owns queue reconciliation.
+
+The Action authenticates with the workflow's default `GITHUB_TOKEN`, not a stored PAT — see **Environment Variables** below. It can also be re-run manually via `workflow_dispatch` (Actions tab → Enrich Submission → Run workflow), supplying `pr_number` and `head_ref` for the PR to (re-)process.
 
 **Never put the PAT in `index.html` or any client-side code.**
 
@@ -130,14 +134,13 @@ Field notes:
 
 | Variable | Where | Purpose |
 |---|---|---|
-| `GH_PAT` | Vercel project settings | GitHub fine-grained PAT for `teddyballgm/TBR` with `contents: write` and `pull-requests: write` |
-| `GH_PAT` | GitHub Actions secrets | **Same token as above** — used by the enrichment workflow to push and comment |
+| `GH_PAT` | Vercel project settings | GitHub fine-grained PAT for `teddyballgm/TBR` with `contents: write` and `pull-requests: write` — used only by `api/submit.js` |
 | `ANTHROPIC_API_KEY` | GitHub Actions secrets | Claude API key for submission enrichment |
 | `ALLOWED_ORIGIN` | Vercel *(optional)* | CORS origin for `/api/submit`; defaults to `https://tefleming.com` |
 | `ANTHROPIC_MODEL` | GitHub Actions *(optional)* | Enrichment model; defaults to `claude-opus-4-7` |
 | `ANTHROPIC_VERSION` | GitHub Actions *(optional)* | Anthropic API version header; defaults to `2023-06-01` |
 
-The `GH_PAT` is stored in **two** places (Vercel and GitHub Actions). Rotating it requires updating both — see `RUNBOOK.md`.
+`GH_PAT` lives **only** in Vercel now. The enrichment workflow (`.github/workflows/enrich-submission.yml`) authenticates with the run's default `GITHUB_TOKEN` instead of a stored PAT — no Actions secret to rotate on that side. Rotating `GH_PAT` is a single-place update — see `RUNBOOK.md`. (`enrich.mjs` still reads it from an env var named `GH_PAT` internally; that env var's value is `secrets.GITHUB_TOKEN` at the workflow level, not the Vercel PAT — the name was kept to minimize code churn.)
 
 ---
 

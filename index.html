@@ -290,6 +290,11 @@
     .submit-status.success a { color: var(--green); }
     .submit-status.error { color: #c0392b; }
 
+    /* Honeypot — visually hidden (not display:none, so bots that skip hidden
+       fields via computed style still tend to fill it in), never shown or
+       reachable by real users (off-screen + no tab stop). */
+    .hp-field { position: absolute; left: -9999px; }
+
     /* ── Ratings ───────────────────────────────────────────────────── */
 
     .rating-book {
@@ -420,6 +425,7 @@
         <h2>Submit a Book</h2>
         <p class="sub-desc">Opens a PR adding a stub to tbr.md for triage.</p>
         <form id="submit-form">
+          <input type="text" name="website" id="sub-website" class="hp-field" autocomplete="off" tabindex="-1" aria-hidden="true">
           <div class="field-row">
             <label for="sub-title">Title</label>
             <input type="text" id="sub-title" required placeholder="e.g. The Left Hand of Darkness">
@@ -450,6 +456,7 @@
         <h2>Log a Rating</h2>
         <p class="sub-desc">Opens a PR adding your rating to ratings.md.</p>
         <form id="ratings-form">
+          <input type="text" name="website" id="rat-website" class="hp-field" autocomplete="off" tabindex="-1" aria-hidden="true">
           <div class="field-row">
             <label for="rat-title">Title</label>
             <input type="text" id="rat-title" required placeholder="e.g. Piranesi">
@@ -506,6 +513,7 @@
       </div>
       <p class="sub-desc">Submitting opens a GitHub PR to add your rating to ratings.md.</p>
       <form id="rate-form">
+        <input type="text" name="website" id="rate-website" class="hp-field" autocomplete="off" tabindex="-1" aria-hidden="true">
         <div class="field-row">
           <label for="rate-title">Title</label>
           <input type="text" id="rate-title" required>
@@ -1036,6 +1044,7 @@
     const author   = document.getElementById('sub-author').value.trim();
     const recSource     = document.getElementById('sub-source').value.trim() || null;
     const submitterName = document.getElementById('sub-name').value.trim()   || null;
+    const website        = document.getElementById('sub-website').value;
     if (!title || !author) return;
 
     btn.disabled    = true;
@@ -1044,7 +1053,7 @@
     statusEl.textContent = '';
 
     try {
-      const res  = await fetch('/api/submit', jsonPost({ type: 'tbr', title, author, recSource, submitterName }));
+      const res  = await fetch('/api/submit', jsonPost({ type: 'tbr', title, author, recSource, submitterName, website }));
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to open PR');
       statusEl.className = 'submit-status success';
@@ -1070,6 +1079,7 @@
     const scoreStr = document.getElementById('rat-score').value;
     const format   = document.getElementById('rat-format').value.trim() || null;
     const notes    = document.getElementById('rat-notes').value.trim()  || null;
+    const website  = document.getElementById('rat-website').value;
     if (!title || !author || !scoreStr) return;
 
     btn.disabled    = true;
@@ -1078,7 +1088,7 @@
     statusEl.textContent = '';
 
     try {
-      const res  = await fetch('/api/submit', jsonPost({ type: 'rating', title, author, scoreStr, format, notes }));
+      const res  = await fetch('/api/submit', jsonPost({ type: 'rating', title, author, scoreStr, format, notes, website }));
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to open PR');
       statusEl.className = 'submit-status success';
@@ -1144,6 +1154,7 @@
     const scoreStr = document.getElementById('rate-score').value;
     const format   = document.getElementById('rate-format').value.trim() || null;
     const notes    = document.getElementById('rate-notes').value.trim()  || null;
+    const website  = document.getElementById('rate-website').value;
     if (!title || !author || !scoreStr) return;
 
     btn.disabled    = true;
@@ -1152,7 +1163,7 @@
     statusEl.textContent = '';
 
     try {
-      const res  = await fetch('/api/submit', jsonPost({ type: 'rating', title, author, series, scoreStr, format, notes }));
+      const res  = await fetch('/api/submit', jsonPost({ type: 'rating', title, author, series, scoreStr, format, notes, website }));
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Failed to open PR');
       statusEl.className = 'submit-status success';

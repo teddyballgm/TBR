@@ -582,9 +582,16 @@ async function postFailureComment(err) {
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
-// Commit the given file(s) and push back to the PR branch. Embeds the PAT in
+// Commit the given file(s) and push back to the PR branch. Embeds the token in
 // the remote URL so git can authenticate without an interactive prompt — the
 // checkout's HTTP extraheader auth doesn't survive into this child process.
+// GH_PAT here is the workflow's default GITHUB_TOKEN (see enrich-submission.yml) —
+// "x-access-token" as the username and the "token <value>" Authorization scheme
+// both work identically whether the value is a PAT or GITHUB_TOKEN, so no format
+// changes were needed when this moved off a stored PAT.
+// Note: a push authenticated with GITHUB_TOKEN does not trigger other workflow
+// runs (GitHub suppresses that to prevent recursive Action loops) — intentional
+// here, since there's nothing further that should fire off this commit.
 function commitAndPush(paths, message) {
   const list = Array.isArray(paths) ? paths : [paths];
   run('git config user.name "github-actions[bot]"');

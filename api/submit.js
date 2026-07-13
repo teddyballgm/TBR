@@ -1,6 +1,50 @@
 const REPO = 'teddyballgm/TBR';
 const API  = 'https://api.github.com';
 
+// ── Abuse protection ──────────────────────────────────────────────────────
+//
+// Each submission triggers a paid GitHub API call chain (and, later, a paid
+// Claude call in the enrichment Action), and the endpoint is unauthenticated.
+// Two cheap layers, no external services:
+
+// 1. Honeypot: a hidden form field real users never fill in. Bots that
+//    populate every input trip it; we fake success and do nothing further.
+function isHoneypotTripped(fields) {
+  return typeof fields.website === 'string' && fields.website.trim().length > 0;
+}
+
+// 2. Rate limit: max submissions per IP per hour, tracked in an in-module
+//    Map. Serverless instances don't share memory (and Vercel functions are
+//    frequently cold-started), so this is best-effort per-instance
+//    throttling, not a hard global cap — acceptable for this threat model,
+//    where the goal is capping runaway cost from a single abusive client
+//    hammering one warm instance, not a distributed attacker.
+const RATE_LIMIT_MAX    = 5;
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour
+const submissionsByIP = new Map();
+
+function getClientIP(req) {
+  const forwarded = req.headers['x-forwarded-for'];
+  if (typeof forwarded === 'string' && forwarded.length > 0) {
+    return forwarded.split(',')[0].trim();
+  }
+  return req.socket.remoteAddress;
+}
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  const timestamps = (submissionsByIP.get(ip) || []).filter(t => now - t < RATE_LIMIT_WINDOW);
+
+  if (timestamps.length >= RATE_LIMIT_MAX) {
+    submissionsByIP.set(ip, timestamps);
+    return true;
+  }
+
+  timestamps.push(now);
+  submissionsByIP.set(ip, timestamps);
+  return false;
+}
+
 async function ghFetch(path, opts = {}) {
   const res = await fetch(`${API}${path}`, {
     ...opts,
@@ -216,6 +260,17 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', process.env.ALLOWED_ORIGIN || 'https://tefleming.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  // Fake success, do nothing — don't tip off the bot that it was caught.
+  // Checked before anything else so a bot trips it as cheaply as possible.
+  if (isHoneypotTripped(req.body || {})) {
+    return res.status(200).json({ prUrl: `https://github.com/${REPO}` });
+  }
+
+  const ip = getClientIP(req);
+  if (isRateLimited(ip)) {
+    return res.status(429).json({ error: 'Too many submissions from this connection — please try again in a bit.' });
+  }
 
   if (!process.env.GH_PAT) {
     return res.status(500).json({ error: 'GH_PAT not configured' });
