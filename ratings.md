@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Castle 1000 doors — Kenny Gould · 7/10 *(Audible)*
+### Castle of 1000 Doors — Kenny Gould · 7/10 *(Audible)*
 
 Reads like a kiddy version of DCC but very kiddy
 
