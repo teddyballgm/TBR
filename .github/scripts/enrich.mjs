@@ -269,7 +269,7 @@ Here is the current queue file (tbr.md):
 ${tbrContent}
 </tbr>
 
-The LIVE queue is only the book entries under the "## Tier 1", "## Tier 2", and "## Tier 3" headings. Anything under "## Already Read / Removed from Queue" is already done, and "## Adding a New TBR Book (Checklist)" is not a book. Do not match against those.
+The LIVE queue is only the book entries under any "## Tier N" heading (currently Tier 1 through Tier 4). Anything under "## Already Read / Removed from Queue" is already done, and "## Adding a New TBR Book (Checklist)" is not a book. Do not match against those.
 
 Match on the underlying work, not exact string equality: allow for author-name variants (e.g. "Ursula Le Guin" vs "Ursula K. Le Guin"), series or subtitle differences, and punctuation/casing. A rating titled "X (Some Series)" still matches a live entry titled "X".
 

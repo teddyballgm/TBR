@@ -220,21 +220,23 @@
 
 -----
 
-## John Scalzi Collection — Humble Bundle (Old Man's War & More by Tor Books, June 2026)
+## Tier 4 — Owned Backlog (Scalzi Bundle)
 
-*All titles here are **Owned (Humble Bundle EPUB, June 2026)** — EPUB via Humble Bundle / Kindle. No price tracking needed. Predicted ratings supplied at acquisition. The queue cards render in the three "Scalzi Bundle" tier sections below; this heading is a provenance note (the site renders Tier / Already Read sections only). Series entry points flagged per the series-entry-point rule.*
+*Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
 
 *Note: **Starter Villain** was in this bundle but is already read and rated **8/10** — see "Already Read / Removed from Queue" and ratings.md. Not re-added as a queue entry to avoid a duplicate.*
 
------
+*Not queued (owned, out-of-taxonomy):*
+- **Your Hate Mail Will Be Graded** — nonfiction essay/blog collection, doesn't fit the fiction rating taxonomy as-is. **Flag for Ted:** decide whether it belongs in the system at all before assigning a rating.
+- **Shadow War of the Night Dragons: Prologue** — a parody joke excerpt, not a real standalone work. Noted only as present in the bundle.
 
-## Tier — Scalzi Bundle · Highest Fit (predicted 7.5–8)
+-----
 
 ### The Collapsing Empire — John Scalzi
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7.5–8/10
+**Predicted rating:** 8/10
 
 **Why it's here:** The collapsing FTL trade network — the Flow — is the central system: a galaxy-spanning interdependency engineered (accidentally) to fail, followed through its political and economic consequences. Multi-POV discovery structure with court intrigue; the reader unravels the mechanics alongside the characters. The strongest systems-driven / discovery-engine fit in the bundle.
 
@@ -244,7 +246,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7.5–8/10
+**Predicted rating:** 8/10
 
 **Why it's here:** Near-future tech-and-disability systems taken to a logical extreme — a "locked in" population navigating the world through robotic "threeps" and a shared neural network — wrapped around a procedural murder investigation. The worldbuilding does thematic and plot work simultaneously, which is the profile's sweet spot.
 
@@ -254,7 +256,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7.5–8/10
+**Predicted rating:** 8/10
 
 **Why it's here:** Satirical SF with a dark comedic voice — an interstellar diplomatic crisis hinging on a specific breed of sheep. Standalone, so no series commitment, and the closest thing in the bundle to the DCC mode of following an absurd premise to coherent extremes.
 
@@ -262,13 +264,11 @@
 
 -----
 
-## Tier — Scalzi Bundle · Strong (predicted 7–7.5)
-
 ### Old Man's War — John Scalzi
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Military SF, witty, and the well-regarded entry point to Scalzi's best-known universe — elderly recruits, transferred consciousness, and a war machine whose logic gets steadily unpacked.
 
@@ -278,7 +278,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Same-universe follow-up; shifts to the Special Forces angle only gestured at in book 1, with more room for the identity/consciousness systems.
 
@@ -288,7 +288,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Returns to the book 1 protagonists and pushes the war's political machinery to the foreground.
 
@@ -298,7 +298,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Retells the events of The Last Colony from a different POV — a structural experiment in re-access to a known story.
 
@@ -308,7 +308,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Episodic continuation of the Old Man's War universe, structured as linked installments — closest the series gets to a procedural cadence.
 
@@ -318,7 +318,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Same episodic format as The Human Division; resolves the arc it left open.
 
@@ -328,7 +328,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Middle volume of the Interdependency trilogy — the Flow-collapse systems from book 1 escalate into open political crisis.
 
@@ -338,7 +338,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Trilogy finale — pays off the collapsing-network premise and the political chessboard built across books 1–2.
 
@@ -348,7 +348,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Second Haden-universe procedural — reuses the threep/Lock In systems for a fresh near-future mystery (a lethal sport played through robotic bodies).
 
@@ -358,7 +358,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Metafictional satire of the Star Trek "expendable crew" trope — narrative causality itself becomes a system followed to a self-aware, logical extreme. Hugo winner. Standalone.
 
@@ -368,7 +368,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 7–7.5/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** A "reboot" of H. Beam Piper's *Little Fuzzy* — corporate/legal SF turning on whether a newly found species is legally sentient. Standalone.
 
@@ -376,13 +376,11 @@
 
 -----
 
-## Tier — Scalzi Bundle · Lighter / Lower Ceiling (predicted 6–6.5)
-
 ### The Kaiju Preservation Society — John Scalzi
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 6–6.5/10
+**Predicted rating:** 6.5/10
 
 **Why it's here:** Breezy, low-stakes comfort read — an organization protecting giant monsters in a parallel dimension; Scalzi has openly called it a "pop song" of a novel. Standalone.
 
@@ -392,7 +390,7 @@
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-**Predicted rating:** 6–6.5/10
+**Predicted rating:** 6.5/10
 
 **Why it's here:** Early/lighter Scalzi — a first-contact comedy told through a Hollywood agent negotiating on behalf of aliens. Less systems-driven than the highest-fit picks. Standalone.
 
@@ -400,15 +398,35 @@
 
 -----
 
-## Scalzi — Notes / Low-Priority & Out-of-Taxonomy (owned, no predicted rating)
+### After the Coup — John Scalzi
 
-*Reference notes — not rendered as queue cards (the site renders Tier / Already Read sections only).*
+**Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
 
-- **After the Coup** — Old Man's War-universe short story. Owned, low priority. (Read Old Man's War first for context.)
-- **Unlocked: An Oral History of Haden's Syndrome** — Lock In prequel novella. Owned, low priority. (Pairs with / precedes Lock In.)
-- **The President's Brain is Missing** — short story. Owned, low priority. Standalone.
-- **Your Hate Mail Will Be Graded** — nonfiction essay/blog collection, **not fiction**. Doesn't fit the fiction rating taxonomy as-is. **Flag for Ted:** decide whether it belongs in the system at all before assigning a rating. No predicted rating.
-- **Shadow War of the Night Dragons: Prologue** — a parody joke excerpt, **not a real standalone work**. Excluded from the system entirely; noted only as present in the bundle.
+**Predicted rating:** 6/10
+
+**Why it's here:** Old Man's War-universe short story, included in the bundle.
+
+**The caveat:** Low priority — a minor addendum rather than a core entry. Read Old Man's War first for context.
+
+### Unlocked: An Oral History of Haden's Syndrome — John Scalzi
+
+**Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
+
+**Predicted rating:** 6/10
+
+**Why it's here:** Lock In prequel novella, included in the bundle.
+
+**The caveat:** Low priority — pairs with / precedes Lock In rather than standing on its own.
+
+### The President's Brain is Missing — John Scalzi
+
+**Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
+
+**Predicted rating:** 6/10
+
+**Why it's here:** Standalone short story, included in the bundle.
+
+**The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
 

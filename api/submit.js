@@ -160,10 +160,23 @@ async function submitRating({ title, author, series, scoreStr, format, notes }) 
   return pr.html_url;
 }
 
+// Parses a section heading's numeric range, e.g. "9-10" → [9, 10], "7-8.5" →
+// [7, 8.5], "5 and below" → [-Infinity, 5]. Returns null if the heading has
+// no recognizable range (e.g. "Did Not Finish").
+function parseSectionRange(heading) {
+  const belowMatch = heading.match(/^([\d.]+)\s+and below$/i);
+  if (belowMatch) return [-Infinity, parseFloat(belowMatch[1])];
+
+  const rangeMatch = heading.match(/^([\d.]+)\s*-\s*([\d.]+)$/);
+  if (rangeMatch) return [parseFloat(rangeMatch[1]), parseFloat(rangeMatch[2])];
+
+  return null;
+}
+
 function insertIntoRatingsSection(md, score, stub) {
   const parts = md.split(/^(?=## )/m);
-  let bestSection = null;
-  let bestDist    = Infinity;
+  let bestSection  = null;
+  let bestDist     = Infinity;
 
   for (const part of parts) {
     if (!part.startsWith('## ')) continue;
@@ -171,17 +184,13 @@ function insertIntoRatingsSection(md, score, stub) {
     const heading = part.slice(3, nl).trim();
     if (/not finish/i.test(heading)) continue;
 
-    const scoreMatches = [...part.matchAll(/·\s*([\d.]+(?:-[\d.]+)?)\/10/g)];
-    if (!scoreMatches.length) continue;
+    const range = parseSectionRange(heading);
+    if (!range) continue;
+    const [min, max] = range;
 
-    const scores = scoreMatches.map(m => {
-      const s = m[1];
-      return s.includes('-')
-        ? (parseFloat(s) + parseFloat(s.split('-')[1])) / 2
-        : parseFloat(s);
-    });
-    const avg  = scores.reduce((a, b) => a + b, 0) / scores.length;
-    const dist = Math.abs(score - avg);
+    if (score >= min && score <= max) { bestSection = `## ${heading}`; bestDist = 0; break; }
+
+    const dist = score < min ? min - score : score - max;
     if (dist < bestDist) { bestDist = dist; bestSection = `## ${heading}`; }
   }
 
