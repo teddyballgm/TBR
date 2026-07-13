@@ -2,11 +2,21 @@ name: Enrich Submission
 
 on:
   pull_request:
-    types: [opened]
+    types: [opened, reopened]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to enrich/reconcile'
+        required: true
+        type: string
+      head_ref:
+        description: 'PR head branch name (e.g. submit/foo-123 or rating/bar-456)'
+        required: true
+        type: string
 
 permissions:
-  contents: read
-  pull-requests: read
+  contents: write
+  pull-requests: write
 
 jobs:
   enrich:
@@ -14,15 +24,23 @@ jobs:
     # webhook payload — more reliable than github.head_ref in all runner versions.
     # `submit/` = a new TBR book (fill in triage fields); `rating/` = a new
     # rating (examine the queue and reconcile it against what was just read).
-    if: ${{ startsWith(github.event.pull_request.head.ref, 'submit/') || startsWith(github.event.pull_request.head.ref, 'rating/') }}
+    # A manual workflow_dispatch re-run (e.g. after fixing a transient failure)
+    # has no pull_request payload, so it carries the same info via inputs.
+    if: >-
+      (github.event_name == 'pull_request' &&
+       (startsWith(github.event.pull_request.head.ref, 'submit/') ||
+        startsWith(github.event.pull_request.head.ref, 'rating/'))) ||
+      (github.event_name == 'workflow_dispatch' &&
+       (startsWith(github.event.inputs.head_ref, 'submit/') ||
+        startsWith(github.event.inputs.head_ref, 'rating/')))
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          token: ${{ secrets.GH_PAT }}
+          ref: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.head_ref || github.event.pull_request.head.ref }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0          # needed for git diff origin/main...HEAD
 
       - name: Set up Node.js
@@ -33,8 +51,8 @@ jobs:
       - name: Enrich submission
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GH_PAT:            ${{ secrets.GH_PAT }}
-          PR_NUMBER:         ${{ github.event.pull_request.number }}
-          PR_HEAD_REF:       ${{ github.event.pull_request.head.ref }}
+          GH_PAT:            ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER:         ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.pr_number || github.event.pull_request.number }}
+          PR_HEAD_REF:       ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.head_ref || github.event.pull_request.head.ref }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: node .github/scripts/enrich.mjs
