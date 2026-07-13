@@ -35,10 +35,10 @@ CNAME             — legacy GitHub Pages artifact, can be ignored
 
 ## How Reads Work
 
-`index.html` fetches `tbr.md` and `ratings.md` directly from the GitHub API (unauthenticated — repo is public), parses the markdown client-side, and renders the result. No server involvement.
+`index.html` fetches `tbr.md` and `ratings.md` as same-origin static files (Vercel serves them alongside `index.html`), parses the markdown client-side, and renders the result. No server involvement.
 
 ```
-Browser → GitHub API (unauthenticated) → markdown → parsed + rendered in browser
+Browser → /tbr.md, /ratings.md (same origin) → markdown → parsed + rendered in browser
 ```
 
 ## How Writes Work
@@ -67,8 +67,11 @@ Top-level structure:
 ## Tier 1 — [description]
 ## Tier 2 — [description]  
 ## Tier 3 — [description]
+## Tier 4 — [description]
 ## Already Read / Removed
 ```
+
+Tier 4 is reserved for owned backlogs acquired in bulk (e.g. a Humble Bundle) rather than individually triaged submissions — same entry schema as any other tier, just a different provenance. It participates in rating reconciliation like Tiers 1–3.
 
 Individual book entry:
 ```markdown

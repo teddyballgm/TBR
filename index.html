@@ -559,33 +559,12 @@
 </div>
 
 <script>
-  const REPO = 'teddyballgm/TBR';
-  const API  = 'https://api.github.com';
+  // ── Markdown reads (same-origin static files) ──────────────────────
 
-  // ── GitHub API (reads only — unauthenticated) ─────────────────────
-
-  async function ghFetch(path) {
-    const res = await fetch(`${API}${path}`, {
-      headers: { Accept: 'application/vnd.github.v3+json' }
-    });
-    if (!res.ok) {
-      const body = await res.json().catch(() => ({}));
-      throw new Error(body.message || `GitHub API error ${res.status}`);
-    }
-    return res.json();
-  }
-
-  async function getFileContent(path) {
-    const data = await ghFetch(`/repos/${REPO}/contents/${path}`);
-    return { content: b64Decode(data.content) };
-  }
-
-  function b64Decode(b64) {
-    return decodeURIComponent(
-      atob(b64.replace(/\n/g, '')).split('').map(c =>
-        '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)
-      ).join('')
-    );
+  async function fetchMd(path) {
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Failed to load ${path} (${res.status})`);
+    return res.text();
   }
 
   // ── Helpers ───────────────────────────────────────────────────────
@@ -967,8 +946,7 @@
 
   async function fetchRatingsMd() {
     if (!cachedRatingsMd) {
-      const { content } = await getFileContent('ratings.md');
-      cachedRatingsMd = content;
+      cachedRatingsMd = await fetchMd('/ratings.md');
     }
     return cachedRatingsMd;
   }
@@ -995,8 +973,8 @@
     submit.style.display  = 'none';
 
     try {
-      const [{ content: tbrMd }] = await Promise.all([
-        getFileContent('tbr.md'),
+      const [tbrMd] = await Promise.all([
+        fetchMd('/tbr.md'),
         fetchRatingsMd().then(md => { ratedSet = buildRatedSet(md); }).catch(() => {})
       ]);
       renderTBR(parseTBR(tbrMd));
