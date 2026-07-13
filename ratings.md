@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Castle of 1000 Doors — Kenny Gould · 7/10 *(Audible)*
+
+Reads like a kiddy version of DCC but very kiddy
+
 ### The Three-Body Problem — Cixin Liu · 8/10 *(Libby Audiobook)*
 
 Really enjoyed the hard sci-fi - appreciated being anchored to a different perspective than is so often the default.
