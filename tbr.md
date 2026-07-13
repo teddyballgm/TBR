@@ -20,6 +20,18 @@
 
 -----
 
+### 11/22/63 — Stephen King
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=11%2F22%2F63+Stephen+King) | Price: *not yet tracked*
+
+**Predicted rating:** 8-8.5/10
+
+**Why it's here:** Time-travel mechanics function as a real system — the reset, the "obdurate past" pushing back against change, the harmonics — and Jake learns the rules at the same rate the reader does, the same discovery-engine mechanism that makes Project Hail Mary and The Martian work. The Sadie relationship earns its emotional payoff without curdling into sentimentality. Standalone — no series-bloat risk.
+
+**The caveat:** Long (~850 pages / ~30 hrs audio) — some version of the page-count-vs-greatness ratio risk that dinged Cosmere. Tone leans more wistful and earnest than DCC's dark wit — a real departure from the benchmark register, not a small one.
+
+-----
+
 ## Tier 2 — Strong Recommendation
 
 ### Mother of Learning — nobody103
@@ -106,6 +118,18 @@
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
 **The caveat:** May skew too cozy — similar risk as Kingfisher. Left Hand of Darkness already tested this exact profile (low-action, thematic) and underperformed at 7/10.
+
+-----
+
+### The Running Man — Stephen King (writing as Richard Bachman)
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Running+Man+Stephen+King+Bachman) | Price: *not yet tracked*
+
+**Predicted rating:** 7.5-8/10
+
+**Why it's here:** The tightest thematic match to DCC's core appeal in King's catalog — a predatory media/entertainment institution (the game show, Free-Vee) followed to its coherent, bleak logical extreme. Protagonist as vehicle for the systemic critique rather than a hero's journey, no clean win. Economy of craft — short, propulsive Bachman-era prose, no series-bloat risk.
+
+**The caveat:** Less dark wit than DCC, more nihilistic dread — the satire has teeth but not much humor. Bleaker and less emotionally rich than 11/22/63; a truer test of whether "systems followed to extremes" alone is enough without a relationship payoff.
 
 -----
 
