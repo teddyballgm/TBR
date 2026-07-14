@@ -8,6 +8,44 @@
 
 ## Tier 1 — Highest Confidence
 
+### Kaiju: Battlefield Surgeon — Matt Dinniman
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Kaiju+Battlefield+Surgeon+Dinniman) | Price: *not yet tracked*
+
+**Predicted rating:** 8.5-9/10
+
+**Why it's here:** Same author and narrator (Jeff Hayes) as the 9.5
+and 9 benchmarks — the highest-confidence author/narrator combination
+in the system. A woman trapped inside a grotesque game-world built
+from kaiju biology; systems followed to coherent, deranged extremes.
+Standalone universe, no DCC-length series commitment.
+
+**The caveat:** Darker and more body-horror-grotesque than DCC, with
+less warmth — some DCC readers bounce. The satirical engine is
+intact but meaner. Prefer Audible; Hayes is half the thesis.
+
+-----
+
+### Going Postal — Terry Pratchett
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Going+Postal+Terry+Pratchett) | Price: *not yet tracked*
+
+**Predicted rating:** 8.5-9/10
+
+**Why it's here:** The untested gap in the profile — HHGTTG rated
+9/10, zero Pratchett on record. Direct descendant of that DNA: a con
+man deployed as pure vehicle to satirize institutions, internal logic
+followed to absurd coherent extremes, real teeth under the jokes.
+Functions as a standalone Discworld entry point despite the series
+size.
+
+**The caveat:** Narration risk — the older Stevens/Briggs recordings
+are dated; check the newer full-cast recordings before buying audio,
+or default to Kindle. Register is warmer than DCC's; the satire
+bites but rarely draws blood.
+
+-----
+
 ### No Country for Old Men — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
@@ -55,6 +93,43 @@ risk, offset by the sardonic register.
 -----
 
 ## Tier 2 — Strong Recommendation
+
+### All Systems Red (The Murderbot Diaries #1) — Martha Wells
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All+Systems+Red+Martha+Wells) | Price: *not yet tracked*
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** Corporate-dystopia satire with real teeth, dry
+dark wit, extreme economy of craft — novella-length, zero fat. The
+sardonic-distant voice is the opposite of the Piranesi failure mode
+(earnest native innocence).
+
+**The caveat:** Protagonist-forward — Murderbot's voice IS the book,
+the flagged risk mode. Prediction holds only if the sardonic register
+offsets it. Kevin R. Free's narration is well-regarded but not
+Hayes/Bray tier. Series entry point — start here; later novellas are
+priced aggressively per page.
+
+-----
+
+### Alien Clay — Adrian Tchaikovsky
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Alien+Clay+Adrian+Tchaikovsky) | Price: *not yet tracked*
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** The designated Tchaikovsky entry point. Dissident
+exiled to an alien-world labor camp — dual discovery engine (alien
+ecology plus regime logic), dry satirical first-person, standalone.
+New-author discovery candidate for the satirical-systems register.
+
+**The caveat:** Tchaikovsky is unproven in this system. Middle
+section is idea-dense with moderate action — partial echo of the
+low-action underperformance pattern (Left Hand 8.5→7), offset by
+satire and forward momentum that book lacked.
+
+-----
 
 ### Mother of Learning — nobody103
 
