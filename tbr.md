@@ -244,6 +244,30 @@
 
 -----
 
+### 2034 — Elliot Ackerman & Admiral James Stavridis
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=2034+Elliot+Ackerman+Stavridis) | Price: *not yet tracked*
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Near-future US-China naval war with real prose craft behind it — Ackerman is a genuine novelist, not a credentialed hobbyist, and Stavridis's operational background keeps the escalation logic honest. The domain authenticity is the opposite of the Burnout problem: these are people who actually held the jobs they're writing about.
+
+**The caveat:** Five-narrator ensemble cast — same access-structure family as the Malazan DNF, no single protagonist-as-vehicle, no discovery engine. Explicitly marketed as a "cautionary tale," and at least one review calls it "maudlin, over dramatic, repetitive" in spots. Lacks the invented-system/dark-wit register that drives the 9-10 tier; the ceiling is structural, not a research-quality problem.
+
+-----
+
+### Vortex — Larry Bond
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Vortex+Larry+Bond) | Price: *not yet tracked*
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Bond co-wrote Red Storm Rising with Clancy — this is the same tactical-technothriller DNA from one of its two actual architects, not an imitator working from reputation. Closest structural comp on the list to Ghost Fleet: multi-POV, hardware-literate, plausible-extrapolation register.
+
+**The caveat:** Same ensemble-cast risk as 2034 and Ghost Fleet — no discovery engine, no satire, protagonist-as-vehicle doesn't really apply here. Genre-technothriller craft ceiling, same band as Mitch Rapp (7/10) rather than anything approaching DCC.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
