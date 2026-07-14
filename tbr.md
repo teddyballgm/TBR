@@ -14,7 +14,7 @@
 
 **Predicted rating:** 8.5-9/10
 
-**Why it's here:** Same author and narrator (Jeff Hayes) as the 9.5
+**Why it's here:** Same author and narrator (Jeff Hays) as the 9.5
 and 9 benchmarks — the highest-confidence author/narrator combination
 in the system. A woman trapped inside a grotesque game-world built
 from kaiju biology; systems followed to coherent, deranged extremes.
@@ -22,7 +22,7 @@ Standalone universe, no DCC-length series commitment.
 
 **The caveat:** Darker and more body-horror-grotesque than DCC, with
 less warmth — some DCC readers bounce. The satirical engine is
-intact but meaner. Prefer Audible; Hayes is half the thesis.
+intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
@@ -108,7 +108,7 @@ sardonic-distant voice is the opposite of the Piranesi failure mode
 **The caveat:** Protagonist-forward — Murderbot's voice IS the book,
 the flagged risk mode. Prediction holds only if the sardonic register
 offsets it. Kevin R. Free's narration is well-regarded but not
-Hayes/Bray tier. Series entry point — start here; later novellas are
+Hays/Bray tier. Series entry point — start here; later novellas are
 priced aggressively per page.
 
 -----

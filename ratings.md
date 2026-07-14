@@ -2,7 +2,7 @@
 
 What makes a 9/10: strong authorial control, original worldbuilding that doesn’t over-explain itself, dark wit, real emotional stakes, protagonist as vehicle rather than the point. Distance from the protagonist is fine — trust in the author is essential.
 
-Narrator quality is tracked where relevant — narration has meaningfully affected ratings in both directions. Jeff Hayes and R.C. Bray are known floor-raisers; a weak narrator on a voice-dependent or character-dense book is a real ceiling suppressor.
+Narrator quality is tracked where relevant — narration has meaningfully affected ratings in both directions. Jeff Hays and R.C. Bray are known floor-raisers; a weak narrator on a voice-dependent or character-dense book is a real ceiling suppressor.
 
 -----
 
@@ -12,9 +12,9 @@ Narrator quality is tracked where relevant — narration has meaningfully affect
 
 Wow. Even as this book shifted some of the early series dynamics it packed a frickin wallop on every level — from a man and his ex-girlfriend’s cat to intergalactic political history.
 
-### Dungeon Crawler Carl — Matt Dinniman · 9/10 *(Audible — Jeff Hayes)*
+### Dungeon Crawler Carl — Matt Dinniman · 9/10 *(Audible — Jeff Hays)*
 
-The satire is the star. Dinniman builds a predatory alien entertainment empire and follows its internal logic to absurd, coherent extremes — the weirdness is earned, not random. The world rewards paying attention; the humor has teeth. Less about Carl specifically, more about marveling at the whole deranged system Dinniman has constructed. Jeff Hayes’s narration is inseparable from the experience — the definitive version. The benchmark everything else gets measured against.
+The satire is the star. Dinniman builds a predatory alien entertainment empire and follows its internal logic to absurd, coherent extremes — the weirdness is earned, not random. The world rewards paying attention; the humor has teeth. Less about Carl specifically, more about marveling at the whole deranged system Dinniman has constructed. Jeff Hays’s narration is inseparable from the experience — the definitive version. The benchmark everything else gets measured against.
 
 ### The Hitchhiker’s Guide to the Galaxy — Douglas Adams · 9/10 *(read in high school)*
 
@@ -62,7 +62,7 @@ A very personal zombie story. Intriguing build towards the inevitable.
 
 ### Starter Villain — John Scalzi · 8/10 *(Audible — Wil Wheaton)*
 
-Very enjoyable — breezy, fun, snarky and satirical. Wheaton’s narration is serviceable but he lacks the range of Hayes or Bray; the back half suffers as character count grows and his limited range flattens the distinctions. Worth a re-read in print to see if the ceiling is higher.
+Very enjoyable — breezy, fun, snarky and satirical. Wheaton’s narration is serviceable but he lacks the range of Hays or Bray; the back half suffers as character count grows and his limited range flattens the distinctions. Worth a re-read in print to see if the ceiling is higher.
 
 ### The Martian — Andy Weir · 8.5/10 *(Audible — R.C. Bray)*
 
