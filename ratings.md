@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Running man — Richard Bachman · 8/10 *(Libby audiobook)*
+
+Liked this a good bit - feels like it influenced squid game (though I liked it better). Shocked to see it was written in 1982! Very direct, angry, violent.
+
 ### Castle of 1000 Doors — Kenny Gould · 7/10 *(Audible)*
 
 Reads like a kiddy version of DCC but very kiddy
