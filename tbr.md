@@ -218,18 +218,6 @@ satire and forward momentum that book lacked.
 
 -----
 
-### The Running Man — Stephen King (writing as Richard Bachman)
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Running+Man+Stephen+King+Bachman) | Price: *not yet tracked*
-
-**Predicted rating:** 7.5-8/10
-
-**Why it's here:** The tightest thematic match to DCC's core appeal in King's catalog — a predatory media/entertainment institution (the game show, Free-Vee) followed to its coherent, bleak logical extreme. Protagonist as vehicle for the systemic critique rather than a hero's journey, no clean win. Economy of craft — short, propulsive Bachman-era prose, no series-bloat risk.
-
-**The caveat:** Less dark wit than DCC, more nihilistic dread — the satire has teeth but not much humor. Bleaker and less emotionally rich than 11/22/63; a truer test of whether "systems followed to extremes" alone is enough without a relationship payoff.
-
------
-
 ## Tier 3 — Worth Trying
 
 ### The Road — Cormac McCarthy
@@ -577,6 +565,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- The Running Man — Stephen King (writing as Richard Bachman). Read (Libby audiobook). Predicted 7.5-8 → actual 8. Landed at 8/10, at the top of its 7.5-8 predicted range.
 - The Left Hand of Darkness — Ursula Le Guin. Read (Audible). Predicted 8.5 → actual 7. Slow pace, themes didn't land — the slow/thematic literary underperformance pattern (see Known risks).
 - 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). Predicted 7 → actual 7. On target.
 - The Girl with All the Gifts — M.R. Carey. Read (Audible). Predicted 7.5 → actual 8. Slightly beat its prediction.
