@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### We are legion — Dennis taylor · 8.5/10 *(Audible)*
+### We Are Legion (We Are Bob) — Dennis E. Taylor · 8.5/10 *(Audible)*
 
 Fun premise. Engaging main character(s). Liked narrator. Could have been higher if I could tell where the stakes were
 
