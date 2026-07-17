@@ -58,28 +58,6 @@ bites but rarely draws blood.
 
 -----
 
-### We Are Legion (We Are Bob) — Dennis E. Taylor
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=We+Are+Legion+Dennis+Taylor) | Price: *n/a — purchased*
-**Status:** Purchased
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Ray Porter narration plus the Weir-style
-problem-solving loop — the most validated pattern in the ratings
-profile (PHM 9/10, The Martian 8.5/10, both Porter/Bray-elevated).
-Self-replicating probe protagonist engineering through constraints
-the reader learns in real time — pure discovery engine, no game
-mechanics.
-
-**The caveat:** Structural Expeditionary Force risk — books 1–3 carry
-the prediction; the series dilutes past that (ExFor precedent: 8.5
-for books 1–3, 6.5 overall). Treat as a trilogy and reassess before
-continuing. Bob's voice is charm-dependent — mild protagonist-forward
-risk, offset by the sardonic register.
-
------
-
 ### 11/22/63 — Stephen King
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=11%2F22%2F63+Stephen+King) | Price: *not yet tracked*
@@ -565,6 +543,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- We Are Legion (We Are Bob) — Dennis E. Taylor. Read (Audible). Predicted 8.5 → actual 8.5. Landed at 8.5, exactly on its predicted 8.5.
 - The Running Man — Stephen King (writing as Richard Bachman). Read (Libby audiobook). Predicted 7.5-8 → actual 8. Landed at 8/10, at the top of its 7.5-8 predicted range.
 - The Left Hand of Darkness — Ursula Le Guin. Read (Audible). Predicted 8.5 → actual 7. Slow pace, themes didn't land — the slow/thematic literary underperformance pattern (see Known risks).
 - 1% lifesteal — Robert Blaise. Read (Whispersync (mostly audible)). Predicted 7 → actual 7. On target.
