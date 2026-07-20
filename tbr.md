@@ -4,6 +4,8 @@
 
 *Kindle pricing tracked via [eReaderIQ](https://www.ereaderiq.com) — prices current as of July 2026. 🔔 = alert set at threshold price.*
 
+*Library availability linked via [Fulton County OverDrive](https://fulcolibrary.overdrive.com) — search links only, not live availability (requires sign-in). Owned/purchased entries (marked with **Status:**) don't carry a library link.*
+
 -----
 
 ## Tier 1 — Highest Confidence
@@ -11,6 +13,7 @@
 ### Kaiju: Battlefield Surgeon — Matt Dinniman
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Kaiju+Battlefield+Surgeon+Dinniman) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Kaiju+Battlefield+Surgeon+Dinniman)
 
 **Predicted rating:** 8.5-9/10
 
@@ -29,6 +32,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 ### Going Postal — Terry Pratchett
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Going+Postal+Terry+Pratchett) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Going+Postal+Terry+Pratchett)
 
 **Predicted rating:** 8.5-9/10
 
@@ -49,6 +53,7 @@ bites but rarely draws blood.
 ### No Country for Old Men — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=No+Country+for+Old+Men+Cormac+McCarthy)
 
 **Predicted rating:** 8.5/10
 
@@ -61,6 +66,7 @@ bites but rarely draws blood.
 ### 11/22/63 — Stephen King
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=11%2F22%2F63+Stephen+King) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=11%2F22%2F63+Stephen+King)
 
 **Predicted rating:** 8-8.5/10
 
@@ -75,6 +81,7 @@ bites but rarely draws blood.
 ### All Systems Red (The Murderbot Diaries #1) — Martha Wells
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All+Systems+Red+Martha+Wells) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=All+Systems+Red+Martha+Wells)
 
 **Predicted rating:** 8.5/10
 
@@ -94,6 +101,7 @@ priced aggressively per page.
 ### Alien Clay — Adrian Tchaikovsky
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Alien+Clay+Adrian+Tchaikovsky) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Alien+Clay+Adrian+Tchaikovsky)
 
 **Predicted rating:** 8.5/10
 
@@ -112,6 +120,7 @@ satire and forward momentum that book lacked.
 ### Mother of Learning — nobody103
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Mother+of+Learning)
 
 **Predicted rating:** 8/10
 
@@ -124,6 +133,7 @@ satire and forward momentum that book lacked.
 ### City of Stairs — Robert Jackson Bennett
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=City+of+Stairs+Robert+Jackson+Bennett) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=City+of+Stairs+Robert+Jackson+Bennett)
 
 **Predicted rating:** 8/10
 
@@ -136,6 +146,7 @@ satire and forward momentum that book lacked.
 ### The Lies of Locke Lamora — Scott Lynch
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $1.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Lies+of+Locke+Lamora+Scott+Lynch)
 
 **Predicted rating:** 8/10
 
@@ -157,6 +168,7 @@ satire and forward momentum that book lacked.
 ### The Traitor Baru Cormorant — Seth Dickinson
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Traitor+Baru+Cormorant+Seth+Dickinson)
 
 **Predicted rating:** 8.5/10
 
@@ -167,6 +179,7 @@ satire and forward momentum that book lacked.
 ### Blood Meridian — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Blood+Meridian+Cormac+McCarthy)
 
 **Predicted rating:** 8/10
 
@@ -177,6 +190,7 @@ satire and forward momentum that book lacked.
 ### The Spy Who Came in from the Cold — John le Carré
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Spy+Who+Came+in+from+the+Cold+le+Carre) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Spy+Who+Came+in+from+the+Cold+John+le+Carre)
 
 **Predicted rating:** 8.5/10
 
@@ -187,6 +201,7 @@ satire and forward momentum that book lacked.
 ### The Goblin Emperor — Katherine Addison
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Goblin+Emperor+Katherine+Addison) | Price: $12.99 🔔 *alert set @ $12.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Goblin+Emperor+Katherine+Addison)
 
 **Predicted rating:** 7/10
 
@@ -201,6 +216,7 @@ satire and forward momentum that book lacked.
 ### The Road — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $2.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Road+Cormac+McCarthy)
 
 **Predicted rating:** 7.5/10
 
@@ -213,6 +229,7 @@ satire and forward momentum that book lacked.
 ### Gideon the Ninth — Tamsyn Muir
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Gideon+the+Ninth+Tamsyn+Muir) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Gideon+the+Ninth+Tamsyn+Muir)
 
 **Predicted rating:** 7.5/10
 
@@ -225,6 +242,7 @@ satire and forward momentum that book lacked.
 ### The Boy on the Bridge — M. R. Carey
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Boy+on+the+Bridge+M+R+Carey) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Boy+on+the+Bridge+M+R+Carey)
 
 **Predicted rating:** 7.5/10
 
@@ -237,6 +255,7 @@ satire and forward momentum that book lacked.
 ### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Discount+Dans+Backroom+Bargains+James+Hunter)
 
 **Predicted rating:** 7.0–7.5/10
 
@@ -262,6 +281,7 @@ satire and forward momentum that book lacked.
 ### The Yiddish Policemen's Union — Michael Chabon
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Yiddish+Policemens+Union+Michael+Chabon) | Price: $15.99 🔔 *alert set @ $15.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Yiddish+Policemens+Union+Michael+Chabon)
 
 **Predicted rating:** 8/10
 
@@ -274,6 +294,7 @@ satire and forward momentum that book lacked.
 ### The Magicians — Lev Grossman *(rec from Ian)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20magicians%20Lev%20grossman) | Price: $12.99 🔔 *alert set @ $12.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Magicians+Lev+Grossman)
 
 **Predicted rating:** 6.5–7.5/10
 
@@ -286,6 +307,7 @@ satire and forward momentum that book lacked.
 ### Red Rising — Pierce Brown *(rec from Gavin)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Red+Rising+Pierce+Brown)
 
 **Predicted rating:** 6.5–7.5/10
 
@@ -298,6 +320,7 @@ satire and forward momentum that book lacked.
 ### Dark Matter — Blake Crouch *(rec from Gavin)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Dark+Matter+Blake+Crouch)
 
 **Predicted rating:** 6.5/10
 
@@ -310,6 +333,7 @@ satire and forward momentum that book lacked.
 ### 2034 — Elliot Ackerman & Admiral James Stavridis
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=2034+Elliot+Ackerman+Stavridis) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=2034+Elliot+Ackerman+Stavridis)
 
 **Predicted rating:** 7/10
 
@@ -322,6 +346,7 @@ satire and forward momentum that book lacked.
 ### Vortex — Larry Bond
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Vortex+Larry+Bond) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Vortex+Larry+Bond)
 
 **Predicted rating:** 7/10
 
