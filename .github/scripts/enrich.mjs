@@ -152,6 +152,7 @@ Field rules:
 
 // ── 3. Rewrite tbr.md ────────────────────────────────────────────────────────
 
+// Every entry enriched here also gets a Fulton County OverDrive search link (see below).
 function enrichTBR(title, author, recSource, enriched) {
   let md = fs.readFileSync('tbr.md', 'utf8');
 
@@ -171,10 +172,18 @@ function enrichTBR(title, author, recSource, enriched) {
   const kindleMatch = stubBlock.match(/\*\*Kindle:\*\* .+/);
   const kindleLine  = kindleMatch ? kindleMatch[0] : null;
 
+  // Every entry reaching this point is unowned by construction (see header
+  // comment on this function's caller). Fulton County's OverDrive catalog
+  // requires a signed-in session for live availability, so this is a search
+  // link, not a confirmed-available link.
+  const libraryUrl  = `https://fulcolibrary.overdrive.com/search?query=${encodeURIComponent(`${title} ${author}`)}`;
+  const libraryLine = `**Library:** [Check Fulton County OverDrive](${libraryUrl})`;
+
   // Build the enriched entry.
   const recSuffix = recSource ? ` *(rec from ${recSource})*` : '';
   const lines = [`### ${title} — ${author}${recSuffix}`];
   if (kindleLine) lines.push('', kindleLine);
+  lines.push('', libraryLine);
   lines.push(
     '',
     `**Predicted rating:** ${enriched.predicted_rating}/10`,
