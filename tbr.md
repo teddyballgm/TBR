@@ -31,7 +31,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### Going Postal — Terry Pratchett
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Going+Postal+Terry+Pratchett) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Going+Postal+Terry+Pratchett) | Price: $6.49 🔔 *alert set @ $6.48*
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Going+Postal+Terry+Pratchett)
 
 **Predicted rating:** 8.5-9/10
@@ -178,7 +178,7 @@ satire and forward momentum that book lacked.
 
 ### Blood Meridian — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $9.99 🔔 *alert set @ $9.98*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $6.49 🔔 *alert set @ $6.48*
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Blood+Meridian+Cormac+McCarthy)
 
 **Predicted rating:** 8/10
@@ -208,6 +208,17 @@ satire and forward momentum that book lacked.
 **Why it's here:** Competent protagonist navigating complex institution. Genuine warmth. Surprisingly gripping despite low action. Lower darkness quotient than most of the list.
 
 **The caveat:** May skew too cozy — similar risk as Kingfisher. Left Hand of Darkness already tested this exact profile (low-action, thematic) and underperformed at 7/10.
+
+### For We Are Many (Bobiverse Book 2) — Dennis E. Taylor
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=For+We+Are+Many+Dennis+Taylor) | Price: $9.99 🔔 *alert set @ $9.98*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=For+We+Are+Many+Dennis+Taylor)
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Direct continuation of We Are Legion (We Are Bob), which landed exactly on its 8.5 prediction — the Von Neumann-probe discovery-engine mechanics and dry wit are proven in this system. Same author, same voice, same systems-driven core.
+
+**The caveat:** Sequel to a book you've already read — no new-reader discovery-engine novelty left, since the rules are established. Bobiverse is 5 books deep as of this list; not yet past the 6+ volume longevity red flag, but approaching it. Predicted a half-point below book 1 to reflect standard book-2 sag risk rather than assuming the exact-hit repeats.
 
 -----
 
@@ -254,7 +265,7 @@ satire and forward momentum that book lacked.
 
 ### Discount Dan's Backroom Bargains — James Hunter *(rec from social media)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: *not yet tracked*
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Discount+Dan+James+Hunter) | Price: $4.99 🔔 *alert set @ $4.98*
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Discount+Dans+Backroom+Bargains+James+Hunter)
 
 **Predicted rating:** 7.0–7.5/10
@@ -306,7 +317,7 @@ satire and forward momentum that book lacked.
 
 ### Red Rising — Pierce Brown *(rec from Gavin)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Red%20rising%20Pierce%20brown) | Price: $1.99 🔔 *alert set @ $1.98*
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Red+Rising+Pierce+Brown)
 
 **Predicted rating:** 6.5–7.5/10
@@ -319,7 +330,7 @@ satire and forward momentum that book lacked.
 
 ### Dark Matter — Blake Crouch *(rec from Gavin)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch) | Price: $12.99 🔔 *alert set @ $12.98*
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Dark+Matter+Blake+Crouch)
 
 **Predicted rating:** 6.5/10
