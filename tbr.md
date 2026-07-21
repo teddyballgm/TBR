@@ -379,6 +379,14 @@ satire and forward momentum that book lacked.
 
 **The caveat:** Self-recommendation (author submitting own book) is a flag. Even granting competent execution, the subgenre's conventions — first-person suspense, reveal-driven plotting, marriage-as-mystery — don't intersect with the DCC axis at all. Likely finishable but not the thing being chased.
 
+### Dauntless (The Lost Fleet #1) — Jack Campbell *(rec from David Rice)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dauntless+Lost+Fleet+Jack+Campbell) | Price: *not yet tracked*
+
+**Why it's here:** Fleet-tactics competence porn — a disciplined commander rebuilding an unruly fleet's cohesion has some systems-puzzle appeal in the DCC vein. Well-regarded for its space combat craft.
+
+**The caveat:** Structurally misaligned on three fronts — built on a King Arthur/messianic-return legend framing (earnest chosen-one anti-pattern), protagonist-as-moral-paragon rather than protagonist-as-vehicle, and a six-book core series that Campbell extended into multiple spinoff series (Beyond the Frontier, Lost Stars, Outlands) — series-longevity red flag. Predicted 6/10; treat as a low-confidence add.
+
 -----
 
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
