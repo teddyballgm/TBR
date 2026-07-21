@@ -367,6 +367,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### Happy Wife — Meredith Lavender *(rec from Meredith Lavender)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Happy%20wife%20Meredith%20Lavender)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Happy%20Wife%20Meredith%20Lavender)
+
+**Predicted rating:** 5.5/10
+
+**Why it's here:** Domestic thriller territory — a wife investigating her husband's dark secrets at a Nantucket estate. The genre trades on twist mechanics and marital dread, which is structurally the opposite of what the profile rewards: no worldbuilding to speak of, protagonist-forward interiority, and tension built on withheld information rather than earned weirdness. Closer to airport-thriller craft than to the authorial control and satirical teeth the benchmark demands.
+
+**The caveat:** Self-recommendation (author submitting own book) is a flag. Even granting competent execution, the subgenre's conventions — first-person suspense, reveal-driven plotting, marriage-as-mystery — don't intersect with the DCC axis at all. Likely finishable but not the thing being chased.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -576,6 +590,7 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 ## Already Read / Removed from Queue
 
