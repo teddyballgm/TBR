@@ -577,6 +577,15 @@ satire and forward momentum that book lacked.
 
 -----
 
+
+### Happy wife — Meredith Lavender *(rec from Meredith Lavender)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Happy%20wife%20Meredith%20Lavender)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - We Are Legion (We Are Bob) — Dennis E. Taylor. Read (Audible). Predicted 8.5 → actual 8.5. Landed at 8.5, exactly on its predicted 8.5.
