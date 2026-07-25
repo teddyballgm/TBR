@@ -124,7 +124,9 @@ Rules:
 [Authoring checklist. Not a book section — parsers and the enrichment Action skip it.]
 ```
 
-**Owned entries drop the acquisition lines.** A book you already have carries `**Status:** [Owned/Purchased, with provenance]` *instead of* the `**Kindle:**` and `**Library:**` lines — there's no price to track and no reason to borrow it. The two shapes are mutually exclusive: as of this writing all 46 queue entries carry exactly one of `**Library:**` (25, unowned) or `**Status:**` (21, owned). The site keys off this — `**Status:**` suppresses price tracking in the UI and turns on the Rate button.
+**Owned entries drop the acquisition lines.** A book you already have carries `**Status:** [Owned/Purchased, with provenance]` *instead of* the `**Kindle:**` and `**Library:**` lines — there's no price to track and no reason to borrow it. The two shapes are mutually exclusive: every queue entry carries exactly one of them. An entry carrying both is a defect, and it has a specific cause worth recognizing — a book bought *after* it was queued, where `**Status:**` was added by hand and the now-dead `**Kindle:**` price line was never removed. It's invisible on the site (`renderTBRBook` branches on ownership and never renders the price for an owned book), so it only shows up as a stale price in the file, which then reads as a deliberate alert threshold. Nothing prompts the removal; check for it when you mark a book owned.
+
+The site keys off this — `**Status:**` suppresses price tracking in the UI and turns on the Rate button.
 
 Rules:
 - **Required fields:** Title, Author, "Predicted rating," "Why it's here," "The caveat"
