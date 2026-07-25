@@ -156,7 +156,6 @@ satire and forward momentum that book lacked.
 
 ### Catch-22 — Joseph Heller
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
 **Status:** Purchased
 
 **Predicted rating:** 8/10
