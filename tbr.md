@@ -276,19 +276,6 @@ satire and forward momentum that book lacked.
 
 -----
 
-### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
-**Status:** Purchased
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Fantasy siege novel with an engineer protagonist solving problems laterally. Parker is known for dry wit and systems-thinking worldbuilding — the engineer-narrator solving problems by exhausting every option is a direct match for DCC's "systems followed to logical extremes."
-
-**The caveat:** Unreliable narrator structure — some readers find the framing device more clever than satisfying. Real risk is tonal: dry can tip into flat without DCC's satirical warmth underneath it.
-
----
-
 ### The Yiddish Policemen's Union — Michael Chabon
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Yiddish+Policemens+Union+Michael+Chabon) | Price: $15.99 🔔 *alert set @ $15.98*
@@ -594,6 +581,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- Sixteen Ways to Defend a Walled City — K.J. Parker. Read (Kindle). Predicted 8 → actual 7.5. Landed at 7.5, half a point below its 8/10 prediction.
 - We Are Legion (We Are Bob) — Dennis E. Taylor. Read (Audible). Predicted 8.5 → actual 8.5. Landed at 8.5, exactly on its predicted 8.5.
 - The Running Man — Stephen King (writing as Richard Bachman). Read (Libby audiobook). Predicted 7.5-8 → actual 8. Landed at 8/10, at the top of its 7.5-8 predicted range.
 - The Left Hand of Darkness — Ursula Le Guin. Read (Audible). Predicted 8.5 → actual 7. Slow pace, themes didn't land — the slow/thematic literary underperformance pattern (see Known risks).
