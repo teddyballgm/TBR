@@ -156,7 +156,6 @@ satire and forward momentum that book lacked.
 
 ### Catch-22 — Joseph Heller
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Catch-22+Joseph+Heller) | Price: *not yet tracked*
 **Status:** Purchased
 
 **Predicted rating:** 8/10
@@ -278,7 +277,6 @@ satire and forward momentum that book lacked.
 
 ### Sixteen Ways to Defend a Walled City — K.J. Parker *(rec from Dylan)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Sixteen+Ways+to+Defend+a+Walled+City+KJ+Parker) | Price: $9.99 🔔 *alert set @ $1.99*
 **Status:** Purchased
 
 **Predicted rating:** 8/10
