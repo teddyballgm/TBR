@@ -66,22 +66,38 @@ The Action authenticates with the workflow's default `GITHUB_TOKEN`, not a store
 
 ### tbr.md
 
-Top-level structure:
+Top-level structure (these are the only `##` headings the lint allows, and the
+last two must match verbatim):
 ```markdown
 ## Tier 1 — [description]
 ## Tier 2 — [description]  
 ## Tier 3 — [description]
 ## Tier 4 — [description]
-## Already Read / Removed
+## Already Read / Removed from Queue
+## Adding a New TBR Book (Checklist)
 ```
 
 Tier 4 is reserved for owned backlogs acquired in bulk (e.g. a Humble Bundle) rather than individually triaged submissions — same entry schema as any other tier, just a different provenance. It participates in rating reconciliation like Tiers 1–3.
 
-Individual book entry:
+Individual book entry — **unowned**, carrying both acquisition lines:
 ```markdown
 ### Title — Author *(rec from Source)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Title+Author) | Price: $X.XX ~~$Y.YY~~ 🔔 alert set @ $Z.ZZ
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Title+Author)
+
+**Predicted rating:** X/10
+
+**Why it's here:** Reason this book made the list.
+
+**The caveat:** The main risk or reservation.
+```
+
+Individual book entry — **owned**, which replaces both acquisition lines with a
+single status line:
+```markdown
+### Title — Author
 
 **Status:** Purchased
 
@@ -94,10 +110,13 @@ Individual book entry:
 
 Field notes:
 - `*(rec from Source)*` on the title line is optional
-- `**Status:** Purchased` is optional — present only for bought books; suppresses price tracking in the UI
+- **The title line separator must be a spaced em dash — `### Title — Author`.** The site splits on that exact ` — ` and skips any entry it can't split, with no error anywhere: the book simply doesn't appear on the page. A hyphen, an en dash, or an unspaced em dash loses the book. `lint-schema.mjs` checks this.
+- **Exactly one acquisition shape per entry** — either `**Kindle:**` + `**Library:**` (unowned) or `**Status:**` (owned), never both and never neither. Both together is what happens when a book is bought after being queued and the dead price line isn't removed; the site hides it (ownership suppresses price rendering), so it survives in the file looking like a deliberate alert threshold. `lint-schema.mjs` checks this.
+- `**Status:**` must contain the literal word "purchased" (any casing) — that's the string the site tests to suppress price tracking and show the Rate button. `**Status:** Owned` on its own renders as an unowned entry with no prices. `lint-schema.mjs` checks this.
 - `**Kindle:**` price fields are optional — if no price data, renders as "price not yet tracked"
 - eReaderIQ URL format: `https://www.ereaderiq.com/search/?q=Title+Author` (URL-encoded)
-- Alert threshold is set at $0.01 below current price
+- Alert threshold sits $0.01 below a reference price — usually the current price, sometimes a historical floor you missed. See CONSTITUTION.md for which to use.
+- The enrichment Action writes the `**Library:**` line on every book it triages, so unowned entries reaching `main` always have both lines.
 
 ### ratings.md
 
