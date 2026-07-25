@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Sixteen Ways to Defend a Walled City — K.J. Parker · 7.5/10 *(Kindle)*
+
+Clever story on many levels.  Orhan felt uneven - can’t tell if that was his fatigue because of the siege or what. Good pacing
+
 ### We Are Legion (We Are Bob) — Dennis E. Taylor · 8.5/10 *(Audible)*
 
 Fun premise. Engaging main character(s). Liked narrator. Could have been higher if I could tell where the stakes were
