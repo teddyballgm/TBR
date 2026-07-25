@@ -146,8 +146,8 @@ async function submitTBR({ title, author, recSource, submitterName }) {
   });
 
   const prBody = submitterName
-    ? `Submitted by ${submitterName} via tefleming.com`
-    : 'Submitted via tefleming.com';
+    ? `Submitted by ${submitterName} via tbr.tefleming.com`
+    : 'Submitted via tbr.tefleming.com';
 
   const pr = await ghFetch(`/repos/${REPO}/pulls`, jsonPost({
     title: `TBR: ${title} — ${author}`,
@@ -196,7 +196,7 @@ async function submitRating({ title, author, series, scoreStr, format, notes }) 
   // matches on the underlying work rather than an exact title/author string.
   const pr = await ghFetch(`/repos/${REPO}/pulls`, jsonPost({
     title: `Rating: ${displayTitle} — ${author} · ${scoreStr}/10`,
-    body: 'Submitted via tefleming.com — queue reconciliation runs automatically on open.',
+    body: 'Submitted via tbr.tefleming.com — queue reconciliation runs automatically on open.',
     head: branch,
     base: 'main',
   }));
@@ -257,7 +257,7 @@ export default async function handler(req, res) {
   }
 
   // CORS — restricted to the site's own origin. Override via ALLOWED_ORIGIN.
-  res.setHeader('Access-Control-Allow-Origin', process.env.ALLOWED_ORIGIN || 'https://tefleming.com');
+  res.setHeader('Access-Control-Allow-Origin', process.env.ALLOWED_ORIGIN || 'https://tbr.tefleming.com');
   res.setHeader('Access-Control-Allow-Methods', 'POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 

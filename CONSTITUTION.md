@@ -7,7 +7,7 @@
 
 This repo is a personal reading record and curation system. It is not Goodreads. It is not comprehensive. It is an opinionated, maintained list of what's worth reading and why — judged against a specific taste profile — and a queue of what's next, ranked by confidence of hitting that profile.
 
-The site at tefleming.com surfaces these files. The markdown files are the source of truth. The site is a reader and submission interface, not a database.
+The site at tbr.tefleming.com surfaces these files. The markdown files are the source of truth. The site is a reader and submission interface, not a database.
 
 ---
 
@@ -187,7 +187,7 @@ Claude should assess submissions against the taste profile defined above — not
 
 ---
 
-## Site — tefleming.com
+## Site — tbr.tefleming.com
 
 The site is a read-mostly interface with a submission form. It has two tabs:
 

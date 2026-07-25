@@ -1,6 +1,6 @@
 # Operations Runbook
 
-Operational guide for keeping `tefleming.com` (repo `teddyballgm/TBR`) running.
+Operational guide for keeping `tbr.tefleming.com` (repo `teddyballgm/TBR`) running.
 For architecture and data schemas, see `development.md`.
 
 ---
@@ -79,7 +79,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 
 | Variable | Where | Default | Effect |
 |---|---|---|---|
-| `ALLOWED_ORIGIN` | Vercel | `https://tefleming.com` | CORS origin allowed to POST to `/api/submit` |
+| `ALLOWED_ORIGIN` | Vercel | `https://tbr.tefleming.com` | CORS origin allowed to POST to `/api/submit` |
 | `ANTHROPIC_MODEL` | GitHub Actions | `claude-opus-4-7` | Model used for enrichment (e.g. bump to a newer Claude model) |
 | `ANTHROPIC_VERSION` | GitHub Actions | `2023-06-01` | Anthropic API version header |
 
@@ -87,7 +87,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 
 ## Verification checklist (after any secret rotation)
 
-1. **Submit form:** on `tefleming.com`, submit a throwaway test book. You should get a PR link back (not an auth error).
+1. **Submit form:** on `tbr.tefleming.com`, submit a throwaway test book. You should get a PR link back (not an auth error).
 2. **Enrichment:** the submission PR's Action should go green and post a **"Claude enrichment"** comment within a minute. (For a rating submission, the comment reports whether the queue was reconciled or left untouched.)
 3. **Merge & deploy:** merge the PR; within ~10s Vercel redeploys `main` and the book appears on the site.
 4. **Clean up:** delete the test PR/branch and remove the test entry if merged.
@@ -97,5 +97,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 ## Deploy & hosting notes
 
 - **Hosting:** Vercel, auto-deploys on push to `main` (~10s, no build step).
-- **DNS/domain:** `tefleming.com` is configured in Vercel. `CNAME` in the repo is a legacy GitHub Pages artifact and is unused.
+- **DNS/domain:** `tbr.tefleming.com` is assigned to this project in Vercel, via a `tbr` CNAME record at IONOS pointing to the target Vercel's domain panel shows for the project. Vercel provisions and renews the certificate automatically.
+- **The apex is not ours.** `tefleming.com` and `www.tefleming.com` are assigned to a *separate* Vercel project (a static placeholder page). A domain can only belong to one Vercel project at a time, so re-adding the apex here would silently take it away from that project. Don't.
+- **Don't touch these at IONOS:** the apex `A` record (`216.198.79.1`) and the `MX` records (`mx00.ionos.com` / `mx01.ionos.com`). The MX records are what make the `*@tefleming.com → tedfleming@me.com` catch-all forwarding work; delegating the domain to Vercel's nameservers would break email.
 - **Data is the repo:** `tbr.md` and `ratings.md` are the source of truth; every change is a git commit, so history *is* your backup — recover any bad edit with `git revert`.

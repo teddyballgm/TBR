@@ -1,7 +1,7 @@
 # TBR
 
 Personal book management system — a to-be-read queue and ratings log powering
-[tefleming.com](https://tefleming.com).
+[tbr.tefleming.com](https://tbr.tefleming.com).
 
 A deliberately minimal setup: a single `index.html` frontend (vanilla JS, no
 build step), one Vercel serverless function (`api/submit.js`), two markdown
