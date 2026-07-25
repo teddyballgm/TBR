@@ -156,7 +156,12 @@ Two consequences worth stating plainly:
 - **Describe the system as it is, not as it was.** Every claim here about how reads work, which tiers exist, or which fields an entry carries is something the predictor treats as true.
 - **Lessons belong in Known risks.** That section is the only place a calibration miss durably changes future predictions. A post-mortem written only into `ratings.md` teaches the reader; one written into Known risks teaches the pipeline.
 
-**Machine-checked subset:** `.github/scripts/lint-schema.mjs` runs on every PR and enforces the parts of the schemas above that are mechanically checkable — allowed `##` headings, presence of the three required entry fields, predicted-rating format, ratings.md heading shape, and stray triage placeholders. It is narrower than this document: it checks the ` — ` separator on `ratings.md` headings but **not** on `tbr.md` ones, so a queue entry can pass lint and still be dropped silently by the site. Green CI means "no known schema violation," not "the site will render it."
+**Machine-checked subset:** `.github/scripts/lint-schema.mjs` enforces the parts of the schemas above that are mechanically checkable — allowed `##` headings, the ` — ` title separator on both files' headings, presence of the three required entry fields, predicted-rating format, the one-acquisition-shape rule, the literal "purchased" in `**Status:**`, `ratings.md` heading shape, and stray triage placeholders. It runs in two places, and it needs both:
+
+- **On every pull request**, via `.github/workflows/lint-schema.yml`.
+- **Inside the enrichment Action**, immediately before it commits. This is not redundancy. The Action pushes with `GITHUB_TOKEN`, and GitHub does not let a `GITHUB_TOKEN` push trigger further workflow runs — so the PR check only ever sees the stub that arrived from the form, never the Action's own rewrite of these files. Without the in-process check, the commits that do the most editing would be the only ones nobody validates. A violation there fails the enrichment and names itself in the PR comment; nothing malformed gets pushed.
+
+It is still narrower than this document — it checks shape, not judgment. Nothing mechanical can tell you a tier is wrong, a caveat is dishonest, or an alert threshold no longer reflects what a book is worth to you. Green CI means "no known schema violation."
 
 ---
 

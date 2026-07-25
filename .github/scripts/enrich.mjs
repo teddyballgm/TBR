@@ -601,8 +601,39 @@ async function postFailureComment(err) {
 // Note: a push authenticated with GITHUB_TOKEN does not trigger other workflow
 // runs (GitHub suppresses that to prevent recursive Action loops) — intentional
 // here, since there's nothing further that should fire off this commit.
+// Run the schema lint against the working tree before anything is committed.
+//
+// This exists because the lint-schema workflow structurally cannot cover these
+// commits: the push below is authenticated with GITHUB_TOKEN, which GitHub
+// deliberately prevents from triggering further workflow runs (see the note on
+// commitAndPush). The Lint Schema check on a submission PR therefore only ever
+// examines the human/API-written stub — the Action's own file surgery, which is
+// what actually rewrites tbr.md and ratings.md, reaches main unchecked. Running
+// the lint here closes that gap at the point of damage: malformed content never
+// leaves the runner, and the failure comment names the violation.
+//
+// One consequence worth knowing: the lint reads whole files, not the diff, so a
+// pre-existing violation on the branch will fail enrichment even though this run
+// didn't cause it. That's the right trade — the violation is real either way,
+// and the comment shows exactly what to fix.
+function lintSchemaOrThrow() {
+  try {
+    const out = execSync('node .github/scripts/lint-schema.mjs', {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'pipe'],
+    });
+    console.log(out.trim());
+  } catch (err) {
+    const detail = [err.stdout, err.stderr].filter(Boolean).join('\n').trim();
+    throw new Error(
+      `Schema lint rejected the edited files — nothing was committed or pushed.\n\n${detail}`,
+    );
+  }
+}
+
 function commitAndPush(paths, message) {
   const list = Array.isArray(paths) ? paths : [paths];
+  lintSchemaOrThrow();
   run('git config user.name "github-actions[bot]"');
   run('git config user.email "github-actions[bot]@users.noreply.github.com"');
   run(`git add ${list.join(' ')}`);
