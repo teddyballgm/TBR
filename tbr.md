@@ -578,6 +578,15 @@ satire and forward momentum that book lacked.
 -----
 
 
+
+### Name of the wind — Patrick r *(rec from David rice)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Name%20of%20the%20wind%20Patrick%20r)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Sixteen Ways to Defend a Walled City — K.J. Parker. Read (Kindle). Predicted 8 → actual 7.5. Landed at 7.5, half a point below its 8/10 prediction.
