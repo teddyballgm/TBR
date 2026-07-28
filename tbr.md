@@ -367,6 +367,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### The Name of the Wind — Patrick Rothfuss *(rec from David rice)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Name%20of%20the%20wind%20Patrick%20r)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Name%20of%20the%20Wind%20Patrick%20Rothfuss)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Rothfuss has genuine prose craft and the frame-story structure shows real authorial control — the Kvothe-in-the-inn narration is a deliberate choice, not a default. The magic system (sympathy) has the kind of ruleset density that lands well against the Sanderson reference point, and the University sections have earned worldbuilding.
+
+**The caveat:** This is a protagonist-forward novel where you are asked to love Kvothe — precocious, gifted, narrating his own legend — and the taste profile explicitly flags books that require loving the main character as a risk. Also long, unhurried, and structurally the opposite of DCC's economy; the payoff is deferred across a trilogy that isn't finished. **Series entry point — start here.** Kingkiller Chronicle reading order: *The Name of the Wind*, *The Wise Man's Fear*.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -576,6 +590,7 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 ## Already Read / Removed from Queue
