@@ -84,6 +84,10 @@ Half a point behind PHM — same problem-solving energy, slightly less ambitious
 
 Been a few years — but enjoyed reading the books after the first season of the show. Having the visuals from the show made it more immersive. Dust, the trilogy's finale, undercut itself: the time-shifting structure undermined the stakes built up in the earlier eras, so the ending didn't land as hard as it should have. Comp for future predictions when an ending is billed as a payoff for slow-built stakes.
 
+### Going Postal — Terry Pratchett · 8/10 *(Hoopla — Richard Coyle)*
+
+Fun, lighter satire. Started on the older Stephen Briggs recording, switched to the newer Richard Coyle narration partway through — the rating moved up after the switch, validating the queue's narration-risk caveat. Predicted 8.5-9, landed at 8.
+
 ### Expeditionary Force — Craig Alanson · 8.5/10
 
 First three books are fantastic — voice, pacing, and the Skippy dynamic all firing on all cylinders. Once caught up and returning for Ground State onward: formulaic, clearly unplanned — new big baddie each arc with no sense of a destination. Classic case of a series outlasting its premise. (Series overall closer to 6.5/10.)
