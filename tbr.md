@@ -29,27 +29,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Going Postal — Terry Pratchett
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Going+Postal+Terry+Pratchett) | Price: $6.49 🔔 *alert set @ $6.48*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Going+Postal+Terry+Pratchett)
-
-**Predicted rating:** 8.5-9/10
-
-**Why it's here:** The untested gap in the profile — HHGTTG rated
-9/10, zero Pratchett on record. Direct descendant of that DNA: a con
-man deployed as pure vehicle to satirize institutions, internal logic
-followed to absurd coherent extremes, real teeth under the jokes.
-Functions as a standalone Discworld entry point despite the series
-size.
-
-**The caveat:** Narration risk — the older Stevens/Briggs recordings
-are dated; check the newer full-cast recordings before buying audio,
-or default to Kindle. Register is warmer than DCC's; the satire
-bites but rarely draws blood.
-
------
-
 ### No Country for Old Men — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
@@ -77,6 +56,33 @@ bites but rarely draws blood.
 -----
 
 ## Tier 2 — Strong Recommendation
+
+### Making Money (Moist von Lipwig #2) — Terry Pratchett
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Making+Money+Terry+Pratchett) | Price: *not yet tracked*
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Making+Money+Terry+Pratchett)
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Direct sequel to Going Postal (8/10 actual) —
+same con-man-legitimizes-a-broken-institution engine, redirected at
+Ankh-Morpork's currency and the Royal Mint. Arguably a tighter fit
+for the systems-lens preference than the postal book: banking gives
+Moist a more mechanical rule-set to exploit (gold standard vs. paper
+money, a chief cashier obsessed with "true" numbers, a board working
+against him).
+
+**The caveat:** Sequel-formula risk — same trick (con man conquers
+institution #2) with more subplot sprawl layered on (a rival
+family's assassination plot, a golem-labor thread, a chairman who's
+literally a dog). Half point knocked off the Going Postal actual for
+that, same logic as the Bobiverse Book 2 discount. Narration mirrors
+the Going Postal split: an older Stephen Briggs solo recording vs. a
+newer Penguin re-recording (Richard Coyle as Moist, with Bill Nighy
+and Peter Serafinowicz). Check Hoopla for the newer cast before
+defaulting to the first result.
+
+-----
 
 ### All Systems Red (The Murderbot Diaries #1) — Martha Wells
 
@@ -595,6 +601,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- Going Postal — Terry Pratchett. Read (Hoopla — started Stephen Briggs, switched to newer Richard Coyle narration mid-book). Predicted 8.5-9 → actual 8. Narrator swap confirmed the queue's caveat: rating moved up after switching off the older recording.
 - Sixteen Ways to Defend a Walled City — K.J. Parker. Read (Kindle). Predicted 8 → actual 7.5. Landed at 7.5, half a point below its 8/10 prediction.
 - We Are Legion (We Are Bob) — Dennis E. Taylor. Read (Audible). Predicted 8.5 → actual 8.5. Landed at 8.5, exactly on its predicted 8.5.
 - The Running Man — Stephen King (writing as Richard Bachman). Read (Libby audiobook). Predicted 7.5-8 → actual 8. Landed at 8/10, at the top of its 7.5-8 predicted range.
