@@ -589,6 +589,15 @@ satire and forward momentum that book lacked.
 
 
 
+
+### Consuming fire — Scalzi
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Consuming%20fire%20Scalzi)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Collapsing Empire — John Scalzi. Read (Kindle). Predicted 8 → actual 8.5. Beat its 8/10 prediction by half a point (actual 8.5).
