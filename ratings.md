@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### The Collapsing Empire — John Scalzi · 8.5/10 *(Kindle)*
+
+Sharp but light, good pacing of reveals. Looking forward to the next book in series
+
 ### Sixteen Ways to Defend a Walled City — K.J. Parker · 7.5/10 *(Kindle)*
 
 Clever story on many levels.  Orhan felt uneven - can’t tell if that was his fatigue because of the siege or what. Good pacing
