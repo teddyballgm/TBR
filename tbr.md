@@ -399,16 +399,6 @@ satire and forward momentum that book lacked.
 
 -----
 
-### The Collapsing Empire — John Scalzi
-
-**Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
-
-**Predicted rating:** 8/10
-
-**Why it's here:** The collapsing FTL trade network — the Flow — is the central system: a galaxy-spanning interdependency engineered (accidentally) to fail, followed through its political and economic consequences. Multi-POV discovery structure with court intrigue; the reader unravels the mechanics alongside the characters. The strongest systems-driven / discovery-engine fit in the bundle.
-
-**The caveat:** **Series entry point — start here.** Book 1 of the Interdependency trilogy (→ The Consuming Fire → The Last Emperox). Scalzi's snark runs lighter than the DCC register; the systems, not the voice, carry it.
-
 ### Lock In — John Scalzi
 
 **Status:** Owned (Humble Bundle EPUB, June 2026) — purchased
@@ -601,6 +591,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- The Collapsing Empire — John Scalzi. Read (Kindle). Predicted 8 → actual 8.5. Beat its 8/10 prediction by half a point (actual 8.5).
 - Going Postal — Terry Pratchett. Read (Hoopla — started Stephen Briggs, switched to newer Richard Coyle narration mid-book). Predicted 8.5-9 → actual 8. Narrator swap confirmed the queue's caveat: rating moved up after switching off the older recording.
 - Sixteen Ways to Defend a Walled City — K.J. Parker. Read (Kindle). Predicted 8 → actual 7.5. Landed at 7.5, half a point below its 8/10 prediction.
 - We Are Legion (We Are Bob) — Dennis E. Taylor. Read (Audible). Predicted 8.5 → actual 8.5. Landed at 8.5, exactly on its predicted 8.5.
