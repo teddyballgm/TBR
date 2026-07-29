@@ -387,6 +387,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### The Consuming Fire — John Scalzi
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Consuming%20fire%20Scalzi)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Consuming%20Fire%20John%20Scalzi)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Second book in the Interdependency trilogy — space opera with Scalzi's signature brisk dialogue, political maneuvering, and dry wit. The satirical bite around a decaying empire and willfully blind aristocracy is the closest structural match to the profile: dark comedy following its internal logic. Prose is economical and the plotting is tight, which aligns with the craft-economy criterion.
+
+**The caveat:** Not a series entry point — reading order requires The Collapsing Empire first, which isn't in the queue. Scalzi's voice runs toward glib rather than teeth-baring; the wit is closer to sitcom cadence than DCC's coherent-extreme satire, and characters tend to sound alike. Middle-book structural drag is a real risk.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -589,14 +603,6 @@ satire and forward momentum that book lacked.
 
 
 
-
-### Consuming fire — Scalzi
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Consuming%20fire%20Scalzi)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
