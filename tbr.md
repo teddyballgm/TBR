@@ -604,6 +604,15 @@ satire and forward momentum that book lacked.
 
 
 
+
+### Hyperion — Dan Simmons *(rec from Darren Wheat)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Hyperion%20Dan%20Simmons)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Collapsing Empire — John Scalzi. Read (Kindle). Predicted 8 → actual 8.5. Beat its 8/10 prediction by half a point (actual 8.5).
