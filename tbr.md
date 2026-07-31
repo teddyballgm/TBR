@@ -227,6 +227,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### Hyperion — Dan Simmons *(rec from Darren Wheat)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Hyperion%20Dan%20Simmons)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Hyperion%20Dan%20Simmons)
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Frame-tale structure with six pilgrims telling wildly different stories — horror, noir, war, literary tragedy — held together by strong authorial control and a genuinely strange far-future world that trusts the reader to assemble it. The worldbuilding is dense and unexplained in the DCC sense: Shrike, Time Tombs, TechnoCore all land as earned weirdness. Tonal range and structural ambition are the draw; the Priest's Tale in particular has the dark-wit-with-teeth quality the profile chases.
+
+**The caveat:** Literary-SF register leans thematic and mournful in stretches, and the book is famously a half-novel — it ends mid-arc and the payoff lives in Fall of Hyperion. Some tales are stronger than others, so the quality is unevenly distributed in the way that usually caps these at 8 rather than 9. **Series entry point — start here.** Read order: Hyperion → Fall of Hyperion (the two form one story); Endymion books are a later duology.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 ### The Road — Cormac McCarthy
@@ -600,6 +614,7 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
