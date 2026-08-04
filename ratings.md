@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### making money — Terry Pratchett · 8/10 *(Hoopla)*
+
+This series is definitely fun, light.  Some interesting concepts (Igors?) and I do appreciate the satire
+
 ### The Collapsing Empire — John Scalzi · 8.5/10 *(Kindle)*
 
 Sharp but light, good pacing of reveals. Looking forward to the next book in series
