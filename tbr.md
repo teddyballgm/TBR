@@ -594,6 +594,15 @@ satire and forward momentum that book lacked.
 
 
 
+
+### Moist von Lipwig 3 — Terry Pratchett
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Moist%20von%20Lipwig%203%20Terry%20Pratchett)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Making Money (Moist von Lipwig #2) — Terry Pratchett. Read (Hoopla). Predicted 7.5 → actual 8. Beat its 7.5 prediction by half a point (actual 8).
