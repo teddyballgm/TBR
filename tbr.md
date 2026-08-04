@@ -390,6 +390,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### Raising Steam — Terry Pratchett
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Raising%20Steam%20Terry%20Pratchett)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Raising%20Steam%20Terry%20Pratchett)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Late-period Discworld, and Pratchett's satirical machinery is the closest thing in fantasy to the coherent-extreme wit the profile chases — DCC owes him a debt. Raising Steam applies that machinery to industrial revolution as social force, with Moist von Lipwig as the vehicle-protagonist the profile tolerates well. The worldbuilding is dense and earned by forty prior books.
+
+**The caveat:** This is widely considered one of the weakest late Discworld novels — Pratchett's illness shows in loose structure, speechifying where satire used to bite, and thematic points made explicitly rather than followed to their logical extremes. Also a poor entry point; much of the payoff depends on prior Moist and dwarf-politics arcs, so read cold it may land closer to 6.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -589,6 +603,7 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
