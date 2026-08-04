@@ -216,20 +216,6 @@ satire and forward momentum that book lacked.
 
 -----
 
-### Making Money — Terry Pratchett
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Moist%20von%20Lipwig%203%20Terry%20Pratchett)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Making%20Money%20Terry%20Pratchett)
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Third Moist von Lipwig book — Pratchett running a con artist through the reinvention of paper currency on the Discworld. The satirical engine is exactly the kind of thing the profile rewards: internal logic followed to coherent extremes, dark wit with teeth, economy of craft. Moist as vehicle-protagonist rather than object of affection tracks well against the DCC benchmark.
-
-**The caveat:** Late-period Pratchett occasionally softens the satire toward warmth in a way that can undercut the teeth (adjacent to the Wizard's Guide risk). It's also book 3 of a sub-series — reading Going Postal first is close to required, so this entry is really a bet on the whole Moist arc. Discworld's comic voice is protagonist-adjacent enough that if Moist doesn't land, the book doesn't.
-
------
-
 ## Tier 3 — Worth Trying
 
 ### The Road — Cormac McCarthy
@@ -603,7 +589,6 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
-
 
 
 
