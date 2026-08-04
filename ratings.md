@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### making money — Terry Pratchett · 8/10 *(Hoopla)*
+### Making Money — Terry Pratchett · 8/10 *(Hoopla)*
 
 This series is definitely fun, light.  Some interesting concepts (Igors?) and I do appreciate the satire
 
