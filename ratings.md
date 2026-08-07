@@ -133,7 +133,7 @@ Incredible world-architect, but the texture of living inside the longer books ca
 ## 6-6.5
 
 
-### Traitor baru cormorant — Seth Dickinson · 6.5/10 *(Libby audiobook)*
+### The Traitor Baru Cormorant — Seth Dickinson · 6.5/10 *(Libby audiobook)*
 
 The ending got a half point back. The arc of this story is ambitious. I get the satire but it’s so blatant that it distracted me from the story.
 
