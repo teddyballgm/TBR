@@ -145,17 +145,6 @@ satire and forward momentum that book lacked.
 
 **The caveat:** Deliberately repetitive structure that rewards patience. Not a fast read.
 
-### The Traitor Baru Cormorant — Seth Dickinson
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Traitor+Baru+Cormorant+Seth+Dickinson) | Price: $9.99 🔔 *alert set @ $9.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Traitor+Baru+Cormorant+Seth+Dickinson)
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Genuine structural ambition, ruthless internal logic, a protagonist who is a vehicle for ideas about empire and identity. Dickinson follows his premise to its conclusions without flinching — the same quality that makes DCC's weirdness work.
-
-**The caveat:** Deliberately brutal. Go in knowing that.
-
 ### Blood Meridian — Cormac McCarthy
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $6.49 🔔 *alert set @ $6.48*
@@ -611,6 +600,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- The Traitor Baru Cormorant — Seth Dickinson. Read (Libby audiobook). Predicted 8.5 → actual 6.5. Landed 6.5 vs predicted 8.5 — meaningful miss, satire too blatant.
 - Making Money (Moist von Lipwig #2) — Terry Pratchett. Read (Hoopla). Predicted 7.5 → actual 8. Beat its 7.5 prediction by half a point (actual 8).
 - The Collapsing Empire — John Scalzi. Read (Kindle). Predicted 8 → actual 8.5. Beat its 8/10 prediction by half a point (actual 8.5).
 - Going Postal — Terry Pratchett. Read (Hoopla — started Stephen Briggs, switched to newer Richard Coyle narration mid-book). Predicted 8.5-9 → actual 8. Narrator swap confirmed the queue's caveat: rating moved up after switching off the older recording.
