@@ -113,8 +113,7 @@ satire and forward momentum that book lacked.
 
 ### City of Stairs — Robert Jackson Bennett
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=City+of+Stairs+Robert+Jackson+Bennett) | Price: $9.99 🔔 *alert set @ $9.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=City+of+Stairs+Robert+Jackson+Bennett)
+**Status:** Purchased
 
 **Predicted rating:** 8/10
 
