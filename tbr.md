@@ -597,6 +597,15 @@ satire and forward momentum that book lacked.
 
 
 
+
+### Tainted cup — Robert Jackson bennett *(rec from Dylan)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Tainted%20cup%20Robert%20Jackson%20bennett)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Traitor Baru Cormorant — Seth Dickinson. Read (Libby audiobook). Predicted 8.5 → actual 6.5. Landed 6.5 vs predicted 8.5 — meaningful miss, satire too blatant.
