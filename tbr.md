@@ -204,6 +204,20 @@ satire and forward momentum that book lacked.
 
 -----
 
+### The Tainted Cup — Robert Jackson Bennett *(rec from Dylan)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Tainted%20cup%20Robert%20Jackson%20bennett)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Tainted%20Cup%20Robert%20Jackson%20Bennett)
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Bennett is a genuine stylist with strong authorial control, and this one pairs a Holmes/Watson dynamic with a mycological, body-horror-inflected empire fighting off leviathans — earned weirdness, not decorative weirdness. The worldbuilding is dense but delivered through the case rather than exposition dumps, and the prose has real wit. Structurally closer to The Rook than DCC — a competent, oddball investigator navigating an institution whose rules keep escalating.
+
+**The caveat:** It's a mystery first, and the genre's beat structure (interview, clue, reveal) can flatten the satirical teeth the profile rewards. Din as narrator is more earnest than acidic, so if you need the dark comic register DCC operates in, this will read a half-step warm.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 ### The Road — Cormac McCarthy
@@ -591,6 +605,7 @@ satire and forward momentum that book lacked.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
