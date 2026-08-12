@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Alien clay — A Tchaikovsky · 8/10 *(Kindle and Libby audio)*
+### Alien Clay — Adrian Tchaikovsky · 8/10 *(Kindle and Libby audio)*
 
 Great concept piece - felt overwrought in the build up but the payoff is excellent. Ending closer to 8.5, build up probably more like 7
 
