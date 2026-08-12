@@ -79,25 +79,6 @@ priced aggressively per page.
 
 -----
 
-### Alien Clay — Adrian Tchaikovsky
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Alien+Clay+Adrian+Tchaikovsky) | Price: *not yet tracked*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Alien+Clay+Adrian+Tchaikovsky)
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** The designated Tchaikovsky entry point. Dissident
-exiled to an alien-world labor camp — dual discovery engine (alien
-ecology plus regime logic), dry satirical first-person, standalone.
-New-author discovery candidate for the satirical-systems register.
-
-**The caveat:** Tchaikovsky is unproven in this system. Middle
-section is idea-dense with moderate action — partial echo of the
-low-action underperformance pattern (Left Hand 8.5→7), offset by
-satire and forward momentum that book lacked.
-
------
-
 ### Mother of Learning — nobody103
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
@@ -614,6 +595,7 @@ satire and forward momentum that book lacked.
 
 ## Already Read / Removed from Queue
 
+- Alien Clay — Adrian Tchaikovsky. Read (Kindle and Libby audio). Predicted 8.5 → actual 8. Landed 8/10, half a point below its 8.5 prediction.
 - The Traitor Baru Cormorant — Seth Dickinson. Read (Libby audiobook). Predicted 8.5 → actual 6.5. Landed 6.5 vs predicted 8.5 — meaningful miss, satire too blatant.
 - Making Money (Moist von Lipwig #2) — Terry Pratchett. Read (Hoopla). Predicted 7.5 → actual 8. Beat its 7.5 prediction by half a point (actual 8).
 - The Collapsing Empire — John Scalzi. Read (Kindle). Predicted 8 → actual 8.5. Beat its 8/10 prediction by half a point (actual 8.5).
