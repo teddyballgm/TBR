@@ -37,6 +37,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### All Systems Red — Martha Wells · 7/10 *(Hoopla audio)*
+
+I think the short format works against this book. Felt like dipping my toe into a new world. Interesting but no sense of the stakes. Will probably read sequels but not urgently
+
 ### Alien Clay — Adrian Tchaikovsky · 8/10 *(Kindle and Libby audio)*
 
 Great concept piece - felt overwrought in the build up but the payoff is excellent. Ending closer to 8.5, build up probably more like 7
