@@ -59,26 +59,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### All Systems Red (The Murderbot Diaries #1) — Martha Wells
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All+Systems+Red+Martha+Wells) | Price: *not yet tracked*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=All+Systems+Red+Martha+Wells)
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Corporate-dystopia satire with real teeth, dry
-dark wit, extreme economy of craft — novella-length, zero fat. The
-sardonic-distant voice is the opposite of the Piranesi failure mode
-(earnest native innocence).
-
-**The caveat:** Protagonist-forward — Murderbot's voice IS the book,
-the flagged risk mode. Prediction holds only if the sardonic register
-offsets it. Kevin R. Free's narration is well-regarded but not
-Hays/Bray tier. Series entry point — start here; later novellas are
-priced aggressively per page.
-
------
-
 ### Mother of Learning — nobody103
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
@@ -595,6 +575,7 @@ priced aggressively per page.
 
 ## Already Read / Removed from Queue
 
+- All Systems Red (The Murderbot Diaries #1) — Martha Wells. Read (Hoopla audio). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — short format and low stakes undercut it.
 - Alien Clay — Adrian Tchaikovsky. Read (Kindle and Libby audio). Predicted 8.5 → actual 8. Landed 8/10, half a point below its 8.5 prediction.
 - The Traitor Baru Cormorant — Seth Dickinson. Read (Libby audiobook). Predicted 8.5 → actual 6.5. Landed 6.5 vs predicted 8.5 — meaningful miss, satire too blatant.
 - Making Money (Moist von Lipwig #2) — Terry Pratchett. Read (Hoopla). Predicted 7.5 → actual 8. Beat its 7.5 prediction by half a point (actual 8).

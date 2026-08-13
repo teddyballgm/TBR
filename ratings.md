@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### All systems red — Martha wells · 7/10 *(Hoopla audio)*
+### All Systems Red — Martha Wells · 7/10 *(Hoopla audio)*
 
 I think the short format works against this book. Felt like dipping my toe into a new world. Interesting but no sense of the stakes. Will probably read sequels but not urgently
 
