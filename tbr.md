@@ -311,20 +311,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Happy Wife — Meredith Lavender *(rec from Meredith Lavender)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Happy%20wife%20Meredith%20Lavender)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Happy%20Wife%20Meredith%20Lavender)
-
-**Predicted rating:** 5.5/10
-
-**Why it's here:** Domestic thriller territory — a wife investigating her husband's dark secrets at a Nantucket estate. The genre trades on twist mechanics and marital dread, which is structurally the opposite of what the profile rewards: no worldbuilding to speak of, protagonist-forward interiority, and tension built on withheld information rather than earned weirdness. Closer to airport-thriller craft than to the authorial control and satirical teeth the benchmark demands.
-
-**The caveat:** Self-recommendation (author submitting own book) is a flag. Even granting competent execution, the subgenre's conventions — first-person suspense, reveal-driven plotting, marriage-as-mystery — don't intersect with the DCC axis at all. Likely finishable but not the thing being chased.
-
------
-
 ### The Name of the Wind — Patrick Rothfuss *(rec from David rice)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Name%20of%20the%20wind%20Patrick%20r)
@@ -575,6 +561,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Happy Wife — Meredith Lavender. Read (Libby audio). Predicted 5.5 → actual 7.5. Beat its 5.5 prediction by 2 points (actual 7.5)
 - All Systems Red (The Murderbot Diaries #1) — Martha Wells. Read (Hoopla audio). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — short format and low stakes undercut it.
 - Alien Clay — Adrian Tchaikovsky. Read (Kindle and Libby audio). Predicted 8.5 → actual 8. Landed 8/10, half a point below its 8.5 prediction.
 - The Traitor Baru Cormorant — Seth Dickinson. Read (Libby audiobook). Predicted 8.5 → actual 6.5. Landed 6.5 vs predicted 8.5 — meaningful miss, satire too blatant.

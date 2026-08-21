@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Happy wife — Meredith lavender · 7.5/10 *(Libby audio)*
+### Happy Wife — Meredith Lavender · 7.5/10 *(Libby audio)*
 
 Fun story - well paced. Interesting characters. Not my usual genre but I enjoyed it a good bit
 
