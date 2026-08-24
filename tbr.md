@@ -167,9 +167,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### The Tainted Cup — Robert Jackson Bennett *(rec from Dylan)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Tainted%20cup%20Robert%20Jackson%20bennett)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Tainted%20Cup%20Robert%20Jackson%20Bennett)
+**Status:** Purchased
 
 **Predicted rating:** 8/10
 
