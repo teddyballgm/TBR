@@ -145,7 +145,7 @@ Incredible world-architect, but the texture of living inside the longer books ca
 ## 6-6.5
 
 
-### City of stairs — Bennett · 6/10 *(Audible)*
+### City of Stairs — Robert Jackson Bennett · 6/10 *(Audible)*
 
 The ending was good - opening 75% needed to be cut way back.
 
