@@ -560,6 +560,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Perfect life — Meredith lavender *(rec from Meredith lavender)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Perfect%20life%20Meredith%20lavender)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - City of Stairs — Robert Jackson Bennett. Read (Audible). Predicted 8 → actual 6. Landed 6/10 vs predicted 8 — meaningful miss, pacing complaint.
