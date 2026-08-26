@@ -353,6 +353,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Perfect Life — Meredith Lavender *(rec from Meredith lavender)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Perfect%20life%20Meredith%20lavender)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Perfect%20Life%20Meredith%20Lavender)
+
+**Predicted rating:** 5/10
+
+**Why it's here:** Cannot verify this title against any known published work, and the recommendation source is the author herself — a self-rec with no external signal. Nothing about the submission suggests the taste-profile markers: no evidence of dark wit, original worldbuilding, or authorial control at the DCC level. Absent any indicator otherwise, this reads as an unvetted submission rather than a triaged pick.
+
+**The caveat:** The book may not exist under this title/author, or may be a self-published work with no track record against the profile. Flag for owner review before enrichment is trusted — the predicted rating is a placeholder reflecting absence of signal, not an assessment of the work.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -560,14 +574,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
-
-### Perfect life — Meredith lavender *(rec from Meredith lavender)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Perfect%20life%20Meredith%20lavender)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
