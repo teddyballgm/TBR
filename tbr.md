@@ -557,6 +557,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Heroes die — Stover *(rec from Random Reddit post)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Heroes%20die%20Stover)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Happy Wife — Meredith Lavender. Read (Libby audio). Predicted 5.5 → actual 7.5. Beat its 5.5 prediction by 2 points (actual 7.5)
