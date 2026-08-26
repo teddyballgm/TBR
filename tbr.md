@@ -165,6 +165,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Heroes Die — Matthew Woodring Stover *(rec from Random Reddit post)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Heroes%20die%20Stover)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Heroes%20Die%20Matthew%20Woodring%20Stover)
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** Stover writes with the kind of authorial control the profile demands — a brutal, tightly-plotted portal-fantasy premise (actor-assassin shot into a secondary world as live entertainment for a dystopian Earth audience) executed with real teeth. The frame is inherently satirical about spectacle and consumption, which lines up with DCC's game-show-as-atrocity engine, and Caine is a protagonist built as vehicle for the machinery rather than someone to love. Dense worldbuilding on both sides of the portal, earned weirdness, no bloat.
+
+**The caveat:** The nastiness is unrelenting and largely unleavened by DCC's dark wit — Stover plays it straight where Dinniman would crack a joke, and the grimness can read as posture rather than satire. Prose is muscular but occasionally purple, and the Earth-side dystopia leans harder on cruelty than on coherent internal logic.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 ### The Road — Cormac McCarthy
@@ -538,6 +552,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
