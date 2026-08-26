@@ -72,18 +72,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### City of Stairs — Robert Jackson Bennett
-
-**Status:** Purchased
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Espionage-inflected fantasy — an intelligence operative investigates a murder in a city where the gods used to be real and got killed. Strong discovery engine (outsider protagonist, suppressed history reader learns alongside her), dark wit, original theology-as-worldbuilding.
-
-**The caveat:** Book two shifts POV and loses some of book one's tightness — flag now so it's not a surprise later.
-
------
-
 ### The Lies of Locke Lamora — Scott Lynch
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $1.98*
@@ -559,6 +547,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- City of Stairs — Robert Jackson Bennett. Read (Audible). Predicted 8 → actual 6. Landed 6/10 vs predicted 8 — meaningful miss, pacing complaint.
 - Happy Wife — Meredith Lavender. Read (Libby audio). Predicted 5.5 → actual 7.5. Beat its 5.5 prediction by 2 points (actual 7.5)
 - All Systems Red (The Murderbot Diaries #1) — Martha Wells. Read (Hoopla audio). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — short format and low stakes undercut it.
 - Alien Clay — Adrian Tchaikovsky. Read (Kindle and Libby audio). Predicted 8.5 → actual 8. Landed 8/10, half a point below its 8.5 prediction.
