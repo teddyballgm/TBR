@@ -272,8 +272,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### Dark Matter — Blake Crouch *(rec from Gavin)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch) | Price: $12.99 🔔 *alert set @ $12.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Dark+Matter+Blake+Crouch)
+**Status:** Purchased
 
 **Predicted rating:** 6.5/10
 
