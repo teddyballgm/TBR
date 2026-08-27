@@ -167,9 +167,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### Heroes Die — Matthew Woodring Stover *(rec from Random Reddit post)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Heroes%20die%20Stover)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Heroes%20Die%20Matthew%20Woodring%20Stover)
+**Status:** Purchased
 
 **Predicted rating:** 8.5/10
 
