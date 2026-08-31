@@ -29,19 +29,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### No Country for Old Men — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=No+Country+for+Old+Men+Cormac+McCarthy) | Price: $12.99 🔔 *alert set @ $12.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=No+Country+for+Old+Men+Cormac+McCarthy)
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Closer to your thriller background than his other work. Chigurh is one of the great antagonists in fiction — the kind of villain who reframes everything around him. Tight, relentless, no fat.
-
-**The caveat:** The ending is deliberately withholding — divisive for exactly the same reason Dust's ending bothered you, but intentionally so.
-
------
-
 ### 11/22/63 — Stephen King
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=11%2F22%2F63+Stephen+King) | Price: *not yet tracked*
@@ -575,6 +562,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- No Country for Old Men — Cormac McCarthy. Read (Libby audiobook). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — density/accessibility issues, missed prediction by 1.5.
 - City of Stairs — Robert Jackson Bennett. Read (Audible). Predicted 8 → actual 6. Landed 6/10 vs predicted 8 — meaningful miss, pacing complaint.
 - Happy Wife — Meredith Lavender. Read (Libby audio). Predicted 5.5 → actual 7.5. Beat its 5.5 prediction by 2 points (actual 7.5)
 - All Systems Red (The Murderbot Diaries #1) — Martha Wells. Read (Hoopla audio). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — short format and low stakes undercut it.
