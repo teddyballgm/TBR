@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### No country for old men — Cormac mccarthy · 7/10 *(Libby audiobook)*
+### No Country for Old Men — Cormac McCarthy · 7/10 *(Libby audiobook)*
 
 Not sure what to make of it - felt denser, less accessible than other books I’ve read lately. Not sure I followed enough to fully appreciate the theme work happening
 
