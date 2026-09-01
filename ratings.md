@@ -149,6 +149,10 @@ Incredible world-architect, but the texture of living inside the longer books ca
 ## 6-6.5
 
 
+### Perfect life — Meredith lavender · 6.5/10 *(Hardback)*
+
+Slower starting than the first book; gets satisfying to through the middle.
+
 ### City of Stairs — Robert Jackson Bennett · 6/10 *(Audible)*
 
 The ending was good - opening 75% needed to be cut way back.
