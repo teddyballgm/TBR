@@ -338,20 +338,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Perfect Life — Meredith Lavender *(rec from Meredith lavender)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Perfect%20life%20Meredith%20lavender)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Perfect%20Life%20Meredith%20Lavender)
-
-**Predicted rating:** 5/10
-
-**Why it's here:** Cannot verify this title against any known published work, and the recommendation source is the author herself — a self-rec with no external signal. Nothing about the submission suggests the taste-profile markers: no evidence of dark wit, original worldbuilding, or authorial control at the DCC level. Absent any indicator otherwise, this reads as an unvetted submission rather than a triaged pick.
-
-**The caveat:** The book may not exist under this title/author, or may be a self-published work with no track record against the profile. Flag for owner review before enrichment is trusted — the predicted rating is a placeholder reflecting absence of signal, not an assessment of the work.
-
------
-
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -562,6 +548,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Perfect Life — Meredith Lavender. Read (Hardback). Predicted 5 → actual 6.5. Landed 6.5 vs predicted 5 — beat prediction by 1.5.
 - No Country for Old Men — Cormac McCarthy. Read (Libby audiobook). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — density/accessibility issues, missed prediction by 1.5.
 - City of Stairs — Robert Jackson Bennett. Read (Audible). Predicted 8 → actual 6. Landed 6/10 vs predicted 8 — meaningful miss, pacing complaint.
 - Happy Wife — Meredith Lavender. Read (Libby audio). Predicted 5.5 → actual 7.5. Beat its 5.5 prediction by 2 points (actual 7.5)
