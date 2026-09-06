@@ -338,6 +338,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### All the Pretty Horses — Cormac McCarthy *(rec from Jesse Breite)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All%20the%20pretty%20horses%20Mccwrthy)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=All%20the%20Pretty%20Horses%20Cormac%20McCarthy)
+
+**Predicted rating:** 6.5/10
+
+**Why it's here:** McCarthy has authorial control in abundance and prose that trusts the reader completely — no hand-holding, no over-explanation. The border trilogy opener has real stakes and earned mythic weight. But this is slow, thematic literary fiction that leans on landscape and elegy rather than the dark wit, systemic worldbuilding, or satirical teeth the profile chases.
+
+**The caveat:** This is the exact failure mode flagged in Known risks: reputation-heavy literary fiction where voice does the work and structure is deliberately meandering. No genre engine, no coherent weirdness, no bite — closer to the Le Guin miss than to DCC. Likely appreciated more than enjoyed.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -537,6 +551,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
