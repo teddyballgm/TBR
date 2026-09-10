@@ -38,7 +38,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 **Why it's here:** Time-travel mechanics function as a real system — the reset, the "obdurate past" pushing back against change, the harmonics — and Jake learns the rules at the same rate the reader does, the same discovery-engine mechanism that makes Project Hail Mary and The Martian work. The Sadie relationship earns its emotional payoff without curdling into sentimentality. Standalone — no series-bloat risk.
 
-**The caveat:** Long (~850 pages / ~30 hrs audio) — some version of the page-count-vs-greatness ratio risk that dinged Cosmere. Tone leans more wistful and earnest than DCC's dark wit — a real departure from the benchmark register, not a small one.
+**The caveat:** Long (~850 pages / ~30 hrs audio) — some version of the page-count-vs-greatness ratio risk that dinged Cosmere. Tone leans more wistful and earnest than DCC's dark wit — a real departure from the benchmark register, not a small one. Also worth flagging under the new pacing-distribution risk: the ending is famously divisive among King readers, with a common complaint that it deflates rather than pays off the 800-page buildup with Sadie. Not lowering the prediction for this — the discovery-engine mechanics are the strongest part of the pitch — but worth going in aware of it.
 
 -----
 
@@ -144,11 +144,11 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 **Status:** Purchased
 
-**Predicted rating:** 8/10
+**Predicted rating:** 7.5/10
 
 **Why it's here:** Bennett is a genuine stylist with strong authorial control, and this one pairs a Holmes/Watson dynamic with a mycological, body-horror-inflected empire fighting off leviathans — earned weirdness, not decorative weirdness. The worldbuilding is dense but delivered through the case rather than exposition dumps, and the prose has real wit. Structurally closer to The Rook than DCC — a competent, oddball investigator navigating an institution whose rules keep escalating.
 
-**The caveat:** It's a mystery first, and the genre's beat structure (interview, clue, reveal) can flatten the satirical teeth the profile rewards. Din as narrator is more earnest than acidic, so if you need the dark comic register DCC operates in, this will read a half-step warm.
+**The caveat:** It's a mystery first, and the genre's beat structure (interview, clue, reveal) can flatten the satirical teeth the profile rewards. Din as narrator is more earnest than acidic, so if you need the dark comic register DCC operates in, this will read a half-step warm. Same author as City of Stairs, the clearest exemplar of the pacing-distribution risk in Known risks (6/10, opening three-quarters needed cutting) — no evidence yet that Bennett's front-loading tendency is fixed here, so the prediction is discounted half a point pending confirmation.
 
 -----
 
