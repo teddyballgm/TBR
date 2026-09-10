@@ -25,7 +25,7 @@ What makes a 9/10:
 
 Secondary reference points: *The Rook* (O'Malley), *Emperor's Soul* (Sanderson), *He Who Fights With Monsters* (Shirtaloon — for progression systems and world density, despite structural bloat).
 
-Known risks: books that are warm/cozy without satirical coherence (*Wizard's Guide to Defensive Baking*), identity-reconstruction mysteries where the payoff undershoots the structure (*Piranesi*), slow/thematic literary fiction that leans on reputation over voice and worldbuilding (*The Left Hand of Darkness* — predicted 8.5, actual 7), protagonist-forward narratives that require you to love the main character.
+Known risks: books that are warm/cozy without satirical coherence (*Wizard's Guide to Defensive Baking*), identity-reconstruction mysteries where the payoff undershoots the structure (*Piranesi*), slow/thematic literary fiction that leans on reputation over voice and worldbuilding (*The Left Hand of Darkness* — predicted 8.5, actual 7), protagonist-forward narratives that require you to love the main character, and pacing distribution mismatches — front-loaded bloat or a payoff that lands late or undercuts the earlier buildup (*City of Stairs* — 6/10, opening three-quarters needed cutting; *Alien Clay* — buildup ~7, ending ~8.5; *The Traitor Baru Cormorant* — ending clawed back half a point; *Wool*'s *Dust* finale — time-shifting structure undercut the stakes built up in earlier eras). This risk is independent of worldbuilding or discovery-engine quality — a book can nail the concept and still lose points to where the weight of the payoff sits.
 
 ---
 
@@ -208,4 +208,4 @@ Authentication: reads need none (the files are public static assets). Submission
 
 ---
 
-*Last updated: July 2026 (schema/site sections reconciled against the code — Tier 4, `**Library:**`, same-origin reads).*
+*Last updated: September 2026 (added pacing-distribution risk to Known risks — City of Stairs, Alien Clay, Traitor Baru Cormorant, Wool/Dust).*
