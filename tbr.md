@@ -324,20 +324,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Raising Steam — Terry Pratchett
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Raising%20Steam%20Terry%20Pratchett)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Raising%20Steam%20Terry%20Pratchett)
-
-**Predicted rating:** 7/10
-
-**Why it's here:** Late-period Discworld, and Pratchett's satirical machinery is the closest thing in fantasy to the coherent-extreme wit the profile chases — DCC owes him a debt. Raising Steam applies that machinery to industrial revolution as social force, with Moist von Lipwig as the vehicle-protagonist the profile tolerates well. The worldbuilding is dense and earned by forty prior books.
-
-**The caveat:** This is widely considered one of the weakest late Discworld novels — Pratchett's illness shows in loose structure, speechifying where satire used to bite, and thematic points made explicitly rather than followed to their logical extremes. Also a poor entry point; much of the payoff depends on prior Moist and dwarf-politics arcs, so read cold it may land closer to 6.
-
------
-
 ### All the Pretty Horses — Cormac McCarthy *(rec from Jesse Breite)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All%20the%20pretty%20horses%20Mccwrthy)
@@ -563,6 +549,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Raising Steam — Terry Pratchett. Read (Libby audiobook). Predicted 7 → actual 7.5. Landed 7.5 vs predicted 7 — slightly beat prediction.
 - Perfect Life — Meredith Lavender. Read (Hardback). Predicted 5 → actual 6.5. Landed 6.5 vs predicted 5 — beat prediction by 1.5.
 - No Country for Old Men — Cormac McCarthy. Read (Libby audiobook). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — density/accessibility issues, missed prediction by 1.5.
 - City of Stairs — Robert Jackson Bennett. Read (Audible). Predicted 8 → actual 6. Landed 6/10 vs predicted 8 — meaningful miss, pacing complaint.
