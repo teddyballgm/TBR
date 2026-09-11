@@ -37,7 +37,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Raising steam — Pratchett · 7.5/10 *(Libby audiobook)*
+### Raising Steam — Terry Pratchett · 7.5/10 *(Libby audiobook)*
 
 The Moist Von Lipwig series is light and fun. Interesting without being challenging.
 
