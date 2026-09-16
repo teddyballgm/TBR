@@ -8,6 +8,10 @@ Narrator quality is tracked where relevant — narration has meaningfully affect
 
 ## 9-10
 
+
+### The Road — Cormac McCarthy · 9/10 *(Libby audio)*
+
+A sparse book with spare language painting a gray world that lets you look at a father son relationship.
 ### Parade of Horribles — Matt Dinniman · 9.5/10 *(Whispersync, mostly Audible)*
 
 Wow. Even as this book shifted some of the early series dynamics it packed a frickin wallop on every level — from a man and his ex-girlfriend’s cat to intergalactic political history.

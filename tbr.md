@@ -166,17 +166,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Tier 3 — Worth Trying
 
-### The Road — Cormac McCarthy
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Road+Cormac+McCarthy) | Price: $7.99 🔔 *alert set @ $2.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The+Road+Cormac+McCarthy)
-
-**Predicted rating:** 7.5/10
-
-**Why it's here:** Strong authorial control and real economy of craft — McCarthy does more with less than almost anyone in the genre, and it earns its ending in a way Dust couldn't. Set against the rest of the profile it's a partial match, not a lock: no dark wit, and the post-apocalyptic setting is well-worn rather than original worldbuilding. That's the same reputation-plus-topicality shape that made Piranesi and The Left Hand of Darkness miss high, so the prediction reflects the pattern rather than betting against it.
-
-**The caveat:** Relentlessly bleak. Not a comfortable read. Go in knowing that.
-
 -----
 
 ### Gideon the Ninth — Tamsyn Muir
@@ -549,6 +538,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- The Road — Cormac McCarthy. Read (Libby audio). Predicted 7.5 → actual 9. Landed 9 vs predicted 7.5 — beat prediction by 1.5.
 - Raising Steam — Terry Pratchett. Read (Libby audiobook). Predicted 7 → actual 7.5. Landed 7.5 vs predicted 7 — slightly beat prediction.
 - Perfect Life — Meredith Lavender. Read (Hardback). Predicted 5 → actual 6.5. Landed 6.5 vs predicted 5 — beat prediction by 1.5.
 - No Country for Old Men — Cormac McCarthy. Read (Libby audiobook). Predicted 8.5 → actual 7. Landed 7/10 vs predicted 8.5 — density/accessibility issues, missed prediction by 1.5.
