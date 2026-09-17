@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Heroes Die — Matthew Woodring Stover · 8/10 *(Whispersync)*
+
+Loved the premise. Liked the stories. Main character developed well. Political but not too in your face. Dark but not overly so - especially without major comic relief
+
 ### Raising Steam — Terry Pratchett · 7.5/10 *(Libby audiobook)*
 
 The Moist Von Lipwig series is light and fun. Interesting without being challenging.
