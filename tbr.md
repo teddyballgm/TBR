@@ -526,7 +526,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
-- Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 7.5. Landed 7.5 vs predicted 8.5 — missed by a point.
+- Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
 - The Road — Cormac McCarthy. Read (Libby audio). Predicted 7.5 → actual 9. Landed 9 vs predicted 7.5 — beat prediction by 1.5.
 - Raising Steam — Terry Pratchett. Read (Libby audiobook). Predicted 7 → actual 7.5. Landed 7.5 vs predicted 7 — slightly beat prediction.
 - Perfect Life — Meredith Lavender. Read (Hardback). Predicted 5 → actual 6.5. Landed 6.5 vs predicted 5 — beat prediction by 1.5.
