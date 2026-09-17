@@ -41,7 +41,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Heroes die — Stover · 7.5/10 *(Whispersync)*
+### Heroes Die — Matthew Woodring Stover · 7.5/10 *(Whispersync)*
 
 Loved the premise. Liked the stories. Main character developed well. Political but not too in your face. Dark but not overly so - especially without major comic relief
 

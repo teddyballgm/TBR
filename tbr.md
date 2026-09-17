@@ -152,18 +152,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Heroes Die — Matthew Woodring Stover *(rec from Random Reddit post)*
-
-**Status:** Purchased
-
-**Predicted rating:** 8.5/10
-
-**Why it's here:** Stover writes with the kind of authorial control the profile demands — a brutal, tightly-plotted portal-fantasy premise (actor-assassin shot into a secondary world as live entertainment for a dystopian Earth audience) executed with real teeth. The frame is inherently satirical about spectacle and consumption, which lines up with DCC's game-show-as-atrocity engine, and Caine is a protagonist built as vehicle for the machinery rather than someone to love. Dense worldbuilding on both sides of the portal, earned weirdness, no bloat.
-
-**The caveat:** The nastiness is unrelenting and largely unleavened by DCC's dark wit — Stover plays it straight where Dinniman would crack a joke, and the grimness can read as posture rather than satire. Prose is muscular but occasionally purple, and the Earth-side dystopia leans harder on cruelty than on coherent internal logic.
-
------
-
 ## Tier 3 — Worth Trying
 
 -----
@@ -538,6 +526,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 7.5. Landed 7.5 vs predicted 8.5 — missed by a point.
 - The Road — Cormac McCarthy. Read (Libby audio). Predicted 7.5 → actual 9. Landed 9 vs predicted 7.5 — beat prediction by 1.5.
 - Raising Steam — Terry Pratchett. Read (Libby audiobook). Predicted 7 → actual 7.5. Landed 7.5 vs predicted 7 — slightly beat prediction.
 - Perfect Life — Meredith Lavender. Read (Hardback). Predicted 5 → actual 6.5. Landed 6.5 vs predicted 5 — beat prediction by 1.5.
