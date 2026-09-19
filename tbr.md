@@ -152,6 +152,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Blade of Tyshalle — Matthew Stover
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blade%20of%20Tyshalle%20Stover)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Blade%20of%20Tyshalle%20Matthew%20Stover)
+
+**Predicted rating:** 8/10
+
+**Why it's here:** Second in the Acts of Caine sequence — a portal-fantasy frame wrapped around a brutal corporate dystopia, with Stover exercising the kind of authorial control the profile rewards: he knows exactly how ugly he's willing to get and follows the logic there without flinching. The tonal register — dark wit, genre machinery bent toward satirical ends, protagonist as vehicle for a thesis about violence and spectacle — lines up with what makes DCC work. Worldbuilding is dense and earned rather than explained.
+
+**The caveat:** Substantially longer than *Heroes Die* and widely considered bloated in its middle third — a pacing-distribution risk of the kind flagged in Known risks (*City of Stairs*, *Alien Clay*). Also assumes you've read book one; dropping in cold loses most of the payoff, so this is really a bet on the series rather than a standalone triage.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 -----
@@ -524,14 +538,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
-
-### Blade of Tyshalle — Stover
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blade%20of%20Tyshalle%20Stover)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
