@@ -166,6 +166,18 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Best Served Cold — Joe Abercrombie
+
+**Status:** Purchased (Audible, $7.99 — 81% off Audible Monthly Deal, reg. $42.51; Whispersync applies)
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** First Law World, Book 1 of 3 — loosely connected rather than a continuation of the original trilogy (new POV protagonist per book), 26 hrs 29 min, narrated by Steven Pacey — same narrator as the First Law trilogy, with an established track record in this world. Aligns well with the profile: dark wit with satirical coherence, an anti-chosen-one structure, economy of craft, no romance-forward plot.
+
+**The caveat:** Abercrombie's protagonists are emotional-focus/interiority pieces rather than systems-driven vehicles — a genuine gap against the DCC benchmark, though not a knock against the book on its own terms. Series-longevity flag isn't triggered (3 volumes, below the 6+ dilution-risk threshold), but this is still a trilogy commitment, not the standalone read it was originally miscategorized as. No pacing-distribution risk flag — this is a revenge-plot structure, not the exposition-front-loaded pattern in Known risks.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 -----
