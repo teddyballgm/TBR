@@ -524,6 +524,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Blade of Tyshalle — Stover
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blade%20of%20Tyshalle%20Stover)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
