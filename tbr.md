@@ -262,8 +262,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### Dark Matter — Blake Crouch *(rec from Gavin)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20matter%20Blake%20crouch) | Price: $12.99 🔔 *alert set @ $12.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Dark+Matter+Blake+Crouch)
+**Status:** Purchased
 
 **Predicted rating:** 6.5/10
 
@@ -615,12 +614,13 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 When adding a new book, include:
 
-1. **Title & Author**
+1. **Title & Author** — on the heading line as `### Title — Author`, with a spaced em dash. A hyphen there drops the book from the site silently.
 2. **Rec source** (if applicable)
-3. **Kindle price** — search: `https://www.ereaderiq.com/search/?q=Title+Author` → set alert at $0.01 below current price
-4. **Predicted rating** (Claude's estimate based on profile)
-5. **Why it fits** (voice / tone / structure match to DCC/HWFWM profile)
-6. **The caveat** (honest risk factors)
+3. **Kindle price** — search: `https://www.ereaderiq.com/search/?q=Title+Author` → set alert $0.01 below the reference price (current price, or a floor you missed — see CONSTITUTION.md)
+4. **Library link** — `https://fulcolibrary.overdrive.com/search?query=Title+Author`. Goes with the Kindle line; unowned entries carry both. An owned book carries `**Status:** ... purchased` instead of either.
+5. **Predicted rating** (Claude's estimate based on profile)
+6. **Why it fits** (voice / tone / structure match to DCC/HWFWM profile)
+7. **The caveat** (honest risk factors)
 
 -----
 

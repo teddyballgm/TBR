@@ -7,7 +7,7 @@
 
 This repo is a personal reading record and curation system. It is not Goodreads. It is not comprehensive. It is an opinionated, maintained list of what's worth reading and why — judged against a specific taste profile — and a queue of what's next, ranked by confidence of hitting that profile.
 
-The site at tefleming.com surfaces these files. The markdown files are the source of truth. The site is a reader and submission interface, not a database.
+The site at tbr.tefleming.com surfaces these files. The markdown files are the source of truth. The site is a reader and submission interface, not a database.
 
 ---
 
@@ -124,7 +124,9 @@ Rules:
 [Authoring checklist. Not a book section — parsers and the enrichment Action skip it.]
 ```
 
-**Owned entries drop the acquisition lines.** A book you already have carries `**Status:** [Owned/Purchased, with provenance]` *instead of* the `**Kindle:**` and `**Library:**` lines — there's no price to track and no reason to borrow it. The two shapes are mutually exclusive: as of this writing all 46 queue entries carry exactly one of `**Library:**` (25, unowned) or `**Status:**` (21, owned). The site keys off this — `**Status:**` suppresses price tracking in the UI and turns on the Rate button.
+**Owned entries drop the acquisition lines.** A book you already have carries `**Status:** [Owned/Purchased, with provenance]` *instead of* the `**Kindle:**` and `**Library:**` lines — there's no price to track and no reason to borrow it. The two shapes are mutually exclusive: every queue entry carries exactly one of them. An entry carrying both is a defect, and it has a specific cause worth recognizing — a book bought *after* it was queued, where `**Status:**` was added by hand and the now-dead `**Kindle:**` price line was never removed. It's invisible on the site (`renderTBRBook` branches on ownership and never renders the price for an owned book), so it only shows up as a stale price in the file, which then reads as a deliberate alert threshold. Nothing prompts the removal; check for it when you mark a book owned.
+
+The site keys off this — `**Status:**` suppresses price tracking in the UI and turns on the Rate button.
 
 Rules:
 - **Required fields:** Title, Author, "Predicted rating," "Why it's here," "The caveat"
@@ -154,7 +156,12 @@ Two consequences worth stating plainly:
 - **Describe the system as it is, not as it was.** Every claim here about how reads work, which tiers exist, or which fields an entry carries is something the predictor treats as true.
 - **Lessons belong in Known risks.** That section is the only place a calibration miss durably changes future predictions. A post-mortem written only into `ratings.md` teaches the reader; one written into Known risks teaches the pipeline.
 
-**Machine-checked subset:** `.github/scripts/lint-schema.mjs` runs on every PR and enforces the parts of the schemas above that are mechanically checkable — allowed `##` headings, presence of the three required entry fields, predicted-rating format, ratings.md heading shape, and stray triage placeholders. It is narrower than this document: it checks the ` — ` separator on `ratings.md` headings but **not** on `tbr.md` ones, so a queue entry can pass lint and still be dropped silently by the site. Green CI means "no known schema violation," not "the site will render it."
+**Machine-checked subset:** `.github/scripts/lint-schema.mjs` enforces the parts of the schemas above that are mechanically checkable — allowed `##` headings, the ` — ` title separator on both files' headings, presence of the three required entry fields, predicted-rating format, the one-acquisition-shape rule, the literal "purchased" in `**Status:**`, `ratings.md` heading shape, and stray triage placeholders. It runs in two places, and it needs both:
+
+- **On every pull request**, via `.github/workflows/lint-schema.yml`.
+- **Inside the enrichment Action**, immediately before it commits. This is not redundancy. The Action pushes with `GITHUB_TOKEN`, and GitHub does not let a `GITHUB_TOKEN` push trigger further workflow runs — so the PR check only ever sees the stub that arrived from the form, never the Action's own rewrite of these files. Without the in-process check, the commits that do the most editing would be the only ones nobody validates. A violation there fails the enrichment and names itself in the PR comment; nothing malformed gets pushed.
+
+It is still narrower than this document — it checks shape, not judgment. Nothing mechanical can tell you a tier is wrong, a caveat is dishonest, or an alert threshold no longer reflects what a book is worth to you. Green CI means "no known schema violation."
 
 ---
 
@@ -187,7 +194,7 @@ Claude should assess submissions against the taste profile defined above — not
 
 ---
 
-## Site — tefleming.com
+## Site — tbr.tefleming.com
 
 The site is a read-mostly interface with a submission form. It has two tabs:
 

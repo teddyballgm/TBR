@@ -1,6 +1,6 @@
 # Operations Runbook
 
-Operational guide for keeping `tefleming.com` (repo `teddyballgm/TBR`) running.
+Operational guide for keeping `tbr.tefleming.com` (repo `teddyballgm/TBR`) running.
 For architecture and data schemas, see `development.md`.
 
 ---
@@ -67,6 +67,7 @@ The enrichment Action is unaffected by `GH_PAT` expiry — it doesn't use that s
 | Action ✗ with **no** comment | `GITHUB_TOKEN` couldn't post (unlikely — check `permissions:` in the workflow are still `contents: write` / `pull-requests: write`) | Fix the workflow's `permissions:` block, then re-run via `workflow_dispatch` (pass `pr_number` and `head_ref`) |
 | Enrichment: "Placeholder not found… stub may already be enriched" | The `[To be filled during triage]` stub was edited/removed before the Action ran | Re-add the stub, or triage the entry manually |
 | Enrichment: "Claude did not return valid JSON" | Model returned prose/fenced output | Re-run the workflow (Actions tab → Enrich Submission → Run workflow, or `workflow_dispatch` with `pr_number`/`head_ref`); if persistent, check the prompt / model in `enrich.mjs` |
+| Enrichment: "Schema lint rejected the edited files — nothing was committed or pushed" | The Action's own edit to `tbr.md`/`ratings.md` violates the schema, or the branch already carried a violation (the lint reads whole files, not the diff) | The comment quotes the violation with a file and line. Fix the markdown on the branch and re-run via `workflow_dispatch`. Nothing was pushed, so the branch is exactly as it was before the run. If the violation is in an entry this submission didn't touch, it came in on the branch and needs fixing regardless |
 | Site shows stale data after a merge | Vercel deploy lag or cache | Wait ~10s; check Vercel Deployments for a successful build on `main` |
 | Site fails to load any books | GitHub API read blip, or `tbr.md`/`ratings.md` markdown broke the parser | Check the raw markdown formatting against the schemas in `development.md` |
 | PR fails the "Lint Schema" check | `tbr.md` or `ratings.md` doesn't match the documented schema | Read the job's error output — it names the offending heading/entry — and fix the markdown (see schema in `development.md`) |
@@ -79,7 +80,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 
 | Variable | Where | Default | Effect |
 |---|---|---|---|
-| `ALLOWED_ORIGIN` | Vercel | `https://tefleming.com` | CORS origin allowed to POST to `/api/submit` |
+| `ALLOWED_ORIGIN` | Vercel | `https://tbr.tefleming.com` | CORS origin allowed to POST to `/api/submit` |
 | `ANTHROPIC_MODEL` | GitHub Actions | `claude-opus-4-7` | Model used for enrichment (e.g. bump to a newer Claude model) |
 | `ANTHROPIC_VERSION` | GitHub Actions | `2023-06-01` | Anthropic API version header |
 
@@ -87,7 +88,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 
 ## Verification checklist (after any secret rotation)
 
-1. **Submit form:** on `tefleming.com`, submit a throwaway test book. You should get a PR link back (not an auth error).
+1. **Submit form:** on `tbr.tefleming.com`, submit a throwaway test book. You should get a PR link back (not an auth error).
 2. **Enrichment:** the submission PR's Action should go green and post a **"Claude enrichment"** comment within a minute. (For a rating submission, the comment reports whether the queue was reconciled or left untouched.)
 3. **Merge & deploy:** merge the PR; within ~10s Vercel redeploys `main` and the book appears on the site.
 4. **Clean up:** delete the test PR/branch and remove the test entry if merged.
@@ -97,5 +98,7 @@ None are required — all have safe defaults. Set them only if you need to chang
 ## Deploy & hosting notes
 
 - **Hosting:** Vercel, auto-deploys on push to `main` (~10s, no build step).
-- **DNS/domain:** `tefleming.com` is configured in Vercel. `CNAME` in the repo is a legacy GitHub Pages artifact and is unused.
+- **DNS/domain:** `tbr.tefleming.com` is assigned to this project in Vercel, via a `tbr` CNAME record at IONOS pointing to the target Vercel's domain panel shows for the project. Vercel provisions and renews the certificate automatically.
+- **The apex is not ours.** `tefleming.com` and `www.tefleming.com` are assigned to a *separate* Vercel project (a static placeholder page). A domain can only belong to one Vercel project at a time, so re-adding the apex here would silently take it away from that project. Don't.
+- **Don't touch these at IONOS:** the apex `A` record (`216.198.79.1`) and the `MX` records (`mx00.ionos.com` / `mx01.ionos.com`). The MX records are what make the `*@tefleming.com → tedfleming@me.com` catch-all forwarding work; delegating the domain to Vercel's nameservers would break email.
 - **Data is the repo:** `tbr.md` and `ratings.md` are the source of truth; every change is a git commit, so history *is* your backup — recover any bad edit with `git revert`.

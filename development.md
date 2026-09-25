@@ -2,7 +2,7 @@
 
 ## Overview
 
-`tefleming.com` is a personal book tracking site backed by this GitHub repo (`teddyballgm/TBR`). It displays a reading queue (TBR) and a ratings log, both sourced from markdown files in the repo. Visitors can submit new books or ratings via a form, which opens a GitHub PR for manual triage.
+`tbr.tefleming.com` is a personal book tracking site backed by this GitHub repo (`teddyballgm/TBR`). It displays a reading queue (TBR) and a ratings log, both sourced from markdown files in the repo. Visitors can submit new books or ratings via a form, which opens a GitHub PR for manual triage.
 
 For operations — rotating the GitHub token, troubleshooting failures — see **`RUNBOOK.md`**.
 
@@ -14,7 +14,7 @@ For operations — rotating the GitHub token, troubleshooting failures — see *
 - **Frontend:** Single file — `index.html`. Vanilla JS, no build tooling, no frameworks, no npm.
 - **Backend:** Single serverless function — `api/submit.js`. Runs on Vercel, never touches the browser.
 - **Data:** Two markdown files — `tbr.md` and `ratings.md`. These are the source of truth.
-- **Domain:** `tefleming.com` (naked domain is primary; `www` redirects to it)
+- **Domain:** `tbr.tefleming.com`. The apex `tefleming.com` (and `www`) belong to a separate Vercel project serving a static placeholder page — they are not part of this repo and do not route here.
 
 ---
 
@@ -28,7 +28,6 @@ ratings.md        — ratings log data
 CONSTITUTION.md   — taste profile, rating scale, triage workflow
 development.md    — this file
 RUNBOOK.md        — operations: secret rotation, troubleshooting
-CNAME             — legacy GitHub Pages artifact, can be ignored
 ```
 
 ---
@@ -66,22 +65,38 @@ The Action authenticates with the workflow's default `GITHUB_TOKEN`, not a store
 
 ### tbr.md
 
-Top-level structure:
+Top-level structure (these are the only `##` headings the lint allows, and the
+last two must match verbatim):
 ```markdown
 ## Tier 1 — [description]
 ## Tier 2 — [description]  
 ## Tier 3 — [description]
 ## Tier 4 — [description]
-## Already Read / Removed
+## Already Read / Removed from Queue
+## Adding a New TBR Book (Checklist)
 ```
 
 Tier 4 is reserved for owned backlogs acquired in bulk (e.g. a Humble Bundle) rather than individually triaged submissions — same entry schema as any other tier, just a different provenance. It participates in rating reconciliation like Tiers 1–3.
 
-Individual book entry:
+Individual book entry — **unowned**, carrying both acquisition lines:
 ```markdown
 ### Title — Author *(rec from Source)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Title+Author) | Price: $X.XX ~~$Y.YY~~ 🔔 alert set @ $Z.ZZ
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Title+Author)
+
+**Predicted rating:** X/10
+
+**Why it's here:** Reason this book made the list.
+
+**The caveat:** The main risk or reservation.
+```
+
+Individual book entry — **owned**, which replaces both acquisition lines with a
+single status line:
+```markdown
+### Title — Author
 
 **Status:** Purchased
 
@@ -94,10 +109,13 @@ Individual book entry:
 
 Field notes:
 - `*(rec from Source)*` on the title line is optional
-- `**Status:** Purchased` is optional — present only for bought books; suppresses price tracking in the UI
+- **The title line separator must be a spaced em dash — `### Title — Author`.** The site splits on that exact ` — ` and skips any entry it can't split, with no error anywhere: the book simply doesn't appear on the page. A hyphen, an en dash, or an unspaced em dash loses the book. `lint-schema.mjs` checks this.
+- **Exactly one acquisition shape per entry** — either `**Kindle:**` + `**Library:**` (unowned) or `**Status:**` (owned), never both and never neither. Both together is what happens when a book is bought after being queued and the dead price line isn't removed; the site hides it (ownership suppresses price rendering), so it survives in the file looking like a deliberate alert threshold. `lint-schema.mjs` checks this.
+- `**Status:**` must contain the literal word "purchased" (any casing) — that's the string the site tests to suppress price tracking and show the Rate button. `**Status:** Owned` on its own renders as an unowned entry with no prices. `lint-schema.mjs` checks this.
 - `**Kindle:**` price fields are optional — if no price data, renders as "price not yet tracked"
 - eReaderIQ URL format: `https://www.ereaderiq.com/search/?q=Title+Author` (URL-encoded)
-- Alert threshold is set at $0.01 below current price
+- Alert threshold sits $0.01 below a reference price — usually the current price, sometimes a historical floor you missed. See CONSTITUTION.md for which to use.
+- The enrichment Action writes the `**Library:**` line on every book it triages, so unowned entries reaching `main` always have both lines.
 
 ### ratings.md
 
@@ -136,7 +154,7 @@ Field notes:
 |---|---|---|
 | `GH_PAT` | Vercel project settings | GitHub fine-grained PAT for `teddyballgm/TBR` with `contents: write` and `pull-requests: write` — used only by `api/submit.js` |
 | `ANTHROPIC_API_KEY` | GitHub Actions secrets | Claude API key for submission enrichment |
-| `ALLOWED_ORIGIN` | Vercel *(optional)* | CORS origin for `/api/submit`; defaults to `https://tefleming.com` |
+| `ALLOWED_ORIGIN` | Vercel *(optional)* | CORS origin for `/api/submit`; defaults to `https://tbr.tefleming.com` |
 | `ANTHROPIC_MODEL` | GitHub Actions *(optional)* | Enrichment model; defaults to `claude-opus-4-7` |
 | `ANTHROPIC_VERSION` | GitHub Actions *(optional)* | Anthropic API version header; defaults to `2023-06-01` |
 
@@ -146,7 +164,9 @@ Field notes:
 
 ## CORS
 
-`api/submit.js` currently allows `Access-Control-Allow-Origin: https://tefleming.com`. Do not change this to `*`.
+`api/submit.js` currently allows `Access-Control-Allow-Origin: https://tbr.tefleming.com`. Do not change this to `*`.
+
+Note that the site's own form posts to `/api/submit` **same-origin**, so this header is never enforced against it — the value is hardening against cross-origin abuse, not a dependency of the form. Getting it wrong will not break submissions, and getting it right will not stop a non-browser client.
 
 ---
 
