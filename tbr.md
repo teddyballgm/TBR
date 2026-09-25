@@ -551,6 +551,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Station eleven — Emily at John Mandel *(rec from Dylan)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Station%20eleven%20Emily%20at%20John%20Mandel)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
