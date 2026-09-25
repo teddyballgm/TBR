@@ -341,6 +341,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### A Canticle for Leibowitz — Walter M. Miller Jr. *(rec from Dylan)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Liebowitz%20Walter%20miller)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=A%20Canticle%20for%20Leibowitz%20Walter%20M.%20Miller%20Jr.)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Post-apocalyptic triptych with a genuinely dark satirical streak — monks preserving fragments of a civilization they can't understand is the kind of earned weirdness the profile rewards, and Miller trusts the reader to sit with the joke across centuries. Structurally closer to literary SF than to a discovery-engine like DCC: three novellas with heavy thematic freight rather than propulsive worldbuilding. The wit has teeth, but it's dry Catholic irony, not Dinniman's live-wire voice.
+
+**The caveat:** Leans thematic and meditative in ways that have historically underperformed against this profile (cf. Left Hand of Darkness at 7). The third act shifts register hard and the payoff is philosophical rather than visceral — a pacing-distribution risk of the kind flagged in Known risks. Reputation is doing a lot of the lifting; the actual reading experience is slower and more austere than the premise suggests.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -551,14 +565,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
-
-### A Canticle for Liebowitz — Walter miller *(rec from Dylan)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Liebowitz%20Walter%20miller)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
