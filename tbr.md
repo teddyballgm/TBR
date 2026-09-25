@@ -301,7 +301,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### The Name of the Wind — Patrick Rothfuss *(rec from David rice)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Name%20of%20the%20wind%20Patrick%20r)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20Name%20of%20the%20Wind%20Patrick%20Rothfuss)
 
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Name%20of%20the%20Wind%20Patrick%20Rothfuss)
 
@@ -315,7 +315,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### The Consuming Fire — John Scalzi
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Consuming%20fire%20Scalzi)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20Consuming%20Fire%20John%20Scalzi)
 
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Consuming%20Fire%20John%20Scalzi)
 
@@ -329,7 +329,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### All the Pretty Horses — Cormac McCarthy *(rec from Jesse Breite)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All%20the%20pretty%20horses%20Mccwrthy)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=All%20the%20Pretty%20Horses%20Cormac%20McCarthy)
 
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=All%20the%20Pretty%20Horses%20Cormac%20McCarthy)
 
