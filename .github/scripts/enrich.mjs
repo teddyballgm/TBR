@@ -153,6 +153,9 @@ Field rules:
 // ── 3. Rewrite tbr.md ────────────────────────────────────────────────────────
 
 // Every entry enriched here also gets a Fulton County OverDrive search link (see below).
+// Both the Library link and the stub's eReaderIQ Kindle link are built from the
+// corrected title/author passed in, so a submitter's typos don't survive into
+// either search URL.
 function enrichTBR(title, author, recSource, enriched) {
   let md = fs.readFileSync('tbr.md', 'utf8');
 
@@ -167,10 +170,15 @@ function enrichTBR(title, author, recSource, enriched) {
   const arIdx = md.indexOf('\n## Already Read');
   if (arIdx === -1) throw new Error('"Already Read" section not found in tbr.md');
 
-  // Extract the Kindle link from the stub so we can carry it over.
+  // Carry the stub's Kindle line over, but rebuild its eReaderIQ URL from the
+  // corrected title/author — the stub's was built from what the submitter
+  // typed. Anything after the link (price, alert) is kept as-is.
   const stubBlock   = md.slice(stubHeadingPos, arIdx);
   const kindleMatch = stubBlock.match(/\*\*Kindle:\*\* .+/);
-  const kindleLine  = kindleMatch ? kindleMatch[0] : null;
+  const ereaderUrl  = `https://www.ereaderiq.com/search/?q=${encodeURIComponent(`${title} ${author}`)}`;
+  const kindleLine  = kindleMatch
+    ? kindleMatch[0].replace(/(\[Track on eReaderIQ\]\().*?(\))(?=\s*(?:\||$))/, (_, open, close) => `${open}${ereaderUrl}${close}`)
+    : null;
 
   // Every entry reaching this point is unowned by construction (see header
   // comment on this function's caller). Fulton County's OverDrive catalog
