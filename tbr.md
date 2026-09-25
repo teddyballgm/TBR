@@ -126,17 +126,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Hyperion — Dan Simmons *(rec from Darren Wheat)*
+### The Fall of Hyperion — Dan Simmons
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Hyperion%20Dan%20Simmons)
-
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Hyperion%20Dan%20Simmons)
+**Status:** Purchased
 
 **Predicted rating:** 8/10
 
-**Why it's here:** Frame-tale structure with six pilgrims telling wildly different stories — horror, noir, war, literary tragedy — held together by strong authorial control and a genuinely strange far-future world that trusts the reader to assemble it. The worldbuilding is dense and unexplained in the DCC sense: Shrike, Time Tombs, TechnoCore all land as earned weirdness. Tonal range and structural ambition are the draw; the Priest's Tale in particular has the dark-wit-with-teeth quality the profile chases.
+**Why it's here:** Direct continuation of Hyperion, which landed exactly on its predicted 8/10 — and that book was explicitly a setup job, so this is where the pilgrims' threads actually pay off. The Shrike, the Time Tombs, the TechnoCore, and the Hegemony–Ouster war all converge, and Sol and Rachel's Merlin's-sickness storyline (the one that hit hardest in book one) gets its resolution here. Same author control, same dense, earned-weirdness worldbuilding that doesn't stop to explain itself.
 
-**The caveat:** Literary-SF register leans thematic and mournful in stretches, and the book is famously a half-novel — it ends mid-arc and the payoff lives in Fall of Hyperion. Some tales are stronger than others, so the quality is unevenly distributed in the way that usually caps these at 8 rather than 9. **Series entry point — start here.** Read order: Hyperion → Fall of Hyperion (the two form one story); Endymion books are a later duology.
+**The caveat:** Drops the Canterbury Tales vignette structure — the specific thing that made Hyperion work (variation in style and tone per tale) — for a conventional linear narrative told largely through Joseph Severn, a new viewpoint character. That swaps the structural novelty for payoff, and it's a pacing-distribution bet in the opposite direction from Alien Clay: the question is whether resolution without the vignette engine clears the bar the setup set. Heavier on space-opera war politics and Keats than book one. Predicted flat rather than a half-point below book 1 (the usual book-2 sag discount) because the payoff is concentrated here — Hyperion by itself ends on a cliffhanger. Two-book duology; the later Endymion books are a separate, optional arc.
 
 -----
 
@@ -581,6 +579,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
 - The Road — Cormac McCarthy. Read (Libby audio). Predicted 7.5 → actual 9. Landed 9 vs predicted 7.5 — beat prediction by 1.5.
 - Raising Steam — Terry Pratchett. Read (Libby audiobook). Predicted 7 → actual 7.5. Landed 7.5 vs predicted 7 — slightly beat prediction.
