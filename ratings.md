@@ -41,7 +41,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Hyperion — Simmons · 8/10 *(Audible)*
+### Hyperion — Dan Simmons · 8/10 *(Audible)*
 
 I loved the approach - essentially a setup job broken down into several vignettes. The variation in style and tone of each is well done. While the model predicted my affinity for the priest story, I think it underrated how the Merlin sickness storyline would hit me right in the feels
 
