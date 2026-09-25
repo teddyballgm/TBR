@@ -343,7 +343,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### A Canticle for Leibowitz — Walter M. Miller Jr. *(rec from Dylan)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Liebowitz%20Walter%20miller)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Leibowitz%20Walter%20M.%20Miller%20Jr.)
 
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=A%20Canticle%20for%20Leibowitz%20Walter%20M.%20Miller%20Jr.)
 
