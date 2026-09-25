@@ -343,7 +343,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### A Canticle for Leibowitz — Walter M. Miller Jr. *(rec from Dylan)*
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Liebowitz%20Walter%20miller)
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=A%20Canticle%20for%20Leibowitz%20Walter%20M.%20Miller%20Jr.)
 
 **Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=A%20Canticle%20for%20Leibowitz%20Walter%20M.%20Miller%20Jr.)
 
@@ -352,6 +352,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **Why it's here:** Post-apocalyptic triptych with a genuinely dark satirical streak — monks preserving fragments of a civilization they can't understand is the kind of earned weirdness the profile rewards, and Miller trusts the reader to sit with the joke across centuries. Structurally closer to literary SF than to a discovery-engine like DCC: three novellas with heavy thematic freight rather than propulsive worldbuilding. The wit has teeth, but it's dry Catholic irony, not Dinniman's live-wire voice.
 
 **The caveat:** Leans thematic and meditative in ways that have historically underperformed against this profile (cf. Left Hand of Darkness at 7). The third act shifts register hard and the payoff is philosophical rather than visceral — a pacing-distribution risk of the kind flagged in Known risks. Reputation is doing a lot of the lifting; the actual reading experience is slower and more austere than the premise suggests.
+
+-----
+
+### Station Eleven — Emily St. John Mandel *(rec from Dylan)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Station%20Eleven%20Emily%20St.%20John%20Mandel)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Station%20Eleven%20Emily%20St.%20John%20Mandel)
+
+**Predicted rating:** 6.5/10
+
+**Why it's here:** Post-apocalyptic literary fiction with a braided timeline structure and a traveling Shakespeare troupe — the worldbuilding is quiet and character-forward rather than dense or systemic. Prose is controlled and the author knows what she's doing, which clears the bar for craft. But the register is elegiac and humane, not dark-witted, and there's no satirical engine or progression logic doing work underneath.
+
+**The caveat:** This is the opposite corner of the taste profile from DCC — sentiment and interconnected-lives melancholy over teeth and systems. Closest failure mode is *The Left Hand of Darkness*: a well-regarded literary novel whose reputation outruns what the voice and worldbuilding deliver against this specific profile. Structural risk too — the multi-timeline convergence is the payoff, and if it lands soft the earlier threads deflate.
 
 -----
 
