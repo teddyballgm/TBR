@@ -366,6 +366,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### The Gunslinger — Stephen King *(rec from Darren)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20Gunslinger%20Stephen%20King)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Gunslinger%20Stephen%20King)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Assuming this points at The Dark Tower series, the entry point is The Gunslinger — a lean, strange, tonally controlled opener with genuine authorial confidence and worldbuilding that refuses to explain itself. The mythic-weird register and economy of the original 1982 text map reasonably well to the 'earned weirdness' the profile rewards, closer to The Rook than to standard epic fantasy. King trusts the reader to sit with disorientation, which is the right instinct for this taste.
+
+**The caveat:** King's strengths are voice and atmosphere, not the dark-wit-with-teeth or satirical coherence that pushes DCC into benchmark tier — the stakes are mythic rather than sharp. The series is also a pacing-distribution risk in the exact way Known risks flags: the payoff lands seven books later and is widely considered to undercut the buildup, and even book one is a slow, deliberately alienating read. **Series entry point — start here.** Read order is publication: The Gunslinger, The Drawing of the Three, The Waste Lands, Wizard and Glass, Wolves of the Calla, Song of Susannah, The Dark Tower.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -565,6 +579,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
