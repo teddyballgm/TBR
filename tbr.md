@@ -577,6 +577,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Dark Tower — Stephen king *(rec from Darren)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Dark%20Tower%20Stephen%20king)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
