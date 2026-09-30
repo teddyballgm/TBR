@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### The Fall of Hyperion — Dan Simmons · 8/10 *(Audible)*
+
+Totally agree with those who told me to think of the first two books as one story. Liked the twists, the payoff.
+
 ### Hyperion — Dan Simmons · 8/10 *(Audible)*
 
 I loved the approach - essentially a setup job broken down into several vignettes. The variation in style and tone of each is well done. While the model predicted my affinity for the priest story, I think it underrated how the Merlin sickness storyline would hit me right in the feels

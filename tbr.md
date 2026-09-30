@@ -126,18 +126,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### The Fall of Hyperion — Dan Simmons
-
-**Status:** Purchased
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Direct continuation of Hyperion, which landed exactly on its predicted 8/10 — and that book was explicitly a setup job, so this is where the pilgrims' threads actually pay off. The Shrike, the Time Tombs, the TechnoCore, and the Hegemony–Ouster war all converge, and Sol and Rachel's Merlin's-sickness storyline (the one that hit hardest in book one) gets its resolution here. Same author control, same dense, earned-weirdness worldbuilding that doesn't stop to explain itself.
-
-**The caveat:** Drops the Canterbury Tales vignette structure — the specific thing that made Hyperion work (variation in style and tone per tale) — for a conventional linear narrative told largely through Joseph Severn, a new viewpoint character. That swaps the structural novelty for payoff, and it's a pacing-distribution bet in the opposite direction from Alien Clay: the question is whether resolution without the vignette engine clears the bar the setup set. Heavier on space-opera war politics and Keats than book one. Predicted flat rather than a half-point below book 1 (the usual book-2 sag discount) because the payoff is concentrated here — Hyperion by itself ends on a cliffhanger. Two-book duology; the later Endymion books are a separate, optional arc.
-
------
-
 ### The Tainted Cup — Robert Jackson Bennett *(rec from Dylan)*
 
 **Status:** Purchased
@@ -594,6 +582,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- The Fall of Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
 - The Road — Cormac McCarthy. Read (Libby audio). Predicted 7.5 → actual 9. Landed 9 vs predicted 7.5 — beat prediction by 1.5.
