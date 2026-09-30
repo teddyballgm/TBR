@@ -368,6 +368,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Endymion — Dan Simmons
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Endymion%20Dan%20Simmons)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Endymion%20Dan%20Simmons)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** Third book in the Hyperion Cantos, pivoting from the pilgrimage mosaic of the first two into a straightforward chase narrative across the WorldWeb. Simmons has the authorial control and dense worldbuilding the profile rewards, and the Cantos universe is genuinely earned weirdness — Shrike, farcaster network, Church-as-antagonist. Closer in register to literary-SF sweep than to the dark wit of DCC.
+
+**The caveat:** Structural mismatch with the profile: Endymion is protagonist-forward (Raul as first-person narrator, Aenea as messiah-figure) and demands emotional investment in the leads in a way the profile explicitly flags as risky. Also a sequel — no standalone entry point, and the payoff sits in Rise of Endymion, which is the pacing-distribution failure mode Known risks calls out. Predicted rating assumes the reader has already committed to Hyperion/Fall.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -567,6 +581,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
