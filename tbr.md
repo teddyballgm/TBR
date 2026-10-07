@@ -82,8 +82,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ### Blood Meridian — Cormac McCarthy
 
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Blood+Meridian+Cormac+McCarthy) | Price: $6.49 🔔 *alert set @ $6.48*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Blood+Meridian+Cormac+McCarthy)
+**Status:** Purchased
 
 **Predicted rating:** 8/10
 
@@ -379,6 +378,18 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **Why it's here:** Third book in the Hyperion Cantos, pivoting from the pilgrimage mosaic of the first two into a straightforward chase narrative across the WorldWeb. Simmons has the authorial control and dense worldbuilding the profile rewards, and the Cantos universe is genuinely earned weirdness — Shrike, farcaster network, Church-as-antagonist. Closer in register to literary-SF sweep than to the dark wit of DCC.
 
 **The caveat:** Structural mismatch with the profile: Endymion is protagonist-forward (Raul as first-person narrator, Aenea as messiah-figure) and demands emotional investment in the leads in a way the profile explicitly flags as risky. Also a sequel — no standalone entry point, and the payoff sits in Rise of Endymion, which is the pacing-distribution failure mode Known risks calls out. Predicted rating assumes the reader has already committed to Hyperion/Fall.
+
+-----
+
+### The Last Murder at the End of the World — Stuart Turton
+
+**Status:** Purchased
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** A sealed island village, the last humans alive after a fog killed everyone else, and a countdown: solve the murder or the villagers' protection fails and the fog takes them too. A closed-circle mystery with a systems-driven engine, where the setup constrains the plot and the answer has to follow from the rules. Turton has a track record of authorial control over intricate high-concept structures (Seven Deaths of Evelyn Hardcastle).
+
+**The caveat:** Turton's mysteries live or die on the reveal, and this one has drawn mixed reactions on whether the twist earns the buildup. That's the pacing-distribution risk in Known risks. The ensemble is also fairly emotional and sentimental about its premise, which cuts against the dark-wit register.
 
 -----
 
