@@ -163,6 +163,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Recursion — Blake Crouch *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Recursion%20Blake%20Crouch)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Recursion%20Blake%20Crouch)
+
+**Predicted rating:** 7.5/10
+
+**Why it's here:** Crouch writes high-concept thrillers with aggressive pacing and a willingness to follow a premise — here, memory as a physical phenomenon that rewrites reality — to its structural extremes. That commitment to running the idea to its logical end has some kinship with the satirical coherence the profile rewards, and the propulsion resembles DCC's refusal to waste pages. Dark Matter is the closest reference point: same author, same escalating-recursion structure, same reliance on concept over character.
+
+**The caveat:** Crouch is concept-forward but prose-thin — the authorial control is in the plotting, not the sentence, and there's no dark wit to speak of. The emotional stakes lean sentimental (lost-family register) rather than earned, which is exactly the register the profile tends to mark down. Risk of landing closer to 7 if the final-act time-loop structure sags under its own repetition, à la Wool/Dust.
+
+-----
+
 ## Tier 3 — Worth Trying
 
 -----
@@ -606,14 +620,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
-
-### Recursion — Blake curran *(rec from Gavin)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Recursion%20Blake%20curran)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
