@@ -606,6 +606,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Recursion — Blake curran *(rec from Gavin)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Recursion%20Blake%20curran)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - The Fall of Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
