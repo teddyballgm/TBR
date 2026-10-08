@@ -46,19 +46,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Mother of Learning — nobody103
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Mother+of+Learning)
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Time-loop academia LitRPG — protagonist and reader unravel the loop's mechanics together in real time. Systems followed to genuinely logical extremes with tight authorial control over a self-imposed puzzle-box structure. The closest thing on this list to DCC's "systems as narrative engine" without being DCC-adjacent LitRPG filler.
-
-**The caveat:** Web-serial prose is functional, not stylish — go in for structure and plotting, not voice.
-
------
-
 ### The Lies of Locke Lamora — Scott Lynch
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The+Lies+of+Locke+Lamora+Scott+Lynch) | Price: $3.99 🔔 *alert set @ $1.98*
@@ -623,6 +610,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Mother of Learning — nobody103. Read (Whispersync). Predicted 8 → actual 8.5. Landed 8.5 vs predicted 8 — beat prediction by half a point.
 - The Fall of Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.

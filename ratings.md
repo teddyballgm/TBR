@@ -41,7 +41,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
-### Mother of learning arc 1 — Nobody · 8.5/10 *(Whispersync)*
+### Mother of Learning: Arc 1 — nobody103 · 8.5/10 *(Whispersync)*
 
 Book started slow but gains speed and ends really strong. Ready for arc two
 
