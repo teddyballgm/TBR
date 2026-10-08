@@ -42,6 +42,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Mother of Learning: Arc 2 — nobody103
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother%20of%20Learning%20Arc%202%20Domagoj%20Kurmaic) | Price: *not yet tracked*
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Mother%20of%20Learning%20Arc%202)
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** Direct continuation of Arc 1, which beat its 8 prediction at 8.5 and "ends really strong" — the momentum this arc picks up from. With the loop's basic rules set up, Arc 2 is where Zorian stops just surviving the loop and starts using it on purpose: the systems get pushed to their logical extremes, the puzzle-box widens past one boy's problem, and the reader's discovery keeps pace with the protagonist's. That's the same discovery-engine mechanism that powers DCC and the Bobiverse, and it's at its strongest here. The slow start that held Arc 1 back is behind you.
+
+**The caveat:** Same web-serial prose as Arc 1 — functional rather than stylish, and Arc 1 already showed it caps the ceiling. Arc 2 of 3, so it ends on a handoff rather than a resolution; part of its value depends on Arc 3 sticking the landing. Unlike most book 2s it isn't discounted for sag, because the serial's middle is widely considered its strongest stretch. But For We Are Many was discounted half a point for exactly that risk, and if the investigation-heavy middle drags, expect 8. Narrator continuity matters for Whispersync — confirm the same Arc 1 narrator before buying audio.
+
+-----
+
 ## Tier 2 — Strong Recommendation
 
 -----
