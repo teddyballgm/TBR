@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Mother of Learning: Arc 1 — nobody103 · 8.5/10 *(Whispersync)*
+
+Book started slow but gains speed and ends really strong. Ready for arc two
+
 ### The Fall of Hyperion — Dan Simmons · 8/10 *(Audible)*
 
 Totally agree with those who told me to think of the first two books as one story. Liked the twists, the payoff.

@@ -42,20 +42,19 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-## Tier 2 — Strong Recommendation
+### Mother of Learning: Arc 2 — nobody103
+
+**Status:** Purchased (Whispersync, ~$10)
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** Direct continuation of Arc 1, which beat its 8 prediction at 8.5 and "ends really strong" — the momentum this arc picks up from. With the loop's basic rules set up, Arc 2 is where Zorian stops just surviving the loop and starts using it on purpose: the systems get pushed to their logical extremes, the puzzle-box widens past one boy's problem, and the reader's discovery keeps pace with the protagonist's. That's the same discovery-engine mechanism that powers DCC and the Bobiverse, and it's at its strongest here. The slow start that held Arc 1 back is behind you.
+
+**The caveat:** Same web-serial prose as Arc 1 — functional rather than stylish, and Arc 1 already showed it caps the ceiling. Arc 2 of 3, so it ends on a handoff rather than a resolution; part of its value depends on Arc 3 sticking the landing. Unlike most book 2s it isn't discounted for sag, because the serial's middle is widely considered its strongest stretch. But For We Are Many was discounted half a point for exactly that risk, and if the investigation-heavy middle drags, expect 8.
 
 -----
 
-### Mother of Learning — nobody103
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Mother+of+Learning+nobody103) | Price: $2.99 🔔 *alert set @ $2.98*
-**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Mother+of+Learning)
-
-**Predicted rating:** 8/10
-
-**Why it's here:** Time-loop academia LitRPG — protagonist and reader unravel the loop's mechanics together in real time. Systems followed to genuinely logical extremes with tight authorial control over a self-imposed puzzle-box structure. The closest thing on this list to DCC's "systems as narrative engine" without being DCC-adjacent LitRPG filler.
-
-**The caveat:** Web-serial prose is functional, not stylish — go in for structure and plotting, not voice.
+## Tier 2 — Strong Recommendation
 
 -----
 
@@ -623,6 +622,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Mother of Learning — nobody103. Read (Whispersync). Predicted 8 → actual 8.5. Landed 8.5 vs predicted 8 — beat prediction by half a point.
 - The Fall of Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
 - Heroes Die — Matthew Woodring Stover. Read (Whispersync). Predicted 8.5 → actual 8. Landed 8 vs predicted 8.5 — missed by half a point.
