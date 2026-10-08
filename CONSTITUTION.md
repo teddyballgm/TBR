@@ -23,6 +23,8 @@ What makes a 9/10:
 - Protagonist as vehicle rather than the point — distance from the protagonist is fine; trust in the author is essential
 - Economy of craft — does what it needs to do without bloat
 
+Structural affinity: **time loops and reset structures.** A protagonist who relives the same stretch of time and learns the rules by exploiting them is a draw in its own right, not just a fit with the discovery-engine criteria above. *Mother of Learning* Arc 1 landed 8.5 despite a slow start. This raises a book's prediction when the loop is the engine of the plot, with rules the reader learns alongside the protagonist. It does not rescue weak prose or sentimental stakes, and a loop used only as set dressing earns no boost.
+
 Secondary reference points: *The Rook* (O'Malley), *Emperor's Soul* (Sanderson), *He Who Fights With Monsters* (Shirtaloon — for progression systems and world density, despite structural bloat).
 
 Known risks: books that are warm/cozy without satirical coherence (*Wizard's Guide to Defensive Baking*), identity-reconstruction mysteries where the payoff undershoots the structure (*Piranesi*), slow/thematic literary fiction that leans on reputation over voice and worldbuilding (*The Left Hand of Darkness* — predicted 8.5, actual 7), protagonist-forward narratives that require you to love the main character, and pacing distribution mismatches — front-loaded bloat or a payoff that lands late or undercuts the earlier buildup (*City of Stairs* — 6/10, opening three-quarters needed cutting; *Alien Clay* — buildup ~7, ending ~8.5; *The Traitor Baru Cormorant* — ending clawed back half a point; *Wool*'s *Dust* finale — time-shifting structure undercut the stakes built up in earlier eras). This risk is independent of worldbuilding or discovery-engine quality — a book can nail the concept and still lose points to where the weight of the payoff sits.
@@ -215,4 +217,4 @@ Authentication: reads need none (the files are public static assets). Submission
 
 ---
 
-*Last updated: September 2026 (added pacing-distribution risk to Known risks — City of Stairs, Alien Clay, Traitor Baru Cormorant, Wool/Dust).*
+*Last updated: October 2026 (added time-loop structural affinity to the taste profile; earlier: pacing-distribution risk in Known risks — City of Stairs, Alien Clay, Traitor Baru Cormorant, Wool/Dust).*
