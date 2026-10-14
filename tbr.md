@@ -42,6 +42,18 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Mother of Learning: Arc 3 — nobody103
+
+**Status:** Purchased (Whispersync)
+
+**Predicted rating:** 8.5/10
+
+**Why it's here:** The finale of a series that has landed 8.5 twice running — Arc 1 beat its prediction, Arc 2 hit its prediction exactly, and the Arc 2 rating names the mystery as the reason to keep going. Arc 3 is where that mystery pays out: the questions built up across both earlier arcs get answered, and Zorian's slow, subtle growth (the other thing the Arc 2 rating praised) is what the endgame runs on. The loop's rules are fully understood by now, so the discovery engine shifts from learning the system to exploiting it under pressure — still squarely inside the time-loop affinity.
+
+**The caveat:** This is a payoff book, so the pacing-distribution risk applies directly: the whole series' score now leans on whether the ending lands. As the loop runs out, the plot moves from exploring the reset to executing a plan with fewer second chances, and the time-loop boost only applies while the loop is driving the plot — the final stretch leans more on large-scale action, which is less your profile than the puzzle-box middle. Same web-serial prose that has capped the ceiling at 8.5 for two books. If the ending feels rushed relative to the buildup, expect 8; it would take an exceptional landing to break 9.
+
+-----
+
 ## Tier 2 — Strong Recommendation
 
 -----

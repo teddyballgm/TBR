@@ -43,7 +43,7 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 
 ### Mother of Learning: Arc 2 — nobody103 · 8.5/10 *(Whispersync)*
 
-Definitely no sophomore slump here! Dogging the subtle character growth from Zorian - the building of the world and mystery has me ready to keep going!
+Definitely no sophomore slump here! Digging the subtle character growth from Zorian - the building of the world and mystery has me ready to keep going!
 
 ### Mother of Learning: Arc 1 — nobody103 · 8.5/10 *(Whispersync)*
 
