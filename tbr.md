@@ -42,6 +42,18 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Mother of Learning: Arc 4 — nobody103
+
+**Status:** Purchased
+
+**Predicted rating:** 8/10
+
+**Why it's here:** The actual finale — Arc 3's queue entry called itself the finale, but the series runs four books. Three straight landings at 8–8.5 (8.5, 8.5, 8) make this the most predictable book in the queue, and the Arc 3 rating says you're still "really engaged with the story and universe" even through a dragging middle. Arc 4 is where the accumulated mystery and Zorian's slow character growth — the two things every Mother of Learning rating has praised — finally have to cash out.
+
+**The caveat:** Arc 3 slipped half a point from its 8.5 prediction on middle-stretch drag, and that's the trend line to respect: the series is now past the puzzle-box discovery phase that drove the 8.5s, and the endgame leans on large-scale action and plan execution rather than learning the loop — less your profile. Pure pacing-distribution risk: the whole series' payoff sits in this book. A clean landing gets back to 8.5; another saggy middle or a rushed ending makes 7.5 plausible. Same web-serial prose ceiling as the first three — 9 is not on the table.
+
+-----
+
 ## Tier 2 — Strong Recommendation
 
 -----
