@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Mother of Learning: Arc 3 (Mother of Learning) — nobody103 · 8/10 *(Audible)*
+
+Drags through the middle a bit but still really engaged with the story and universe!
+
 ### Mother of Learning: Arc 2 — nobody103 · 8.5/10 *(Whispersync)*
 
 Definitely no sophomore slump here! Digging the subtle character growth from Zorian - the building of the world and mystery has me ready to keep going!

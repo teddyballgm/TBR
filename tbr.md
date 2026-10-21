@@ -42,15 +42,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Mother of Learning: Arc 3 — nobody103
+### Mother of Learning: Arc 4 — nobody103
 
-**Status:** Purchased (Whispersync)
+**Status:** Purchased
 
-**Predicted rating:** 8.5/10
+**Predicted rating:** 8/10
 
-**Why it's here:** The finale of a series that has landed 8.5 twice running — Arc 1 beat its prediction, Arc 2 hit its prediction exactly, and the Arc 2 rating names the mystery as the reason to keep going. Arc 3 is where that mystery pays out: the questions built up across both earlier arcs get answered, and Zorian's slow, subtle growth (the other thing the Arc 2 rating praised) is what the endgame runs on. The loop's rules are fully understood by now, so the discovery engine shifts from learning the system to exploiting it under pressure — still squarely inside the time-loop affinity.
+**Why it's here:** The actual finale — Arc 3's queue entry called itself the finale, but the series runs four books. Three straight landings at 8–8.5 (8.5, 8.5, 8) make this the most predictable book in the queue, and the Arc 3 rating says you're still "really engaged with the story and universe" even through a dragging middle. Arc 4 is where the accumulated mystery and Zorian's slow character growth — the two things every Mother of Learning rating has praised — finally have to cash out.
 
-**The caveat:** This is a payoff book, so the pacing-distribution risk applies directly: the whole series' score now leans on whether the ending lands. As the loop runs out, the plot moves from exploring the reset to executing a plan with fewer second chances, and the time-loop boost only applies while the loop is driving the plot — the final stretch leans more on large-scale action, which is less your profile than the puzzle-box middle. Same web-serial prose that has capped the ceiling at 8.5 for two books. If the ending feels rushed relative to the buildup, expect 8; it would take an exceptional landing to break 9.
+**The caveat:** Arc 3 slipped half a point from its 8.5 prediction on middle-stretch drag, and that's the trend line to respect: the series is now past the puzzle-box discovery phase that drove the 8.5s, and the endgame leans on large-scale action and plan execution rather than learning the loop — less your profile. Pure pacing-distribution risk: the whole series' payoff sits in this book. A clean landing gets back to 8.5; another saggy middle or a rushed ending makes 7.5 plausible. Same web-serial prose ceiling as the first three — 9 is not on the table.
 
 -----
 
@@ -622,6 +622,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Mother of Learning: Arc 3 — nobody103. Read (Audible). Predicted 8.5 → actual 8. Landed at 8 vs predicted 8.5 — missed by half a point.
 - Mother of Learning: Arc 2 — nobody103. Read (Whispersync). Predicted 8.5 → actual 8.5. Landed exactly on its 8.5 prediction.
 - Mother of Learning — nobody103. Read (Whispersync). Predicted 8 → actual 8.5. Landed 8.5 vs predicted 8 — beat prediction by half a point.
 - The Fall of Hyperion — Dan Simmons. Read (Audible). Predicted 8 → actual 8. Landed 8/10, exactly on its predicted 8/10.
