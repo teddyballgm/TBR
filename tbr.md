@@ -620,6 +620,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### The ritualist — Dakota kraut *(rec from Jonathan Reece)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20ritualist%20Dakota%20kraut)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Mother of Learning: Arc 3 — nobody103. Read (Audible). Predicted 8.5 → actual 8. Landed at 8 vs predicted 8.5 — missed by half a point.
