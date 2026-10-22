@@ -406,6 +406,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### The Completionist Chronicles: Ritualist — Dakota Krout *(rec from Jonathan Reece)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20Completionist%20Chronicles%3A%20Ritualist%20Dakota%20Krout)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=The%20Completionist%20Chronicles%3A%20Ritualist%20Dakota%20Krout)
+
+**Predicted rating:** 6.5/10
+
+**Why it's here:** LitRPG progression fantasy in the HWFWM neighborhood — a protagonist discovers an underused magic system (ritual magic) and exploits its rules to grow stronger. The system-mastery loop is the draw, and when it works it scratches the same itch as Shirtaloon's world density. Dakota Krout is a workhorse of the genre with a large catalog, so there's a baseline competence to the mechanics.
+
+**The caveat:** Krout's prose is functional at best — closer to genre-without-craft than to Dinniman's authorial control, and the dark wit is largely absent. Early-career Krout especially leans on wish-fulfillment beats and thin secondary characters, which is the exact failure mode the profile penalizes. Expect progression-system satisfaction without the satirical teeth or economy of craft that pushes a book past 7.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -620,14 +634,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
-
-### The ritualist — Dakota kraut *(rec from Jonathan Reece)*
-
-**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=The%20ritualist%20Dakota%20kraut)
-
-**Why it's here:** [To be filled during triage]
-
-**The caveat:** [To be filled during triage]
 
 ## Already Read / Removed from Queue
 
