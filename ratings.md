@@ -41,6 +41,10 @@ Deceptively small, then devastating. The magic system serves the themes rather t
 ## 7-8.5
 
 
+### Mother of Learning: Arc 4 — nobody103 · 8.5/10 *(Audible)*
+
+Liked the series overall - didn’t know on the way in that it was a web serial but it tracks with the uneven pacing. I like how all the pieces gathered along the way played a part in the finale.
+
 ### Mother of Learning: Arc 3 (Mother of Learning) — nobody103 · 8/10 *(Audible)*
 
 Drags through the middle a bit but still really engaged with the story and universe!
