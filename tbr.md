@@ -406,6 +406,18 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### He Who Fights with Monsters 13 — Shirtaloon
+
+**Status:** Purchased (Kindle + Audible, $13; Whispersync applies)
+
+**Predicted rating:** 7/10
+
+**Why it's here:** You finished all 12 books and rated the series 7/10 — the engine was world curiosity (Pallimustus, the progression system, the Earth question), and the peaks landed through Shirtaloon's restraint in the quiet character conversations. A continuation buys more of exactly that, and Heath Miller's narration is a known quantity across the Kindle/Audible pair.
+
+**The caveat:** Your own rating names the problem: structural bloat, roughly 4 books' worth of 9/10 material spread across 12. Book 13 extends a series already past the 6+ dilution-risk threshold, and you tolerated Jason rather than loved him — nothing about a 13th volume fixes either. Expect the series average, not the peaks; 9 is not realistically on the table.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
