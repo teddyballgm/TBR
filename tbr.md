@@ -138,18 +138,6 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
-### Best Served Cold — Joe Abercrombie
-
-**Status:** Purchased (Audible, $7.99 — 81% off Audible Monthly Deal, reg. $42.51; Whispersync applies)
-
-**Predicted rating:** 7.5/10
-
-**Why it's here:** First Law World, Book 1 of 3 — loosely connected rather than a continuation of the original trilogy (new POV protagonist per book), 26 hrs 29 min, narrated by Steven Pacey — same narrator as the First Law trilogy, with an established track record in this world. Aligns well with the profile: dark wit with satirical coherence, an anti-chosen-one structure, economy of craft, no romance-forward plot.
-
-**The caveat:** Abercrombie's protagonists are emotional-focus/interiority pieces rather than systems-driven vehicles — a genuine gap against the DCC benchmark, though not a knock against the book on its own terms. Series-longevity flag isn't triggered (3 volumes, below the 6+ dilution-risk threshold), but this is still a trilogy commitment, not the standalone read it was originally miscategorized as. No pacing-distribution risk flag — this is a revenge-plot structure, not the exposition-front-loaded pattern in Known risks.
-
------
-
 ### Recursion — Blake Crouch *(rec from Gavin)*
 
 **Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Recursion%20Blake%20Crouch)
@@ -625,6 +613,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 ## Already Read / Removed from Queue
 
+- Best Served Cold — Joe Abercrombie. Read (Mostly audible). Predicted 7.5 → actual 6.5. Landed 6.5 vs predicted 7.5 — missed by a point, character-tracking issues.
 - Mother of Learning: Arc 4 — nobody103. Read (Audible). Predicted 8 → actual 8.5. Landed 8.5 vs predicted 8 — beat prediction by half a point.
 - Mother of Learning: Arc 3 — nobody103. Read (Audible). Predicted 8.5 → actual 8. Landed at 8 vs predicted 8.5 — missed by half a point.
 - Mother of Learning: Arc 2 — nobody103. Read (Whispersync). Predicted 8.5 → actual 8.5. Landed exactly on its 8.5 prediction.

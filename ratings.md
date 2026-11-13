@@ -185,6 +185,10 @@ Incredible world-architect, but the texture of living inside the longer books ca
 ## 6-6.5
 
 
+### Best Served Cold — Joe Abercrombie · 6.5/10 *(Mostly audible)*
+
+Good story - well woven. Long, dragged in parts. Very character-driven but I had trouble keeping up with some of the “who’s who”.
+
 ### Perfect Life — Meredith Lavender · 6.5/10 *(Hardback)*
 
 Slower starting than the first book; gets satisfying to through the middle.
