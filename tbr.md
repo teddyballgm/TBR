@@ -396,6 +396,20 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 -----
 
+### Vibe — Adam Grant *(rec from Zach Hamilton)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Vibe%20Adam%20Grant)
+
+**Library:** [Check Fulton County OverDrive](https://fulcolibrary.overdrive.com/search?query=Vibe%20Adam%20Grant)
+
+**Predicted rating:** 5/10
+
+**Why it's here:** This appears to be nonfiction from a mainstream organizational psychologist — pop-psych in the TED-talk register, built on anecdote and research synthesis. Nothing in that shape maps to the taste profile, which is calibrated for fiction with dark wit, original worldbuilding, and strong authorial control. There is no narrative structure here for a loop, satire, or progression system to live inside.
+
+**The caveat:** Category mismatch is the whole risk: the profile doesn't rate self-help or business nonfiction, so even a competent execution lands outside what this list is for. Also worth confirming the book exists under this title — Grant's catalog is Think Again, Hidden Potential, Originals, Give and Take, and 'Vibe' doesn't match a known title as of the submitter's note.
+
+-----
+
 ## Tier 4 — Owned Backlog (Scalzi Bundle)
 
 *Owned via the John Scalzi Humble Bundle (Old Man's War & More by Tor Books, June 2026) — EPUB, no price tracking needed. Predicted ratings supplied at acquisition. Series entry points flagged per the series-entry-point rule.*
@@ -595,6 +609,7 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 **The caveat:** Low priority — a minor addendum rather than a core entry.
 
 -----
+
 
 
 
