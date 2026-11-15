@@ -611,6 +611,15 @@ intact but meaner. Prefer Audible; Hays is half the thesis.
 
 
 
+
+### Vibe — Adam grant *(rec from Zach Hamilton)*
+
+**Kindle:** [Track on eReaderIQ](https://www.ereaderiq.com/search/?q=Vibe%20Adam%20grant)
+
+**Why it's here:** [To be filled during triage]
+
+**The caveat:** [To be filled during triage]
+
 ## Already Read / Removed from Queue
 
 - Best Served Cold — Joe Abercrombie. Read (Mostly audible). Predicted 7.5 → actual 6.5. Landed 6.5 vs predicted 7.5 — missed by a point, character-tracking issues.
